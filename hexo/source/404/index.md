@@ -57,9 +57,6 @@ noDate: "true"
 
 ***
 
-<div class="pic">
-<img src="/resources/Mihawk-Wind.gif" title="Mihawk-Wind">
-</div>
 
 <p class="center">很抱歉，您所访问的地址并不存在: </p>
 
@@ -71,3 +68,4 @@ noDate: "true"
 以下是博主喜欢的一些歌曲，可以听听，稍作休息~
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=360 src="http://music.163.com/outchain/player?type=0&id=414624452&auto=1&height=430"></iframe>
 </div>
+

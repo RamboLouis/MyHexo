@@ -1,6 +1,7 @@
 ---
 title: Mac搭建Hexo博客
-
+date: 2016-06-01 21:23:31
+tags: hexo
 ---
 ##  前言
 >总算是把Hexo给弄好了。在这期间遇到了各种问题，网上有的教程也有点老了，这里就再写一篇。**最新的教程**可以去[Hexo官网](https://hexo.io/zh-cn/docs/index.html)查看。
@@ -256,3 +257,5 @@ http://www.jianshu.com/p/858ecf233db9
 
 使用Hexo搭建博客（四），博客的部件和插件:
 http://www.jianshu.com/p/739bf1305e66
+
+
