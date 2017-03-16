@@ -1,7 +1,9 @@
 ---
 title: Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结
 date: 2016-10-10 18:20:25
-tags: Cocoapods
+tags: 
+    - Cocoapods
+    - Mac
 ---
 
 >安装淘宝源就直接跳过,安装十余次,分享下最近安装cocoapods的经验,仅仅提醒ruby版本问题之后的操作.如果还有不懂地方可以下方评论,会及时回答.

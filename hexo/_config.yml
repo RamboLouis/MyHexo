@@ -2,18 +2,18 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site
+# Site 博客设置
 title: RamboLu Blog                                 #博客名
-subtitle: Fire proves gold,adversity proves men.    #博客副标题
-description:                                        #网站描述, 用于爬虫抓取的关键词
+subtitle: # Fire proves gold,adversity proves men.  #博客副标题
+description: Fire proves gold,adversity proves men. #网站描述, 用于爬虫抓取的关键词
 author: RamboLu                                     #作者名称
-language: zh-CN                                     #网页编码,中文
+language: zh-Hans                                   #网页编码,中文  ： zh-CN
 timezone:
 email: coderambolu@gmail.com                        #作者邮箱
 
 # URL   网址
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://RamboLu.com                 #用于绑定域名, 其他的不需要配置
+url: http://RamboLu.top                 #用于绑定域名, 其他的不需要配置
 root: /                                 #网站根目录
 permalink: :year/:month/:day/:title/    #文章的 永久链接 格式
 permalink_defaults:                     #永久链接中各部分的默认值
@@ -72,7 +72,7 @@ pagination_dir: page                    # 分页目录
 # Extensions 扩展
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yelee                             # 当前主题名称。值为false时禁用主题
+theme: next                             # 当前主题名称。值为false时禁用主题
 
 # Deployment 账户类型
 ## Docs: https://hexo.io/docs/deployment.html

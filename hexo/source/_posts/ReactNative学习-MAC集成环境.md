@@ -1,7 +1,8 @@
 ---
 title: ReactNative学习-MAC集成环境
 date: 2016-12-08 23:29:01
-tags: React Native
+tags: 
+  - React Native
 ---
 >官网有更详细的集成步骤，这里只是根据个人需求写出简单实用的集成步骤。
 

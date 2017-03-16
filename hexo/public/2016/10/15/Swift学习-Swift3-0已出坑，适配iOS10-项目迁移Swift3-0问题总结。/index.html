@@ -1,17 +1,89 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-    <!--[if lt IE 9]>
-        <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
-    <![endif]-->
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no" />
-<meta name="author" content="RamboLu" />
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Swift," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/img/钢铁侠.png?v=5.1.0" />
+
+
+
 
 
 
@@ -23,7 +95,7 @@ Swift项目,为适配iOS10,无奈只能更新Xcode 8 ,可是发现一入3.0深�
 2&amp;gt;使用系统自带的桥接工具.(原装的就是好,直接打开2.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。">
-<meta property="og:url" content="http://RamboLu.com/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/index.html">
+<meta property="og:url" content="http://RamboLu.top/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/index.html">
 <meta property="og:site_name" content="RamboLu Blog">
 <meta property="og:description" content="前言
 Swift项目,为适配iOS10,无奈只能更新Xcode 8 ,可是发现一入3.0深似海,从此幸福是路人.于是边摸索边修改,在节前的完成代码迁移.节后在完成手头工作后,整理思路,把Swift3.0迁移的心得分享大家.废话不多说分享下心得:
@@ -47,7 +119,7 @@ Swift项目,为适配iOS10,无奈只能更新Xcode 8 ,可是发现一入3.0深�
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-0b6b3aaf1d67bed3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-0e3bcf5083b6d4e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-0cb70ac2167f7a10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2016-12-12T16:48:20.000Z">
+<meta property="og:updated_time" content="2017-03-15T10:28:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。">
 <meta name="twitter:description" content="前言
@@ -58,286 +130,289 @@ Swift项目,为适配iOS10,无奈只能更新Xcode 8 ,可是发现一入3.0深�
 2&amp;gt;使用系统自带的桥接工具.(原装的就是好,直接打开2.">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1666327-98d84a6ab3a12740.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
-<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
 
-    <link rel="alternate" href="/atom.xml" title="RamboLu Blog" type="application/atom+xml">
-
-
-
-    <link rel="shortcut icon" href="/img/钢铁侠.png">
-
-
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
-
-
-
-    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
-
-
-
-    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/style.css">
-
-
-
-<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-
-<title>Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。 | RamboLu Blog</title>
-
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-<script>
-    var yiliaConfig = {
-        fancybox: true,
-        animate: true,
-        isHome: false,
-        isPost: true,
-        isArchive: false,
-        isTag: false,
-        isCategory: false,
-        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
-        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: undefined
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
+  };
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
 
-
-
-    <script> yiliaConfig.rootUrl = "\/";</script>
-
+  <link rel="canonical" href="http://RamboLu.top/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/"/>
 
 
 
 
 
+  <title> Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。 | RamboLu Blog </title>
 </head>
-<body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            <img src="/img/钢铁侠.png" class="animated zoomIn">
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">RamboLu</a></h1>
-        </hgroup>
 
-        
-        <p class="header-subtitle">Fire proves gold,adversity proves men.</p>
-        
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-        
+  
 
 
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>Menu</li>
-                        <li>Tags</li>
-                        
-                        <li>Friends</li>
-                        
-                        
-                        <li>About Me</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
 
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="/">主页</a></li>
-                        
-                            <li><a href="/archives/">所有文章</a></li>
-                        
-                            <li><a href="/tags">标签</a></li>
-                        
-                            <li><a href="/about">关于我</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" href="mailto:coderambolu@gmail.com" title="Email"></a>
-                            
-                                <a class="fa 新浪微博" href="http://weibo.com/210008553" title="新浪微博"></a>
-                            
-                                <a class="fa GitHub" href="https://github.com/RamboLouis" title="GitHub"></a>
-                            
-                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
-                            
-                                <a class="fa 简书" href="http://www.jianshu.com/users/7ebaa8152f09" title="简书"></a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cocoapods/">Cocoapods</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React-Native/">React Native</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swift/">Swift</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
-                    
-                    </div>
-                </section>
-                
 
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">爱运动,爱旅行,爱折腾,有一颗不安分的心,挑战新事物.</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>                
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?2d9c1db15b7380e5a1acdc3b72311996";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=61220060";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">RamboLu Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">RamboLu</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                <img src="/img/钢铁侠.png" class="animated zoomIn">
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">RamboLu</a></h1>
-            </hgroup>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
             
-            <p class="header-subtitle">Fire proves gold,adversity proves men.</p>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/">主页</a></li>
-                
-                    <li><a href="/archives/">所有文章</a></li>
-                
-                    <li><a href="/tags">标签</a></li>
-                
-                    <li><a href="/about">关于我</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" target="_blank" href="mailto:coderambolu@gmail.com" title="Email"></a>
-                            
-                                <a class="fa 新浪微博" target="_blank" href="http://weibo.com/210008553" title="新浪微博"></a>
-                            
-                                <a class="fa GitHub" target="_blank" href="https://github.com/RamboLouis" title="GitHub"></a>
-                            
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
-                                <a class="fa 简书" target="_blank" href="http://www.jianshu.com/users/7ebaa8152f09" title="简书"></a>
-                            
-                        </ul>
-            </nav>
-        </header>                
-    </div>
-    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            所有文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于我
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
 </nav>
-      <div class="body-wrap"><article id="post-Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/" class="article-date">
-      <time datetime="2016-10-14T16:23:31.000Z" itemprop="datePublished">2016-10-15</time>
-</a>
 
 
-    </div>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
   
-  <div class="article-inner">
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="RamboLu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/钢铁侠.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RamboLu Blog">
+    </span>
+
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 class="article-title" itemprop="name">
-      Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。
-    </h1>
-  
-
-      </header>
-      
-      <div class="article-info article-info-post">
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。
+              
+            
+          </h1>
         
 
-        
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Swift/">Swift</a></li></ul>
-    </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-15T00:23:31+08:00">
+                2016-10-15
+              </time>
+            
 
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+            
+
+            
+          </span>
+
           
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/" class="leancloud_visitors" data-flag-title="Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
 <p>Swift项目,为适配iOS10,无奈只能更新Xcode 8 ,可是发现一入3.0深似海,从此幸福是路人.于是边摸索边修改,在节前的完成代码迁移.节后在完成手头工作后,整理思路,把Swift3.0迁移的心得分享大家.<br>废话不多说分享下心得:</p>
 </blockquote>
@@ -390,193 +465,541 @@ Swift项目,为适配iOS10,无奈只能更新Xcode 8 ,可是发现一入3.0深�
 
       
     </div>
-    
-  </div>
-  
-    
-    <div class="copyright">
-        <p><span>Title:</span><a href="/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/">Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。</a></p>
-        <p><span>Author:</span><a href="/" title="Back to Homepage">RamboLu</a></p>
-        <p><span>Created:</span>2016-10-15, 00:23:31</p>
-        <p><span>Updated:</span>2016-12-13, 00:48:20</p>
-        <p>
-            <span>Full URL:</span><a class="post-url" href="/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/" title="Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。">http://RamboLu.com/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/</a>
-            <span class="copy-path" data-clipboard-text="From http://RamboLu.com/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/　　By RamboLu" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
-            <script> var clipboard = new Clipboard('.copy-path'); </script>
-        </p>
-        <p>
-            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
-        </p>
+
+    <div>
+      
+        
+
+      
     </div>
 
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Swift/" rel="tag"># Swift</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/10/Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结!/" rel="next" title="Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结">
+                <i class="fa fa-chevron-left"></i> Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/08/ReactNative学习-MAC集成环境/" rel="prev" title="ReactNative学习-MAC集成环境">
+                ReactNative学习-MAC集成环境 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
 
 
-    <nav id="article-nav">
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/"
+           data-title="Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。" data-url="http://RamboLu.top/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/">
+      </div>
+    
+  </div>
+
+
+        </div>
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/12/08/ReactNative学习-MAC集成环境/">
-                    ReactNative学习-MAC集成环境
-                </a>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/img/钢铁侠.png"
+               alt="RamboLu" />
+          <p class="site-author-name" itemprop="name">RamboLu</p>
+           
+              <p class="site-description motion-element" itemprop="description">Fire proves gold,adversity proves men.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
             </div>
-        
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/10/10/Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结!/">
-                    Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结
-                </a>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
             </div>
+          
+
+        </nav>
+
         
-    </nav>
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/RamboLouis" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/210008553" target="_blank" title="新浪微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  新浪微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/7ebaa8152f09" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/RamboLouis" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://objccn.io/" title="ObjC中国" target="_blank">ObjC中国</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://hexo.io" title="Hexo" target="_blank">Hexo</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://pages.github.com/" title="GitHub" target="_blank">GitHub</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://stackoverflow.com" title="Stack Overflow" target="_blank">Stack Overflow</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.raywenderlich.com" title="Ray Wenderlich" target="_blank">Ray Wenderlich</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://cn.udacity.com/" title="Udacity" target="_blank">Udacity</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、代码篇-一定要做好备份"><span class="nav-number">1.1.</span> <span class="nav-text">1、代码篇:(一定要做好备份!!!)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-gt-升级Xcode8正式版-8A218a"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">1>升级Xcode8正式版(8A218a).</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-gt-使用系统自带的桥接工具-原装的就是好-直接打开2-2项目也会提醒-gt-步骤-3"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">2>使用系统自带的桥接工具.(原装的就是好,直接打开2.2项目也会提醒->步骤:3)</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Edit-gt-Convert-gt-To-Current-Swift-Syntax"><span class="nav-number">1.1.0.2.0.1.</span> <span class="nav-text">Edit > Convert > To Current Swift Syntax..</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-gt-不用说就是为3-0来的-选择Swift3"><span class="nav-number">1.1.0.3.</span> <span class="nav-text">3>不用说就是为3.0来的,选择Swift3.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-gt-上面的框架就不用选了-只选择-app的-这个是检测代码-不然你会哭的"><span class="nav-number">1.1.0.4.</span> <span class="nav-text">4>上面的框架就不用选了,只选择.app的.(这个是检测代码,不然你会哭的)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-gt-检测完后"><span class="nav-number">1.1.0.5.</span> <span class="nav-text">5>检测完后.</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、第三方框架篇-使用的cocoapods管理的第三方框架"><span class="nav-number">1.2.</span> <span class="nav-text">2、第三方框架篇:(使用的cocoapods管理的第三方框架)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-gt-发现框架报错-不要怕-按照错误一样一样来"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">1>发现框架报错.(不要怕,按照错误一样一样来)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#问题1-–-第三方框架版本问题-”Use-Legacy-Swift-Language-Version”"><span class="nav-number">1.2.0.1.1.</span> <span class="nav-text">* 问题1:–.第三方框架版本问题,”Use Legacy Swift Language Version”</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#问题2-–-lipo-can’t-open-input-file-xxx-No-such-file-or-directory"><span class="nav-number">1.2.0.1.2.</span> <span class="nav-text">* 问题2:–.lipo:can’t open input file:xxx(No such file or directory)</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-gt-发现框架过时-需要更新框架"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">2>发现框架过时,需要更新框架.</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#SnapKit框架问题"><span class="nav-number">1.2.0.2.0.1.</span> <span class="nav-text">* SnapKit框架问题:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#Alamofire框架问题"><span class="nav-number">1.2.0.2.0.2.</span> <span class="nav-text">* Alamofire框架问题:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#可能还会有其他框架问题-目前还没有遇到-欢迎讨论"><span class="nav-number">1.2.0.2.0.3.</span> <span class="nav-text">* 可能还会有其他框架问题,目前还没有遇到.欢迎讨论.</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-其他问题总结"><span class="nav-number">1.3.</span> <span class="nav-text">3.其他问题总结:</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#关于重建工程来迁移到Swift3-0解决方案"><span class="nav-number">1.3.0.0.0.1.</span> <span class="nav-text">* 关于重建工程来迁移到Swift3.0解决方案.</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#Swift3-0语法的学习"><span class="nav-number">1.3.0.0.0.2.</span> <span class="nav-text">* Swift3.0语法的学习.</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#后续持续补充"><span class="nav-number">1.3.0.0.0.3.</span> <span class="nav-text">* 后续持续补充.</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后记"><span class="nav-number">1.4.</span> <span class="nav-text">后记</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">RamboLu</span>
+</div>
+
+
+<div class="powered-by">
+   <a class="theme-link" href="https://hexo.io">Hexo</a> 
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
 
   
-</article>
 
-    <div id="toc" class="toc-article">
-    <strong class="toc-title">Contents</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、代码篇-一定要做好备份"><span class="toc-number">1.1.</span> <span class="toc-text">1、代码篇:(一定要做好备份!!!)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-gt-升级Xcode8正式版-8A218a"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">1>升级Xcode8正式版(8A218a).</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-gt-使用系统自带的桥接工具-原装的就是好-直接打开2-2项目也会提醒-gt-步骤-3"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">2>使用系统自带的桥接工具.(原装的就是好,直接打开2.2项目也会提醒->步骤:3)</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#Edit-gt-Convert-gt-To-Current-Swift-Syntax"><span class="toc-number">1.1.0.2.0.1.</span> <span class="toc-text">Edit > Convert > To Current Swift Syntax..</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-gt-不用说就是为3-0来的-选择Swift3"><span class="toc-number">1.1.0.3.</span> <span class="toc-text">3>不用说就是为3.0来的,选择Swift3.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-gt-上面的框架就不用选了-只选择-app的-这个是检测代码-不然你会哭的"><span class="toc-number">1.1.0.4.</span> <span class="toc-text">4>上面的框架就不用选了,只选择.app的.(这个是检测代码,不然你会哭的)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-gt-检测完后"><span class="toc-number">1.1.0.5.</span> <span class="toc-text">5>检测完后.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、第三方框架篇-使用的cocoapods管理的第三方框架"><span class="toc-number">1.2.</span> <span class="toc-text">2、第三方框架篇:(使用的cocoapods管理的第三方框架)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-gt-发现框架报错-不要怕-按照错误一样一样来"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">1>发现框架报错.(不要怕,按照错误一样一样来)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#问题1-–-第三方框架版本问题-”Use-Legacy-Swift-Language-Version”"><span class="toc-number">1.2.0.1.1.</span> <span class="toc-text">* 问题1:–.第三方框架版本问题,”Use Legacy Swift Language Version”</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#问题2-–-lipo-can’t-open-input-file-xxx-No-such-file-or-directory"><span class="toc-number">1.2.0.1.2.</span> <span class="toc-text">* 问题2:–.lipo:can’t open input file:xxx(No such file or directory)</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-gt-发现框架过时-需要更新框架"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">2>发现框架过时,需要更新框架.</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#SnapKit框架问题"><span class="toc-number">1.2.0.2.0.1.</span> <span class="toc-text">* SnapKit框架问题:</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Alamofire框架问题"><span class="toc-number">1.2.0.2.0.2.</span> <span class="toc-text">* Alamofire框架问题:</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#可能还会有其他框架问题-目前还没有遇到-欢迎讨论"><span class="toc-number">1.2.0.2.0.3.</span> <span class="toc-text">* 可能还会有其他框架问题,目前还没有遇到.欢迎讨论.</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-其他问题总结"><span class="toc-number">1.3.</span> <span class="toc-text">3.其他问题总结:</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#关于重建工程来迁移到Swift3-0解决方案"><span class="toc-number">1.3.0.0.0.1.</span> <span class="toc-text">* 关于重建工程来迁移到Swift3.0解决方案.</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Swift3-0语法的学习"><span class="toc-number">1.3.0.0.0.2.</span> <span class="toc-text">* Swift3.0语法的学习.</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#后续持续补充"><span class="toc-number">1.3.0.0.0.3.</span> <span class="toc-text">* 后续持续补充.</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-number">1.4.</span> <span class="toc-text">后记</span></a></li></ol></li></ol>
-</div>
-<style>
-    .left-col .switch-btn,
-    .left-col .switch-area {
-        display: none;
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"rambolu"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz", "rgnJBaCPX4E4G0oXvw19elko");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
     }
-</style>
 
-<input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
 
-<script>
-    yiliaConfig.toc = ["Hide", "Show", !!"false"];
-</script>
-
-
-
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
-        </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。　| RamboLu Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
-
-    
-</div>
-
-
-
-
-
-
-
-    
-
-
-
-
-    <div class="scroll" id="post-nav-button">
-        
-            <a href="/2016/12/08/ReactNative学习-MAC集成环境/" title="Pre: ReactNative学习-MAC集成环境">
-                <i class="fa fa-angle-left"></i>
-            </a>
-        
-
-        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-
-        
-            <a href="/2016/10/10/Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结!/" title="Next: Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        
-    </div>
-
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/12/08/ReactNative学习-MAC集成环境/">ReactNative学习-MAC集成环境</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/">Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/10/Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结!/">Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/01/WKWebView替换UIWebView/">WKWebView替换UIWebView</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Mac搭建Hexo博客/">Mac搭建Hexo博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/08/发布博客/">发布博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/29/免费开发者证书真机调试App ID失效问题解决方案总结/">免费开发者证书真机调试App ID失效问题:"Unable to add App ID because the '10' App ID limit in '7' days has been exceeded."解决方案总结。</a></li></ul>
-
-
-
-
-    <script>
-        
-    </script>
-</div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                <i class="fa fa-copyright"></i> 
-                2015-2016 RamboLu
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
-            </div>
-        </div>
-        
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >Site Visitors: 
-                            <span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>, </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">Page Hits: 
-                            <span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
-        
-    </div>
-</footer>
-    </div>
-    
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
-
-
-
-
-
-<div class="scroll" id="scroll">
-    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
-</div>
-<script>
-    // Open in New Window
-    
-        var oOpenInNew = {
-            
-             title: "a.article-title, .article-more-link a", 
-             post: ".article-entry a[href], .copyright a[href]", 
-             tags: ".article-tag a", 
-             categories: ".article-category a, a.tag-list-link", 
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
         }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
-    
-</script>
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-  </div>
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+
+  
+
 </body>
 </html>
