@@ -1,6 +1,8 @@
 ---
 title: Mac环境更改shell自定义终端-oh my zsh安装及配置
 date: 2017-02-25 11:00:26
+categories:
+    - Mac
 tags: 
     - Mac
     - 进阶

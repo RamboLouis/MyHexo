@@ -1,6 +1,8 @@
 ---
 title: Mac环境使用DigitalOcean租用VPS，部署Docker容器+SS搭建专属梯子
 date: 2017-02-21 21:52:55
+categories:
+    - Mac
 tags:
     - Mac
     - 进阶

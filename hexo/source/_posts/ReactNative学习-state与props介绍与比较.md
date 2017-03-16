@@ -1,13 +1,15 @@
 ---
 title: ReactNative学习-state与props介绍与比较
 date: 2017-02-28 20:33:33
+categories:
+    - ReactNative
 tags: 
     - ReactNative
     - React
     - JavaScript
 ---
 
-## 一、State
+## State
 * state的作用
 
 state是React中组件的一个对象.React把用户界面当做是状态机,想象它有不同的状态然后渲染这些状态,可以轻松让用户界面与数据保持一致.

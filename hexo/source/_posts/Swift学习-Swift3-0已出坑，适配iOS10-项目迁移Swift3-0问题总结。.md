@@ -1,6 +1,8 @@
 ---
 title: 'Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。'
 date: 2016-10-15 00:23:31
+categories:
+    - iOS
 tags: 
     - Swift
 ---

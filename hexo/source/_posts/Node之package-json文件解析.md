@@ -1,6 +1,8 @@
 ---
 title: Node之Package.json文件参数解析
 date: 2017-02-13 14:12:00
+categories:
+    - Node
 tags:
     - Node
     - JavaScript

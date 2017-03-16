@@ -1,6 +1,8 @@
 ---
 title: Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结
 date: 2016-10-10 18:20:25
+categories:
+    - Cocoapods
 tags: 
     - Cocoapods
     - Mac

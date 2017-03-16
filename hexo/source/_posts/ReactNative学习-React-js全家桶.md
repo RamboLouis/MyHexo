@@ -1,6 +1,8 @@
 ---
 title: ReactNative学习-React技术栈全家桶
 date: 2016-12-24 15:26:03
+categories:
+    - ReactNative
 tags: 
   - ReactNative
   - React

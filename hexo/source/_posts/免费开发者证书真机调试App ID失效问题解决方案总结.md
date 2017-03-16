@@ -1,8 +1,11 @@
 ---
 title: 免费开发者证书真机调试App ID失效问题:"Unable to add App ID because the '10' App ID limit in '7' days has been exceeded."解决方案总结。
 date: 2016-04-29 18:43:55
+categories:
+    - Xcode
 tags: 
     - 随笔
+    - Xcode
 ---
 # 前言
 >今天(4月29日),笔者在做免费开发者证书真机调试的时候.发现如下问题:

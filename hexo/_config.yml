@@ -4,7 +4,7 @@
 
 # Site 博客设置
 title: RamboLu Blog                                 #博客名
-subtitle: # Fire proves gold,adversity proves men.  #博客副标题
+subtitle:  技术在于折腾。                              #博客副标题
 description: Fire proves gold,adversity proves men. #网站描述, 用于爬虫抓取的关键词
 author: RamboLu                                     #作者名称
 language: zh-Hans                                   #网页编码,中文  ： zh-CN

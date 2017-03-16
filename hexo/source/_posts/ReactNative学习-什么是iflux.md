@@ -1,6 +1,8 @@
 ---
 title: ReactNative学习-什么是iflux?
 date: 2017-03-03 20:44:29
+categories:
+    - ReactNative
 tags: 
     - ReactNative
     - React

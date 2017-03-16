@@ -1,6 +1,8 @@
 ---
 title: ReactNative学习-MAC集成环境
 date: 2016-12-08 23:29:01
+categories:
+    - ReactNative
 tags: 
   - React Native
 ---
