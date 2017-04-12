@@ -53,6 +53,13 @@ default_category: uncategorized         # 默认分类
 category_map:                           # 分类别名
 tag_map:                                # 标签别名
 
+# 本地搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
 # Date / Time format 日期类型
 # Hexo 使用 Moment.js 来解析和显示时间。
 ## You can customize the date format as defined in
