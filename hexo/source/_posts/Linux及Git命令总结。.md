@@ -1,7 +1,13 @@
 ---
 title: Linux及Git命令总结。
 date: 2016-02-17 18:02:51
-tags:
+categories:
+    - Linux
+    - Git
+tags: 
+    - Linux
+    - Git
+    - Mac
 ---
 ### 常用Linux命令
 

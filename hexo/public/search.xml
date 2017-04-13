@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中.]]></title>
+      <url>%2F2017%2F04%2F13%2FMac%E5%AD%A6%E4%B9%A0-%E7%B3%BB%E7%BB%9FAutomator%E5%B0%86%E6%98%BE%E7%A4%BA%E4%B8%8E%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6%E5%8A%9F%E8%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0Finder%E6%9C%8D%E5%8A%A1%E4%B8%AD%2F</url>
+      <content type="text"><![CDATA[1 .启动Automator 2.选择新建文稿 3.选择服务 4.[1] 搜索 运行 -&gt; 选择 运行shell脚本 -&gt; [2] 设置 “服务”收到 没有输入和 位于Finder.app -&gt; [3] 添加如下命令12345678STATUS=`defaults read com.apple.finder AppleShowAllFiles`if [ $STATUS == YES ];then defaults write com.apple.finder AppleShowAllFiles NOelse defaults write com.apple.finder AppleShowAllFiles YESfikillall Finder 5.按 Commond + S 保存,并写入名字 6.在系统偏好设置中,选择键盘 7.设置键盘找到 显示与隐藏文件开关勾选 8.Finder 的菜单栏中选择 -&gt; 服务]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Go学习-Mac环境配置Golang开发环境及学习项目.]]></title>
       <url>%2F2017%2F03%2F25%2FGo%E5%AD%A6%E4%B9%A0-Mac%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AEGolang%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%8F%8A%E5%AD%A6%E4%B9%A0%E9%A1%B9%E7%9B%AE%2F</url>
       <content type="text"><![CDATA[一、下载安装Golang的SDK. Go下载官网:https://golang.org/dl/ 二、配置环境变量 默认安装目录 /usr/local/go 目录 编辑环境变量 1vi ~/.bash_profile GOPATH是项目目录，根据自己的项目设置. GOPATH如果有多个目录，用冒号:分割 12345export GOROOT=/usr/local/goexport GOBIN=$GOROOT/binexport GOARCH=amd64export GOOS=darwinexport GOPATH=/Users/用户名/Desktop/xxxx1:/Users/用户名/Desktop/xxxx2 编译生效 1source ~/.bash_profile 查看Go环境变量 1go env 三、使用Gogland或IDEA安装Go插件GOPATH下需要建立3个目录：bin 存储编译后的可执行文件；pkg 存放编译后生成的包文件；src 存放项目的源码； 四、Golang项目一个golang电子书介绍如何与golang建立一个网站:https://github.com/astaxie/build-web-application-with-golang高性能Web框架:https://github.com/astaxie/beego]]></content>
@@ -74,8 +81,15 @@
     
     <entry>
       <title><![CDATA[Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结]]></title>
-      <url>%2F2016%2F10%2F10%2FCocoapods%E8%BF%9B%E9%98%B6-%E5%B1%A1%E8%AF%95%E4%B8%8D%E7%88%BD%EF%BC%8C%E5%AE%89%E8%A3%85Cocoapods1.1.0%E6%9C%80%E6%96%B0%E5%BF%83%E5%BE%97%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93!%2F</url>
+      <url>%2F2016%2F10%2F07%2FCocoapods%E8%BF%9B%E9%98%B6-%E5%B1%A1%E8%AF%95%E4%B8%8D%E7%88%BD%EF%BC%8C%E5%AE%89%E8%A3%85Cocoapods1.1.0%E6%9C%80%E6%96%B0%E5%BF%83%E5%BE%97%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93!%2F</url>
       <content type="text"><![CDATA[安装淘宝源就直接跳过,安装十余次,分享下最近安装cocoapods的经验,仅仅提醒ruby版本问题之后的操作.如果还有不懂地方可以下方评论,会及时回答.12Error installing cocoapods: activesupport requires Ruby version &gt;= 2.2.2. 1.安装ruby1&gt;安装 RVMRVM: Ruby Version Manager, Ruby的版本管理器，包括Ruby的版本管理和Gem库管理(gemset)1curl -L get.rvm.io | bash -s stable 2&gt;安装home-brew(切记先安装home-brew,再安装ruby!!)1/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; home-brew地址:&lt;– 如果出现重复安装home-brew,不要怕. 会给你提示命令.It appears Homebrew is already installed. If your intent is to reinstall youshould do the following before running this installer again:1ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)&quot; 3&gt;再安装ruby版本(最新版本2.3.0)1rvm install 2.3.0 出现情况:1.安装不通过的话可以进行手动安装. Installing requirements for osx.Updating system…..Installing required packages: autoconf, automake, libtool, pkg-config, libyaml, readline, libksba, openssl|……..Error running ‘requirements_osx_brew_libs_install autoconf automake libtool pkg-config libyaml readline libksba openssl’,showing last 15 lines of /Users/MTKJ/.rvm/log/1469285314_ruby-2.3.0/package_install_autoconf_automake_libtool_pkg-config_libyaml_readline_libksba_openssl.log 12345678brew install autoconfbrew install automakebrew install lib toolbrew install apple-gcc42brew install libyamlbrew install libxsltbrew install libksbabrew install openssl 2 . Error running ‘__rvm_make -j 1’ 错误 ruby-2.3.0 - #extracting ruby-2.3.0 to /Users/xxxx/.rvm/src/ruby-2.3.0…-ruby-2.3.0 - #configuring………………………………………………|ruby-2.3.0 - #post-configuration.ruby-2.3.0 - #compiling………..Error running ‘__rvm_make -j 1’,showing last 15 lines of /Users/xxxx/.rvm/log/1476689284_ruby-2.3.0/make.logcompiling dln.ccompiling localeinit.ccreating verconf.hverconf.h updatedcompiling loadpath.ccompiling prelude.clinking static-library libruby.2.3.0-static.averifying static-library libruby.2.3.0-static.alinking shared-library libruby.2.3.0.dylibgenerating encdb.hencdb.h updatedmaking enc/bin/sh: /Applications/Xcode: No such file or directorymake: * [enc] Error 127++ return 2There has been an error while running make. Halting the installation./Users/xxxx/.rvm/bin/rvm: line 66: shell_session_update: command not found 安装xcode command line 后再次安装ruby. 1xcode-select --install 如果还是没有成功,查看自己xcode command line 是否选在正确版本. 4&gt;出现错误了,还是没有安装成功ruby.(没关系,卸载RVM,从新安装!)要记得关闭终端重新打开, 或者打开路径cd ~出现在~ 1sudo rm -rf .rvm .rvmrc /etc/rvmrc ;gem uninstall rvm 2.安装CocoaPods1&gt;安装cocoapods(普通版本)1sudo gem install cocoapods 2&gt;更新框架库1pod setup 可以查看框架镜像库的cd ~/.cocoapods 3&gt;更新cocoapods版本(测试版本,仅供特定条件)1sudo gem install cocoapods --pre]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Ruby学习-Ruby版本安装与切换.]]></title>
+      <url>%2F2016%2F09%2F20%2FRuby%E5%AD%A6%E4%B9%A0-Ruby%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85%E4%B8%8E%E5%88%87%E6%8D%A2%2F</url>
+      <content type="text"><![CDATA[Ruby版本管理器（RVM）官网:https://rvm.io/ RVM使用指南:https://ruby-china.org/wiki/rvm-guide 一、安装 RVMRVM: Ruby Version Manager, Ruby的版本管理器，包括Ruby的版本管理和Gem库管理(gemset).1curl -L get.rvm.io | bash -s stable 二、Ruby源 查看当前 Ruby 源 1gem sources -l 删除当前 Ruby 源 1gem sources --remove ****** 使用指定 Ruby 源 1gem sources -a ****** 更新全局的 RubyGems 1sudo gem update --system --no-user-install Ruby 的镜像存放在~/.gemrc里面 三、Ruby 的安装与切换 列出已知的 Ruby 版本 1rvm list known 查询已经安装的 Ruby 版本 1rvm list 切换 Ruby 版本 1rvm use 2.1.0 设置默认版本，控制台默认的 Ruby 版本 1rvm use 2.1.0 --default 卸载已安装的版本 1rvm remove 2.1.0]]></content>
     </entry>
 
     
@@ -83,6 +97,13 @@
       <title><![CDATA[WKWebView替换UIWebView]]></title>
       <url>%2F2016%2F07%2F01%2FWKWebView%E6%9B%BF%E6%8D%A2UIWebView%2F</url>
       <content type="text"><![CDATA[前言 目前,WKWebView只在iOS8后才能用,但是大多数App需要支持iOS7以上的版本，所以兼容性方案就是,iOS7下用UIWebView，iOS8后WKWebView. 一、]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[iOS10 beta版本升级及回退.]]></title>
+      <url>%2F2016%2F06%2F13%2FiOS10-beta%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7%E5%8F%8A%E5%9B%9E%E9%80%80%2F</url>
+      <content type="text"><![CDATA[前言: 笔者前段时间进行iOS 10测试版本升级,出现众多网友共性,程序崩溃、卡顿等问题影响使用.故想回退版本,但是看到许多需要抹掉数据才可恢复,偶遇一良方无需抹掉数据,并附上升级及回退版本教程以及回退版本固件下载地址一枚. iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&gt;复制以下地址，使用自带Safari浏览器打开.iOS Beta Software Profile 描述文件下载地址: 二.安装描述文件,并重启设备. 三.重启后,进入设置-通用-软件更新,下载iOS 10 Developer Beta1安装程序,并安装. iOS10 beta1回退iOS9.3.2一.下载iOS9.3.2固件.ipsw格式.IPSW Downloads固件下载网站地址: 二.打开iTunes.按住Option(alt)键(Win系统按Shift)+点击检查更新. 三.选择下载好的固件进行回退. 四.点击更新后,提示验证固件,验证完成后点击完成.]]></content>
     </entry>
 
     
