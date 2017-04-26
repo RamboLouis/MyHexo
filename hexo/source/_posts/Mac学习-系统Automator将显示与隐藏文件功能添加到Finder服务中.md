@@ -1,6 +1,6 @@
 ---
 title: Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中.
-date: 2017-04-13 15:39:08
+date: 2016-04-13 15:39:08
 categories:
     - Mac
 tags: 

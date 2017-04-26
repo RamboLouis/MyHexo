@@ -1684,7 +1684,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5993d6;
+  background: #33b98c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2234,12 +2234,12 @@ pre .javascript .function {
   margin: 0 5px;
 }
 .site-uv {
-  margin-right: 10px;
-  padding-left: 20px;
+  padding-left: 29px;
 }
-.site-uv::after {
+.site-pv::before {
   content: "|";
-  padding-left: 20px;
+  padding-left: 11px;
+  padding-right: 15px;
 }
 .use-motion .post {
   opacity: 0;

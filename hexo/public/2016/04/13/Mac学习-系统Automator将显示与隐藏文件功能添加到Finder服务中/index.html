@@ -91,7 +91,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Mac," />
 
 
 
@@ -107,15 +107,34 @@
 
 
 
-<meta name="description" content="Fire proves gold,adversity proves men.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="RamboLu Blog">
-<meta property="og:url" content="http://RamboLu.top/categories/Mac/index.html">
+<meta name="description" content="1 .启动Automator
+2.选择新建文稿
+3.选择服务
+4.[1] 搜索 运行 -&amp;gt; 选择 运行shell脚本 -&amp;gt; [2] 设置 “服务”收到 没有输入和 位于Finder.app  -&amp;gt; [3] 添加如下命令12345678STATUS=`defaults read com.apple.finder AppleShowAllFiles`if [ $STATUS == Y">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中.">
+<meta property="og:url" content="http://RamboLu.top/2016/04/13/Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中/index.html">
 <meta property="og:site_name" content="RamboLu Blog">
-<meta property="og:description" content="Fire proves gold,adversity proves men.">
+<meta property="og:description" content="1 .启动Automator
+2.选择新建文稿
+3.选择服务
+4.[1] 搜索 运行 -&amp;gt; 选择 运行shell脚本 -&amp;gt; [2] 设置 “服务”收到 没有输入和 位于Finder.app  -&amp;gt; [3] 添加如下命令12345678STATUS=`defaults read com.apple.finder AppleShowAllFiles`if [ $STATUS == Y">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-77cefcc64f7f6d2a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-83066adb002f204d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-e44fd1cab037ed29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-56c393dc678a174d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-39b88c33cec3dcd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-a95ad203ea8ebda8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-e0cecc8e1bd66f81.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-6c0568446a3347e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-04-17T05:56:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RamboLu Blog">
-<meta name="twitter:description" content="Fire proves gold,adversity proves men.">
+<meta name="twitter:title" content="Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中.">
+<meta name="twitter:description" content="1 .启动Automator
+2.选择新建文稿
+3.选择服务
+4.[1] 搜索 运行 -&amp;gt; 选择 运行shell脚本 -&amp;gt; [2] 设置 “服务”收到 没有输入和 位于Finder.app  -&amp;gt; [3] 添加如下命令12345678STATUS=`defaults read com.apple.finder AppleShowAllFiles`if [ $STATUS == Y">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1666327-77cefcc64f7f6d2a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -143,13 +162,13 @@
 
 
 
-  <link rel="canonical" href="http://RamboLu.top/categories/Mac/"/>
+  <link rel="canonical" href="http://RamboLu.top/2016/04/13/Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中/"/>
 
 
 
 
 
-  <title> 分类: Mac | RamboLu Blog </title>
+  <title> Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中. | RamboLu Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -199,7 +218,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
@@ -335,103 +354,211 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        Mac
-        <small>分类</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/02/25/Mac环境更改shell自定义终端-oh-my-zsh安装及配置/" itemprop="url">
-              
-                <span itemprop="name">Mac环境更改shell自定义终端-oh my zsh安装及配置</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-02-25T11:00:26+08:00"
-              content="2017-02-25" >
-          02-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/02/21/Mac环境使用DigitalOcean租用VPS，部署Docker容器-SS搭建专属梯子/" itemprop="url">
-              
-                <span itemprop="name">Mac环境使用DigitalOcean租用VPS，部署Docker容器+SS搭建专属梯子</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-02-21T21:52:55+08:00"
-              content="2017-02-21" >
-          02-21
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/13/Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中/" itemprop="url">
-              
-                <span itemprop="name">Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中.</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-13T15:39:08+08:00"
-              content="2016-04-13" >
-          04-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2016/04/13/Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="RamboLu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/钢铁侠.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RamboLu Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中.
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-13T15:39:08+08:00">
+                2016-04-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Mac/" itemprop="url" rel="index">
+                    <span itemprop="name">Mac</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/04/13/Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/13/Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2016/04/13/Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中/" class="leancloud_visitors" data-flag-title="Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中.">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="1-启动Automator"><a href="#1-启动Automator" class="headerlink" title="1 .启动Automator"></a>1 .启动<code>Automator</code></h4><p><img src="http://upload-images.jianshu.io/upload_images/1666327-77cefcc64f7f6d2a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="启动`Automator`"></p>
+<h4 id="2-选择新建文稿"><a href="#2-选择新建文稿" class="headerlink" title="2.选择新建文稿"></a>2.选择新建文稿</h4><p><img src="http://upload-images.jianshu.io/upload_images/1666327-83066adb002f204d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择新建文稿"></p>
+<h4 id="3-选择服务"><a href="#3-选择服务" class="headerlink" title="3.选择服务"></a>3.选择服务</h4><p><img src="http://upload-images.jianshu.io/upload_images/1666327-e44fd1cab037ed29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择服务"></p>
+<h4 id="4-1-搜索-运行-gt-选择-运行shell脚本-gt-2-设置-“服务”收到-没有输入和-位于Finder-app-gt-3-添加如下命令"><a href="#4-1-搜索-运行-gt-选择-运行shell脚本-gt-2-设置-“服务”收到-没有输入和-位于Finder-app-gt-3-添加如下命令" class="headerlink" title="4.[1] 搜索 运行 -&gt; 选择 运行shell脚本 -&gt; [2] 设置 “服务”收到 没有输入和 位于Finder.app  -&gt; [3] 添加如下命令"></a>4.[1] 搜索 <code>运行</code> -&gt; 选择 <code>运行shell脚本</code> -&gt; [2] 设置 “服务”收到 <code>没有输入</code>和 位于<code>Finder.app</code>  -&gt; [3] 添加如下命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">STATUS=`defaults read com.apple.finder AppleShowAllFiles`</div><div class="line">if [ $STATUS == YES ];</div><div class="line">then </div><div class="line">    defaults write com.apple.finder AppleShowAllFiles NO</div><div class="line">else</div><div class="line">    defaults write com.apple.finder AppleShowAllFiles YES</div><div class="line">fi</div><div class="line">killall Finder</div></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-56c393dc678a174d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="搜索结果"></p>
+<h4 id="5-按-Commond-S-保存-并写入名字"><a href="#5-按-Commond-S-保存-并写入名字" class="headerlink" title="5.按 Commond + S  保存,并写入名字"></a>5.按 Commond + S  保存,并写入名字</h4><p><img src="http://upload-images.jianshu.io/upload_images/1666327-39b88c33cec3dcd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="保存"></p>
+<h4 id="6-在系统偏好设置中-选择键盘"><a href="#6-在系统偏好设置中-选择键盘" class="headerlink" title="6.在系统偏好设置中,选择键盘"></a>6.在系统偏好设置中,选择键盘</h4><p><img src="http://upload-images.jianshu.io/upload_images/1666327-a95ad203ea8ebda8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择键盘"></p>
+<h4 id="7-设置键盘找到-显示与隐藏文件开关勾选"><a href="#7-设置键盘找到-显示与隐藏文件开关勾选" class="headerlink" title="7.设置键盘找到 显示与隐藏文件开关勾选"></a>7.设置键盘找到 显示与隐藏文件开关勾选</h4><p><img src="http://upload-images.jianshu.io/upload_images/1666327-e0cecc8e1bd66f81.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示与隐藏文件开关"></p>
+<h4 id="8-Finder-的菜单栏中选择-gt-服务"><a href="#8-Finder-的菜单栏中选择-gt-服务" class="headerlink" title="8.Finder 的菜单栏中选择 -&gt; 服务"></a>8.Finder 的菜单栏中选择 -&gt; 服务</h4><p><img src="http://upload-images.jianshu.io/upload_images/1666327-6c0568446a3347e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择 -&gt; 服务"></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Mac/" rel="tag"># Mac</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/18/Mac搭建Hexo博客/" rel="next" title="Mac搭建Hexo博客">
+                <i class="fa fa-chevron-left"></i> Mac搭建Hexo博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/29/免费开发者证书真机调试App ID失效问题解决方案总结/" rel="prev" title="免费开发者证书真机调试App ID失效问题:"Unable to add App ID because the '10' App ID limit in '7' days has been exceeded."解决方案总结。">
+                免费开发者证书真机调试App ID失效问题:"Unable to add App ID because the '10' App ID limit in '7' days has been exceeded."解决方案总结。 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -439,6 +566,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/13/Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中/"
+           data-title="Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中." data-url="http://RamboLu.top/2016/04/13/Mac学习-系统Automator将显示与隐藏文件功能添加到Finder服务中/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -458,8 +593,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/img/钢铁侠.png"
@@ -616,6 +760,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-启动Automator"><span class="nav-number">1.</span> <span class="nav-text">1 .启动Automator</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-选择新建文稿"><span class="nav-number">2.</span> <span class="nav-text">2.选择新建文稿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-选择服务"><span class="nav-number">3.</span> <span class="nav-text">3.选择服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-搜索-运行-gt-选择-运行shell脚本-gt-2-设置-“服务”收到-没有输入和-位于Finder-app-gt-3-添加如下命令"><span class="nav-number">4.</span> <span class="nav-text">4.[1] 搜索 运行 -> 选择 运行shell脚本 -> [2] 设置 “服务”收到 没有输入和 位于Finder.app  -> [3] 添加如下命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-按-Commond-S-保存-并写入名字"><span class="nav-number">5.</span> <span class="nav-text">5.按 Commond + S  保存,并写入名字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-在系统偏好设置中-选择键盘"><span class="nav-number">6.</span> <span class="nav-text">6.在系统偏好设置中,选择键盘</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-设置键盘找到-显示与隐藏文件开关勾选"><span class="nav-number">7.</span> <span class="nav-text">7.设置键盘找到 显示与隐藏文件开关勾选</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-Finder-的菜单栏中选择-gt-服务"><span class="nav-number">8.</span> <span class="nav-text">8.Finder 的菜单栏中选择 -> 服务</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -741,6 +901,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 

@@ -125,3 +125,9 @@ pod setup
 sudo gem install cocoapods --pre
 ```
 
+##### 4>指定安装cocoapods版本
+
+```
+sudo gem install cocoapods --version 1.0.1
+```
+
