@@ -68,7 +68,7 @@ struct IntStack: Container {
 
 感谢Swift的类型推断，实际上并不需要声明具体`Item`的`Int`定义`IntStack`。由于`IntStack`符合`Container`协议的所有要求，所以Swift可以`Item`通过查看`append(_:)`方法参数的`item`类型和下标的返回类型来推断适用的方法。实际上，如果你`typealias Item = Int`从上面的代码中删除一行，那么所有内容都仍然有效，因为它应该是什么类型的`Item`。
 
-您也可以使通用`Stack`类型符合`Container`协议：
+你也可以使通用`Stack`类型符合`Container`协议：
 
 ```
 struct Stack<Element>: Container {
@@ -97,10 +97,13 @@ struct Stack<Element>: Container {
 
 扩展现有类型以指定关联类型
 
-您可以扩展现有类型以添加​​符合协议，如添加协议与扩展一致性所述。这包括具有关联类型的协议。
+你可以扩展现有类型以添加​​符合协议，如添加协议与扩展一致性所述。这包括具有关联类型的协议。
 
-Swift的Array类型已经提供了一个append(_:)方法，一个count属性和一个带Int索引的下标来检索它的元素。这三个功能符合Container协议的要求。这意味着您可以通过声明采用协议来扩展Array以符合协议。您可以使用空的扩展名来执行此操作，如使用扩展名声明协议采用所述： ContainerArray
+Swift的`Array`类型已经提供了一个`append(_:)`方法，一个`count`属性和一个带`Int`索引的下标来检索它的元素。这三个功能符合`Container`协议的要求。这意味着你可以通过声明采用协议来扩展`Array`以符合协议。你可以使用空的扩展名来执行此操作，如使用扩展名声明协议采用所述： ContainerArray
 
+```
 extension Array: Container {}
-Array的现有append(_:)方法和下标使Swift能够推断Item适用于的Stack类型，就像上面的泛型一样。定义此扩展名后，您可以使用任何Array作为Container。
+```
+
+Array的现有`append(_:)`方法和下标使Swift能够推断`Item`适用于的`Stack`类型，就像上面的泛型一样。定义此扩展名后，你可以使用任何`Array`作为`Container`。
 

@@ -658,25 +658,27 @@ git remote add *shortname* *url*
 * 取回远程仓库的变化，并与本地分支合并
 
 ```
-git pull [remote] [branch]
+git pull *remote* *branch*
 ```
 
 * 上传本地指定分支到远程仓库
 
 ```
-git push [remote] [branch]
+git push *remote* *branch*
 ```
 
 * 强行推送当前分支到远程仓库，即使有冲突
 
 ```
-git push [remote] --force
+git push *remote* --force
+或者:
+git push -f -u origin master
 ```
 
 * 推送所有分支到远程仓库
 
 ```
-git push [remote] --all
+git push *remote* --all
 ```
 
 #### 九、撤销
@@ -684,13 +686,13 @@ git push [remote] --all
 * 恢复暂存区的指定文件到工作区
 
 ```
-git checkout [file]
+git checkout *file*
 ```
 
 * 恢复某个commit的指定文件到暂存区和工作区
 
 ```
-git checkout [commit] [file]
+git checkout *commit* *file*
 ```
 
 * 恢复暂存区的所有文件到工作区
@@ -717,7 +719,10 @@ git reset --hard
 git reset **commit**
 ```
 
-* 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致
+* 重置当前分支回滚到某一次历史提交版本
+
+`ps:
+回滚完在执行git push -f -u origin master`
 
 ```
 git reset --hard **commit**

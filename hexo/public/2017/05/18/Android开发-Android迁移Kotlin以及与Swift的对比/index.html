@@ -1,0 +1,1274 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Swift,Kotlin," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/img/钢铁侠.png?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="前言:北京时间的17日23点,谷歌一年一度的I/O开发者大会召开.就在这第一天,谷歌安卓团队大会上宣布Kotlin成为Android的主力开发语言,其实在之前这个语言就已经支持了安卓平台开发，但是直到今天谷歌开发者大会上才宣布对该语言的全面支持和维护,至此之后代码将更加简洁.最近项目上线,CTO说闲暇之余学习下安卓,无奈重新啃java的语法,这是多么痛的领悟,可是一觉醒来,万物复苏.作为热衷Sw">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android开发-java迁移Kotlin以及Kotlin与Swift对比学习.">
+<meta property="og:url" content="http://RamboLu.top/2017/05/18/Android开发-Android迁移Kotlin以及与Swift的对比/index.html">
+<meta property="og:site_name" content="RamboLu Blog">
+<meta property="og:description" content="前言:北京时间的17日23点,谷歌一年一度的I/O开发者大会召开.就在这第一天,谷歌安卓团队大会上宣布Kotlin成为Android的主力开发语言,其实在之前这个语言就已经支持了安卓平台开发，但是直到今天谷歌开发者大会上才宣布对该语言的全面支持和维护,至此之后代码将更加简洁.最近项目上线,CTO说闲暇之余学习下安卓,无奈重新啃java的语法,这是多么痛的领悟,可是一觉醒来,万物复苏.作为热衷Sw">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-2f21c585f5a11d31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-037c81681ed27be8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-3be717b132da80ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-85f7b794b83f43a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-0e358bc86a37c8ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-617bd8faf1d89f4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-a33793e2b7a6a46c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-3b41981f73eff30c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-05-19T10:16:14.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android开发-java迁移Kotlin以及Kotlin与Swift对比学习.">
+<meta name="twitter:description" content="前言:北京时间的17日23点,谷歌一年一度的I/O开发者大会召开.就在这第一天,谷歌安卓团队大会上宣布Kotlin成为Android的主力开发语言,其实在之前这个语言就已经支持了安卓平台开发，但是直到今天谷歌开发者大会上才宣布对该语言的全面支持和维护,至此之后代码将更加简洁.最近项目上线,CTO说闲暇之余学习下安卓,无奈重新啃java的语法,这是多么痛的领悟,可是一觉醒来,万物复苏.作为热衷Sw">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1666327-2f21c585f5a11d31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://RamboLu.top/2017/05/18/Android开发-Android迁移Kotlin以及与Swift的对比/"/>
+
+
+
+
+
+  <title> Android开发-java迁移Kotlin以及Kotlin与Swift对比学习. | RamboLu Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?2d9c1db15b7380e5a1acdc3b72311996";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=61220060";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1261507178&web_id=1261507178" language="JavaScript"></script>
+  </div>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">RamboLu Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">技术在于折腾。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            所有文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于我
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2017/05/18/Android开发-Android迁移Kotlin以及与Swift的对比/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="RamboLu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/钢铁侠.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RamboLu Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Android开发-java迁移Kotlin以及Kotlin与Swift对比学习.
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-18T10:41:19+08:00">
+                2017-05-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/05/18/Android开发-Android迁移Kotlin以及与Swift的对比/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/18/Android开发-Android迁移Kotlin以及与Swift的对比/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/05/18/Android开发-Android迁移Kotlin以及与Swift的对比/" class="leancloud_visitors" data-flag-title="Android开发-java迁移Kotlin以及Kotlin与Swift对比学习.">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>前言:北京时间的17日23点,谷歌一年一度的I/O开发者大会召开.就在这第一天,谷歌安卓团队大会上宣布Kotlin成为Android的主力开发语言,其实在之前这个语言就已经支持了安卓平台开发，但是直到今天谷歌开发者大会上才宣布对该语言的全面支持和维护,至此之后代码将更加简洁.<br>最近项目上线,CTO说闲暇之余学习下安卓,无奈重新啃java的语法,这是多么痛的领悟,可是一觉醒来,万物复苏.<br>作为热衷Swift的iOS开发者,看到Kotlin语法是多么的熟悉.23333.</p>
+</blockquote>
+<h3 id="一、Kotlin的迁移"><a href="#一、Kotlin的迁移" class="headerlink" title="一、Kotlin的迁移."></a>一、Kotlin的迁移.</h3><h4 id="1、安装一个Kotlin的插件"><a href="#1、安装一个Kotlin的插件" class="headerlink" title="1、安装一个Kotlin的插件."></a>1、安装一个Kotlin的插件.</h4><p>Ps:使用Android Studio开发安卓.听说Android Studio 3.0 预览版已支持 Kotlin了,就可以跳过这一步了.</p>
+<ul>
+<li><code>Android Studio</code> -&gt; <code>Preferences</code> -&gt; <code>Plugins</code></li>
+<li>选择<code>Browse Repositories</code></li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-2f21c585f5a11d31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择Browse Repositories"></p>
+<ul>
+<li>搜索<code>Kotlin</code></li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-037c81681ed27be8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="搜索Kotlin"></p>
+<ul>
+<li>根据提示重启Android Studio即可.</li>
+</ul>
+<h4 id="2、java文件迁移Kotlin"><a href="#2、java文件迁移Kotlin" class="headerlink" title="2、java文件迁移Kotlin"></a>2、java文件迁移Kotlin</h4><p>Kotlin插件提供了迁移入口, jetbrains真是良心卖家啊.</p>
+<ul>
+<li>打开你的Activity,</li>
+<li>选择 <code>code</code> -&gt; <code>Convert Java File to Kotlin File</code></li>
+</ul>
+<p>Ps:和Swift迁移感觉一样,<br><img src="http://upload-images.jianshu.io/upload_images/1666327-3be717b132da80ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p>原本java文件的MainActivity:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">package com.example.rambolu.testkotlin;</div><div class="line"></div><div class="line">import android.support.v7.app.AppCompatActivity;</div><div class="line">import android.os.Bundle;</div><div class="line"></div><div class="line">public class MainActivity extends AppCompatActivity &#123;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    protected void onCreate(Bundle savedInstanceState) &#123;</div><div class="line">        super.onCreate(savedInstanceState);</div><div class="line">        setContentView(R.layout.activity_main);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>迁移后kt文件的MainActivity:<br>Ps:迁移后发现眼前的画面似曾相识…</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">package com.barryzhang.kotlinhello</div><div class="line"></div><div class="line">import android.support.v7.app.AppCompatActivity</div><div class="line">import android.os.Bundle</div><div class="line"></div><div class="line">class MainActivity : AppCompatActivity() &#123;</div><div class="line"></div><div class="line">    override fun onCreate(savedInstanceState: Bundle?) &#123;</div><div class="line">        super.onCreate(savedInstanceState)</div><div class="line">        setContentView(R.layout.activity_main)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>对比swift文件的ViewController:<br>Ps：真的和Kotlin是孪生姐妹…</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">import UIKit</div><div class="line"></div><div class="line">class ViewController: UIViewController &#123;</div><div class="line"></div><div class="line">    override func viewDidLoad() &#123;</div><div class="line">        super.viewDidLoad()</div><div class="line">        // Do any additional setup after loading the view, typically from a nib.</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    override func didReceiveMemoryWarning() &#123;</div><div class="line">        super.didReceiveMemoryWarning()</div><div class="line">        // Dispose of any resources that can be recreated.</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>感觉当你写惯了swift后,在书写方式上稍微熟悉下可以无缝切入Kotlin.至于android的类库还需要再进一步的学习.</li>
+<li>同时Kotlin和java也可以进行混编(有点类似OC和Swift混编),Kotlin可以调用java的类库,同时java也可以调用Kotlin.</li>
+</ul>
+<h4 id="3、配置Kotlin"><a href="#3、配置Kotlin" class="headerlink" title="3、配置Kotlin."></a>3、配置Kotlin.</h4><ul>
+<li><p>当你转移后,再次打开Activity,IDE会提醒你<code>Kotlin not configured</code>.此时需要点击右面的<code>configure</code>.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-85f7b794b83f43a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Configure"></p>
+</li>
+<li><p>点击后会提醒项目配置Kotlin,是选择选择默认状态(All modules containing Kotlin files: app),以及Kotlin的版本就即可.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-0e358bc86a37c8ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Kotlin version"><br>Ps: 配置完,其实是在你项目中的<code>build.gradle</code>中添加了Kotlin版本和路径(不是app-&gt;build.gradle)</p>
+</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-617bd8faf1d89f4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="版本和路径"><br>以及你的<code>app</code>-&gt;<code>build.gradle</code>中添加了Kotlin的依赖</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-a33793e2b7a6a46c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Kotlin的依赖"></p>
+<ul>
+<li>配置完,提示需要同步才能正常工作,此时需要点击同步.</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-3b41981f73eff30c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="同步"></p>
+<ul>
+<li>好了,现在可以运行了.</li>
+</ul>
+<h3 id="二、Kotlin与Swift对比学习"><a href="#二、Kotlin与Swift对比学习" class="headerlink" title="二、Kotlin与Swift对比学习."></a>二、Kotlin与Swift对比学习.</h3><ul>
+<li><p>作为官方主推,势必要成为开发的趋势,笔者认为早上车,早体验代码的简洁,同时也提高了开发效率，对于Swift可以更进一步研究FP和POP,而不是还在因为一个property里面的修饰符思考半天.</p>
+</li>
+<li><p>相比Kotlin,目前版本1.1,有如两年前的Swift,对于比Swift开源还早的语言,看来没有大财主也是无济于事啊,之前谷歌与甲骨文的官司,感觉谷歌也是没有办法,也想加紧更换开发Android的语言,这才导致谷歌宣布Swift的孪生姐妹Kotlin成为主力语言.</p>
+</li>
+<li><p>对比学习主要也是更直观的对比2种语言的书写方式,以及书写规范,方便掌握,也加深对语言的认识.</p>
+</li>
+</ul>
+<p>Kotlin的官方文档:<br><a href="http://kotlinlang.org/docs/reference/basic-syntax.html" target="_blank" rel="external">http://kotlinlang.org/docs/reference/basic-syntax.html</a><br>民间翻译中文版:<br><a href="https://huanglizhuo.gitbooks.io/kotlin-in-chinese/Basics/Basic-Types.html" target="_blank" rel="external">https://huanglizhuo.gitbooks.io/kotlin-in-chinese/Basics/Basic-Types.html</a><br>Swift的官方文档:<br><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309" target="_blank" rel="external">https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309</a><br>以及Kotlin和Swift对比文档<br><a href="http://nilhcem.com/swift-is-like-kotlin/" target="_blank" rel="external">http://nilhcem.com/swift-is-like-kotlin/</a><br>以下简单举例语法的相似之处,具体开发中涉及到的类库还要看各家介绍.</p>
+<ul>
+<li>常量和变量</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Swift</div><div class="line">let :常量  ,var :变量</div><div class="line">var a :  Int = 0   </div><div class="line">a = 1</div><div class="line">let b = 2</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Kotlin 也支持类型推导</div><div class="line">val :常量  ,var :变量</div><div class="line">var a : Int = 1   </div><div class="line"> a = 2</div><div class="line">val b = 1</div></pre></td></tr></table></figure>
+<ul>
+<li>打印Holle world</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Swift</div><div class="line">print(&quot;Hello, world!&quot;)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Kotlin</div><div class="line">print(&quot;Hello, world!&quot;) println(&quot;Hello, world!&quot;)   // 和Swift 1.0中使用到的类似</div></pre></td></tr></table></figure>
+<ul>
+<li>打印嵌套字符串<br>区别在于一个是\,一个是$,以及大小括号</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Swift</div><div class="line">let name = &quot;rambolu&quot;</div><div class="line">let age = 25</div><div class="line">print(&quot;我的名字: \(name), 我的年龄 : \(age) &quot;)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Kotlin</div><div class="line">val name = &quot;rambolu&quot;</div><div class="line">val age = 25</div><div class="line">println(&quot;我的名字: $&#123;name&#125;, 我的年龄 $&#123;age&#125; &quot;)</div></pre></td></tr></table></figure>
+<ul>
+<li>数组 for in循环</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Swift</div><div class="line">let arr = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]</div><div class="line">for i in 0..&lt;arr.count &#123;</div><div class="line">    print(&quot; \(i) + \(arr[i])&quot;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Kotlin</div><div class="line">val arr = arrayOf(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;)</div><div class="line">val count = arr.count()</div><div class="line">for (i in 0..count - 1) &#123;</div><div class="line">    println(&quot;$&#123;i&#125; + $&#123;arr[i]&#125;&quot;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>持续补充</li>
+</ul>
+<h3 id="三、后记"><a href="#三、后记" class="headerlink" title="三、后记"></a>三、后记</h3><ul>
+<li>Kotlin的成长似乎也伴随着Swift成长,从苹果把Swift的开源,以及成为主力开发语言至今,苹果一直在激进般的前行,现在谷歌也把Kotlin成为Android的主力开发语言,瞬间感觉以后的开发都在降低了开发者的学习成本,代码都更加的简洁,方便其他开发者更快捷的开发app应用.</li>
+<li>Kotlin团队也宣称 Kotlin 将在 Android Studio 3.0中直接提供,这也意味着开发Android不再需要安装任何插件和担心兼容性的问题了.</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Swift/" rel="tag"># Swift</a>
+          
+            <a href="/tags/Kotlin/" rel="tag"># Kotlin</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/19/Swift学习-面向协议编程中associatedtype的认识/" rel="next" title="Swift学习-面向协议编程中associatedtype的认识">
+                <i class="fa fa-chevron-left"></i> Swift学习-面向协议编程中associatedtype的认识
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/28/Android开发--四大组件之Activity/" rel="prev" title="Android开发-四大组件之Activity.">
+                Android开发-四大组件之Activity. <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/05/18/Android开发-Android迁移Kotlin以及与Swift的对比/"
+           data-title="Android开发-java迁移Kotlin以及Kotlin与Swift对比学习." data-url="http://RamboLu.top/2017/05/18/Android开发-Android迁移Kotlin以及与Swift的对比/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/img/钢铁侠.png"
+               alt="RamboLu" />
+          <p class="site-author-name" itemprop="name">RamboLu</p>
+           
+              <p class="site-description motion-element" itemprop="description">Fire proves gold,adversity proves men.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/RamboLouis" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/210008553" target="_blank" title="新浪微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  新浪微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/7ebaa8152f09" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-book"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/RamboLouis" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.linkedin.com/in/政浩-路-695158108/" target="_blank" title="LinkedIn">
+                  
+                    <i class="fa fa-fw fa-linkedin"></i>
+                  
+                  LinkedIn
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:coderambolu@gmail.com" target="_blank" title="Email">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>
+                  
+                  Email
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://objccn.io/" title="ObjC中国" target="_blank">ObjC中国</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://hexo.io" title="Hexo" target="_blank">Hexo</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://pages.github.com/" title="GitHub" target="_blank">GitHub</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://stackoverflow.com" title="Stack Overflow" target="_blank">Stack Overflow</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.raywenderlich.com" title="Ray Wenderlich" target="_blank">Ray Wenderlich</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://cn.udacity.com/" title="Udacity" target="_blank">Udacity</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://segmentfault.com/" title="segmentfault" target="_blank">segmentfault</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、Kotlin的迁移"><span class="nav-number">1.</span> <span class="nav-text">一、Kotlin的迁移.</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、安装一个Kotlin的插件"><span class="nav-number">1.1.</span> <span class="nav-text">1、安装一个Kotlin的插件.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、java文件迁移Kotlin"><span class="nav-number">1.2.</span> <span class="nav-text">2、java文件迁移Kotlin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、配置Kotlin"><span class="nav-number">1.3.</span> <span class="nav-text">3、配置Kotlin.</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、Kotlin与Swift对比学习"><span class="nav-number">2.</span> <span class="nav-text">二、Kotlin与Swift对比学习.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、后记"><span class="nav-number">3.</span> <span class="nav-text">三、后记</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">RamboLu</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a>Hexo</a> 技术支持
+</div>
+
+<div class="theme-info">
+  来自 <a>Next</a> 主题
+  </a>
+</div>
+
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i> 本站访客数<span class="busuanzi-value" id="busuanzi_value_site_uv"></span>人次</span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i> 本站总访问量<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>次</span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"rambolu"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz", "rgnJBaCPX4E4G0oXvw19elko");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+
+  
+
+</body>
+</html>
