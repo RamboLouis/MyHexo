@@ -120,7 +120,7 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 
 每次新 Activity 启动时，前一 Activity 便会停止，但系统会在堆栈（“返回栈”）">
 <meta property="og:image" content="https://developer.android.google.cn/images/activity_lifecycle.png">
-<meta property="og:updated_time" content="2017-06-05T09:26:48.000Z">
+<meta property="og:updated_time" content="2017-06-07T15:55:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android开发-Activity.">
 <meta name="twitter:description" content="Activity
@@ -480,15 +480,45 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 <li><p>Activity之间通过Intent进行通信。</p>
 </li>
 </ul>
+<h4 id="创建-Activity"><a href="#创建-Activity" class="headerlink" title="创建 Activity"></a>创建 Activity</h4><ul>
+<li><p>创建 Activity，必须创建 Activity 的子类。</p>
+</li>
+<li><p><strong><code>onCreate()</code></strong> </p>
+</li>
+</ul>
+<p>　　必须实现此方法。系统会在创建您的 Activity 时调用此方法。在这个方法实现内初始化 Activity 的必需组件。 同时必须在此方法内调用 <code>setContentView()</code>，以定义 Activity 用户界面的布局。</p>
+<ul>
+<li><strong><code>onPause()</code></strong></li>
+</ul>
+<p>　　系统将此方法作为用户离开 Activity 的第一个信号进行调用（但并不总是意味着 Activity 会被销毁）。通常应该在此方法内确认在当前用户会话结束后仍然有效的操作（因为用户可能不会返回）。</p>
 <h4 id="配置-AndroidManifest"><a href="#配置-AndroidManifest" class="headerlink" title="配置 AndroidManifest"></a>配置 AndroidManifest</h4><ul>
-<li>更改默认Activity入口。</li>
+<li>更改默认Activity。</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;manifest ... &gt;</div><div class="line">  &lt;application ... &gt;</div><div class="line">      &lt;activity android:name=&quot;.MainActivity&quot; /&gt;</div><div class="line">      ...</div><div class="line">  &lt;/application ... &gt;</div><div class="line">  ...</div><div class="line">&lt;/manifest &gt;</div></pre></td></tr></table></figure>
+<ul>
+<li><p>intent-filter</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;activity android:name=&quot;.MainActivity&quot;&gt;</div><div class="line">  &lt;intent-filter&gt;</div><div class="line">     &lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;</div><div class="line">     &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;</div><div class="line">   &lt;/intent-filter&gt;</div><div class="line">&lt;/activity&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><action> 元素指定这是应用的“主”入口点。</action></p>
+<p><category> 元素指定此 Activity 应列入系统的应用启动器内。</category></p>
 <h4 id="启动-Activity"><a href="#启动-Activity" class="headerlink" title="启动 Activity"></a>启动 Activity</h4><ul>
 <li>可以通过调用 <code>startActivity()</code>，并将其传递给描述您想启动的 Activity 的 Intent 来启动另一个 Activity。</li>
 <li>启动某个已知 Activity。 可以通过使用类名创建一个显式定义您想启动的 Activity 的 Intent 对象来实现此目的。 例如，可以通过以下代码让一个 Activity 启动另一个名为 HomeActivity 的 Activity：</li>
 </ul>
+<ol>
+<li>显式启动:通过包名来启动</li>
+</ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Intent intent = new Intent(XXX.this, HomeActivity.class);</div><div class="line">startActivity(intent);</div></pre></td></tr></table></figure>
+<ol>
+<li>隐式启动:通过AndroidManifest中的Intent-filter的Action,Category来实现。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"> &lt;activity android:name=&quot;.OtherActivity&quot;&gt;</div><div class="line">    &lt;intent-filter&gt;</div><div class="line">        &lt;action android:name=&quot;other_action&quot; /&gt;</div><div class="line">        &lt;category android:name=&quot;other_category&quot; /&gt;</div><div class="line">        &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;</div><div class="line">    &lt;/intent-filter&gt;</div><div class="line">&lt;/activity&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Intent otherIntent = new Intent();</div><div class="line">otherIntent.setAction(&quot;other_action&quot;);</div><div class="line">otherIntent.addCategory(&quot;other_category&quot;);</div><div class="line">startActivity(otherIntent);</div></pre></td></tr></table></figure>
+<ul>
+<li>应用还可以利用 Activity 数据执行某项操作，例如打电话、发短信、发电子邮件等。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">// 打电话</div><div class="line">Uri uri = Uri.parse(&quot;tel:10010&quot;);</div><div class="line">Intent intent = new Intent(Intent.ACTION_DIAL, uri);</div><div class="line">startActivity(intent);</div><div class="line">// 2. 发短信</div><div class="line">Uri uri = Uri.parse(&quot;sms:10010&quot;);</div><div class="line">Intent intent = new Intent(Intent.ACTION_SENDTO, uri);</div><div class="line">intent.putExtra(&quot;sms_body&quot;, &quot;今天天气不错&quot;);</div><div class="line">startActivity(intent);</div><div class="line">// 3. 打开浏览器</div><div class="line">Uri uri = Uri.parse(&quot;http://www.baidu.com&quot;);</div><div class="line">Intent intent  = new Intent(Intent.ACTION_VIEW, uri);</div><div class="line">startActivity(intent);</div></pre></td></tr></table></figure>
 <h4 id="启动-Activity-以获得回调结果"><a href="#启动-Activity-以获得回调结果" class="headerlink" title="启动 Activity 以获得回调结果"></a>启动 Activity 以获得回调结果</h4><p>从启动的 Activity 获得回调结果。在这种情况下，请通过调用 <code>startActivityForResult()</code>（而非 startActivity()）来启动 Activity。 要想在随后收到后续 Activity 的结果，请实现 <code>onActivityResult()</code> 回调方法。 当后续 Activity 完成时，它会使用 Intent 向 <code>onActivityResult()</code> 方法返回结果。</p>
 <h4 id="管理-Activity-生命周期"><a href="#管理-Activity-生命周期" class="headerlink" title="管理 Activity 生命周期"></a>管理 Activity 生命周期</h4><ul>
 <li><strong>onCreate()</strong>: 类似iOS中的viewDidLoad。</li>
@@ -542,6 +572,27 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 <li>Activity的销毁顺序:</li>
 </ul>
 <p>onPause()—&gt;onStop()—&gt;onDestroy()</p>
+<h4 id="Activity-正向传值及反向回调"><a href="#Activity-正向传值及反向回调" class="headerlink" title="Activity 正向传值及反向回调"></a>Activity 正向传值及反向回调</h4><h5 id="正向传值"><a href="#正向传值" class="headerlink" title="正向传值"></a>正向传值</h5><ul>
+<li>Activity A 传递一个或多个参数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">Intent intent = new Intent(MainActivity.this, UserActivity.class);</div><div class="line">// 一次传一个</div><div class="line">intent.putExtra(&quot;name&quot;,name);</div><div class="line"></div><div class="line">// 一次传多条数据</div><div class="line">Bundle bd = new Bundle();</div><div class="line">bd.putCharSequence(&quot;name&quot;,name);</div><div class="line">bd.putCharSequence(&quot;sex&quot;,sex);</div><div class="line">intent.putExtras(bd);</div><div class="line"></div><div class="line">startActivity(intent);</div></pre></td></tr></table></figure>
+<ul>
+<li>Activity B 接收一个或多个参数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Intent getIntent = getIntent();</div><div class="line"></div><div class="line">// 一次取一个</div><div class="line">name = getIntent.getStringExtra(&quot;name&quot;);</div><div class="line"></div><div class="line">// 一次取多个</div><div class="line">Bundle bd = getIntent.getExtras();</div><div class="line">name = bd.getCharSequence(&quot;name&quot;).toString();</div><div class="line">sex = bd.getCharSequence(&quot;sex&quot;).toString();</div></pre></td></tr></table></figure>
+<h5 id="反向回调"><a href="#反向回调" class="headerlink" title="反向回调"></a>反向回调</h5><ul>
+<li>Activity A 使用带<code>Result</code>的方法 <code>startActivityForResult()</code> 来启动 Activity B，而非 <code>startActivity()</code> 来启动 Activity B。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Intent intent = new Intent(OtherActivity.this,ImageActivity.class);</div><div class="line">startActivityForResult(intent,100);</div></pre></td></tr></table></figure>
+<ul>
+<li>Activity B 则实现 <code>setResult()</code>方法来实现回传值。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Intent intent = getIntent();</div><div class="line">setResult(200,intent);</div><div class="line">finish();</div></pre></td></tr></table></figure>
+<ul>
+<li>这样 Activity A 就会收到 Activity B 的回调结果，Activity A 再实现 <code>onActivityResult()</code> 回调方法进行监听。</li>
+</ul>
+<p>requestCode 为 Activity A 中 <code>startActivityForResult()</code> 发送的第二个参数: 100<br>resultCode 为 Activity B 中<code>setResult()</code>发送的第一个参数: 200<br>Intent 为 Activity B 中的Intent</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">@Override</div><div class="line">   protected void onActivityResult(int requestCode, int resultCode, Intent data) &#123;</div><div class="line">       super.onActivityResult(requestCode, resultCode, data);</div><div class="line">       Log.d(TAG, &quot;requestCode-----&gt;&quot; + requestCode);</div><div class="line">       Log.d(TAG, &quot;resultCode---&gt;&quot; + resultCode);</div><div class="line">       </div><div class="line">   &#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -813,7 +864,7 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Activity"><span class="nav-number">1.</span> <span class="nav-text">Activity</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-AndroidManifest"><span class="nav-number">2.</span> <span class="nav-text">配置 AndroidManifest</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动-Activity"><span class="nav-number">3.</span> <span class="nav-text">启动 Activity</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动-Activity-以获得回调结果"><span class="nav-number">4.</span> <span class="nav-text">启动 Activity 以获得回调结果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#管理-Activity-生命周期"><span class="nav-number">5.</span> <span class="nav-text">管理 Activity 生命周期</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Activity"><span class="nav-number">1.</span> <span class="nav-text">Activity</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建-Activity"><span class="nav-number">2.</span> <span class="nav-text">创建 Activity</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-AndroidManifest"><span class="nav-number">3.</span> <span class="nav-text">配置 AndroidManifest</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动-Activity"><span class="nav-number">4.</span> <span class="nav-text">启动 Activity</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动-Activity-以获得回调结果"><span class="nav-number">5.</span> <span class="nav-text">启动 Activity 以获得回调结果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#管理-Activity-生命周期"><span class="nav-number">6.</span> <span class="nav-text">管理 Activity 生命周期</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Activity-正向传值及反向回调"><span class="nav-number">7.</span> <span class="nav-text">Activity 正向传值及反向回调</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#正向传值"><span class="nav-number">7.1.</span> <span class="nav-text">正向传值</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#反向回调"><span class="nav-number">7.2.</span> <span class="nav-text">反向回调</span></a></li></ol></li></ol></div>
             
 
           </div>

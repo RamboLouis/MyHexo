@@ -13,7 +13,15 @@ categories:
 * Activity之间通过Intent进行通信。
 
 #### 创建 Activity
+* 创建 Activity，必须创建 Activity 的子类。
 
+* **`onCreate()`** 
+
+　　必须实现此方法。系统会在创建您的 Activity 时调用此方法。在这个方法实现内初始化 Activity 的必需组件。 同时必须在此方法内调用 `setContentView()`，以定义 Activity 用户界面的布局。
+
+* **`onPause()`**
+
+　　系统将此方法作为用户离开 Activity 的第一个信号进行调用（但并不总是意味着 Activity 会被销毁）。通常应该在此方法内确认在当前用户会话结束后仍然有效的操作（因为用户可能不会返回）。
 #### 配置 AndroidManifest
 
 * 更改默认Activity。
@@ -28,9 +36,9 @@ categories:
 </manifest >
 ```
  
- * intent-filter
+* intent-filter
 
- ```
+```
  <activity android:name=".MainActivity">
    <intent-filter>
       <action android:name="android.intent.action.MAIN" />
@@ -39,8 +47,8 @@ categories:
  </activity>
 ```
 
-<action> 元素指定这是应用的“主”入口点。
-<category> 元素指定此 Activity 应列入系统的应用启动器内。
+action 元素指定这是应用的“主”入口点。
+category 元素指定此 Activity 应列入系统的应用启动器内。
 
 #### 启动 Activity
 
@@ -164,4 +172,69 @@ onCreate()—>onStart()—>onResume()
 
 onPause()—>onStop()—>onDestroy()
 
+
+#### Activity 正向传值及反向回调
+##### 正向传值
+* Activity A 传递一个或多个参数
+
+```
+Intent intent = new Intent(MainActivity.this, UserActivity.class);
+// 一次传一个
+intent.putExtra("name",name);
+
+// 一次传多条数据
+Bundle bd = new Bundle();
+bd.putCharSequence("name",name);
+bd.putCharSequence("sex",sex);
+intent.putExtras(bd);
+
+startActivity(intent);
+```
+
+* Activity B 接收一个或多个参数
+
+```
+Intent getIntent = getIntent();
+
+// 一次取一个
+name = getIntent.getStringExtra("name");
+
+// 一次取多个
+Bundle bd = getIntent.getExtras();
+name = bd.getCharSequence("name").toString();
+sex = bd.getCharSequence("sex").toString();
+```
+
+##### 反向回调
+* Activity A 使用带`Result`的方法 `startActivityForResult()` 来启动 Activity B，而非 `startActivity()` 来启动 Activity B。
+
+```
+Intent intent = new Intent(OtherActivity.this,ImageActivity.class);
+startActivityForResult(intent,100);
+```
+
+* Activity B 则实现 `setResult()`方法来实现回传值。
+
+```
+Intent intent = getIntent();
+setResult(200,intent);
+finish();
+```
+
+* 这样 Activity A 就会收到 Activity B 的回调结果，Activity A 再实现 `onActivityResult()` 回调方法进行监听。
+
+requestCode 为 Activity A 中 `startActivityForResult()` 发送的第二个参数: 100
+resultCode 为 Activity B 中`setResult()`发送的第一个参数: 200
+Intent 为 Activity B 中的Intent
+
+```
+ @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.d(TAG, "requestCode----->" + requestCode);
+        Log.d(TAG, "resultCode--->" + resultCode);
+        
+    }
+    
+```
 
