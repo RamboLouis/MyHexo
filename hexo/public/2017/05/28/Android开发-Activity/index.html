@@ -120,7 +120,7 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 
 每次新 Activity 启动时，前一 Activity 便会停止，但系统会在堆栈（“返回栈”）">
 <meta property="og:image" content="https://developer.android.google.cn/images/activity_lifecycle.png">
-<meta property="og:updated_time" content="2017-06-07T15:55:20.000Z">
+<meta property="og:updated_time" content="2017-06-08T02:14:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android开发-Activity.">
 <meta name="twitter:description" content="Activity
@@ -496,12 +496,10 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;manifest ... &gt;</div><div class="line">  &lt;application ... &gt;</div><div class="line">      &lt;activity android:name=&quot;.MainActivity&quot; /&gt;</div><div class="line">      ...</div><div class="line">  &lt;/application ... &gt;</div><div class="line">  ...</div><div class="line">&lt;/manifest &gt;</div></pre></td></tr></table></figure>
 <ul>
-<li><p>intent-filter</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;activity android:name=&quot;.MainActivity&quot;&gt;</div><div class="line">  &lt;intent-filter&gt;</div><div class="line">     &lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;</div><div class="line">     &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;</div><div class="line">   &lt;/intent-filter&gt;</div><div class="line">&lt;/activity&gt;</div></pre></td></tr></table></figure>
-</li>
+<li>intent-filter</li>
 </ul>
-<p><action> 元素指定这是应用的“主”入口点。</action></p>
-<p><category> 元素指定此 Activity 应列入系统的应用启动器内。</category></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;activity android:name=&quot;.MainActivity&quot;&gt;</div><div class="line">  &lt;intent-filter&gt;</div><div class="line">     &lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;</div><div class="line">     &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;</div><div class="line">   &lt;/intent-filter&gt;</div><div class="line">&lt;/activity&gt;</div></pre></td></tr></table></figure>
+<p>action 元素指定这是应用的“主”入口点。<br>category 元素指定此 Activity 应列入系统的应用启动器内。</p>
 <h4 id="启动-Activity"><a href="#启动-Activity" class="headerlink" title="启动 Activity"></a>启动 Activity</h4><ul>
 <li>可以通过调用 <code>startActivity()</code>，并将其传递给描述您想启动的 Activity 的 Intent 来启动另一个 Activity。</li>
 <li>启动某个已知 Activity。 可以通过使用类名创建一个显式定义您想启动的 Activity 的 Intent 对象来实现此目的。 例如，可以通过以下代码让一个 Activity 启动另一个名为 HomeActivity 的 Activity：</li>
@@ -639,6 +637,10 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2017/06/05/Android开发-Adapter/" rel="prev" title="Android开发-Adapter">
+                Android开发-Adapter <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -713,7 +715,7 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">24</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
