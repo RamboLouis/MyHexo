@@ -138,11 +138,13 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-faa39f8b0a849441.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-d50805f02617e517.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-804ba850fb461acc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-b84d7476382d8420.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-22c83aefeb34c193.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-f5b68806ffe2040d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-a926bcfd857363fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-d24a0c10167502ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-a5d24645b774e6fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-03-16T04:56:04.000Z">
+<meta property="og:updated_time" content="2017-06-14T03:54:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac环境使用DigitalOcean租用VPS，部署Docker容器+SS搭建专属梯子">
 <meta name="twitter:description" content="技术在于折腾。
@@ -513,10 +515,13 @@
 <p><img src="http://upload-images.jianshu.io/upload_images/1666327-579a658a82cf16f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择设置ssh"></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1666327-d8cf08dd3ed44f8a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置ssh"><br>ps：关于配置ssh可以在settings里面找到。</p>
 <ul>
-<li>生成ssh，可以参考github官方生成文档：<a href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank" rel="external">https://help.github.com/articles/connecting-to-github-with-ssh/</a></li>
-<li>查看ssh,可以通过查找文件输入 <em>~/.ssh</em>的方式<br>具体查看公钥<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat ~/.ssh/id_rsa.pub</div></pre></td></tr></table></figure>
+<li><p>生成ssh，可以参考github官方生成文档：<a href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank" rel="external">https://help.github.com/articles/connecting-to-github-with-ssh/</a></p>
+</li>
+<li><p>查看ssh,可以通过查找文件输入 <em>~/.ssh</em>的方式</p>
 </li>
 </ul>
+<p>具体查看公钥</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat ~/.ssh/id_rsa.pub</div></pre></td></tr></table></figure>
 <p><img src="http://upload-images.jianshu.io/upload_images/1666327-ad7c75321bc57179.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="查看ssh"></p>
 <ul>
 <li>再把查看的公钥粘贴至对话框</li>
@@ -531,25 +536,37 @@
 <ul>
 <li>部署docker容器</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">apt install docker.io</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install docker.io</div></pre></td></tr></table></figure>
+<p>ps：如果出现部署不上，出现如下情况，执行下面命令。</p>
+<p>情况一:<br><img src="http://upload-images.jianshu.io/upload_images/1666327-b84d7476382d8420.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="情况一:"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div></pre></td></tr></table></figure>
+<p>情况二: 找不到docker.io(Ubuntu里，Docker叫docker.io)，那就采用其它安装方式安装最新版本的Docker。<br><img src="http://upload-images.jianshu.io/upload_images/1666327-22c83aefeb34c193.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="情况二:"><br>此命令会把Docker官方提供的最新版本的软件仓库替换Ubuntu的相应仓库。有一点要注意，采用这种方式进行安装，Docker的软件包名应该叫lxc-docker。此时，Docker命令的名字还是docker。而采用之前上面的安装方式，Docker命令的名字应该叫docker.io。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -sSL https://get.docker.com/ | sudo sh</div></pre></td></tr></table></figure>
+<p>再升级Docker</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update &amp;&amp; sudo apt-get upgrade</div></pre></td></tr></table></figure>
 <ul>
 <li>拉取shadowsocks 仓库</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker pull oddrationale/docker-shadowsocks</div></pre></td></tr></table></figure>
 <ul>
-<li><p>设置仓库的端口、密码、及加密方式<br>ps：<br>xxxxxx 是你要设置的密码<br>1984 是你的端口号</p>
+<li>设置仓库的端口、密码、及加密方式<br>ps：<br>xxxxxx 是你要设置的密码<br>1984 是你的端口号</li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run -d -p 1984:1984 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 1984 -k xxxxxx -m aes-256-cfb</div></pre></td></tr></table></figure>
-</li>
-<li><p>查看docker 列表<br>ps：如果出现up就表明部署成功</p>
-</li>
+<ul>
+<li>查看docker 列表<br>ps：如果出现up就表明部署成功</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker ps</div></pre></td></tr></table></figure>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-f5b68806ffe2040d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="看到docker容器的列表"><br>五、下载ss客户端（shadowsocks），并添加。<br>GitHub官方提供下载dmg：<br><a href="https://github.com/shadowsocks/shadowsocks-iOS/releases" target="_blank" rel="external">https://github.com/shadowsocks/shadowsocks-iOS/releases</a></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-f5b68806ffe2040d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="看到docker容器的列表"></p>
+<p>五、下载ss客户端（shadowsocks），并添加。<br>GitHub官方提供下载dmg：<br><a href="https://github.com/shadowsocks/shadowsocks-iOS/releases" target="_blank" rel="external">https://github.com/shadowsocks/shadowsocks-iOS/releases</a></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1666327-a926bcfd857363fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="shadowsocks下载"></p>
 <ul>
-<li>安装后配置服务器，打开服务器设置，并添加服务器。<br><img src="http://upload-images.jianshu.io/upload_images/1666327-d24a0c10167502ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="添加服务器"></li>
-<li>把创建的服务器Ip、端口号及创建的加密方式密码填入即可<br>ps：<br>默认端口号填写的<em>1984</em><br>加密方式选择<em>aes-256-cfb</em><br><img src="http://upload-images.jianshu.io/upload_images/1666327-a5d24645b774e6fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设定服务器"></li>
+<li>安装后配置服务器，打开服务器设置，并添加服务器。</li>
 </ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-d24a0c10167502ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="添加服务器"></p>
+<ul>
+<li>把创建的服务器Ip、端口号及创建的加密方式密码填入即可</li>
+</ul>
+<p>ps：<br>默认端口号填写的<em>1984</em><br>加密方式选择<em>aes-256-cfb</em><br><img src="http://upload-images.jianshu.io/upload_images/1666327-a5d24645b774e6fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设定服务器"></p>
 
       
     </div>

@@ -3,9 +3,9 @@
   
     
     <entry>
-      <title><![CDATA[Android开发-Adapter]]></title>
+      <title><![CDATA[Android开发-Adapter.]]></title>
       <url>%2F2017%2F06%2F05%2FAndroid%E5%BC%80%E5%8F%91-Adapter%2F</url>
-      <content type="text"><![CDATA[Adapter 从字面意思了解就是适配器,类似于iOS中UITableView和UICollectionView的数据源。]]></content>
+      <content type="text"><![CDATA[Adapter 从字面意思了解就是适配器,类似于iOS中UITableView和UICollectionView中的数据源。 对于控件安卓也有类似iOS的列表和九宫格setAdapter]]></content>
     </entry>
 
     
@@ -68,7 +68,7 @@
     <entry>
       <title><![CDATA[Mac环境使用DigitalOcean租用VPS，部署Docker容器+SS搭建专属梯子]]></title>
       <url>%2F2017%2F02%2F21%2FMac%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8DigitalOcean%E7%A7%9F%E7%94%A8VPS%EF%BC%8C%E9%83%A8%E7%BD%B2Docker%E5%AE%B9%E5%99%A8-SS%E6%90%AD%E5%BB%BA%E4%B8%93%E5%B1%9E%E6%A2%AF%E5%AD%90%2F</url>
-      <content type="text"><![CDATA[技术在于折腾。 一、DigitalOcean官网注册https://cloud.digitalocean.com/ps：注册费用$5，现在还送$10，一共$15,如果选用最便宜的服务器，可以使用3个月。二、创建虚拟服务器 三、选择服务器 系统默认是乌班图，喜欢CoreOS、CentOS可以自行选择 价钱是每月的使用费以及设备的配置，如果平时上网话，5刀的足以 线路使用纽约、旧金山都可以，建议使用旧金山的四、选择连接方式，建议使用ssh连接(安全) ps：关于配置ssh可以在settings里面找到。 生成ssh，可以参考github官方生成文档：https://help.github.com/articles/connecting-to-github-with-ssh/ 查看ssh,可以通过查找文件输入 ~/.ssh的方式具体查看公钥1cat ~/.ssh/id_rsa.pub 再把查看的公钥粘贴至对话框 四、连接服务器 连接服务器，生成的IP地址 1ssh root@xxx.xxx.xxx.xxx 部署docker容器 1apt install docker.io 拉取shadowsocks 仓库 1docker pull oddrationale/docker-shadowsocks 设置仓库的端口、密码、及加密方式ps：xxxxxx 是你要设置的密码1984 是你的端口号 1docker run -d -p 1984:1984 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 1984 -k xxxxxx -m aes-256-cfb 查看docker 列表ps：如果出现up就表明部署成功 1docker ps 五、下载ss客户端（shadowsocks），并添加。GitHub官方提供下载dmg：https://github.com/shadowsocks/shadowsocks-iOS/releases 安装后配置服务器，打开服务器设置，并添加服务器。 把创建的服务器Ip、端口号及创建的加密方式密码填入即可ps：默认端口号填写的1984加密方式选择aes-256-cfb]]></content>
+      <content type="text"><![CDATA[技术在于折腾。 一、DigitalOcean官网注册https://cloud.digitalocean.com/ps：注册费用$5，现在还送$10，一共$15,如果选用最便宜的服务器，可以使用3个月。二、创建虚拟服务器 三、选择服务器 系统默认是乌班图，喜欢CoreOS、CentOS可以自行选择 价钱是每月的使用费以及设备的配置，如果平时上网话，5刀的足以 线路使用纽约、旧金山都可以，建议使用旧金山的四、选择连接方式，建议使用ssh连接(安全) ps：关于配置ssh可以在settings里面找到。 生成ssh，可以参考github官方生成文档：https://help.github.com/articles/connecting-to-github-with-ssh/ 查看ssh,可以通过查找文件输入 ~/.ssh的方式 具体查看公钥 1cat ~/.ssh/id_rsa.pub 再把查看的公钥粘贴至对话框 四、连接服务器 连接服务器，生成的IP地址 1ssh root@xxx.xxx.xxx.xxx 部署docker容器 1sudo apt-get install docker.io ps：如果出现部署不上，出现如下情况，执行下面命令。 情况一: 1sudo apt-get update 情况二: 找不到docker.io(Ubuntu里，Docker叫docker.io)，那就采用其它安装方式安装最新版本的Docker。此命令会把Docker官方提供的最新版本的软件仓库替换Ubuntu的相应仓库。有一点要注意，采用这种方式进行安装，Docker的软件包名应该叫lxc-docker。此时，Docker命令的名字还是docker。而采用之前上面的安装方式，Docker命令的名字应该叫docker.io。 1curl -sSL https://get.docker.com/ | sudo sh 再升级Docker 1sudo apt-get update &amp;&amp; sudo apt-get upgrade 拉取shadowsocks 仓库 1docker pull oddrationale/docker-shadowsocks 设置仓库的端口、密码、及加密方式ps：xxxxxx 是你要设置的密码1984 是你的端口号 1docker run -d -p 1984:1984 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 1984 -k xxxxxx -m aes-256-cfb 查看docker 列表ps：如果出现up就表明部署成功 1docker ps 五、下载ss客户端（shadowsocks），并添加。GitHub官方提供下载dmg：https://github.com/shadowsocks/shadowsocks-iOS/releases 安装后配置服务器，打开服务器设置，并添加服务器。 把创建的服务器Ip、端口号及创建的加密方式密码填入即可 ps：默认端口号填写的1984加密方式选择aes-256-cfb]]></content>
     </entry>
 
     
