@@ -107,27 +107,30 @@
 
 
 
-<meta name="description" content="Adapter
-从字面意思了解就是适配器,类似于iOS中UITableView和UICollectionView中的数据源。
+<meta name="description" content="Adapter和AdapterView
+Adapter
+Adapter从字面意思了解就是适配器，类似于iOS中UITableView和UICollectionView中的数据源。
 
-对于控件安卓也有类似iOS的列表和九宫格setAdapter">
+　对于列表和九宫格控件，安卓也有类似iOS的ListView和GridView。　　　　由于ListView和GridView都继承于抽象类AbsListView，这个类中有一个setAdapter的方法，通过这个方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android开发-Adapter.">
+<meta property="og:title" content="Android开发-Adapter和AdapterView.">
 <meta property="og:url" content="http://RamboLu.top/2017/06/05/Android开发-Adapter/index.html">
 <meta property="og:site_name" content="RamboLu Blog">
-<meta property="og:description" content="Adapter
-从字面意思了解就是适配器,类似于iOS中UITableView和UICollectionView中的数据源。
+<meta property="og:description" content="Adapter和AdapterView
+Adapter
+Adapter从字面意思了解就是适配器，类似于iOS中UITableView和UICollectionView中的数据源。
 
-对于控件安卓也有类似iOS的列表和九宫格setAdapter">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-15774e3d137bbf88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-06-15T13:58:49.000Z">
+　对于列表和九宫格控件，安卓也有类似iOS的ListView和GridView。　　　　由于ListView和GridView都继承于抽象类AbsListView，这个类中有一个setAdapter的方法，通过这个方法">
+<meta property="og:image" content="http://om9s615i9.bkt.clouddn.com/Adapter流程图.png-rambolu">
+<meta property="og:updated_time" content="2017-06-22T10:16:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android开发-Adapter.">
-<meta name="twitter:description" content="Adapter
-从字面意思了解就是适配器,类似于iOS中UITableView和UICollectionView中的数据源。
+<meta name="twitter:title" content="Android开发-Adapter和AdapterView.">
+<meta name="twitter:description" content="Adapter和AdapterView
+Adapter
+Adapter从字面意思了解就是适配器，类似于iOS中UITableView和UICollectionView中的数据源。
 
-对于控件安卓也有类似iOS的列表和九宫格setAdapter">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1666327-15774e3d137bbf88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+　对于列表和九宫格控件，安卓也有类似iOS的ListView和GridView。　　　　由于ListView和GridView都继承于抽象类AbsListView，这个类中有一个setAdapter的方法，通过这个方法">
+<meta name="twitter:image" content="http://om9s615i9.bkt.clouddn.com/Adapter流程图.png-rambolu">
 
 
 
@@ -161,7 +164,7 @@
 
 
 
-  <title> Android开发-Adapter. | RamboLu Blog </title>
+  <title> Android开发-Adapter和AdapterView. | RamboLu Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -378,7 +381,7 @@
             
             
               
-                Android开发-Adapter.
+                Android开发-Adapter和AdapterView.
               
             
           </h1>
@@ -434,8 +437,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/06/05/Android开发-Adapter/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/05/Android开发-Adapter/" itemprop="commentCount"></span>
+                <a class="cloud-tie-join-count" href="/2017/06/05/Android开发-Adapter/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count join-count" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -443,7 +446,7 @@
 
           
           
-             <span id="/2017/06/05/Android开发-Adapter/" class="leancloud_visitors" data-flag-title="Android开发-Adapter.">
+             <span id="/2017/06/05/Android开发-Adapter/" class="leancloud_visitors" data-flag-title="Android开发-Adapter和AdapterView.">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -472,13 +475,60 @@
       
 
       
-        <h4 id="Adapter"><a href="#Adapter" class="headerlink" title="Adapter"></a>Adapter</h4><ul>
-<li><p>从字面意思了解就是适配器,类似于iOS中UITableView和UICollectionView中的数据源。</p>
+        <h2 id="Adapter和AdapterView"><a href="#Adapter和AdapterView" class="headerlink" title="Adapter和AdapterView"></a>Adapter和AdapterView</h2><p><img src="http://om9s615i9.bkt.clouddn.com/Adapter流程图.png-rambolu" alt=""></p>
+<h3 id="Adapter"><a href="#Adapter" class="headerlink" title="Adapter"></a>Adapter</h3><ul>
+<li>Adapter从字面意思了解就是适配器，类似于iOS中UITableView和UICollectionView中的数据源。</li>
+</ul>
+<p>　对于列表和九宫格控件，安卓也有类似iOS的ListView和GridView。<br>　　　<br>　由于ListView和GridView都继承于抽象类AbsListView，这个类中有一个<code>setAdapter</code>的方法，通过这个方法可以设置具体需要展示的数据。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">以listView为例:</div><div class="line">listView.setAdapter(otherAdapter);</div></pre></td></tr></table></figure>
+<p>　与iOS中遵守数据源协议，实现数据源方法类似。</p>
+<p>　不过在iOS中对于列表和九宫格控件有着各自的数据源协议和函数，而安卓平台上把这个进行了解耦，通过对象的形式一个Adapter可以添加到多个控件，控件则进行样式的展示而已。
+　</p>
+<h5 id="ArrayAdapter"><a href="#ArrayAdapter" class="headerlink" title="ArrayAdapter"></a>ArrayAdapter</h5><ul>
+<li>官方提供了基于<code>BaseAdapter</code>的<code>ArrayAdapter</code>，<code>ArrayAdapter</code>可以看出采用泛型操作（数组、集合等），文档也说明，在默认情况下提供单个TextView操作，所以如果出现单个文本的情况还是可以采用的。</li>
+<li>源码已经看出提供单个TextView进行赋值。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">private @NonNull View createViewFromResource(@NonNull LayoutInflater inflater, int position,</div><div class="line">            @Nullable View convertView, @NonNull ViewGroup parent, int resource) &#123;</div><div class="line">        final View view;</div><div class="line">        final TextView text;</div><div class="line"></div><div class="line">        if (convertView == null) &#123;</div><div class="line">            view = inflater.inflate(resource, parent, false);</div><div class="line">        &#125; else &#123;</div><div class="line">            view = convertView;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        try &#123;</div><div class="line">            if (mFieldId == 0) &#123;</div><div class="line">                //  If no custom field is assigned, assume the whole resource is a TextView</div><div class="line">                text = (TextView) view;</div><div class="line">            &#125; else &#123;</div><div class="line">                //  Otherwise, find the TextView field within the layout</div><div class="line">                text = (TextView) view.findViewById(mFieldId);</div><div class="line"></div><div class="line">                if (text == null) &#123;</div><div class="line">                    throw new RuntimeException(&quot;Failed to find view with ID &quot;</div><div class="line">                            + mContext.getResources().getResourceName(mFieldId)</div><div class="line">                            + &quot; in item layout&quot;);</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125; catch (ClassCastException e) &#123;</div><div class="line">            Log.e(&quot;ArrayAdapter&quot;, &quot;You must supply a resource ID for a TextView&quot;);</div><div class="line">            throw new IllegalStateException(</div><div class="line">                    &quot;ArrayAdapter requires the resource ID to be a TextView&quot;, e);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        final T item = getItem(position);</div><div class="line">        if (item instanceof CharSequence) &#123;</div><div class="line">            text.setText((CharSequence) item);</div><div class="line">        &#125; else &#123;</div><div class="line">            text.setText(item.toString());</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        return view;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Layout样式：</li>
+</ul>
+<p><code>simple_list_item_1</code> 纯文本</p>
+<p><code>simple_expandable_list_item_1</code> 纯文本“膨胀”版</p>
+<p><code>simple_list_item_checked</code> 文本后加对号选项</p>
+<p><code>simple_list_item_single_choice</code> 文本后加圆形选项</p>
+<p><code>simple_list_item_multiple_choice</code> 文本后加方块选项<br>等</p>
+<ul>
+<li>代码实现：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">strArr = new ArrayList&lt;&gt;();</div><div class="line">for (int i = 1; i &lt;= listNum; i++) &#123;</div><div class="line">    strArr.add(&quot;测试&quot;+i);</div><div class="line">&#125;</div><div class="line"></div><div class="line">// 纯文字列表</div><div class="line">// arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,strArr);</div><div class="line">// 纯文字列表（加高）</div><div class="line">// arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_expandable_list_item_1,strArr);</div><div class="line">// 加一个对号选项</div><div class="line">// arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_checked,strArr);</div><div class="line">// 加一个原点选项</div><div class="line">//arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_single_choice,strArr);</div><div class="line">// 加一个方块选项</div><div class="line">arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_multiple_choice,strArr);</div><div class="line">listView = (ListView)findViewById(R.id.arrayAdapterListView);</div><div class="line">listView.setAdapter(arrayAdapter);</div><div class="line">listView.setOnItemClickListener(new AdapterView.OnItemClickListener() &#123;</div><div class="line">    @Override</div><div class="line">    public void onItemClick(AdapterView&lt;?&gt; parent, View view, int position, long id) &#123;</div><div class="line">        Log.d(TAG, &quot;你点击了第&quot; + position + &quot;项&quot;);</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h5 id="SimpleAdapter"><a href="#SimpleAdapter" class="headerlink" title="SimpleAdapter"></a>SimpleAdapter</h5><ul>
+<li><p><code>SimpleAdapter</code>也是基于<code>BaseAdapter</code>的，相比<code>ArrayAdapter</code>增加了ImageView，同时layout样式是可以自己设定的，如果只是简单的图片和文字可以使用<code>SimpleAdapter</code>。</p>
 </li>
-<li><p>对于控件安卓也有类似iOS的列表和九宫格<code>setAdapter</code></p>
+<li><p>之前在思考为什么只有文字和图片，通过源码可以看出，再给每个item赋值的时候分别判断TextView和ImageView的实例存在。</p>
 </li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-15774e3d137bbf88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div></pre></td><td class="code"><pre><div class="line">private void bindView(int position, View view) &#123;</div><div class="line">        final Map dataSet = mData.get(position);</div><div class="line">        if (dataSet == null) &#123;</div><div class="line">            return;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        final ViewBinder binder = mViewBinder;</div><div class="line">        final String[] from = mFrom;</div><div class="line">        final int[] to = mTo;</div><div class="line">        final int count = to.length;</div><div class="line"></div><div class="line">        for (int i = 0; i &lt; count; i++) &#123;</div><div class="line">            final View v = view.findViewById(to[i]);</div><div class="line">            if (v != null) &#123;</div><div class="line">                final Object data = dataSet.get(from[i]);</div><div class="line">                String text = data == null ? &quot;&quot; : data.toString();</div><div class="line">                if (text == null) &#123;</div><div class="line">                    text = &quot;&quot;;</div><div class="line">                &#125;</div><div class="line"></div><div class="line">                boolean bound = false;</div><div class="line">                if (binder != null) &#123;</div><div class="line">                    bound = binder.setViewValue(v, data, text);</div><div class="line">                &#125;</div><div class="line"></div><div class="line">                if (!bound) &#123;</div><div class="line">                    if (v instanceof Checkable) &#123;</div><div class="line">                        if (data instanceof Boolean) &#123;</div><div class="line">                            ((Checkable) v).setChecked((Boolean) data);</div><div class="line">                        &#125; else if (v instanceof TextView) &#123;</div><div class="line">                            // Note: keep the instanceof TextView check at the bottom of these</div><div class="line">                            // ifs since a lot of views are TextViews (e.g. CheckBoxes).</div><div class="line">                            setViewText((TextView) v, text);</div><div class="line">                        &#125; else &#123;</div><div class="line">                            throw new IllegalStateException(v.getClass().getName() +</div><div class="line">                                    &quot; should be bound to a Boolean, not a &quot; +</div><div class="line">                                    (data == null ? &quot;&lt;unknown type&gt;&quot; : data.getClass()));</div><div class="line">                        &#125;</div><div class="line">                    &#125; else if (v instanceof TextView) &#123;</div><div class="line">                        // Note: keep the instanceof TextView check at the bottom of these</div><div class="line">                        // ifs since a lot of views are TextViews (e.g. CheckBoxes).</div><div class="line">                        setViewText((TextView) v, text);</div><div class="line">                    &#125; else if (v instanceof ImageView) &#123;</div><div class="line">                        if (data instanceof Integer) &#123;</div><div class="line">                            setViewImage((ImageView) v, (Integer) data);                            </div><div class="line">                        &#125; else &#123;</div><div class="line">                            setViewImage((ImageView) v, text);</div><div class="line">                        &#125;</div><div class="line">                    &#125; else &#123;</div><div class="line">                        throw new IllegalStateException(v.getClass().getName() + &quot; is not a &quot; +</div><div class="line">                                &quot; view that can be bounds by this SimpleAdapter&quot;);</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>判断实例完再给文本和图片设置值。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">public void setViewText(TextView v, String text) &#123;</div><div class="line">        v.setText(text);</div><div class="line">&#125;</div><div class="line"></div><div class="line">public void setViewImage(ImageView v, int value) &#123;</div><div class="line">        v.setImageResource(value);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>代码：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"> List&lt;Map&lt;String,Object&gt;&gt; listItems = new ArrayList&lt;&gt;();</div><div class="line">for (int i = 0; i &lt; icons.length; i++) &#123;</div><div class="line">     Map&lt;String,Object&gt; item = new HashMap&lt;&gt;();</div><div class="line">     item.put(&quot;icon&quot;,icons[i]);</div><div class="line">     item.put(&quot;name&quot;,names[i]);</div><div class="line">     item.put(&quot;subName&quot;,subNames[i]);</div><div class="line">     item.put(&quot;subIcon&quot;,icons[i]);</div><div class="line">     item.put(&quot;subNames2&quot;,subNames2[i]);</div><div class="line">     listItems.add(item);</div><div class="line">&#125;</div><div class="line">simpleAdapter = new SimpleAdapter(</div><div class="line">                this,</div><div class="line">                listItems,</div><div class="line">                R.layout.layout_item,</div><div class="line">                new String[]&#123;&quot;icon&quot;,&quot;name&quot;,&quot;subName&quot;,&quot;subIcon&quot;,&quot;subNames2&quot;&#125;,</div><div class="line">                new int[]&#123;R.id.imageView, R.id.textView, R.id.textView2, R.id.imageView2, R.id.textView3&#125;);</div><div class="line">listView = (ListView)findViewById(R.id.simpleAdapterListView);</div><div class="line">listView.setAdapter(simpleAdapter);</div><div class="line">listView.setOnItemClickListener(new AdapterView.OnItemClickListener() &#123;</div><div class="line">     @Override</div><div class="line">     public void onItemClick(AdapterView&lt;?&gt; parent, View view, int position, long id) &#123;</div><div class="line">        Toast.makeText(getApplicationContext(),&quot;你点击了第&quot; + position + &quot;项&quot;,Toast.LENGTH_SHORT).show();</div><div class="line">     &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li>layout: 通过ConstraintLayout来进行布局。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div></pre></td><td class="code"><pre><div class="line">&lt;android.support.constraint.ConstraintLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;</div><div class="line">    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;</div><div class="line">    xmlns:tools=&quot;http://schemas.android.com/tools&quot;</div><div class="line">    android:layout_width=&quot;match_parent&quot;</div><div class="line">    android:layout_height=&quot;match_parent&quot;&gt;</div><div class="line"></div><div class="line">    &lt;ImageView</div><div class="line">        android:id=&quot;@+id/imageView&quot;</div><div class="line">        android:layout_width=&quot;50dp&quot;</div><div class="line">        android:layout_height=&quot;50dp&quot;</div><div class="line">        android:layout_marginTop=&quot;10dp&quot;</div><div class="line">        android:layout_marginLeft=&quot;10dp&quot;</div><div class="line">        android:layout_marginBottom=&quot;10dp&quot;</div><div class="line">        app:srcCompat=&quot;@color/colorAccent&quot;</div><div class="line">        app:layout_constraintTop_toTopOf=&quot;parent&quot;</div><div class="line">        app:layout_constraintLeft_toLeftOf=&quot;parent&quot;</div><div class="line">        app:layout_constraintBottom_toBottomOf=&quot;parent&quot;</div><div class="line">        android:layout_marginStart=&quot;10dp&quot; /&gt;</div><div class="line"></div><div class="line">    &lt;TextView</div><div class="line">        android:id=&quot;@+id/textView&quot;</div><div class="line">        android:layout_width=&quot;wrap_content&quot;</div><div class="line">        android:layout_height=&quot;wrap_content&quot;</div><div class="line">        android:text=&quot;TextView&quot;</div><div class="line">        android:textSize=&quot;20sp&quot;</div><div class="line">        app:layout_constraintTop_toTopOf=&quot;@+id/imageView&quot;</div><div class="line">        app:layout_constraintLeft_toRightOf=&quot;@+id/imageView&quot;</div><div class="line">        android:layout_marginLeft=&quot;10dp&quot;</div><div class="line">        android:layout_marginStart=&quot;10dp&quot; /&gt;</div><div class="line"></div><div class="line">    &lt;TextView</div><div class="line">        android:id=&quot;@+id/textView2&quot;</div><div class="line">        android:layout_width=&quot;wrap_content&quot;</div><div class="line">        android:layout_height=&quot;wrap_content&quot;</div><div class="line">        android:text=&quot;TextView&quot;</div><div class="line">        android:textSize=&quot;14sp&quot;</div><div class="line">        app:layout_constraintLeft_toLeftOf=&quot;@+id/textView&quot;</div><div class="line">        app:layout_constraintTop_toBottomOf=&quot;@+id/textView&quot;</div><div class="line">        android:layout_marginTop=&quot;5dp&quot; /&gt;</div><div class="line"></div><div class="line">    &lt;ImageView</div><div class="line">        android:id=&quot;@+id/imageView2&quot;</div><div class="line">        android:layout_width=&quot;10dp&quot;</div><div class="line">        android:layout_height=&quot;10dp&quot;</div><div class="line">        android:layout_marginRight=&quot;10dp&quot;</div><div class="line">        app:layout_constraintBottom_toBottomOf=&quot;parent&quot;</div><div class="line">        app:layout_constraintRight_toRightOf=&quot;parent&quot;</div><div class="line">        app:layout_constraintTop_toTopOf=&quot;parent&quot;</div><div class="line">        app:srcCompat=&quot;@color/colorAccent&quot; /&gt;</div><div class="line"></div><div class="line">    &lt;TextView</div><div class="line">        android:id=&quot;@+id/textView3&quot;</div><div class="line">        android:layout_width=&quot;58dp&quot;</div><div class="line">        android:layout_height=&quot;17dp&quot;</div><div class="line">        android:text=&quot;TextView&quot;</div><div class="line">        app:layout_constraintBottom_toBottomOf=&quot;parent&quot;</div><div class="line">        app:layout_constraintTop_toTopOf=&quot;parent&quot;</div><div class="line">        app:layout_constraintRight_toLeftOf=&quot;@+id/imageView2&quot;</div><div class="line">        android:layout_marginRight=&quot;0dp&quot; /&gt;</div><div class="line"></div><div class="line">&lt;/android.support.constraint.ConstraintLayout&gt;</div></pre></td></tr></table></figure>
+<h5 id="BaseAdapter"><a href="#BaseAdapter" class="headerlink" title="BaseAdapter"></a>BaseAdapter</h5><ul>
+<li><p>通过Adapter继承结构图可以看到，Adapter为一个抽象接口,基于这个抽象接口的有一个抽象实现类<code>BaseAdapter</code>.</p>
+</li>
+<li><p>对于<code>BaseAdapter</code>，在实际开发过程中，大多数都会继承这个类，并重写其方法，定制自己的Adapter，其高度的解耦性，这点和iOS有所不同。</p>
+</li>
+<li><p>相对来讲听开发的哥们说<code>SimpleAdapter</code>和<code>ArrayAdapter</code>相对用的少，都是自己重写或者使用第三方Adapter。</p>
+</li>
+<li></li>
+</ul>
 
       
     </div>
@@ -549,9 +599,7 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/06/05/Android开发-Adapter/"
-           data-title="Android开发-Adapter." data-url="http://RamboLu.top/2017/06/05/Android开发-Adapter/">
-      </div>
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
     
   </div>
 
@@ -750,7 +798,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Adapter"><span class="nav-number">1.</span> <span class="nav-text">Adapter</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Adapter和AdapterView"><span class="nav-number">1.</span> <span class="nav-text">Adapter和AdapterView</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Adapter"><span class="nav-number">1.1.</span> <span class="nav-text">Adapter</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#ArrayAdapter"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">ArrayAdapter</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#SimpleAdapter"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">SimpleAdapter</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#BaseAdapter"><span class="nav-number">1.1.0.3.</span> <span class="nav-text">BaseAdapter</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -901,35 +949,31 @@
 
   
 
-  
-    
+
+
   
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"rambolu"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
+
+
+
+	
+
+
+
+
 
   
     
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
+    <script>
+      var cloudTieConfig = {
+        url: document.location.href, 
+        sourceId: "",
+        productKey: "a1476408fa304aceb7b1701f1a3541d4",
+        target: "cloud-tie-wrapper"
+      };
+    </script>
+    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
   
-
-
-
-
-
-
 
 
 
