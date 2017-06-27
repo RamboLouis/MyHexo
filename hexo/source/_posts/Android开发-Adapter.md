@@ -290,7 +290,7 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 * 对于`BaseAdapter`，在实际开发过程中，大多数都会继承这个类，并重写其方法，定制自己的Adapter，其高度的解耦性，这点和iOS有所不同。
 
-* 听开发的哥们说,相对来讲`SimpleAdapter`和`ArrayAdapter`用的少，都是自己重写或者使用第三方Adapter。
+* 相对来讲`SimpleAdapter`和`ArrayAdapter`用的少，都是自己重写或者使用第三方Adapter。
 
 源码：https://github.com/RamboLouis/AndroidTestProject/tree/master/AndroidAdapter
 
