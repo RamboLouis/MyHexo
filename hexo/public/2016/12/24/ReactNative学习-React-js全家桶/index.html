@@ -121,11 +121,11 @@ ECMAScript 6 入门http://es6.ruanyifeng.com/#docs/style
 Reac">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-379b58e863b620ff.png">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-c0a9e11b0a3a0c58.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-0c7e65a1348bac3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://om9s615i9.bkt.clouddn.com/react的生命周期.png-rambolu">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-d5e8903f42252080.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-fe2a61ebb0812c23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-f500789ca00fd2dd.png">
-<meta property="og:updated_time" content="2017-04-07T09:18:39.000Z">
+<meta property="og:updated_time" content="2017-08-03T03:23:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ReactNative学习-React技术栈全家桶">
 <meta name="twitter:description" content="React 技术栈系列教程http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html
@@ -439,8 +439,8 @@ Reac">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a class="cloud-tie-join-count" href="/2016/12/24/ReactNative学习-React-js全家桶/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count join-count" itemprop="commentCount"></span>
+                <a href="/2016/12/24/ReactNative学习-React-js全家桶/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/12/24/ReactNative学习-React-js全家桶/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -508,51 +508,48 @@ Reac">
 <p>这两种写法实现的功能一样但是原理却是不同，es6的class类可以看作是构造函数的一个语法糖，可以把它当成构造函数来看，extends实现了类之间的继承 —— 定义一个类Main 继承React.Component所有的属性和方法，组件的生命周期函数就是从这来的。constructor是构造器，在实例化对象时调用，super调用了父类的constructor创造了父类的实例对象this，然后用子类的构造函数进行修改。这和es5的原型继承是不同的，原型继承是先创造一个实例化对象this，然后再继承父级的原型方法。了解了这些之后我们在看组件的时候就清楚很多。</p>
 <p>当我们使用组件&lt; Main /&gt;时，其实是对Main类的实例化——new Main，只不过react对这个过程进行了封装，让它看起来更像是一个标签。</p>
 <p>有三点值得注意：1、定义类名字的首字母必须大写 2、因为class变成了关键字，类选择器需要用className来代替。 3、类和模块内部默认使用严格模式，所以不需要用use strict指定运行模式。</p>
-<h2 id="组件的生命周期"><a href="#组件的生命周期" class="headerlink" title="组件的生命周期"></a>组件的生命周期</h2><p><img src="http://upload-images.jianshu.io/upload_images/1666327-0c7e65a1348bac3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="生命周期"></p>
-<p><strong>组件在初始化时会触发5个钩子函数：</strong></p>
-<p>  <strong>1、getDefaultProps()</strong> </p>
+<h2 id="组件的生命周期"><a href="#组件的生命周期" class="headerlink" title="组件的生命周期"></a>组件的生命周期</h2><p>官方文档: <a href="https://facebook.github.io/react/docs/react-component.html#shouldcomponentupdate" target="_blank" rel="external">https://facebook.github.io/react/docs/react-component.html#shouldcomponentupdate</a></p>
+<p><img src="http://om9s615i9.bkt.clouddn.com/react的生命周期.png-rambolu" alt=""></p>
+<p><strong>当创建组件的实例并将其插入到DOM中时，将调用这些方法：</strong></p>
+<p>  <strong>1、constructor()</strong>  </p>
 <blockquote>
-<p>设置默认的props，也可以用dufaultProps设置组件的默认属性。</p>
+<p>React组件的构造函数。在安装React组件的构造函数之前调用它。在实现Component子类的构造函数时，应该在任何其他语句之前调用super（props）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt; constructor(props) &#123;</div><div class="line">  super(props);</div><div class="line">&#125;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
 </blockquote>
-<p>  <strong>2、getInitialState()</strong>  </p>
-<blockquote>
-<p>在使用es6的class语法时是没有这个钩子函数的，可以直接在constructor中定义this.state。此时可以访问this.props。</p>
-</blockquote>
-<p> <strong>3、componentWillMount()</strong> </p>
+<p> <strong>2、componentWillMount()</strong> </p>
 <blockquote>
 <p>组件初始化时只调用，以后组件更新不调用，整个生命周期只调用一次，此时可以修改state。</p>
 </blockquote>
-<p> <strong>4、 render()</strong> </p>
+<p> <strong>3、 render()</strong> </p>
 <blockquote>
 <p> react最重要的步骤，创建虚拟dom，进行diff算法，更新dom树都在此进行。此时就不能更改state了。</p>
 </blockquote>
-<p> <strong>5、componentDidMount()</strong> </p>
+<p> <strong>4、componentDidMount()</strong> </p>
 <blockquote>
 <p>组件渲染之后调用，可以通过this.getDOMNode()获取和操作dom节点，只调用一次。</p>
 </blockquote>
-<p><strong>在更新时也会触发5个钩子函数：</strong></p>
+<p><strong>更新可能是道具或状态的改变引起的。当重新呈现组件时，将调用这些方法：</strong></p>
 <p>  <strong>6、componentWillReceivePorps(nextProps)</strong></p>
 <blockquote>
 <p>组件初始化时不调用，组件接受新的props时调用。</p>
 </blockquote>
 <p>  <strong>7、shouldComponentUpdate(nextProps, nextState)</strong> </p>
 <blockquote>
-<p>react性能优化非常重要的一环。组件接受新的state或者props时调用，我们可以设置在此对比前后两个props和state是否相同，如果相同则返回false阻止更新，因为相同的属性状态一定会生成相同的dom树，这样就不需要创造新的dom树和旧的dom树进行diff算法对比，节省大量性能，尤其是在dom结构复杂的时候。不过调用this.forceUpdate会跳过此步骤。</p>
+<p>react性能优化非常重要的一环。组件接收新的state或者props时调用，默认为true，我们可以设置在此对比前后两个props和state是否相同，如果相同则返回false阻止更新，因为相同的属性状态一定会生成相同的dom树，这样就不需要创造新的dom树和旧的dom树进行diff算法对比，节省大量性能，尤其是在dom结构复杂的时候。对于初始渲染，调用this.forceUpdate（）会跳过此步骤不调用此方法。</p>
 </blockquote>
 <p>  <strong>8、componentWillUpdata(nextProps, nextState)</strong></p>
 <blockquote>
-<p>组件初始化时不调用，只有在组件将要更新时才调用，此时可以修改state</p>
+<p>组件初始化时不调用，只有在组件将要更新时才调用，此时可以修改state<br>如果shouldComponentUpdate（）返回false，则不会调用componentWillUpdate（）</p>
 </blockquote>
 <p>  <strong>9、render()</strong></p>
 <blockquote>
-<p>不多说</p>
+<p>根据diff算法渲染视图</p>
 </blockquote>
 <p>  <strong>10、componentDidUpdate()</strong></p>
 <blockquote>
-<p>组件初始化时不调用，组件更新完成后调用，此时可以获取dom节点。</p>
+<p>组件初始化时不调用，组件更新完成后调用，此时可以获取dom节点。<br>如果shouldComponentUpdate（）返回false，则不会调用componentDidUpdate（）。</p>
 </blockquote>
-<p>还有一个卸载钩子函数</p>
-<p>  <strong>11、componentWillUnmount()</strong> </p>
+<p><strong>当从DOM中删除组件时调用此方法：</strong><br>  <strong>11、componentWillUnmount()</strong> </p>
 <blockquote>
 <p>组件将要卸载时调用，一些事件监听和定时器需要在此时清除。</p>
 </blockquote>
@@ -742,7 +739,12 @@ Reac">
           
   <div class="comments" id="comments">
     
-      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     
   </div>
 
@@ -790,7 +792,7 @@ Reac">
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -801,7 +803,7 @@ Reac">
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1096,27 +1098,37 @@ Reac">
 
   
 
+    <script type="text/javascript">
+      var disqus_shortname = 'rambolu';
+      var disqus_identifier = '2016/12/24/ReactNative学习-React-js全家桶/';
+
+      var disqus_title = "ReactNative学习-React技术栈全家桶";
 
 
+      function run_disqus_script(disqus_script) {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
 
-	
+      run_disqus_script('count.js');
 
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
+      
 
-
-
-
-  
-    
-    <script>
-      var cloudTieConfig = {
-        url: document.location.href, 
-        sourceId: "",
-        productKey: "a1476408fa304aceb7b1701f1a3541d4",
-        target: "cloud-tie-wrapper"
-      };
     </script>
-    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
   
+
+
+
 
 
 

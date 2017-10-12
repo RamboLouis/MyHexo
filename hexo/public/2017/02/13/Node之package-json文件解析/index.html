@@ -432,8 +432,8 @@ package.json在Node项目中用于描述项目的一些基本信息，以及依�
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a class="cloud-tie-join-count" href="/2017/02/13/Node之package-json文件解析/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count join-count" itemprop="commentCount"></span>
+                <a href="/2017/02/13/Node之package-json文件解析/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/02/13/Node之package-json文件解析/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -550,8 +550,8 @@ package.json在Node项目中用于描述项目的一些基本信息，以及依�
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/02/21/Mac环境使用DigitalOcean租用VPS，部署Docker容器-SS搭建专属梯子/" rel="prev" title="Mac环境使用DigitalOcean租用VPS，部署Docker容器+SS搭建专属梯子">
-                Mac环境使用DigitalOcean租用VPS，部署Docker容器+SS搭建专属梯子 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/02/21/Mac环境使用DigitalOcean租用VPS，部署Docker容器搭建SS和VPN专属梯子/" rel="prev" title="Mac环境使用DigitalOcean租用VPS，部署Docker容器搭建SS和VPN专属梯子及Docker命令整理">
+                Mac环境使用DigitalOcean租用VPS，部署Docker容器搭建SS和VPN专属梯子及Docker命令整理 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -578,7 +578,12 @@ package.json在Node项目中用于描述项目的一些基本信息，以及依�
           
   <div class="comments" id="comments">
     
-      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     
   </div>
 
@@ -626,7 +631,7 @@ package.json在Node项目中用于描述项目的一些基本信息，以及依�
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -637,7 +642,7 @@ package.json在Node项目中用于描述项目的一些基本信息，以及依�
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -932,27 +937,37 @@ package.json在Node项目中用于描述项目的一些基本信息，以及依�
 
   
 
+    <script type="text/javascript">
+      var disqus_shortname = 'rambolu';
+      var disqus_identifier = '2017/02/13/Node之package-json文件解析/';
+
+      var disqus_title = "Node之Package.json文件参数解析";
 
 
+      function run_disqus_script(disqus_script) {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
 
-	
+      run_disqus_script('count.js');
 
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
+      
 
-
-
-
-  
-    
-    <script>
-      var cloudTieConfig = {
-        url: document.location.href, 
-        sourceId: "",
-        productKey: "a1476408fa304aceb7b1701f1a3541d4",
-        target: "cloud-tie-wrapper"
-      };
     </script>
-    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
   
+
+
+
 
 
 

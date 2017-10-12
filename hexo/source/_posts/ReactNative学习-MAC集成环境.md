@@ -4,7 +4,7 @@ date: 2016-12-08 23:29:01
 categories:
     - ReactNative
 tags: 
-  - React Native
+  - ReactNative
 ---
 >官网有更详细的集成步骤，这里只是根据个人需求写出简单实用的集成步骤。
 
