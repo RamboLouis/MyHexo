@@ -450,15 +450,17 @@ Swift项目,为适配iOS10,无奈只能更新Xcode 8 ,可是发现一入3.0深�
 
           
             
+            <!--noindex-->
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/" itemprop="commentCount"></span>
+                  <span class="post-comments-count hc-comment-count" data-xid="2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/" itemprop="commentsCount"></span>
                 </a>
               </span>
+              <!--/noindex-->
             
           
 
@@ -624,12 +626,7 @@ Swift项目,为适配iOS10,无奈只能更新Xcode 8 ,可是发现一入3.0深�
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      <div id="hypercomments_widget"></div>
     
   </div>
 
@@ -983,35 +980,32 @@ Swift项目,为适配iOS10,无奈只能更新Xcode 8 ,可是发现一入3.0深�
 
   
 
-    <script type="text/javascript">
-      var disqus_shortname = 'rambolu';
-      var disqus_identifier = '2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/';
-
-      var disqus_title = "Swift学习-Swift3.0已出坑，适配iOS10,项目迁移Swift3.0问题总结。";
 
 
-      function run_disqus_script(disqus_script) {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
 
-      run_disqus_script('count.js');
+	
 
-      
-        var disqus_config = function () {
-            this.page.url = disqus_url;
-            this.page.identifier = disqus_identifier;
-            this.page.title = disqus_title;
-        };
-        run_disqus_script('embed.js');
-      
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
 
-    </script>
-  
+		_hcwp.push({widget:"Bloggerstream", widget_id: 90585, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
+		
+		_hcwp.push({widget:"Stream", widget_id: 90585, xid: "2016/10/15/Swift学习-Swift3-0已出坑，适配iOS10-项目迁移Swift3-0问题总结。/"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/90585/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	
 
 
 

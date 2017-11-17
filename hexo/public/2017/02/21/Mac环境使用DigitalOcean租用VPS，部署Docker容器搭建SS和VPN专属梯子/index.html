@@ -151,7 +151,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-1d5ecc462a185c30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-fbe3204922e161e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-62bc94a1c7bb8a7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-08-01T06:29:07.000Z">
+<meta property="og:updated_time" content="2017-10-30T02:07:18.743Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac环境使用DigitalOcean租用VPS，部署Docker容器搭建SS和VPN专属梯子及Docker命令整理">
 <meta name="twitter:description" content="技术在于折腾。
@@ -475,15 +475,17 @@
 
           
             
+            <!--noindex-->
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/02/21/Mac环境使用DigitalOcean租用VPS，部署Docker容器搭建SS和VPN专属梯子/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/02/21/Mac环境使用DigitalOcean租用VPS，部署Docker容器搭建SS和VPN专属梯子/" itemprop="commentCount"></span>
+                  <span class="post-comments-count hc-comment-count" data-xid="2017/02/21/Mac环境使用DigitalOcean租用VPS，部署Docker容器搭建SS和VPN专属梯子/" itemprop="commentsCount"></span>
                 </a>
               </span>
+              <!--/noindex-->
             
           
 
@@ -653,17 +655,17 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker start xxx(容器名字)</div></pre></td></tr></table></figure>
 <ul>
-<li>拉取安装容器</li>
+<li>拉取安装镜像仓库</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker pull xxx(容器image名或仓库名)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker pull xxx(镜像名字)</div></pre></td></tr></table></figure>
 <ul>
-<li>查看下载仓库</li>
+<li>查看下载镜像仓库</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker images</div></pre></td></tr></table></figure>
 <ul>
-<li>删除下载仓库</li>
+<li>删除下载镜像仓库</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker rmi xxx(仓库名字)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker rmi xxx(镜像名字)</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -748,12 +750,7 @@
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      <div id="hypercomments_widget"></div>
     
   </div>
 
@@ -1107,35 +1104,32 @@
 
   
 
-    <script type="text/javascript">
-      var disqus_shortname = 'rambolu';
-      var disqus_identifier = '2017/02/21/Mac环境使用DigitalOcean租用VPS，部署Docker容器搭建SS和VPN专属梯子/';
-
-      var disqus_title = "Mac环境使用DigitalOcean租用VPS，部署Docker容器搭建SS和VPN专属梯子及Docker命令整理";
 
 
-      function run_disqus_script(disqus_script) {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
 
-      run_disqus_script('count.js');
+	
 
-      
-        var disqus_config = function () {
-            this.page.url = disqus_url;
-            this.page.identifier = disqus_identifier;
-            this.page.title = disqus_title;
-        };
-        run_disqus_script('embed.js');
-      
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
 
-    </script>
-  
+		_hcwp.push({widget:"Bloggerstream", widget_id: 90585, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
+		
+		_hcwp.push({widget:"Stream", widget_id: 90585, xid: "2017/02/21/Mac环境使用DigitalOcean租用VPS，部署Docker容器搭建SS和VPN专属梯子/"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/90585/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	
 
 
 

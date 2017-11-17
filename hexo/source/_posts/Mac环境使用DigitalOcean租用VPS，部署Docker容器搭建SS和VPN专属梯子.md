@@ -261,22 +261,22 @@ docker rm xxx(容器名字)
 docker start xxx(容器名字)
 ```
 
-* 拉取安装容器
+* 拉取安装镜像仓库
 
 ```
-docker pull xxx(容器image名或仓库名)
+docker pull xxx(镜像名字)
 ```
 
-* 查看下载仓库
+* 查看下载镜像仓库
 
 ```
 docker images
 ```
 
-* 删除下载仓库
+* 删除下载镜像仓库
 
 ```
-docker rmi xxx(仓库名字)
+docker rmi xxx(镜像名字)
 ```
 
 

@@ -24,20 +24,26 @@ tags:
 > 下面就结合React Navigation集成到项目进行练习.
 
 
-### 安装 React Navigation
+### 一、在项目中安装 React Navigation
 
 ```
-npm install --save react-navigation
+    npm install --save react-navigation
 ```
-### React Navigation框架里面有什么
-StackNavigator: 屏幕上方导航栏,iOS中的`UINavigationController`
+### 二、React Navigation框架里面有什么
 
-### 什么是Stack Navigation
+* StackNavigator: 可是实现屏幕上方导航栏,类似iOS中的`UINavigationController`.
+
+* TabNavigator: 可是实现屏幕底部多个选项,类似iOS中的`UITabBarController`,但是同时也可以通过修改属性把`TabNavigator`放在顶部.
+
+### 三、什么是Stack Navigation
 Stack Navigation是`React Navigation`框架中的一个具有顶部导航功能的子模块,其使用特点类似iOS的`UINavigationController`,采用"栈"的概念来进行导航的,每个新控制器放在堆栈的顶部,返回时从栈顶移除.
 
-* 我在项目中创建了一个app.js的类,在index.android.js和index.ios.js分别调用这个类. 
+* 在项目中创建了一个app.js的类,在`index.android.js`和`index.ios.js`分别调用这个类. 
 
-**index.android.js和index.ios.js**
+* 更新: RN 在0.49的以后的版本中取消了`index.android.js`和`index.ios.js`这个两个文件,10月04日之后创建的项目统一成`index.js`.
+
+**0.49的以前: index.android.js和index.ios.js**
+**0.49的以后: index.js**
 
 ```
 import React, { Component } from 'react';
@@ -59,4 +65,18 @@ AppRegistry.registerComponent('TestReactNativeProject', () => TestReactNativePro
 
 ```
 
+**App.js类**
+
+```
+import React, { Component } from 'react'
+import NavStackNavigator from '../app/StackNavigator'
+
+export default class App extends Component<{}> {
+  render () {
+    return (
+      <NavStackNavigator />
+    )
+  }
+}
+```
 
