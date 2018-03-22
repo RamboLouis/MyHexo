@@ -183,7 +183,7 @@
 查看文件内容
 
 1cat">
-<meta property="og:updated_time" content="2017-09-28T03:42:10.116Z">
+<meta property="og:updated_time" content="2018-02-10T10:24:10.314Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux及Git命令总结。">
 <meta name="twitter:description" content="常用Linux命令一、常用指令
@@ -671,6 +671,7 @@
 <li>检查磁盘空间</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">df</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">df -h</div></pre></td></tr></table></figure>
 <ul>
 <li>查询DNS解析</li>
 </ul>
@@ -735,11 +736,11 @@
 <ul>
 <li>在当前目录新建并将其初始化为Git代码库</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init *project_name*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init &lt;project_name&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>克隆代码</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone *url*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone &lt;url&gt;</div></pre></td></tr></table></figure>
 <h4 id="二、配置"><a href="#二、配置" class="headerlink" title="二、配置"></a>二、配置</h4><p>Git的设置文件为 <em>.gitconfig</em>，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。</p>
 <ul>
 <li>显示当前的Git配置</li>
@@ -748,19 +749,15 @@
 <ul>
 <li>编辑Git配置文件</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config -e *--global*</div></pre></td></tr></table></figure>
-<ul>
-<li>设置提交代码时的用户信息</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config [--global] [user.name](http://user.name/) &quot;*name*&quot;</div><div class="line">git config [--global] user.email &quot;*email address*&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config -e &lt;--global&gt;</div></pre></td></tr></table></figure>
 <h4 id="三、增加-删除文件"><a href="#三、增加-删除文件" class="headerlink" title="三、增加/删除文件"></a>三、增加/删除文件</h4><ul>
 <li>添加指定文件到暂存区</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add *file1* *file2*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add &lt;file1&gt; &lt;file2&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>添加指定目录到暂存区，包括子目录</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add *dir*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add &lt;dir&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>添加当前目录的所有文件到暂存区</li>
 </ul>
@@ -772,23 +769,23 @@
 <ul>
 <li>删除工作区文件，并且将这次删除放入暂存区</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rm *file1* *file2*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rm &lt;file1&gt; &lt;file2&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>停止追踪指定文件，但该文件会保留在工作区</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rm --cached *file*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rm --cached &lt;file&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>改名文件，并且将这个改名放入暂存区</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git mv *file-original* *file-renamed*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git mv &lt;file-original&gt; &lt;file-renamed&gt;</div></pre></td></tr></table></figure>
 <h4 id="四、代码提交"><a href="#四、代码提交" class="headerlink" title="四、代码提交"></a>四、代码提交</h4><ul>
 <li>提交暂存区到仓库区</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m *message*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m &apos;message&apos;</div></pre></td></tr></table></figure>
 <ul>
 <li>提交暂存区的指定文件到仓库区</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit *file1* *file2* -m *message*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit &lt;file1&gt; &lt;file2&gt; -m &apos;message&apos;</div></pre></td></tr></table></figure>
 <ul>
 <li>提交工作区自上次commit之后的变化，直接到仓库区</li>
 </ul>
@@ -800,11 +797,11 @@
 <ul>
 <li>使用一次新的commit，替代上一次提交<br>如果代码没有任何新变化，则用来改写上一次commit的提交信息</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit --amend -m *message*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit --amend -m &apos;message&apos;</div></pre></td></tr></table></figure>
 <ul>
 <li>重做上一次commit，并包括指定文件的新变化</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit --amend *file1** *file2*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit --amend &lt;file1&gt; &lt;file2&gt;</div></pre></td></tr></table></figure>
 <h4 id="五、分支"><a href="#五、分支" class="headerlink" title="五、分支"></a>五、分支</h4><ul>
 <li>列出所有本地分支</li>
 </ul>
@@ -820,23 +817,23 @@
 <ul>
 <li>新建一个分支，但依然停留在当前分支</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch *branch_name*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch &lt;branch_name&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>新建一个分支，并切换到该分支</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b *branch_name*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b &lt;branch_name&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>新建一个分支，指向指定commit</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch *branch_name* *commit*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch &lt;branch_name&gt; &lt;commit&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>新建一个分支，与指定的远程分支建立追踪关系</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch --track *branch_name** *remote_branch*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch --track &lt;branch_name&gt; &lt;remote_branch&gt;</div></pre></td></tr></table></figure>
 <ul>
-<li>切换到指定分支，并更新工作区</li>
+<li>切换到指定分支或标签</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout *branch_name*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout &lt;branch_name/tag&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>切换到上一个分支</li>
 </ul>
@@ -844,24 +841,20 @@
 <ul>
 <li>建立追踪关系，在现有分支与指定的远程分支之间</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch --set-upstream *branch_name* *remote_branch*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch --set-upstream &lt;branch_name&gt; &lt;remote_branch&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>合并指定分支到当前分支</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git merge *branch_name*</div></pre></td></tr></table></figure>
-<ul>
-<li>选择一个commit，合并进当前分支</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git cherry-pick *commit*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git merge &lt;branch_name&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>删除分支</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -d *branch_name*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -d &lt;branch_name&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>删除远程分支</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push origin --delete *branch_name*</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git branch -dr *remote/branch*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push origin --delete &lt;branch_name&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git branch -dr &lt;remote/branch&gt;</div></pre></td></tr></table></figure>
 <h4 id="六、标签"><a href="#六、标签" class="headerlink" title="六、标签"></a>六、标签</h4><ul>
 <li>列出所有tag</li>
 </ul>
@@ -869,35 +862,35 @@
 <ul>
 <li>新建一个tag在当前commit</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git tag *tag*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git tag &lt;tag&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>新建一个tag在指定commit</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git tag *tag* *commit*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git tag &lt;tag&gt; &lt;commit&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>删除本地tag</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git tag -d *tag*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git tag -d &lt;tag&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>删除远程tag</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin :refs/tags/*tagName*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin :refs/tags/&lt;tagName&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>查看tag信息</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git show *tag*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git show &lt;tag&gt;</div></pre></td></tr></table></figure>
 <ul>
-<li>提交指定tag</li>
+<li>提交远程tag</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push *remote* *tag*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin &lt;tag&gt;</div></pre></td></tr></table></figure>
 <ul>
-<li>提交所有tag</li>
+<li>提交到远程所有tag</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push *remote* --tags</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin --tags</div></pre></td></tr></table></figure>
 <ul>
 <li>新建一个分支，指向某个tag</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b *branch* *tag*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b &lt;branch&gt; &lt;tag&gt;</div></pre></td></tr></table></figure>
 <h4 id="七、查看信息"><a href="#七、查看信息" class="headerlink" title="七、查看信息"></a>七、查看信息</h4><ul>
 <li>显示有变更的文件</li>
 </ul>
@@ -913,24 +906,24 @@
 <ul>
 <li>搜索提交历史，根据关键词</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log -S *keyword*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log -S &lt;keyword&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>显示某个commit之后的所有变动，每个commit占据一行</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log *tag* HEAD --pretty=format:%s</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log &lt;tag&gt; HEAD --pretty=format:%s</div></pre></td></tr></table></figure>
 <ul>
 <li>显示某个commit之后的所有变动，其”提交说明”必须符合搜索条件</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log *tag* HEAD --grep feature</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log &lt;tag&gt; HEAD --grep feature</div></pre></td></tr></table></figure>
 <ul>
 <li>显示某个文件的版本历史，包括文件改名</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --follow *file*</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git whatchanged *file*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --follow &lt;file&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git whatchanged &lt;file&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>显示指定文件相关的每一次diff</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log -p *file*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log -p &lt;file&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>显示过去5次提交</li>
 </ul>
@@ -942,7 +935,7 @@
 <ul>
 <li>显示指定文件是什么人在什么时间修改过</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git blame *file*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git blame &lt;file&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>显示暂存区和工作区的差异</li>
 </ul>
@@ -950,7 +943,7 @@
 <ul>
 <li>显示暂存区和上一个commit的差异</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff --cached *file*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff --cached &lt;file&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>显示工作区与当前分支最新commit之间的差异</li>
 </ul>
@@ -958,7 +951,7 @@
 <ul>
 <li>显示两次提交之间的差异</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff *first-branch*...*second-branch*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff &lt;first-branch&gt;...&lt;second-branch&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>显示今天你写了多少行代码</li>
 </ul>
@@ -966,15 +959,15 @@
 <ul>
 <li>显示某次提交的元数据和内容变化</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git show *commit*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git show &lt;commit&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>显示某次提交发生变化的文件</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git show --name-only *commit*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git show --name-only &lt;commit&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>显示某次提交时，某个文件的内容</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git show *commit*:*filename*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git show &lt;commit&gt;:&lt;filename&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>显示当前分支的最近几次提交</li>
 </ul>
@@ -982,7 +975,7 @@
 <h4 id="八、远程同步"><a href="#八、远程同步" class="headerlink" title="八、远程同步"></a>八、远程同步</h4><ul>
 <li>下载远程仓库的所有变动</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git fetch *remote*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git fetch &lt;remote&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>显示所有远程仓库</li>
 </ul>
@@ -990,35 +983,35 @@
 <ul>
 <li>显示某个远程仓库的信息</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote show *remote*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote show &lt;remote&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>增加一个新的远程仓库，并命名</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add *shortname* *url*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add &lt;shortname&gt; &lt;url&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>取回远程仓库的变化，并与本地分支合并</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull *remote* *branch*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull &lt;remote&gt; &lt;branch&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>上传本地指定分支到远程仓库</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push *remote* *branch*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push &lt;remote&gt; &lt;branch&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>强行推送当前分支到远程仓库，即使有冲突</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git push *remote* --force</div><div class="line">或者:</div><div class="line">git push -f -u origin master</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git push &lt;remote&gt; --force</div><div class="line">或者:</div><div class="line">git push -f -u origin master</div></pre></td></tr></table></figure>
 <ul>
 <li>推送所有分支到远程仓库</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push *remote* --all</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push &lt;remote&gt; --all</div></pre></td></tr></table></figure>
 <h4 id="九、撤销"><a href="#九、撤销" class="headerlink" title="九、撤销"></a>九、撤销</h4><ul>
 <li>恢复暂存区的指定文件到工作区</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout *file*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout &lt;file&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>恢复某个commit的指定文件到暂存区和工作区</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout *commit* *file*</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout &lt;commit&gt; &lt;file&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>恢复暂存区的所有文件到工作区</li>
 </ul>
@@ -1026,7 +1019,7 @@
 <ul>
 <li>重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset **file**</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset &lt;file&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>重置暂存区与工作区，与上一次commit保持一致</li>
 </ul>
@@ -1034,21 +1027,21 @@
 <ul>
 <li>重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset **commit**</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset &lt;commit&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>重置当前分支回滚到某一次历史提交版本</li>
 </ul>
 <p><code>ps:
 回滚完在执行git push -f -u origin master</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset --hard **commit**</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset --hard &lt;commit&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>重置当前HEAD为指定commit，但保持暂存区和工作区不变</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset --keep **commit**</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset --keep &lt;commit&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>新建一个commit，用来撤销指定commit后者的所有变化都将被前者抵消，并且应用到当前分支</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git revert **commit**</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git revert &lt;commit&gt;</div></pre></td></tr></table></figure>
 <ul>
 <li>暂时将未提交的变化移除，稍后再移入</li>
 </ul>
@@ -1190,7 +1183,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">28</span>
+                <span class="site-state-item-count">29</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1364,7 +1357,7 @@
         <div class="copyright" >
   
   &copy;  2015 - 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

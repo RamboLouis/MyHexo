@@ -13,6 +13,6 @@ tags:
 ### 一、什么是FlatList和SectionList
 
 * `FlatList`和`SectionList`通过源码可以看出,都是基于`VirtualizedList`的一种封装实现.
-* `FlatList`实现了单组长列表而`SectionList`则实现了分组长列表.
-* 同时也具备`ScrollView`的特性,
+* `FlatList`实现了单组长列表,而`SectionList`则实现了分组长列表.
+* 同时也具备`ScrollView`的特性.
 

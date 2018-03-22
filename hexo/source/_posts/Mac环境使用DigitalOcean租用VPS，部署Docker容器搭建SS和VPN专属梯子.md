@@ -14,7 +14,7 @@ tags:
 
 ### 一、DigitalOcean官网注册
 https://cloud.digitalocean.com/
-ps：注册费用$5，现在还送$10，一共$15,如果选用最便宜的服务器，可以使用3个月。
+ps：注册费用$5，现在还送$10，一共$15,如果选用最便宜的服务器，可以使用3个月。当然,你也可以租用别家的VPS,适合自己就好.
 ![DigitalOcean官网](http://upload-images.jianshu.io/upload_images/1666327-c528d190dab09ee3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ### 二、创建虚拟服务器
 

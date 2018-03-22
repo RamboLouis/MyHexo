@@ -56,6 +56,8 @@ Ps：主题文件在 ~/.oh-my-zsh/themes 目录
 ZSH_THEME="ys"
 ```
 
-
+## 终端启动速度慢
+检查`~/.bash_profile`或`~/.zshrc`的预加载运行命令
+ps: 删除多余命令,重新启动终端
 
 

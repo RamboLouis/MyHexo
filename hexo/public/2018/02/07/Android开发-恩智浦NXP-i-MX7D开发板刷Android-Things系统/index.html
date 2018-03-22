@@ -91,7 +91,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="iOS,iPhone," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -107,34 +107,47 @@
 
 
 
-<meta name="description" content="前言:
-笔者前段时间进行iOS 10测试版本升级,出现众多网友共性,程序崩溃、卡顿等问题影响使用.故想回退版本,但是看到许多需要抹掉数据才可恢复,偶遇一良方无需抹掉数据,并附上升级及回退版本教程以及回退版本固件下载地址一枚.
+<meta name="description" content="前言:前段时间参加谷歌物联网创新沙龙,有幸抽奖得到一套恩智浦NXP i.MX7D的开发套件,和去年12月的GDD上得到的一样,近日有时间了,可以搞一搞了,自己根据官方的文档,下面分享下刷机心得.
 
-iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址，使用自带Safari浏览器打开.iOS Beta Software Profile 描">
+组装套件https://developer.android.google.cn/things/hardware/imx7d-kit.html
+
+根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤">
 <meta property="og:type" content="article">
-<meta property="og:title" content="iOS10 beta版本升级及回退.">
-<meta property="og:url" content="http://RamboLu.top/2016/06/13/iOS10-beta版本升级及回退/index.html">
+<meta property="og:title" content="Android开发-恩智浦NXP i.MX7D开发板刷Android Things系统心得">
+<meta property="og:url" content="http://RamboLu.top/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/index.html">
 <meta property="og:site_name" content="RamboLu Blog">
-<meta property="og:description" content="前言:
-笔者前段时间进行iOS 10测试版本升级,出现众多网友共性,程序崩溃、卡顿等问题影响使用.故想回退版本,但是看到许多需要抹掉数据才可恢复,偶遇一良方无需抹掉数据,并附上升级及回退版本教程以及回退版本固件下载地址一枚.
+<meta property="og:description" content="前言:前段时间参加谷歌物联网创新沙龙,有幸抽奖得到一套恩智浦NXP i.MX7D的开发套件,和去年12月的GDD上得到的一样,近日有时间了,可以搞一搞了,自己根据官方的文档,下面分享下刷机心得.
 
-iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址，使用自带Safari浏览器打开.iOS Beta Software Profile 描">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-6ee8d14b012fee32.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-a538e0994626af80.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-ffa84528d92800b7.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-be85bf74368e6f73.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-e638f5ce2658ad91.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-efebebca0e94a36f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-970595583e9e4987.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-c7d55ad9da36ee10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-04-13T07:34:12.000Z">
+组装套件https://developer.android.google.cn/things/hardware/imx7d-kit.html
+
+根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-5fcfb0844d9606b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-2fe4f767e8e75a83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-0fe76c03b51e87d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-00c2f580a2eb6ed6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-30caa3d67de1e7d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-0388143d2110a812.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-f8783c252e1422dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-3594b0929f1456ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-7246e19a774219f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-0b8a2fe8cf65c6a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-edced73d0550387e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-9f76d2ba873b8dab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-b8ce261d78ab5a83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-2171e9b64fa5068a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-b11bca69e053cf7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-82d4d447ef2b32d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-917aa5236b3871d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-3666fdcc67b501a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-02-09T06:10:59.608Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS10 beta版本升级及回退.">
-<meta name="twitter:description" content="前言:
-笔者前段时间进行iOS 10测试版本升级,出现众多网友共性,程序崩溃、卡顿等问题影响使用.故想回退版本,但是看到许多需要抹掉数据才可恢复,偶遇一良方无需抹掉数据,并附上升级及回退版本教程以及回退版本固件下载地址一枚.
+<meta name="twitter:title" content="Android开发-恩智浦NXP i.MX7D开发板刷Android Things系统心得">
+<meta name="twitter:description" content="前言:前段时间参加谷歌物联网创新沙龙,有幸抽奖得到一套恩智浦NXP i.MX7D的开发套件,和去年12月的GDD上得到的一样,近日有时间了,可以搞一搞了,自己根据官方的文档,下面分享下刷机心得.
 
-iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址，使用自带Safari浏览器打开.iOS Beta Software Profile 描">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1666327-6ee8d14b012fee32.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+组装套件https://developer.android.google.cn/things/hardware/imx7d-kit.html
+
+根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1666327-5fcfb0844d9606b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -162,13 +175,13 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
 
 
 
-  <link rel="canonical" href="http://RamboLu.top/2016/06/13/iOS10-beta版本升级及回退/"/>
+  <link rel="canonical" href="http://RamboLu.top/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/"/>
 
 
 
 
 
-  <title> iOS10 beta版本升级及回退. | RamboLu Blog </title>
+  <title> Android开发-恩智浦NXP i.MX7D开发板刷Android Things系统心得 | RamboLu Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -364,7 +377,7 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2016/06/13/iOS10-beta版本升级及回退/">
+    <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
@@ -385,7 +398,7 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
             
             
               
-                iOS10 beta版本升级及回退.
+                Android开发-恩智浦NXP i.MX7D开发板刷Android Things系统心得
               
             
           </h1>
@@ -400,8 +413,8 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-06-13T20:37:01+08:00">
-                2016-06-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-07T14:56:41+08:00">
+                2018-02-07
               </time>
             
 
@@ -423,8 +436,8 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iPhone/" itemprop="url" rel="index">
-                    <span itemprop="name">iPhone</span>
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
                   </a>
                 </span>
 
@@ -442,8 +455,8 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/06/13/iOS10-beta版本升级及回退/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="2016/06/13/iOS10-beta版本升级及回退/" itemprop="commentsCount"></span>
+                <a href="/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -452,7 +465,7 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
 
           
           
-             <span id="/2016/06/13/iOS10-beta版本升级及回退/" class="leancloud_visitors" data-flag-title="iOS10 beta版本升级及回退.">
+             <span id="/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/" class="leancloud_visitors" data-flag-title="Android开发-恩智浦NXP i.MX7D开发板刷Android Things系统心得">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -481,17 +494,51 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
       
 
       
-        <h4 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h4><blockquote>
-<p>笔者前段时间进行iOS 10测试版本升级,出现众多网友共性,程序崩溃、卡顿等问题影响使用.故想回退版本,但是看到许多需要抹掉数据才可恢复,偶遇一良方无需抹掉数据,并附上升级及回退版本教程以及回退版本固件下载地址一枚.</p>
+        <blockquote>
+<p>前言:前段时间参加谷歌物联网创新沙龙,有幸抽奖得到一套恩智浦NXP i.MX7D的开发套件,和去年12月的GDD上得到的一样,近日有时间了,可以搞一搞了,自己根据官方的文档,下面分享下刷机心得.</p>
 </blockquote>
-<h2 id="iOS9-3-2升级iOS10-beta1"><a href="#iOS9-3-2升级iOS10-beta1" class="headerlink" title="iOS9.3.2升级iOS10 beta1"></a>iOS9.3.2升级iOS10 beta1</h2><h6 id="一-下载官方描述文件-gt-复制以下地址，使用自带Safari浏览器打开"><a href="#一-下载官方描述文件-gt-复制以下地址，使用自带Safari浏览器打开" class="headerlink" title="一.下载官方描述文件-&gt;复制以下地址，使用自带Safari浏览器打开."></a>一.下载官方描述文件-&gt;复制以下地址，使用自带Safari浏览器打开.</h6><p><a href="http://bbs.feng.com/plugin.php?id=attachment_download:tongji&amp;aid=11375253&amp;name=iOS_beta_Configuration_Profile.mobileconfig&amp;server=http://att4.weiphone.net&amp;url=201601/12/025901twsfmexjpxvwbwue.attach" target="_blank" rel="external">iOS Beta Software Profile 描述文件下载地址:</a></p>
-<h6 id="二-安装描述文件-并重启设备"><a href="#二-安装描述文件-并重启设备" class="headerlink" title="二.安装描述文件,并重启设备."></a>二.安装描述文件,并重启设备.</h6><p><img src="http://upload-images.jianshu.io/upload_images/1666327-6ee8d14b012fee32.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装描述文件"><br><img src="http://upload-images.jianshu.io/upload_images/1666327-a538e0994626af80.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="重新启动"></p>
-<h6 id="三-重启后-进入设置-通用-软件更新-下载iOS-10-Developer-Beta1安装程序-并安装"><a href="#三-重启后-进入设置-通用-软件更新-下载iOS-10-Developer-Beta1安装程序-并安装" class="headerlink" title="三.重启后,进入设置-通用-软件更新,下载iOS 10 Developer Beta1安装程序,并安装."></a>三.重启后,进入设置-通用-软件更新,下载iOS 10 Developer Beta1安装程序,并安装.</h6><p><img src="http://upload-images.jianshu.io/upload_images/1666327-ffa84528d92800b7.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="现在安装"><br><img src="http://upload-images.jianshu.io/upload_images/1666327-be85bf74368e6f73.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="最新版本"></p>
-<h2 id="iOS10-beta1回退iOS9-3-2"><a href="#iOS10-beta1回退iOS9-3-2" class="headerlink" title="iOS10 beta1回退iOS9.3.2"></a>iOS10 beta1回退iOS9.3.2</h2><h6 id="一-下载iOS9-3-2固件-ipsw格式"><a href="#一-下载iOS9-3-2固件-ipsw格式" class="headerlink" title="一.下载iOS9.3.2固件.ipsw格式."></a>一.下载iOS9.3.2固件.ipsw格式.</h6><p><a href="https://ipsw.me" target="_blank" rel="external">IPSW Downloads固件下载网站地址:</a></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-e638f5ce2658ad91.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="下载固件"></p>
-<h6 id="二-打开iTunes-按住Option-alt-键-Win系统按Shift-点击检查更新"><a href="#二-打开iTunes-按住Option-alt-键-Win系统按Shift-点击检查更新" class="headerlink" title="二.打开iTunes.按住Option(alt)键(Win系统按Shift)+点击检查更新."></a>二.打开iTunes.按住Option(alt)键(Win系统按Shift)+点击检查更新.</h6><p><img src="http://upload-images.jianshu.io/upload_images/1666327-efebebca0e94a36f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="按住option"></p>
-<h6 id="三-选择下载好的固件进行回退"><a href="#三-选择下载好的固件进行回退" class="headerlink" title="三.选择下载好的固件进行回退."></a>三.选择下载好的固件进行回退.</h6><p><img src="http://upload-images.jianshu.io/upload_images/1666327-970595583e9e4987.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择版本"><br><img src="http://upload-images.jianshu.io/upload_images/1666327-c7d55ad9da36ee10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="进行回退"></p>
-<h6 id="四-点击更新后-提示验证固件-验证完成后点击完成"><a href="#四-点击更新后-提示验证固件-验证完成后点击完成" class="headerlink" title="四.点击更新后,提示验证固件,验证完成后点击完成."></a>四.点击更新后,提示验证固件,验证完成后点击完成.</h6>
+<h2 id="组装套件"><a href="#组装套件" class="headerlink" title="组装套件"></a>组装套件</h2><p><a href="https://developer.android.google.cn/things/hardware/imx7d-kit.html" target="_blank" rel="external">https://developer.android.google.cn/things/hardware/imx7d-kit.html</a></p>
+<ul>
+<li>根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-5fcfb0844d9606b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+<li>最后的成品就是这个样子,出现NXP的logo.(没有安装相机模块)<br><img src="http://upload-images.jianshu.io/upload_images/1666327-2fe4f767e8e75a83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+</ul>
+<h2 id="刷机开始"><a href="#刷机开始" class="headerlink" title="刷机开始"></a>刷机开始</h2><h5 id="一键式刷机"><a href="#一键式刷机" class="headerlink" title="一键式刷机"></a>一键式刷机</h5><p><a href="https://developer.android.com/things/hardware/imx7d.html" target="_blank" rel="external">https://developer.android.com/things/hardware/imx7d.html</a></p>
+<ul>
+<li>还是根据官方文档的提示,在最后在步骤二的时候提示从Android Things Console下载Android Things Setup Utility.</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-0fe76c03b51e87d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/1666327-00c2f580a2eb6ed6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<ul>
+<li><p>下载Android Things Setup Utility.(如果打不开可能被墙了 -.-)<br><a href="https://partner.android.com/things/console/u/0/#/tools" target="_blank" rel="external">https://partner.android.com/things/console/u/0/#/tools</a><br>ps: 没关系,我在github传了一份,可以下载对应系统版本.<br><a href="https://github.com/RamboLouis/AndroidTestProject/tree/master/AndroidThings/android_things_setup_utility" target="_blank" rel="external">https://github.com/RamboLouis/AndroidTestProject/tree/master/AndroidThings/android_things_setup_utility</a><br>同时,也可以自己去租VPS.(macOS系统的 -.-)<br><a href="http://www.rambolu.top/2017/02/21/Mac%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8DigitalOcean%E7%A7%9F%E7%94%A8VPS%EF%BC%8C%E9%83%A8%E7%BD%B2Docker%E5%AE%B9%E5%99%A8%E6%90%AD%E5%BB%BASS%E5%92%8CVPN%E4%B8%93%E5%B1%9E%E6%A2%AF%E5%AD%90/" target="_blank" rel="external">Mac环境使用DigitalOcean租用VPS</a><br><img src="http://upload-images.jianshu.io/upload_images/1666327-30caa3d67de1e7d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Setup Utility"></p>
+</li>
+<li><p>下载完成后,开始选择对应系统的安装文件,通过命令行运行.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-0388143d2110a812.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+</li>
+<li><p>命令行运行.<br>遇到第一个选项:<br>选择第一个安装Android设备,并可选择设置Wi-Fi.<br>因为第二个是在现有的系统上设置wifi的.<br>第二个选项:<br>根据自己的开发板进行选择.<br>第三个选项:<br>根据个人喜好进行选择图形化界面.<br>直到提示开始开始下载Android Things<br><img src="http://upload-images.jianshu.io/upload_images/1666327-f8783c252e1422dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="下载Android Things"></p>
+</li>
+<li><p>安装结束,确定键继续.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-3594b0929f1456ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装结束,确定键继续"></p>
+</li>
+<li><p>设置并输入自己所在网络wifi名字和密码<br><img src="http://upload-images.jianshu.io/upload_images/1666327-7246e19a774219f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+</li>
+<li><p>点击确定退出安装.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-0b8a2fe8cf65c6a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+</li>
+</ul>
+<h5 id="手动刷机"><a href="#手动刷机" class="headerlink" title="手动刷机"></a>手动刷机</h5><p><a href="https://developer.android.google.cn/things/hardware/fastboot.html" target="_blank" rel="external">https://developer.android.google.cn/things/hardware/fastboot.html</a><br><img src="http://upload-images.jianshu.io/upload_images/1666327-edced73d0550387e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<ul>
+<li>需要在<a href="https://partner.android.com/things/console" target="_blank" rel="external">Android Things Console</a>,创建项目并下载.(同样,如果打不开那就是被墙了 -.-)<br><img src="http://upload-images.jianshu.io/upload_images/1666327-9f76d2ba873b8dab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+<li>按照官方文档说的,执行<code>flash-all.sh</code>文件<br><img src="http://upload-images.jianshu.io/upload_images/1666327-b8ce261d78ab5a83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="flash-all.sh"></li>
+<li>成功 <strong>Successfully flashed your imx7d.</strong><br><img src="http://upload-images.jianshu.io/upload_images/1666327-2171e9b64fa5068a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+</ul>
+<h2 id="查找并运行"><a href="#查找并运行" class="headerlink" title="查找并运行"></a>查找并运行</h2><ul>
+<li><p>输入<code>adb devices</code>发现可以找到设备.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-b11bca69e053cf7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="输入adb devices"></p>
+</li>
+<li><p>通过自建项目或者官网下载demo,可以运行设备了.<br>建议选择26以上的<br><img src="http://upload-images.jianshu.io/upload_images/1666327-82d4d447ef2b32d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-917aa5236b3871d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="结束"><a href="#结束" class="headerlink" title="结束."></a>结束.</h2><ul>
+<li>Holle world出现.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-3666fdcc67b501a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+</ul>
+<p>ps:<br>开发套件教程:<br><a href="https://developer.android.com/things/get-started/kits.html" target="_blank" rel="external">https://developer.android.com/things/get-started/kits.html</a><br>案例:<br><a href="https://developer.android.com/things/sdk/samples.html" target="_blank" rel="external">https://developer.android.com/things/sdk/samples.html</a><br>Google社区:<br><a href="https://plus.google.com/communities/107507328426910012281" target="_blank" rel="external">https://plus.google.com/communities/107507328426910012281</a></p>
+
       
     </div>
 
@@ -518,14 +565,6 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/iOS/" rel="tag"># iOS</a>
-          
-            <a href="/tags/iPhone/" rel="tag"># iPhone</a>
-          
-        </div>
-      
 
       
         
@@ -535,8 +574,8 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/29/免费开发者证书真机调试App ID失效问题解决方案总结/" rel="next" title="免费开发者证书真机调试App ID失效问题:"Unable to add App ID because the '10' App ID limit in '7' days has been exceeded."解决方案总结。">
-                <i class="fa fa-chevron-left"></i> 免费开发者证书真机调试App ID失效问题:"Unable to add App ID because the '10' App ID limit in '7' days has been exceeded."解决方案总结。
+              <a href="/2017/07/10/ReactNative开发-FlatList和SectionList应用/" rel="next" title="ReactNative开发-FlatList和SectionList应用">
+                <i class="fa fa-chevron-left"></i> ReactNative开发-FlatList和SectionList应用
               </a>
             
           </div>
@@ -544,10 +583,6 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/01/WKWebView替换UIWebView/" rel="prev" title="WKWebView替换UIWebView">
-                WKWebView替换UIWebView <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -772,7 +807,7 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言:</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS9-3-2升级iOS10-beta1"><span class="nav-number"></span> <span class="nav-text">iOS9.3.2升级iOS10 beta1</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#一-下载官方描述文件-gt-复制以下地址，使用自带Safari浏览器打开"><span class="nav-number">0.0.1.</span> <span class="nav-text">一.下载官方描述文件->复制以下地址，使用自带Safari浏览器打开.</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#二-安装描述文件-并重启设备"><span class="nav-number">0.0.2.</span> <span class="nav-text">二.安装描述文件,并重启设备.</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#三-重启后-进入设置-通用-软件更新-下载iOS-10-Developer-Beta1安装程序-并安装"><span class="nav-number">0.0.3.</span> <span class="nav-text">三.重启后,进入设置-通用-软件更新,下载iOS 10 Developer Beta1安装程序,并安装.</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS10-beta1回退iOS9-3-2"><span class="nav-number"></span> <span class="nav-text">iOS10 beta1回退iOS9.3.2</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#一-下载iOS9-3-2固件-ipsw格式"><span class="nav-number">0.0.1.</span> <span class="nav-text">一.下载iOS9.3.2固件.ipsw格式.</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#二-打开iTunes-按住Option-alt-键-Win系统按Shift-点击检查更新"><span class="nav-number">0.0.2.</span> <span class="nav-text">二.打开iTunes.按住Option(alt)键(Win系统按Shift)+点击检查更新.</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#三-选择下载好的固件进行回退"><span class="nav-number">0.0.3.</span> <span class="nav-text">三.选择下载好的固件进行回退.</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#四-点击更新后-提示验证固件-验证完成后点击完成"><span class="nav-number">0.0.4.</span> <span class="nav-text">四.点击更新后,提示验证固件,验证完成后点击完成.</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#组装套件"><span class="nav-number">1.</span> <span class="nav-text">组装套件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#刷机开始"><span class="nav-number">2.</span> <span class="nav-text">刷机开始</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#一键式刷机"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">一键式刷机</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#手动刷机"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">手动刷机</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找并运行"><span class="nav-number">3.</span> <span class="nav-text">查找并运行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结束"><span class="nav-number">4.</span> <span class="nav-text">结束.</span></a></li></ol></div>
             
 
           </div>
@@ -938,7 +973,7 @@ iOS9.3.2升级iOS10 beta1一.下载官方描述文件-&amp;gt;复制以下地址
 		_hcwp.push({widget:"Bloggerstream", widget_id: 90585, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
 		
-		_hcwp.push({widget:"Stream", widget_id: 90585, xid: "2016/06/13/iOS10-beta版本升级及回退/"});
+		_hcwp.push({widget:"Stream", widget_id: 90585, xid: "2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/"});
 		
 
 		(function() {
