@@ -60,7 +60,7 @@ npm install
 cd 到的目录,执行如下命令,生成静态页面至`hexo\public\`目录.
 
 ```
-hexo g (hero generate简写)
+hexo g (hexo generate简写)
 ```
 
 ###  本地启动
@@ -125,21 +125,21 @@ deploy:
 deploy:
 - type: git 
   repo:
-- type: heroku 
+- type: hexoku 
   repo:
 ```
 ###  同步
 
 ```
-hexo d (hero deploy简写)
+hexo d (hexo deploy简写)
 ```
 
 执行,以后每次执行就可以依次输入下面三行命令：
 
 ```
-hero clean
-hexo g (hero generate简写)
-hexo d (hero deploy简写)
+hexo clean
+hexo g (hexo generate简写)
+hexo d (hexo deploy简写)
 ```
 大功告成,可以输入你的`用户名.github.io`在浏览器中查看了.
 ##  五、插件
@@ -173,7 +173,7 @@ npm install hexo-generator-feed@1.0.3 --save
 git clone git@github.com:yunlzheng/hexo-themes.git themes/writing
 #在./_config.yml,修改主题为writingtheme: writing
 #查看本地效果
-hexo g (hero generate简写)
+hexo g (hexo generate简写)
 hexo s (hexo server简写)
 ```
 
@@ -228,10 +228,10 @@ rss:
 
 ## 七、后续
 
-###  更新hero
+###  更新hexo
 
 ```
-npm update -g hero
+npm update -g hexo
 ```
 
 ###  更新主题
