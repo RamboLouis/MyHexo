@@ -1,10 +1,12 @@
 ---
-title: Mac环境更改shell自定义终端-oh my zsh安装及配置
+title: Mac、Linux环境自定义终端-oh my zsh安装及配置
 date: 2017-02-25 11:00:26
 categories:
     - Mac
+    - Linux
 tags: 
     - Mac
+    - Linux
     - 进阶
 ---
 
@@ -38,12 +40,28 @@ cat /etc/shells
 ```
 
 4.设置zsh为你的默认的shell
-   
+
 ```
 chsh -s /bin/zsh
 ```
 
+ps: Linux会提示找不到`/bin/zsh`,需要手动安装`zsh`.
+以下以Ubuntu为例:
+
+```
+* 更新软件源
+sudo apt-get update
+* 安装zsh
+sudo apt-get install zsh
+```
+
+
 5.重启终端
+ps:  Ubuntu最后没有效果,需要重启电脑,可以手动点设置也可以用下面命令重启.
+
+```
+sudo reboot
+```
 
 ## 更改zsh主题:
 

@@ -248,3 +248,33 @@ npm update
 ```
 
 
+## 遇到的问题
+
+```
+fatal: unable to access 'https://github.com/xxx/xxx.git/': Could not resolve host: github.com
+FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html
+Error: fatal: unable to access 'https://github.com/xxx/xxx.git/': Could not resolve host: github.com
+
+    at ChildProcess.<anonymous> (/Users/xxxx/hexo/node_modules/hexo-util/lib/spawn.js:37:17)
+    at ChildProcess.emit (events.js:159:13)
+    at maybeClose (internal/child_process.js:943:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
+```
+
+![](https://upload-images.jianshu.io/upload_images/1666327-dc9324430df0d458.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 解决方案:
+
+在当前用户路径`~`输入
+
+```
+ssh -v git@github.com
+```
+
+或者你的`hexo`路径输入
+
+```
+ssh git@github.com
+```
+输入Github密码即可
+
