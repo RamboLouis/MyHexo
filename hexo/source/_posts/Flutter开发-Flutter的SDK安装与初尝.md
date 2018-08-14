@@ -56,4 +56,18 @@ flutter doctor
 
 ![](https://upload-images.jianshu.io/upload_images/1666327-5cb1c73da26447b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+### 三、创建项目
+
+* 以`Android Studio`为例
+
+![](https://upload-images.jianshu.io/upload_images/1666327-f41aab7ae029ae07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 值得注意的是这里提供了各个平台使用的原生语言,例如:iOS平台默认使用`OC`,可以选择使用`Swift`, Android平台默认是`Java`,可以选择`Kotlin`.
+ 
+![](https://upload-images.jianshu.io/upload_images/1666327-69663399be66d485.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+* 最终项目结构目录
+
+![](https://upload-images.jianshu.io/upload_images/1666327-78ba8e7a6a1d6180.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

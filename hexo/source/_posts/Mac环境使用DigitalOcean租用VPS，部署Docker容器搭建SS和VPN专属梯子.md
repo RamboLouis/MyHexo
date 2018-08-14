@@ -138,6 +138,9 @@ GitHub官方提供下载dmg：
 https://github.com/shadowsocks/shadowsocks-iOS/releases
 
 ![shadowsocks下载](http://upload-images.jianshu.io/upload_images/1666327-a926bcfd857363fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+ps: 新一代shadowsocks客户端
+
+https://github.com/shadowsocks/ShadowsocksX-NG/releases
 
 * 安装后配置服务器，打开服务器设置，并添加服务器。
 
@@ -243,6 +246,10 @@ docker ps
 ```
 
 * 暂停容器
+
+ps: 查询过后NAMES,为启动镜像后随机生成的容器名.
+
+![](https://upload-images.jianshu.io/upload_images/1666327-f6eda7dbfd45f917.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ```
 docker stop xxx(容器名字)
