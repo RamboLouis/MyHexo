@@ -17,16 +17,19 @@ Error installing cocoapods:
 ### 1.安装ruby 
 ##### 1>安装 RVM 
 RVM: Ruby Version Manager, Ruby的版本管理器，包括Ruby的版本管理和Gem库管理(gemset)
+
 ```
 curl -L get.rvm.io | bash -s stable
 ```
+
 ##### 2>安装home-brew(切记先安装home-brew,再安装ruby!!)
+
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 ![Homebrew](http://upload-images.jianshu.io/upload_images/1666327-6909f2a40a341691.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-[home-brew地址:](http://brew.sh)<--
+home-brew地址: http://brew.sh
 
 如果出现重复安装home-brew,不要怕.
 
@@ -34,16 +37,20 @@ curl -L get.rvm.io | bash -s stable
 会给你提示命令.
 It appears Homebrew is already installed. If your intent is to reinstall you
 should do the following before running this installer again:
+
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 ```
 
 ##### 3>再安装ruby版本(最新版本2.3.0)
+
 ```
 rvm install 2.3.0
 ```
+
 出现情况:
 1.安装不通过的话可以进行手动安装.
+
 ![手动安装](http://upload-images.jianshu.io/upload_images/1666327-45656448ed643a15.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 >Installing requirements for osx.
@@ -109,11 +116,14 @@ xcode-select --install
 ```
 sudo rm -rf .rvm .rvmrc   /etc/rvmrc ;gem uninstall rvm
 ```
+
 ### 2.安装CocoaPods
 ##### 1>安装cocoapods(普通版本)
+
 ```
 sudo gem install cocoapods
 ```
+
 ##### 2>更新框架库 
 ```
 pod setup
@@ -121,6 +131,7 @@ pod setup
 可以查看框架镜像库的`cd   ~/.cocoapods`
 
 ##### 3>更新cocoapods版本(测试版本,仅供特定条件)
+
 ```
 sudo gem install cocoapods --pre
 ```
@@ -130,4 +141,22 @@ sudo gem install cocoapods --pre
 ```
 sudo gem install cocoapods --version 1.0.1
 ```
+
+出现情况:
+* Could not find a valid gem 'cocoapods' (>= 0), here is why:
+          Unable to download data from https://gems.ruby-china.org - bad response Not Found 404 (https://gems.ruby-china.org/specs.4.8.gz)
+问题是因为gem 的ruby 镜像源发生了更换，切换镜像源即可。
+![](https://upload-images.jianshu.io/upload_images/1666327-b914f84dd5a2ecd2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+```
+https://gems.ruby-china.org => https://gems.ruby-china.com
+// 查看 镜像源
+gem sources -l
+// 删除 镜像源
+gem sources --remove https://gems.ruby-china.org
+// 添加 镜像源
+gem sources -a https://gems.ruby-china.com
+```
+详情可参照ruby中国镜像社区： https://gems.ruby-china.com/
+
 

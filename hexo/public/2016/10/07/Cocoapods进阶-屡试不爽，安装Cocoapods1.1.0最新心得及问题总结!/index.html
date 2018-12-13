@@ -139,7 +139,8 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-4fa021187046f2d3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-b9ed79eaa12daa63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-801a78332b5d3df5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-04-17T03:36:58.000Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1666327-b914f84dd5a2ecd2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-09-25T02:37:54.777Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结">
 <meta name="twitter:description" content="安装淘宝源就直接跳过,安装十余次,分享下最近安装cocoapods的经验,仅仅提醒ruby版本问题之后的操作.如果还有不懂地方可以下方评论,会及时回答.12Error installing cocoapods:	activesupport requires Ruby version &amp;gt;= 2.2.2.
@@ -215,7 +216,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">技术在于折腾。</p>
+        <h1 class="site-subtitle" itemprop="description">技术在于折腾。</h1>
       
   </div>
 
@@ -368,7 +369,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结</h1>
+          <h2 class="post-title" itemprop="name headline">Cocoapods进阶-屡试不爽，安装Cocoapods1.1.0最新心得及问题总结</h2>
         
 
         <div class="post-meta">
@@ -441,12 +442,8 @@
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-
           
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-file-o"></i> 本文总阅读量
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
-            </span>
+          
           
 
           
@@ -469,13 +466,16 @@
         <blockquote>
 <p>安装淘宝源就直接跳过,安装十余次,分享下最近安装cocoapods的经验,仅仅提醒ruby版本问题之后的操作.如果还有不懂地方可以下方评论,会及时回答.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Error installing cocoapods:</div><div class="line">	activesupport requires Ruby version &gt;= 2.2.2.</div></pre></td></tr></table></figure></p>
 </blockquote>
-<h3 id="1-安装ruby"><a href="#1-安装ruby" class="headerlink" title="1.安装ruby"></a>1.安装ruby</h3><h5 id="1-gt-安装-RVM"><a href="#1-gt-安装-RVM" class="headerlink" title="1&gt;安装 RVM"></a>1&gt;安装 RVM</h5><p>RVM: Ruby Version Manager, Ruby的版本管理器，包括Ruby的版本管理和Gem库管理(gemset)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -L get.rvm.io | bash -s stable</div></pre></td></tr></table></figure></p>
+<h3 id="1-安装ruby"><a href="#1-安装ruby" class="headerlink" title="1.安装ruby"></a>1.安装ruby</h3><h5 id="1-gt-安装-RVM"><a href="#1-gt-安装-RVM" class="headerlink" title="1&gt;安装 RVM"></a>1&gt;安装 RVM</h5><p>RVM: Ruby Version Manager, Ruby的版本管理器，包括Ruby的版本管理和Gem库管理(gemset)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -L get.rvm.io | bash -s stable</div></pre></td></tr></table></figure>
 <h5 id="2-gt-安装home-brew-切记先安装home-brew-再安装ruby"><a href="#2-gt-安装home-brew-切记先安装home-brew-再安装ruby" class="headerlink" title="2&gt;安装home-brew(切记先安装home-brew,再安装ruby!!)"></a>2&gt;安装home-brew(切记先安装home-brew,再安装ruby!!)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</div></pre></td></tr></table></figure>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-6909f2a40a341691.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Homebrew"><br><a href="http://brew.sh" target="_blank" rel="external">home-brew地址:</a>&lt;–</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-6909f2a40a341691.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Homebrew"><br>home-brew地址: <a href="http://brew.sh" target="_blank" rel="external">http://brew.sh</a></p>
 <p>如果出现重复安装home-brew,不要怕.</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-775c733738fa3fdc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="重复安装home-brew"><br>会给你提示命令.<br>It appears Homebrew is already installed. If your intent is to reinstall you<br>should do the following before running this installer again:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)&quot;</div></pre></td></tr></table></figure></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-775c733738fa3fdc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="重复安装home-brew"><br>会给你提示命令.<br>It appears Homebrew is already installed. If your intent is to reinstall you<br>should do the following before running this installer again:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)&quot;</div></pre></td></tr></table></figure>
 <h5 id="3-gt-再安装ruby版本-最新版本2-3-0"><a href="#3-gt-再安装ruby版本-最新版本2-3-0" class="headerlink" title="3&gt;再安装ruby版本(最新版本2.3.0)"></a>3&gt;再安装ruby版本(最新版本2.3.0)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rvm install 2.3.0</div></pre></td></tr></table></figure>
-<p>出现情况:<br>1.安装不通过的话可以进行手动安装.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-45656448ed643a15.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="手动安装"></p>
+<p>出现情况:<br>1.安装不通过的话可以进行手动安装.</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-45656448ed643a15.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="手动安装"></p>
 <blockquote>
 <p>Installing requirements for osx.<br>Updating system…..<br>Installing required packages: autoconf, automake, libtool, pkg-config, libyaml, readline, libksba, openssl|<br>……..<br>Error running ‘requirements_osx_brew_libs_install autoconf automake libtool pkg-config libyaml readline libksba openssl’,<br>showing last 15 lines of /Users/MTKJ/.rvm/log/1469285314_ruby-2.3.0/package_install_autoconf_automake_libtool_pkg-config_libyaml_readline_libksba_openssl.log</p>
 </blockquote>
@@ -501,6 +501,13 @@
 <p>可以查看框架镜像库的<code>cd   ~/.cocoapods</code></p>
 <h5 id="3-gt-更新cocoapods版本-测试版本-仅供特定条件"><a href="#3-gt-更新cocoapods版本-测试版本-仅供特定条件" class="headerlink" title="3&gt;更新cocoapods版本(测试版本,仅供特定条件)"></a>3&gt;更新cocoapods版本(测试版本,仅供特定条件)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gem install cocoapods --pre</div></pre></td></tr></table></figure>
 <h5 id="4-gt-指定安装cocoapods版本"><a href="#4-gt-指定安装cocoapods版本" class="headerlink" title="4&gt;指定安装cocoapods版本"></a>4&gt;指定安装cocoapods版本</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gem install cocoapods --version 1.0.1</div></pre></td></tr></table></figure>
+<p>出现情况:</p>
+<ul>
+<li>Could not find a valid gem ‘cocoapods’ (&gt;= 0), here is why:<pre><code>Unable to download data from https://gems.ruby-china.org - bad response Not Found 404 (https://gems.ruby-china.org/specs.4.8.gz)
+</code></pre>问题是因为gem 的ruby 镜像源发生了更换，切换镜像源即可。<br><img src="https://upload-images.jianshu.io/upload_images/1666327-b914f84dd5a2ecd2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">https://gems.ruby-china.org =&gt; https://gems.ruby-china.com</div><div class="line">// 查看 镜像源</div><div class="line">gem sources -l</div><div class="line">// 删除 镜像源</div><div class="line">gem sources --remove https://gems.ruby-china.org</div><div class="line">// 添加 镜像源</div><div class="line">gem sources -a https://gems.ruby-china.com</div></pre></td></tr></table></figure>
+<p>详情可参照ruby中国镜像社区： <a href="https://gems.ruby-china.com/" target="_blank" rel="external">https://gems.ruby-china.com/</a></p>
 
       
     </div>
@@ -619,7 +626,7 @@
                 alt="RamboLu" />
             
               <p class="site-author-name" itemprop="name">RamboLu</p>
-              <p class="site-description motion-element" itemprop="description">Fire proves gold,adversity proves men.</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -629,7 +636,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-count">35</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -765,33 +772,33 @@
 
 
   <div class="theme-info"> 
-  <a> Next </a> 
-  主题
+    <a> Next </a> 
+    主题
   </div>
 
 
 
 
         
-<div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <div class="busuanzi-count">
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-  
-    <span class="site-uv">
-      <i class="fa fa-user"></i> 本站访客数
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      人次
-    </span>
-  
+    
+      <span class="site-uv">
+        <i class="fa fa-user"></i> 本站访客数
+        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+        人次
+      </span>
+    
 
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i> 本站总访问量
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      次
-    </span>
-  
-</div>
+    
+      <span class="site-pv">
+        <i class="fa fa-eye"></i> 本站总访问量
+        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+        次
+      </span>
+    
+  </div>
 
 
 

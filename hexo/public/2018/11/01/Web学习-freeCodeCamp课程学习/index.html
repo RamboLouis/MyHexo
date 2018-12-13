@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Oswald:300,300italic,400,400italic,700,700italic|Lobster:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/IronMan.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/IronMan.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/IronMan.png?v=5.1.4">
+
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="一、Responsive Web Design Certification(响应式网页设计认证)1. Basic HTML and HTML5(基本的HTML和HTML5)2. Basic CSS（基本CSS）3. Applied Visual Design（应用视觉设计）
+Create Visual Balance Using the text-align Property
+
+
+h4标记上的te">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web学习-freeCodeCamp课程学习">
+<meta property="og:url" content="http://RamboLu.top/2018/11/01/Web学习-freeCodeCamp课程学习/index.html">
+<meta property="og:site_name" content="RamboLu Blog">
+<meta property="og:description" content="一、Responsive Web Design Certification(响应式网页设计认证)1. Basic HTML and HTML5(基本的HTML和HTML5)2. Basic CSS（基本CSS）3. Applied Visual Design（应用视觉设计）
+Create Visual Balance Using the text-align Property
+
+
+h4标记上的te">
+<meta property="og:updated_time" content="2018-11-22T07:49:19.606Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Web学习-freeCodeCamp课程学习">
+<meta name="twitter:description" content="一、Responsive Web Design Certification(响应式网页设计认证)1. Basic HTML and HTML5(基本的HTML和HTML5)2. Basic CSS（基本CSS）3. Applied Visual Design（应用视觉设计）
+Create Visual Balance Using the text-align Property
+
+
+h4标记上的te">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://RamboLu.top/2018/11/01/Web学习-freeCodeCamp课程学习/"/>
+
+
+
+
+
+  <title>Web学习-freeCodeCamp课程学习 | RamboLu Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">RamboLu Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">技术在于折腾。</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            所有文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于我
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/11/01/Web学习-freeCodeCamp课程学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="RamboLu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/IronMan.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RamboLu Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Web学习-freeCodeCamp课程学习</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-01T10:28:45+08:00">
+                2018-11-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/01/Web学习-freeCodeCamp课程学习/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/01/Web学习-freeCodeCamp课程学习/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/11/01/Web学习-freeCodeCamp课程学习/" class="leancloud_visitors" data-flag-title="Web学习-freeCodeCamp课程学习">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+          
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="一、Responsive-Web-Design-Certification-响应式网页设计认证"><a href="#一、Responsive-Web-Design-Certification-响应式网页设计认证" class="headerlink" title="一、Responsive Web Design Certification(响应式网页设计认证)"></a>一、Responsive Web Design Certification(响应式网页设计认证)</h2><h3 id="1-Basic-HTML-and-HTML5-基本的HTML和HTML5"><a href="#1-Basic-HTML-and-HTML5-基本的HTML和HTML5" class="headerlink" title="1. Basic HTML and HTML5(基本的HTML和HTML5)"></a>1. Basic HTML and HTML5(基本的HTML和HTML5)</h3><h3 id="2-Basic-CSS（基本CSS）"><a href="#2-Basic-CSS（基本CSS）" class="headerlink" title="2. Basic CSS（基本CSS）"></a>2. Basic CSS（基本CSS）</h3><h3 id="3-Applied-Visual-Design（应用视觉设计）"><a href="#3-Applied-Visual-Design（应用视觉设计）" class="headerlink" title="3. Applied Visual Design（应用视觉设计）"></a>3. Applied Visual Design（应用视觉设计）</h3><ul>
+<li>Create Visual Balance Using the text-align Property</li>
+</ul>
+<blockquote>
+<p>h4标记上的text-align属性将其设置为 center<br>p标记上的text-align属性将其设置为 justify</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">h4 &#123;</div><div class="line">    text-align: center;</div><div class="line">  &#125;</div><div class="line">  p &#123;</div><div class="line">    text-align: justify;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Adjust the Width of an Element Using the width Property（使用width属性调整元素的宽度）</li>
+</ul>
+<blockquote>
+<p>为fullCard类选择器，设置width属性为245px</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">.fullCard &#123;</div><div class="line">    width: 245px;</div><div class="line">    border: 1px solid #ccc;</div><div class="line">    border-radius: 5px;</div><div class="line">    margin: 10px 5px;</div><div class="line">    padding: 4px;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Adjust the Height of an Element Using the height Property（使用height属性调整元素的高度）</li>
+</ul>
+<blockquote>
+<p>将height属性添加到h4标记并将其设置为25px</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">h4 &#123;</div><div class="line">    text-align: center;</div><div class="line">    height: 25px;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use the strong Tag to Make Text Bold（使用strong标记使文字粗体）</li>
+</ul>
+<blockquote>
+<p>在p标签内围绕”Stanford University”包裹一个strong标签。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at &lt;strong&gt;Stanford University&lt;/strong&gt;.&lt;/p&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use the u Tag to Underline Text（使用u标签为文本加下划线）</li>
+</ul>
+<blockquote>
+<p>在”Ph.D. students”文本周围包裹u标签</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;Google was founded by Larry Page and Sergey Brin while they were &lt;u&gt;Ph.D. students&lt;/u&gt; at &lt;strong&gt;Stanford University&lt;/strong&gt;.&lt;/p&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use the em Tag to Italicize Text（使用em标记来显示文本）</li>
+</ul>
+<blockquote>
+<p>em标签应该环绕p标签的内容</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;  </div><div class="line">    &lt;em&gt;</div><div class="line">    Google was founded by Larry Page and Sergey Brin while they were &lt;u&gt;Ph.D. students&lt;/u&gt; at &lt;strong&gt;Stanford University&lt;/strong&gt;.</div><div class="line">    &lt;/em&gt;</div><div class="line">&lt;/p&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use the s Tag to Strikethrough Text（使用s标记删除线文本）</li>
+</ul>
+<blockquote>
+<p>将s标签包裹在h4标签内的“Google”周围，然后在其旁边添加单词Alphabet，Alphabet不具有删除线格式。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;h4&gt;&lt;s&gt;Google&lt;/s&gt;Alphabet&lt;/h4&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>Create a Horizontal Line Using the hr Element（使用hr元素创建水平线）</li>
+</ul>
+<blockquote>
+<p>在h4标签下面添加一个hr标签</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;h4&gt;&lt;s&gt;Google&lt;/s&gt;Alphabet&lt;/h4&gt;</div><div class="line">&lt;hr&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>Adjust the background-color Property of Text（调整文本的背景颜色属性）</li>
+</ul>
+<blockquote>
+<p>将h4元素的背景颜色调整为给定的rgba(45, 45, 45, 0.1)值<br>删除height属性 并添加 padding 为 10px的填充。 </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">h4 &#123;</div><div class="line">    text-align: center;</div><div class="line">    padding: 10px;</div><div class="line">    background-color: rgba(45, 45, 45, 0.1);</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Adjust the Size of a Header Versus a Paragraph Tag（调整标题的大小与段落标记）</li>
+</ul>
+<blockquote>
+<p>将字体大小属性添加到设置为27像素的h4元素</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">h4 &#123;</div><div class="line">    text-align: center;</div><div class="line">    background-color: rgba(45, 45, 45, 0.1);</div><div class="line">    padding: 10px;</div><div class="line">    font-size: 27px;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Add a box-shadow to a Card-like Element（将盒子阴影添加到类似卡片的元素）</li>
+</ul>
+<blockquote>
+<p>把id为thumbnail的元素，使用box-shadow</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#thumbnail &#123;</div><div class="line">    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Decrease the Opacity of an Element（降低元素的不透明度）</li>
+</ul>
+<blockquote>
+<p>links的样式设置opacity为0.7</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.links &#123;</div><div class="line">    text-align: left;</div><div class="line">    color: black;</div><div class="line">    opacity: 0.7;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use the text-transform Property to Make Text Uppercase（使用text-transform属性使文本为大写）</li>
+</ul>
+<blockquote>
+<p>将h4的文本text-transform属性转换为大写</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">h4 &#123;</div><div class="line">    text-align: center;</div><div class="line">    background-color: rgba(45, 45, 45, 0.1);</div><div class="line">    padding: 10px;</div><div class="line">    font-size: 27px;</div><div class="line">    text-transform: uppercase;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Set the font-size for Multiple Heading Elements（设置多个标题元素的font-size）</li>
+</ul>
+<blockquote>
+<p>将h1标记的font-size设置为68px<br>将h2标记的font-size设置为52px<br>将h3标签的font-size设置为40px<br>将h4标记的font-size设置为32px<br>将h5标记的font-size设置为21px<br>将h6标记的font-size设置为14px</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">h1 &#123;</div><div class="line">  font-size: 68px;</div><div class="line">&#125;</div><div class="line">h2 &#123;</div><div class="line">  font-size: 52px;</div><div class="line">&#125;</div><div class="line">h3 &#123;</div><div class="line">  font-size: 40px;</div><div class="line">&#125;</div><div class="line">h4 &#123;</div><div class="line">  font-size: 32px;</div><div class="line">&#125;</div><div class="line">h5 &#123;</div><div class="line">  font-size: 21px;</div><div class="line">&#125;</div><div class="line">h6 &#123;</div><div class="line">  font-size: 14px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Set the font-weight for Multiple Heading Elements（设置多个标题元素的font-weight）</li>
+</ul>
+<blockquote>
+<p>将h1标记的font-weight设置为800<br>将h2标记的font-weight设置为600<br>将h3标签的font-weight设置为500<br>将h4标记的font-weight设置为400<br>将h5标记的font-weight设置为300<br>将h6标记的font-weight设置为200</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">h1 &#123;</div><div class="line">  font-size: 68px;</div><div class="line">  font-weight: 800;</div><div class="line">&#125;</div><div class="line">h2 &#123;</div><div class="line">  font-size: 52px;</div><div class="line">  font-weight: 600;</div><div class="line">&#125;</div><div class="line">h3 &#123;</div><div class="line">  font-size: 40px;</div><div class="line">  font-weight: 500;</div><div class="line">&#125;</div><div class="line">h4 &#123;</div><div class="line">  font-size: 32px;</div><div class="line">  font-weight: 400;</div><div class="line">&#125;</div><div class="line">h5 &#123;</div><div class="line">  font-size: 21px;</div><div class="line">  font-weight: 300;</div><div class="line">&#125;</div><div class="line">h6 &#123;</div><div class="line">  font-size: 14px;</div><div class="line">  font-weight: 200;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Set the font-size of Paragraph Text（设置段落文本的font-size）</li>
+</ul>
+<blockquote>
+<p>将段落的font-size属性值更改为16px</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">p &#123;</div><div class="line">    font-size: 16px;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Set the line-height of Paragraphs（设置段落的line-height）</li>
+</ul>
+<blockquote>
+<p>将line-height属性添加到p标记并将其设置为25px</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">p &#123;</div><div class="line">    font-size: 16px;</div><div class="line">    line-height: 25px;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Adjust the Hover State of an Anchor Tag（调整锚标记的悬停状态）</li>
+</ul>
+<blockquote>
+<p>将a标签设置为黑色。添加规则，当用户将鼠标悬停在a标记上时，颜色为蓝色</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">a &#123;</div><div class="line">    color: black;</div><div class="line">  &#125;</div><div class="line">a:hover &#123;</div><div class="line">    color: blue;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Change an Element’s Relative Position（更改元素的相对位置）</li>
+</ul>
+<blockquote>
+<p>将h2的position更改为relative，并将其移动到距离正常位置top的15px</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">h2 &#123;</div><div class="line">    position: relative;</div><div class="line">    top: 15px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Move a Relatively Positioned Element with CSS Offsets（）</li>
+</ul>
+<blockquote>
+<p>将h2 向右移动15px，向上移动10px</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">h2 &#123;</div><div class="line">    position: relative;</div><div class="line">    left: 15px;</div><div class="line">    bottom: 10px</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Lock an Element to its Parent with Absolute Positioning（使用Absolute将元素锁定到其父级）</li>
+</ul>
+<blockquote>
+<p>给 #searchbar的 top和right元素偏移50px</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#searchbar &#123;</div><div class="line">    position: absolute;</div><div class="line">    top: 50px;</div><div class="line">    right: 50px;</div><div class="line">    </div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Lock an Element to the Browser Window with Fixed Positioning（使用固定定位将元素锁定到浏览器窗口）</li>
+</ul>
+<blockquote>
+<p>将其position更改为fixed，并将其偏离top 0px和left 0px</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#navbar &#123;</div><div class="line">    position: fixed;</div><div class="line">    top: 0px;</div><div class="line">    left: 0px;</div><div class="line">    </div><div class="line">    width: 100%;</div><div class="line">    background-color: #767676;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Push Elements Left or Right with the float Property（使用float属性向左或向右推送元素）</li>
+</ul>
+<blockquote>
+<p>给#left项left设置float，#right项right设置float数。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#left &#123;</div><div class="line">    float: left;</div><div class="line">    width: 50%;</div><div class="line">  &#125;</div><div class="line">#right &#123;</div><div class="line">    float: right;</div><div class="line">    width: 40%;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Change the Position of Overlapping Elements with the z-index Property（使用z-index属性更改重叠元素的位置）</li>
+</ul>
+<blockquote>
+<p>first的元素的z-index值应为2</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.first &#123;</div><div class="line">  background-color: red;</div><div class="line">  position: absolute;</div><div class="line">  z-index: 2;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Center an Element Horizontally Using the margin Property（使用margin属性水平居中元素）</li>
+</ul>
+<blockquote>
+<p>通过添加值为auto的margin属性将页面居中放在页面上</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">div &#123;</div><div class="line">    background-color: blue;</div><div class="line">    height: 100px;</div><div class="line">    width: 100px;</div><div class="line">    margin: auto;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Learn about Complementary Colors（了解互补色）</li>
+</ul>
+<blockquote>
+<p>blue类的div元素应具有blue的background-color<br>yellow类的div元素应具有yellow的background-color</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.blue &#123;</div><div class="line">    background-color: blue;</div><div class="line">  &#125;</div><div class="line">.yellow &#123;</div><div class="line">    background-color: yellow;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Learn about Tertiary Colors（了解第三色）</li>
+</ul>
+<blockquote>
+<p>将orange，cyan和raspberry的background-color属性更改为各自的颜色,确保使用十六进制代码</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">.orange &#123;</div><div class="line">    background-color: #FF7D00;</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">.cyan &#123;</div><div class="line">    background-color: #00FFFF;</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">.raspberry &#123;</div><div class="line">    background-color: #FF007D;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Adjust the Color of Various Elements to Complementary Colors（将各种元素的颜色调整为互补色）</li>
+</ul>
+<blockquote>
+<p>header元素的background-color应为＃09A7A1<br>footer元素的background-color应为＃09A7A1<br>h2元素的color应为＃09A7A1<br>button元素的background-color应为＃FF790E。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">header &#123;</div><div class="line">    background-color: #09A7A1;</div><div class="line">    color: white;</div><div class="line">    padding: 0.25em;</div><div class="line">  &#125;</div><div class="line">footer &#123;</div><div class="line">    background-color: #09A7A1;</div><div class="line">    color: white;</div><div class="line">    padding: 0.5em;</div><div class="line">  &#125;</div><div class="line">h2 &#123;</div><div class="line">    color: #09A7A1;</div><div class="line">  &#125;  </div><div class="line">button &#123;</div><div class="line">    background-color: #FF790E;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Adjust the Hue of a Color（调整颜色的色调）</li>
+</ul>
+<blockquote>
+<p>使用hsl()根据类名（green, cyan, 或blue）更改每个div元素的背景颜色</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">.green &#123;</div><div class="line">    background-color: hsl(120, 100%, 50%);</div><div class="line">  &#125;</div><div class="line">.cyan &#123;</div><div class="line">    background-color: hsl(180, 100%, 50%);</div><div class="line">  &#125;</div><div class="line">.blue &#123;</div><div class="line">    background-color: hsl(240, 100%, 50%);</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Adjust the Tone of a Color（调整颜色的色调）</li>
+</ul>
+<blockquote>
+<p>为nav元素添加背景颜色，使其使用相同的青色色调，但具有80％饱和度和25％亮度值，以改变其色调和阴影</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">nav &#123;</div><div class="line">    background-color: hsl(180, 80%, 25%);</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Create a Gradual CSS Linear Gradient（创建渐进的CSS线性渐变）</li>
+</ul>
+<blockquote>
+<p>对div元素的background使用linear-gradient(），并从35deg的方向设置它以将颜色从#CCFFFF更改为#FFCCCC</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">div&#123; </div><div class="line">    border-radius: 20px;</div><div class="line">    width: 70%;</div><div class="line">    height: 400px;</div><div class="line">    margin: 50px auto;</div><div class="line">    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use a CSS Linear Gradient to Create a Striped Element（使用CSS线性渐变来创建条带元素）</li>
+</ul>
+<blockquote>
+<p>通过更改repeating-linear-gradient()以使用45deg的渐变角度来创建条纹，然后将前两个颜色设置为yellow，将最后两个颜色设置为black</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">div&#123; </div><div class="line">    border-radius: 20px;</div><div class="line">    width: 70%;</div><div class="line">    height: 400px;</div><div class="line">    margin:  50 auto;</div><div class="line">    background: repeating-linear-gradient(</div><div class="line">      45deg,</div><div class="line">      yellow 0px,</div><div class="line">      yellow 40px,</div><div class="line">      black 40px,</div><div class="line">      black 80px</div><div class="line">    );</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Create Texture by Adding a Subtle Pattern as a Background Image（通过添加细微图案作为背景图像来创建纹理）</li>
+</ul>
+<blockquote>
+<p>使用<a href="https://i.imgur.com/MJAkxbh.png的网址，使用正文选择器设置整个页面的背景" target="_blank" rel="external">https://i.imgur.com/MJAkxbh.png的网址，使用正文选择器设置整个页面的背景</a></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;style&gt;</div><div class="line">  body &#123;</div><div class="line">    background: url(https://i.imgur.com/MJAkxbh.png);</div><div class="line">  &#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use the CSS Transform scale Property to Change the Size of an Element（使用CSS Transform scale属性更改元素的大小）</li>
+</ul>
+<blockquote>
+<p>id为#ball2的元素大小增加到原始大小的1.5倍</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#ball2 &#123;</div><div class="line">    left: 65%;</div><div class="line">    transform: scale(1.5);</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use the CSS Transform scale Property to Scale an Element on Hover（使用CSS Transform scale属性在悬停上缩放元素）</li>
+</ul>
+<blockquote>
+<p>为div的悬停状态添加CSS规则，当用户将鼠标悬停在其上时, 使用transform属性将div元素缩放到其原始大小的1.1倍</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">div:hover &#123;</div><div class="line">    transform: scale(1.1);</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use the CSS Transform Property skewX to Skew an Element Along the X-Axis（使用CSS变换属性skewX, 沿X轴倾斜元素）</li>
+</ul>
+<blockquote>
+<p>使用transform属性,将id为bottom的元素沿X轴倾斜24deg</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#bottom &#123;</div><div class="line">    background-color: blue;</div><div class="line">    transform: skewX(24deg);</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use the CSS Transform Property skewY to Skew an Element Along the Y-Axis（使用CSS变换属性skewY，沿Y轴倾斜元素）</li>
+</ul>
+<blockquote>
+<p>使用transform属性，将id为top的元素沿Y轴倾斜-10deg</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#top &#123;</div><div class="line">    background-color: red;</div><div class="line">    transform: skewY(-10deg);</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Create a Graphic Using CSS（使用CSS创建图形）</li>
+</ul>
+<blockquote>
+<p>将background-color更改为transparent<br>将border-radius属性设置为50％以形成圆形<br>更改box-shadow属性，将offset-x设置为25px，offset-y设置为10px，blur-radius设置为0，spread-radius设置为0，颜色设置为blue</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">.center &#123;</div><div class="line">  position: absolute;</div><div class="line">  margin: auto;</div><div class="line">  top: 0;</div><div class="line">  right: 0;</div><div class="line">  bottom: 0;</div><div class="line">  left: 0;</div><div class="line">  width: 100px;</div><div class="line">  height: 100px;</div><div class="line">  </div><div class="line">  background-color: transparent;</div><div class="line">  border-radius: 50%;</div><div class="line">  box-shadow: 25px 10px 0px 0px blue; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Create a More Complex Shape Using CSS and HTML（使用CSS和HTML创建更复杂的形状）</li>
+</ul>
+<blockquote>
+<p>在heart::after选择器中，将background-color更改为pink，将border-radius更改为50％<br>在heart选择器中，填写transform属性，使用rotate()函数偏转-45deg<br>在heart::before选择器中，将其content属性设置为空字符串</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">.heart &#123;</div><div class="line">  transform: rotate(-45deg);</div><div class="line">&#125;</div><div class="line">.heart::after &#123;</div><div class="line">  background-color: pink;</div><div class="line">  border-radius: 50%;</div><div class="line">  &#125;</div><div class="line">.heart::before &#123;</div><div class="line">  content: &quot;&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Learn How the CSS @keyframes and animation Properties Work（了解CSS @keyframes和动画属性的工作原理）</li>
+</ul>
+<blockquote>
+<p>为id为rect的元素创建动画，animation-name设置为rainbow，并将animation-duration设置为4s<br>声明一个@keyframes规则，并将动画开头的背景颜色（0％）设置为blue，将动画的中间（50％）设置为green，将动画的结尾（100％）设置为yellow</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#rect &#123;</div><div class="line">  animation-name: rainbow;</div><div class="line">  animation-duration: 4s;</div><div class="line">&#125;</div><div class="line">@keyframes rainbow &#123;</div><div class="line">  0% &#123;</div><div class="line">    background-color: blue;</div><div class="line">  &#125;</div><div class="line">  50% &#123;</div><div class="line">    background-color: green;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    background-color: yellow;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use CSS Animation to Change the Hover State of a Button（使用CSS动画更改按钮的悬停状态）</li>
+</ul>
+<blockquote>
+<p>使用@keyframes规则将动画名称为background-color的background-color在100％的时候更改为#4791d0</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@keyframes background-color &#123;</div><div class="line">   100% &#123;</div><div class="line">     background-color: #4791d0;</div><div class="line">   &#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Modify Fill Mode of an Animation（修改动画的填充模式）</li>
+</ul>
+<p>ps：因为动画在500ms过后会重置，导致按钮恢复为原始颜色，这样做会将按钮保持突出显示</p>
+<blockquote>
+<p>button：hover应该具有值为forward的animation-fill-mode属性</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">button:hover &#123;</div><div class="line">  animation-name: background-color;</div><div class="line">  animation-duration: 500ms;</div><div class="line">  animation-fill-mode: forwards;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Create Movement Using CSS Animation（使用CSS动画创建运动）</li>
+</ul>
+<blockquote>
+<p>@keyframes规则0％的时候,向left偏移0px<br>@keyframes规则50％的时候,向left偏移25px<br>@keyframes规则100％的时候,向left偏移-25px</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">@keyframes rainbow &#123;</div><div class="line">  0% &#123;</div><div class="line">    background-color: blue;</div><div class="line">    top: 0px;</div><div class="line">    left: 0;</div><div class="line">  &#125;</div><div class="line">  50% &#123;</div><div class="line">    background-color: green;</div><div class="line">    top: 50px;</div><div class="line">    left: 25px;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    background-color: yellow;</div><div class="line">    top: 0px;</div><div class="line">    left: -25px;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Create Visual Direction by Fading an Element from Left to Right（通过从左到右淡化元素来创建视觉方向）</li>
+</ul>
+<blockquote>
+<p>@keyframes规则用于淡入淡出50％的时候, 将opacity属性设置为0.1</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@keyframes fade &#123;</div><div class="line">    50% &#123;</div><div class="line">      left: 60%;</div><div class="line">      opacity: 0.1;</div><div class="line">    &#125;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Animate Elements Continually Using an Infinite Animation Count（动画元素不断使用无限动画计数）</li>
+</ul>
+<blockquote>
+<p>要使球在连续循环中保持在右侧弹跳，请将animation-iteration-count属性更改为infinite值</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#ball &#123;</div><div class="line">  animation-iteration-count: infinite;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Make a CSS Heartbeat using an Infinite Animation Count<br>（使用无限动画计数制作CSS心跳）</li>
+</ul>
+<blockquote>
+<p>heart类的animation-iteration-count属性应具有infinite值<br>back类的animation-iteration-count属性应具有infinite值。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.back &#123;</div><div class="line">  animation-iteration-count: infinite;</div><div class="line">&#125;</div><div class="line">.heart &#123;</div><div class="line">  animation-iteration-count: infinite</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Animate Elements at Variable Rates（可变速率动画元素）</li>
+</ul>
+<blockquote>
+<p>将star-1类的@keyframes规则改为50％</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@keyframes twinkle-1 &#123;</div><div class="line">  50% &#123;</div><div class="line">    transform: scale(0.5);</div><div class="line">    opacity: 0.5;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Animate Multiple Elements at Variable Rates（可变速率动画多个元素）<br>之前可以通过更改其@keyframes规则来更改两个相似动画元素的动画速率。也可以通过操纵多个元素的动画持续时间来实现相同的目标。 </li>
+</ul>
+<blockquote>
+<p>star-1的星的animation-duration属性应为1s<br>star-2的星的animation-duration属性应为0.9s<br>star-3的星的animation-duration属性应为1.1s</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">.star-1 &#123;</div><div class="line">    margin-top: 15%; </div><div class="line">    margin-left: 60%;</div><div class="line">    animation-duration: 1s;</div><div class="line">    animation-name: twinkle;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  .star-2 &#123;</div><div class="line">    margin-top: 25%;</div><div class="line">    margin-left: 25%;</div><div class="line">    animation-duration: 0.9s;</div><div class="line">    animation-name: twinkle;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  .star-3 &#123;</div><div class="line">    margin-top: 10%;</div><div class="line">    margin-left: 50%;</div><div class="line">    animation-duration: 1.1s;</div><div class="line">    animation-name: twinkle;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Change Animation Timing with Keywords（使用关键字更改动画计时）</li>
+</ul>
+<blockquote>
+<p>id为ball1的元素的animation-timing-function属性的值应该是linear<br>id为ball2的元素的animation-timing-function属性的值是ease-out</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#ball1 &#123; </div><div class="line">    left:27%;</div><div class="line">    animation-timing-function: linear;</div><div class="line">  &#125;</div><div class="line">#ball2 &#123; </div><div class="line">    left:56%;</div><div class="line">    animation-timing-function: ease-out;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Learn How Bezier Curves Work（了解Bezier曲线的工作原理）</li>
+</ul>
+<blockquote>
+<p>id为ball1的元素，将animation-timing-function属性的值从linear更改为其等效的cubic-bezier函数值</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#ball1 &#123; </div><div class="line">   left: 27%;</div><div class="line">   animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use a Bezier Curve to Move a Graphic（使用贝塞尔曲线移动图形）</li>
+</ul>
+<blockquote>
+<p>将id为red的元素的animation-timing-function更改为cubic-bezier函数，其中x1，y1，x2，y2值分别设置为0,0,0.58,1</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<ul>
+<li>Make Motion More Natural Using a Bezier Curve（使用贝塞尔曲线使运动更自然）</li>
+</ul>
+<blockquote>
+<p>id为green的元素的animation-timing-function的值更改为cubic-bezier函数，x1，y1，x2，y2值分别设置为0.311,0.441,0.444,1.649</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#green &#123;</div><div class="line">    background: green;</div><div class="line">    left: 75%;</div><div class="line">    animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<h3 id="4-Applied-Accessibility（应用可访问性）"><a href="#4-Applied-Accessibility（应用可访问性）" class="headerlink" title="4. Applied Accessibility（应用可访问性）"></a>4. Applied Accessibility（应用可访问性）</h3>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/" rel="next" title="Linux-Ubuntu安装与卸载Gitlab">
+                <i class="fa fa-chevron-left"></i> Linux-Ubuntu安装与卸载Gitlab
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/img/IronMan.png"
+                alt="RamboLu" />
+            
+              <p class="site-author-name" itemprop="name">RamboLu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/RamboLouis" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/210008553" target="_blank" title="新浪微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.jianshu.com/users/7ebaa8152f09" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-book"></i>简书</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/RamboLouis" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.linkedin.com/in/政浩-路-695158108/" target="_blank" title="LinkedIn">
+                      
+                        <i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:coderambolu@gmail.com" target="_blank" title="Email">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>Email</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、Responsive-Web-Design-Certification-响应式网页设计认证"><span class="nav-number">1.</span> <span class="nav-text">一、Responsive Web Design Certification(响应式网页设计认证)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Basic-HTML-and-HTML5-基本的HTML和HTML5"><span class="nav-number">1.1.</span> <span class="nav-text">1. Basic HTML and HTML5(基本的HTML和HTML5)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Basic-CSS（基本CSS）"><span class="nav-number">1.2.</span> <span class="nav-text">2. Basic CSS（基本CSS）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Applied-Visual-Design（应用视觉设计）"><span class="nav-number">1.3.</span> <span class="nav-text">3. Applied Visual Design（应用视觉设计）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Applied-Accessibility（应用可访问性）"><span class="nav-number">1.4.</span> <span class="nav-text">4. Applied Accessibility（应用可访问性）</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">RamboLu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">
+    由 <a>Hexo</a> 技术支持
+  </div>
+
+
+
+  <span class="post-meta-divider"> | </span>
+
+
+
+  <div class="theme-info"> 
+    <a> Next </a> 
+    主题
+  </div>
+
+
+
+
+        
+  <div class="busuanzi-count">
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    
+      <span class="site-uv">
+        <i class="fa fa-user"></i> 本站访客数
+        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+        人次
+      </span>
+    
+
+    
+      <span class="site-pv">
+        <i class="fa fa-eye"></i> 本站总访问量
+        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+        次
+      </span>
+    
+  </div>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=61220060";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1261507178&web_id=1261507178" language="JavaScript"></script>
+  </div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 'UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz',
+        appKey: 'rgnJBaCPX4E4G0oXvw19elko',
+        placeholder: '请输入...',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz", "rgnJBaCPX4E4G0oXvw19elko");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

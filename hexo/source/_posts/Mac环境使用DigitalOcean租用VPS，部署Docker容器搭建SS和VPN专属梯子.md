@@ -10,12 +10,21 @@ tags:
     - Docker
 ---
 > 技术在于折腾。
+> 
+> 由于平时查阅受限，导致一些国外优秀的文章在国内无法查看，故自己动手丰衣足食。（ps：仅限技术交流，不用于商业用途）
+> 
+> 关于VPS有很多种，例如：DigitalOcean、BandwagonHost、Vultr等，可以根据自己的经济能力自行选择。
 
 
-### 一、DigitalOcean官网注册
+* 以DigitalOcean举例
+
+### 一、官网注册
+
 https://cloud.digitalocean.com/
 ps：注册费用$5，现在还送$10，一共$15,如果选用最便宜的服务器，可以使用3个月。当然,你也可以租用别家的VPS,适合自己就好.
+
 ![DigitalOcean官网](http://upload-images.jianshu.io/upload_images/1666327-c528d190dab09ee3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ### 二、创建虚拟服务器
 
 ![创建虚拟服务器](http://upload-images.jianshu.io/upload_images/1666327-e4559747abf846b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -50,7 +59,7 @@ cat ~/.ssh/id_rsa.pub
 
 ![粘贴ssh](http://upload-images.jianshu.io/upload_images/1666327-faa39f8b0a849441.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 五、连接服务器及部署docker
+### 五、连接服务器及部署
 
 ![虚拟服务器IP](http://upload-images.jianshu.io/upload_images/1666327-d50805f02617e517.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -62,15 +71,14 @@ ssh root@xxx.xxx.xxx.xxx
 
 ![连接服务器](http://upload-images.jianshu.io/upload_images/1666327-804ba850fb461acc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
-* 部署docker容器
+#### 1.通过部署Docker容器方式
 
 ```
 sudo apt-get install docker.io
 ```
 ps：如果出现部署不上，出现如下情况，执行下面命令。
 
-#### 情况一: 提示需要更新。
+##### 情况一: 提示需要更新。
 
 ![情况一:](http://upload-images.jianshu.io/upload_images/1666327-b84d7476382d8420.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -78,7 +86,7 @@ ps：如果出现部署不上，出现如下情况，执行下面命令。
 sudo apt-get update
 ```
 
-#### 情况二: 找不到docker.io(Ubuntu里，Docker叫docker.io)，那就采用其它安装方式安装最新版本的Docker。
+##### 情况二: 找不到docker.io(Ubuntu里，Docker叫docker.io)，那就采用其它安装方式安装最新版本的Docker。
 
 ![情况二:](http://upload-images.jianshu.io/upload_images/1666327-22c83aefeb34c193.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 此命令会把Docker官方提供的最新版本的软件仓库替换Ubuntu的相应仓库。有一点要注意，采用这种方式进行安装，Docker的软件包名应该叫lxc-docker。此时，Docker命令的名字还是docker。而采用之前上面的安装方式，Docker命令的名字应该叫docker.io。
@@ -93,9 +101,17 @@ curl -sSL https://get.docker.com/ | sudo sh
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-### 六、部署连接方式仓库
+#### 2. 通过部署脚本方式
+ 
+ * 脚本仓库： https://github.com/uxh/shadowsocks_bash 
 
-#### 1、通过shadowsocks(ss)连接.
+```
+wget --no-check-certificate -O shadowsocks-libev_CN.sh https://raw.githubusercontent.com/uxh/shadowsocks_bash/master/shadowsocks-libev_CN.sh && bash shadowsocks-libev_CN.sh
+```
+
+### 六、连接
+#### （一）、通过Docker容器方式部署连接仓库
+##### 1、通过shadowsocks(ss)连接.
 
 * 通过`DockerHub`搜索`docker-shadowsocks`
 
@@ -132,29 +148,7 @@ docker ps
 
 ![看到docker容器的列表](http://upload-images.jianshu.io/upload_images/1666327-f5b68806ffe2040d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-* 下载ss客户端（shadowsocks），并添加。
-
-GitHub官方提供下载dmg：
-https://github.com/shadowsocks/shadowsocks-iOS/releases
-
-![shadowsocks下载](http://upload-images.jianshu.io/upload_images/1666327-a926bcfd857363fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-ps: 新一代shadowsocks客户端
-
-https://github.com/shadowsocks/ShadowsocksX-NG/releases
-
-* 安装后配置服务器，打开服务器设置，并添加服务器。
-
-![添加服务器](http://upload-images.jianshu.io/upload_images/1666327-d24a0c10167502ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-* 把创建的服务器Ip、端口号及创建的加密方式密码填入即可
-
-ps：
-默认端口号填写的*1984*
-加密方式选择*aes-256-cfb*
-![设定服务器](http://upload-images.jianshu.io/upload_images/1666327-a5d24645b774e6fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-#### 2、通过IPsec VPN连接.
+##### 2、通过IPsec VPN连接.
 
 * 通过`DockerHub`搜索`ipsec`
 
@@ -237,7 +231,50 @@ Password: your_vpn_password
 
 ![](http://upload-images.jianshu.io/upload_images/1666327-62bc94a1c7bb8a7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 七、Docker命令
+#### （二）、 通过脚本方式部署连接仓库
+
+* 选择安装: 1
+
+![](https://upload-images.jianshu.io/upload_images/1666327-a0712ed5f94dfbb5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 设置密码、端口及加密方式
+
+ps: 加密方式建议选择 aes-256-cfb
+
+![](https://upload-images.jianshu.io/upload_images/1666327-148fd0b6d51a8580.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 回车安装，安装成功
+
+安装过程会经历几分钟，然后把配置信息保存好
+
+![](https://upload-images.jianshu.io/upload_images/1666327-321c50899ead1a2b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+ 
+### 七、添加服务器
+
+* 下载ss客户端（shadowsocks），并添加。
+
+GitHub官方提供下载dmg：
+https://github.com/shadowsocks/shadowsocks-iOS/releases
+
+![shadowsocks下载](http://upload-images.jianshu.io/upload_images/1666327-a926bcfd857363fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+ps: 新一代shadowsocks客户端：
+https://github.com/shadowsocks/ShadowsocksX-NG/releases
+
+![](https://upload-images.jianshu.io/upload_images/1666327-9dba03d94e979981.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 安装后配置服务器，打开服务器设置，并添加服务器。
+
+![添加服务器](http://upload-images.jianshu.io/upload_images/1666327-d24a0c10167502ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 把创建的服务器Ip、端口号及创建的加密方式密码填入即可
+
+ps：
+如果是通过Docker安装的，默认端口号填写的*1984*，加密方式选择*aes-256-cfb*
+
+![设定服务器](http://upload-images.jianshu.io/upload_images/1666327-a5d24645b774e6fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 八、Docker命令
 
 * 查看安装容器
 
