@@ -3,25 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site 博客设置
-title: RamboLu Blog                                 #博客名
-subtitle:  技术在于折腾。                              #博客副标题
-description: Fire proves gold,adversity proves men. #网站描述, 用于爬虫抓取的关键词
-author: RamboLu                                     #作者名称
-language: zh-Hans                                   #网页编码,中文  ： zh-CN
+title: RamboLu Blog                                 # 博客名
+subtitle: 技术在于折腾。                              # 博客副标题
+description: Fire proves gold,adversity proves men. # 网站描述, 用于爬虫抓取的关键词
+keywords:
+author: RamboLu                                     # 作者名称
+language: zh-CN                                     # 网页编码,中文  ： zh-CN
 timezone:
-email: coderambolu@gmail.com                        #作者邮箱
 
-# URL   网址
+# URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://RamboLu.top                 #用于绑定域名, 其他的不需要配置
-root: /                                 #网站根目录
-permalink: :year/:month/:day/:title/    #文章的 永久链接 格式
-permalink_defaults:                     #永久链接中各部分的默认值
-#网站存放在子目录
-#如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
-#则请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
+url: http://RamboLu.top                 # 用于绑定域名, 其他的不需要配置
+root: /                                 # 网站根目录
+permalink: :year/:month/:day/:title/    # 文章的 永久链接 格式
+permalink_defaults:                     # 永久链接中各部分的默认值
 
-# Directory   目录
+# Directory 目录
 source_dir: source                      # 资源文件夹，这个文件夹用来存放内容。
 public_dir: public                      # 公共文件夹，这个文件夹用于存放生成的站点文件。
 tag_dir: tags                           # 标签文件夹
@@ -31,10 +28,10 @@ code_dir: downloads/code                # Include code 文件夹
 i18n_dir: :lang                         # 国际化（i18n）文件夹
 skip_render:                            # 跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。
 
-# Writing,  设置生成博文的默认格式,不修改
+# Writing  设置生成博文的默认格式,不修改
 new_post_name: :title.md                # 新文章的文件名称
 default_layout: post                    # 预设布局
-titlecase: false                        # 把标题转换为 title case
+titlecase: false                        # 把标题转换为 titlecase
 external_link: true                     # 在新标签中打开链接
 filename_case: 0                        # 把文件名称转换为 (1) 小写或 (2) 大写
 render_drafts: false                    # 显示草稿
@@ -47,8 +44,16 @@ highlight:                              # 代码块的设置
   auto_detect: false
   tab_replace:
 
-# Category & Tag  分类 & 标签
+# Home page setting 主页设置
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''                              # 博客索引页的根路径  默认
+  per_page: 10                          # 每页显示的帖子   0 = 禁用分页
+  order_by: -date                       # 帖子订单 默认情况下按日期降序排序
 
+# Category & Tag  分类 & 标签
 default_category: uncategorized         # 默认分类
 category_map:                           # 分类别名
 tag_map:                                # 标签别名
@@ -60,10 +65,9 @@ search:
   format: html
   limit: 10000
 
-# Date / Time format 日期类型
-# Hexo 使用 Moment.js 来解析和显示时间。
+# Date / Time format  日期类型
+## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
-## 您可以自定义定义的日期格式
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD                 # 日期格式
 time_format: HH:mm:ss                   # 时间格式
@@ -73,21 +77,14 @@ time_format: HH:mm:ss                   # 时间格式
 per_page: 10                            # 每页显示的文章量 (0 = 关闭分页功能)
 pagination_dir: page                    # 分页目录
 
-# Disqus  disqus  评论, 与多说类似, 国内一般使用多说
-#disqus_shortname:
-
-# Extensions 扩展
+# Extensions 主题
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next                             # 当前主题名称。值为false时禁用主题
 
-# Deployment 账户类型
-## Docs: https://hexo.io/docs/deployment.html
+
+# Deployment 部署
 deploy:                                 # 部分的设置
     type: git
     repo: https://github.com/RamboLouis/RamboLouis.github.io.git
     branch: master
-#deploy:
-#type: git
-#repo: https://github.com/Kaijun/hexo-theme-huxblog
-#branch: gh-pages

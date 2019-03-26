@@ -2,14 +2,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +29,6 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,9 +45,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -92,51 +96,65 @@
 
 
 
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/IronMan.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/IronMan.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/IronMan.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/IronMan.png?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
   
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/IronMan.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/IronMan.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/IronMan.png?v=5.1.4">
 
 
 
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="前言:前段时间参加谷歌物联网创新沙龙,有幸抽奖得到一套恩智浦NXP i.MX7D的开发套件,和去年12月的GDD上得到的一样,近日有时间了,可以搞一搞了,自己根据官方的文档,下面分享下刷机心得.
-
-组装套件https://developer.android.google.cn/things/hardware/imx7d-kit.html
-
-根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤">
+  <meta name="description" content="前言:前段时间参加谷歌物联网创新沙龙,有幸抽奖得到一套恩智浦NXP i.MX7D的开发套件,和去年12月的GDD上得到的一样,近日有时间了,可以搞一搞了,自己根据官方的文档,下面分享下刷机心得.  组装套件https://developer.android.google.cn/things/hardware/imx7d-kit.html  根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android开发-恩智浦NXP i.MX7D开发板刷Android Things系统心得">
 <meta property="og:url" content="http://RamboLu.top/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/index.html">
 <meta property="og:site_name" content="RamboLu Blog">
-<meta property="og:description" content="前言:前段时间参加谷歌物联网创新沙龙,有幸抽奖得到一套恩智浦NXP i.MX7D的开发套件,和去年12月的GDD上得到的一样,近日有时间了,可以搞一搞了,自己根据官方的文档,下面分享下刷机心得.
-
-组装套件https://developer.android.google.cn/things/hardware/imx7d-kit.html
-
-根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤">
+<meta property="og:description" content="前言:前段时间参加谷歌物联网创新沙龙,有幸抽奖得到一套恩智浦NXP i.MX7D的开发套件,和去年12月的GDD上得到的一样,近日有时间了,可以搞一搞了,自己根据官方的文档,下面分享下刷机心得.  组装套件https://developer.android.google.cn/things/hardware/imx7d-kit.html  根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-5fcfb0844d9606b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-2fe4f767e8e75a83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-0fe76c03b51e87d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
@@ -158,46 +176,23 @@
 <meta property="og:updated_time" content="2018-02-09T06:10:59.608Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android开发-恩智浦NXP i.MX7D开发板刷Android Things系统心得">
-<meta name="twitter:description" content="前言:前段时间参加谷歌物联网创新沙龙,有幸抽奖得到一套恩智浦NXP i.MX7D的开发套件,和去年12月的GDD上得到的一样,近日有时间了,可以搞一搞了,自己根据官方的文档,下面分享下刷机心得.
-
-组装套件https://developer.android.google.cn/things/hardware/imx7d-kit.html
-
-根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤">
+<meta name="twitter:description" content="前言:前段时间参加谷歌物联网创新沙龙,有幸抽奖得到一套恩智浦NXP i.MX7D的开发套件,和去年12月的GDD上得到的一样,近日有时间了,可以搞一搞了,自己根据官方的文档,下面分享下刷机心得.  组装套件https://developer.android.google.cn/things/hardware/imx7d-kit.html  根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1666327-5fcfb0844d9606b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+
+
+
+  <link rel="canonical" href="http://RamboLu.top/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://RamboLu.top/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/"/>
-
-
-
-
 
   <title>Android开发-恩智浦NXP i.MX7D开发板刷Android Things系统心得 | RamboLu Blog</title>
   
@@ -209,9 +204,38 @@
 
 
 
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -220,25 +244,27 @@
 
   <div class="container sidebar-position-left page-post-detail">
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">RamboLu Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
-        <h1 class="site-subtitle" itemprop="description">技术在于折腾。</h1>
+        <p class="site-subtitle">技术在于折腾。</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -246,76 +272,111 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            所有文章
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于我
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
 
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于我</a>
+
+  </li>
+
+      
       
         <li class="menu-item menu-item-search">
           
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
         </li>
       
     </ul>
+  
+
   
 
   
@@ -330,9 +391,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -346,12 +405,23 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
 
@@ -364,20 +434,22 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -386,11 +458,20 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Android开发-恩智浦NXP i.MX7D开发板刷Android Things系统心得</h2>
+          <h1 class="post-title" itemprop="name headline">Android开发-恩智浦NXP i.MX7D开发板刷Android Things系统心得
+
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -398,18 +479,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-07T14:56:41+08:00">
-                2018-02-07
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-02-07 14:56:41" itemprop="dateCreated datePublished" datetime="2018-02-07T14:56:41+08:00">2018-02-07</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-02-09 14:10:59" itemprop="dateModified" datetime="2018-02-09T14:10:59+08:00">2018-02-09</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -420,11 +518,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index">
-                    <span itemprop="name">Android</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
 
                 
                 
@@ -440,7 +534,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -454,13 +548,12 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -483,18 +576,18 @@
         <blockquote>
 <p>前言:前段时间参加谷歌物联网创新沙龙,有幸抽奖得到一套恩智浦NXP i.MX7D的开发套件,和去年12月的GDD上得到的一样,近日有时间了,可以搞一搞了,自己根据官方的文档,下面分享下刷机心得.</p>
 </blockquote>
-<h2 id="组装套件"><a href="#组装套件" class="headerlink" title="组装套件"></a>组装套件</h2><p><a href="https://developer.android.google.cn/things/hardware/imx7d-kit.html" target="_blank" rel="external">https://developer.android.google.cn/things/hardware/imx7d-kit.html</a></p>
+<h2 id="组装套件"><a href="#组装套件" class="headerlink" title="组装套件"></a>组装套件</h2><p><a href="https://developer.android.google.cn/things/hardware/imx7d-kit.html" target="_blank" rel="noopener">https://developer.android.google.cn/things/hardware/imx7d-kit.html</a></p>
 <ul>
 <li>根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-5fcfb0844d9606b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
 <li>最后的成品就是这个样子,出现NXP的logo.(没有安装相机模块)<br><img src="http://upload-images.jianshu.io/upload_images/1666327-2fe4f767e8e75a83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
 </ul>
-<h2 id="刷机开始"><a href="#刷机开始" class="headerlink" title="刷机开始"></a>刷机开始</h2><h5 id="一键式刷机"><a href="#一键式刷机" class="headerlink" title="一键式刷机"></a>一键式刷机</h5><p><a href="https://developer.android.com/things/hardware/imx7d.html" target="_blank" rel="external">https://developer.android.com/things/hardware/imx7d.html</a></p>
+<h2 id="刷机开始"><a href="#刷机开始" class="headerlink" title="刷机开始"></a>刷机开始</h2><h5 id="一键式刷机"><a href="#一键式刷机" class="headerlink" title="一键式刷机"></a>一键式刷机</h5><p><a href="https://developer.android.com/things/hardware/imx7d.html" target="_blank" rel="noopener">https://developer.android.com/things/hardware/imx7d.html</a></p>
 <ul>
 <li>还是根据官方文档的提示,在最后在步骤二的时候提示从Android Things Console下载Android Things Setup Utility.</li>
 </ul>
 <p><img src="http://upload-images.jianshu.io/upload_images/1666327-0fe76c03b51e87d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/1666327-00c2f580a2eb6ed6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <ul>
-<li><p>下载Android Things Setup Utility.(如果打不开可能被墙了 -.-)<br><a href="https://partner.android.com/things/console/u/0/#/tools" target="_blank" rel="external">https://partner.android.com/things/console/u/0/#/tools</a><br>ps: 没关系,我在github传了一份,可以下载对应系统版本.<br><a href="https://github.com/RamboLouis/AndroidTestProject/tree/master/AndroidThings/android_things_setup_utility" target="_blank" rel="external">https://github.com/RamboLouis/AndroidTestProject/tree/master/AndroidThings/android_things_setup_utility</a><br>同时,也可以自己去租VPS.(macOS系统的 -.-)<br><a href="http://www.rambolu.top/2017/02/21/Mac%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8DigitalOcean%E7%A7%9F%E7%94%A8VPS%EF%BC%8C%E9%83%A8%E7%BD%B2Docker%E5%AE%B9%E5%99%A8%E6%90%AD%E5%BB%BASS%E5%92%8CVPN%E4%B8%93%E5%B1%9E%E6%A2%AF%E5%AD%90/" target="_blank" rel="external">Mac环境使用DigitalOcean租用VPS</a><br><img src="http://upload-images.jianshu.io/upload_images/1666327-30caa3d67de1e7d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Setup Utility"></p>
+<li><p>下载Android Things Setup Utility.(如果打不开可能被墙了 -.-)<br><a href="https://partner.android.com/things/console/u/0/#/tools" target="_blank" rel="noopener">https://partner.android.com/things/console/u/0/#/tools</a><br>ps: 没关系,我在github传了一份,可以下载对应系统版本.<br><a href="https://github.com/RamboLouis/AndroidTestProject/tree/master/AndroidThings/android_things_setup_utility" target="_blank" rel="noopener">https://github.com/RamboLouis/AndroidTestProject/tree/master/AndroidThings/android_things_setup_utility</a><br>同时,也可以自己去租VPS.(macOS系统的 -.-)<br><a href="http://www.rambolu.top/2017/02/21/Mac%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8DigitalOcean%E7%A7%9F%E7%94%A8VPS%EF%BC%8C%E9%83%A8%E7%BD%B2Docker%E5%AE%B9%E5%99%A8%E6%90%AD%E5%BB%BASS%E5%92%8CVPN%E4%B8%93%E5%B1%9E%E6%A2%AF%E5%AD%90/" target="_blank" rel="noopener">Mac环境使用DigitalOcean租用VPS</a><br><img src="http://upload-images.jianshu.io/upload_images/1666327-30caa3d67de1e7d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Setup Utility"></p>
 </li>
 <li><p>下载完成后,开始选择对应系统的安装文件,通过命令行运行.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-0388143d2110a812.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 </li>
@@ -507,9 +600,9 @@
 <li><p>点击确定退出安装.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-0b8a2fe8cf65c6a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 </li>
 </ul>
-<h5 id="手动刷机"><a href="#手动刷机" class="headerlink" title="手动刷机"></a>手动刷机</h5><p><a href="https://developer.android.google.cn/things/hardware/fastboot.html" target="_blank" rel="external">https://developer.android.google.cn/things/hardware/fastboot.html</a><br><img src="http://upload-images.jianshu.io/upload_images/1666327-edced73d0550387e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h5 id="手动刷机"><a href="#手动刷机" class="headerlink" title="手动刷机"></a>手动刷机</h5><p><a href="https://developer.android.google.cn/things/hardware/fastboot.html" target="_blank" rel="noopener">https://developer.android.google.cn/things/hardware/fastboot.html</a><br><img src="http://upload-images.jianshu.io/upload_images/1666327-edced73d0550387e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <ul>
-<li>需要在<a href="https://partner.android.com/things/console" target="_blank" rel="external">Android Things Console</a>,创建项目并下载.(同样,如果打不开那就是被墙了 -.-)<br><img src="http://upload-images.jianshu.io/upload_images/1666327-9f76d2ba873b8dab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+<li>需要在<a href="https://partner.android.com/things/console" target="_blank" rel="noopener">Android Things Console</a>,创建项目并下载.(同样,如果打不开那就是被墙了 -.-)<br><img src="http://upload-images.jianshu.io/upload_images/1666327-9f76d2ba873b8dab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
 <li>按照官方文档说的,执行<code>flash-all.sh</code>文件<br><img src="http://upload-images.jianshu.io/upload_images/1666327-b8ce261d78ab5a83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="flash-all.sh"></li>
 <li>成功 <strong>Successfully flashed your imx7d.</strong><br><img src="http://upload-images.jianshu.io/upload_images/1666327-2171e9b64fa5068a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
 </ul>
@@ -523,16 +616,22 @@
 <h2 id="结束"><a href="#结束" class="headerlink" title="结束."></a>结束.</h2><ul>
 <li>Holle world出现.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-3666fdcc67b501a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
 </ul>
-<p>ps:<br>开发套件教程:<br><a href="https://developer.android.com/things/get-started/kits.html" target="_blank" rel="external">https://developer.android.com/things/get-started/kits.html</a><br>案例:<br><a href="https://developer.android.com/things/sdk/samples.html" target="_blank" rel="external">https://developer.android.com/things/sdk/samples.html</a><br>Google社区:<br><a href="https://plus.google.com/communities/107507328426910012281" target="_blank" rel="external">https://plus.google.com/communities/107507328426910012281</a></p>
+<p>ps:<br>开发套件教程:<br><a href="https://developer.android.com/things/get-started/kits.html" target="_blank" rel="noopener">https://developer.android.com/things/get-started/kits.html</a><br>案例:<br><a href="https://developer.android.com/things/sdk/samples.html" target="_blank" rel="noopener">https://developer.android.com/things/sdk/samples.html</a><br>Google社区:<br><a href="https://plus.google.com/communities/107507328426910012281" target="_blank" rel="noopener">https://plus.google.com/communities/107507328426910012281</a></p>
 
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -576,22 +675,16 @@
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
           
 
-
-          
-
   
     <div class="comments" id="comments">
     </div>
+
   
 
 
@@ -625,113 +718,219 @@
         </ul>
       
 
-      <section class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/img/IronMan.png"
-                alt="RamboLu" />
+              <img class="site-author-image" itemprop="image" src="/images/IronMan.png" alt="RamboLu">
             
               <p class="site-author-name" itemprop="name">RamboLu</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Fire proves gold,adversity proves men.</p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">35</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">35</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">20</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
+            </nav>
+          
 
           
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/RamboLouis" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://weibo.com/210008553" target="_blank" title="新浪微博">
-                      
-                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://www.jianshu.com/users/7ebaa8152f09" target="_blank" title="简书">
-                      
-                        <i class="fa fa-fw fa-book"></i>简书</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/RamboLouis" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.linkedin.com/in/政浩-路-695158108/" target="_blank" title="LinkedIn">
-                      
-                        <i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:coderambolu@gmail.com" target="_blank" title="Email">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>Email</a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/RamboLouis" title="GitHub &rarr; https://github.com/RamboLouis" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://weibo.com/210008553" title="新浪微博 &rarr; http://weibo.com/210008553" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.jianshu.com/users/7ebaa8152f09" title="简书 &rarr; http://www.jianshu.com/users/7ebaa8152f09" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>简书</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/RamboLouis" title="Twitter &rarr; https://twitter.com/RamboLouis" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.linkedin.com/in/政浩-路-695158108/" title="LinkedIn &rarr; https://www.linkedin.com/in/政浩-路-695158108/" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:coderambolu@gmail.com" title="Email &rarr; mailto:coderambolu@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>Email</a>
+                </span>
+              
             </div>
           
 
           
-          
 
           
           
 
+          
+            
+          
           
 
         </div>
-      </section>
+      </div>
 
       
       <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
 
             
@@ -739,11 +938,11 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#组装套件"><span class="nav-number">1.</span> <span class="nav-text">组装套件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#刷机开始"><span class="nav-number">2.</span> <span class="nav-text">刷机开始</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#一键式刷机"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">一键式刷机</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#手动刷机"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">手动刷机</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找并运行"><span class="nav-number">3.</span> <span class="nav-text">查找并运行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结束"><span class="nav-number">4.</span> <span class="nav-text">结束.</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#组装套件"><span class="nav-number">1.</span> <span class="nav-text">组装套件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#刷机开始"><span class="nav-number">2.</span> <span class="nav-text">刷机开始</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#一键式刷机"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">一键式刷机</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#手动刷机"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">手动刷机</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#查找并运行"><span class="nav-number">3.</span> <span class="nav-text">查找并运行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结束"><span class="nav-number">4.</span> <span class="nav-text">结束.</span></a></li></div>
             
 
           </div>
-        </section>
+        </div>
       <!--/noindex-->
       
 
@@ -759,60 +958,59 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">RamboLu</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">
-    由 <a>Hexo</a> 技术支持
-  </div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 技术支持</div>
 
 
 
-  <span class="post-meta-divider"> | </span>
+  <span class="post-meta-divider">|</span>
 
 
 
-  <div class="theme-info"> 
-    <a> Next </a> 
-    主题
-  </div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT</a></div>
 
 
 
 
         
-  <div class="busuanzi-count">
-    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-    
-      <span class="site-uv">
-        <i class="fa fa-user"></i> 本站访客数
-        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-        人次
-      </span>
-    
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
 
-    
-      <span class="site-pv">
-        <i class="fa fa-eye"></i> 本站总访问量
-        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-        次
-      </span>
-    
-  </div>
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
 
 
 
 
 
-  <script type="text/javascript">
+  <script>
     (function() {
       var hm = document.createElement("script");
       hm.src = "//tajs.qq.com/stats?sId=61220060";
@@ -843,11 +1041,14 @@
 
     
 
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -861,63 +1062,51 @@
 
 
 
-  
-
-
-  
-
-
-
-
-
-
 
 
 
 
 
   
+    
+      
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script src="/js/src/utils.js?v=6.6.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script src="/js/src/motion.js?v=6.6.0"></script>
 
 
 
@@ -925,36 +1114,22 @@
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+  <script src="/js/src/affix.js?v=6.6.0"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
 
 
 
   
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
 
 
 
   
 
 
-  
-
-
-
-
-	
-
-
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
 
 
 
@@ -962,11 +1137,7 @@
 
 
 
-
-
   
-
-
 
 
 
@@ -976,12 +1147,14 @@
 
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
-  <script type="text/javascript">
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  <script>
     var GUEST = ['nick','mail','link'];
     var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
+    guest = guest.split(',').filter(function (item) {
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
@@ -992,16 +1165,18 @@
         appKey: 'rgnJBaCPX4E4G0oXvw19elko',
         placeholder: '请输入...',
         avatar:'mm',
-        guest_info:guest,
+        meta:guest,
         pageSize:'10' || 10,
+        visitor: false
     });
   </script>
 
 
 
+
   
 
-  <script type="text/javascript">
+  <script>
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -1050,6 +1225,8 @@
         .css('overflow', 'hidden');
       $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
 
+      
+
       $.ajax({
         url: path,
         dataType: isXml ? "xml" : "json",
@@ -1083,6 +1260,7 @@
                 var title = data.title.trim();
                 var titleInLowerCase = title.toLowerCase();
                 var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
                 var contentInLowerCase = content.toLowerCase();
                 var articleUrl = decodeURIComponent(data.url);
                 var indexOfTitle = [];
@@ -1325,107 +1503,61 @@
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz", "rgnJBaCPX4E4G0oXvw19elko");</script>
   <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
+    
     function addCount(Counter) {
       var $visitors = $(".leancloud_visitors");
       var url = $visitors.attr('id').trim();
       var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
 
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function ({ results }) {
           if (results.length > 0) {
             var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            })
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
           } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
           }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
+        })
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
       });
     }
+    
 
     $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz")
+        .done(function ({ api_server }) {
+          var Counter = function (method, url, data) {
+            return $.ajax({
+              method: method,
+              url: `https://${api_server}/1.1${url}`,
+              headers: {
+                'X-LC-Id': "UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz",
+                'X-LC-Key': "rgnJBaCPX4E4G0oXvw19elko",
+                'Content-Type': 'application/json',
+              },
+              data: data,
+            });
+          };
+          
+          addCount(Counter);
+          
+        })
     });
   </script>
 
@@ -1436,6 +1568,16 @@
   
 
   
+
+  
+
+  
+  
+
+  
+
+  
+
   
 
   

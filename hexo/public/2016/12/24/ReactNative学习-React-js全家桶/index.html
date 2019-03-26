@@ -2,14 +2,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +29,6 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,9 +45,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -92,27 +96,21 @@
 
 
 
-  
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/IronMan.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/IronMan.png?v=6.6.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/IronMan.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/IronMan.png?v=6.6.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/IronMan.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/IronMan.png?v=6.6.0">
 
 
-
-
-
-
-  <meta name="keywords" content="JavaScript,ReactNative,React," />
+  <link rel="mask-icon" href="/images/IronMan.png?v=6.6.0" color="#222">
 
 
 
@@ -122,50 +120,18 @@
 
 
 
-
-<meta name="description" content="React 技术栈系列教程http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html
-React.js 入门教程http://www.ruanyifeng.com/blog/2015/03/react.html
-ECMAScript 6 入门http://es6.ruanyifeng.com/#docs/style
-Reac">
-<meta property="og:type" content="article">
-<meta property="og:title" content="ReactNative学习-React技术栈全家桶">
-<meta property="og:url" content="http://RamboLu.top/2016/12/24/ReactNative学习-React-js全家桶/index.html">
-<meta property="og:site_name" content="RamboLu Blog">
-<meta property="og:description" content="React 技术栈系列教程http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html
-React.js 入门教程http://www.ruanyifeng.com/blog/2015/03/react.html
-ECMAScript 6 入门http://es6.ruanyifeng.com/#docs/style
-Reac">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-379b58e863b620ff.png">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-c0a9e11b0a3a0c58.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://om9s615i9.bkt.clouddn.com/react的生命周期.png-rambolu">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-d5e8903f42252080.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-fe2a61ebb0812c23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-f500789ca00fd2dd.png">
-<meta property="og:updated_time" content="2017-08-03T03:23:12.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ReactNative学习-React技术栈全家桶">
-<meta name="twitter:description" content="React 技术栈系列教程http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html
-React.js 入门教程http://www.ruanyifeng.com/blog/2015/03/react.html
-ECMAScript 6 入门http://es6.ruanyifeng.com/#docs/style
-Reac">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1666327-379b58e863b620ff.png">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    version: '5.1.4',
+    version: '6.6.0',
     sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -177,12 +143,45 @@ Reac">
 </script>
 
 
-
-  <link rel="canonical" href="http://RamboLu.top/2016/12/24/ReactNative学习-React-js全家桶/"/>
-
+  
 
 
 
+
+  <meta name="description" content="React 技术栈系列教程http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html React.js 入门教程http://www.ruanyifeng.com/blog/2015/03/react.html ECMAScript 6 入门http://es6.ruanyifeng.com/#docs/style Reac">
+<meta name="keywords" content="JavaScript,ReactNative,React">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ReactNative学习-React技术栈全家桶">
+<meta property="og:url" content="http://RamboLu.top/2016/12/24/ReactNative学习-React-js全家桶/index.html">
+<meta property="og:site_name" content="RamboLu Blog">
+<meta property="og:description" content="React 技术栈系列教程http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html React.js 入门教程http://www.ruanyifeng.com/blog/2015/03/react.html ECMAScript 6 入门http://es6.ruanyifeng.com/#docs/style Reac">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-379b58e863b620ff.png">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-c0a9e11b0a3a0c58.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://om9s615i9.bkt.clouddn.com/react的生命周期.png-rambolu">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-d5e8903f42252080.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-fe2a61ebb0812c23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-f500789ca00fd2dd.png">
+<meta property="og:updated_time" content="2017-08-03T03:23:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ReactNative学习-React技术栈全家桶">
+<meta name="twitter:description" content="React 技术栈系列教程http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html React.js 入门教程http://www.ruanyifeng.com/blog/2015/03/react.html ECMAScript 6 入门http://es6.ruanyifeng.com/#docs/style Reac">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1666327-379b58e863b620ff.png">
+
+
+
+
+
+
+  <link rel="canonical" href="http://RamboLu.top/2016/12/24/ReactNative学习-React-js全家桶/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>ReactNative学习-React技术栈全家桶 | RamboLu Blog</title>
   
@@ -194,9 +193,38 @@ Reac">
 
 
 
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -205,25 +233,27 @@ Reac">
 
   <div class="container sidebar-position-left page-post-detail">
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">RamboLu Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
-        <h1 class="site-subtitle" itemprop="description">技术在于折腾。</h1>
+        <p class="site-subtitle">技术在于折腾。</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -231,76 +261,111 @@ Reac">
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            所有文章
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于我
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
 
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于我</a>
+
+  </li>
+
+      
       
         <li class="menu-item menu-item-search">
           
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
         </li>
       
     </ul>
+  
+
   
 
   
@@ -315,9 +380,7 @@ Reac">
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -331,12 +394,23 @@ Reac">
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
 
@@ -349,20 +423,22 @@ Reac">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2016/12/24/ReactNative学习-React-js全家桶/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -371,11 +447,20 @@ Reac">
 
         
         
-          <h2 class="post-title" itemprop="name headline">ReactNative学习-React技术栈全家桶</h2>
+          <h1 class="post-title" itemprop="name headline">ReactNative学习-React技术栈全家桶
+
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -383,18 +468,35 @@ Reac">
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-24T15:26:03+08:00">
-                2016-12-24
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-12-24 15:26:03" itemprop="dateCreated datePublished" datetime="2016-12-24T15:26:03+08:00">2016-12-24</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-08-03 11:23:12" itemprop="dateModified" datetime="2017-08-03T11:23:12+08:00">2017-08-03</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -405,11 +507,7 @@ Reac">
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ReactNative/" itemprop="url" rel="index">
-                    <span itemprop="name">ReactNative</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/ReactNative/" itemprop="url" rel="index"><span itemprop="name">ReactNative</span></a></span>
 
                 
                 
@@ -425,7 +523,7 @@ Reac">
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2016/12/24/ReactNative学习-React-js全家桶/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/12/24/ReactNative学习-React-js全家桶/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2016/12/24/ReactNative学习-React-js全家桶/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -439,13 +537,12 @@ Reac">
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -465,25 +562,25 @@ Reac">
       
 
       
-        <h4 id="React-技术栈系列教程"><a href="#React-技术栈系列教程" class="headerlink" title="React 技术栈系列教程"></a>React 技术栈系列教程</h4><p><a href="http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html</a></p>
-<h4 id="React-js-入门教程"><a href="#React-js-入门教程" class="headerlink" title="React.js 入门教程"></a>React.js 入门教程</h4><p><a href="http://www.ruanyifeng.com/blog/2015/03/react.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2015/03/react.html</a></p>
-<h4 id="ECMAScript-6-入门"><a href="#ECMAScript-6-入门" class="headerlink" title="ECMAScript 6 入门"></a>ECMAScript 6 入门</h4><p><a href="http://es6.ruanyifeng.com/#docs/style" target="_blank" rel="external">http://es6.ruanyifeng.com/#docs/style</a></p>
-<h4 id="ReactNative-中文网"><a href="#ReactNative-中文网" class="headerlink" title="ReactNative 中文网"></a>ReactNative 中文网</h4><p><a href="http://reactnative.cn" target="_blank" rel="external">http://reactnative.cn</a></p>
-<h4 id="Immutable-js-官方文档"><a href="#Immutable-js-官方文档" class="headerlink" title="Immutable.js 官方文档"></a>Immutable.js 官方文档</h4><p><a href="http://facebook.github.io/immutable-js/" target="_blank" rel="external">http://facebook.github.io/immutable-js/</a></p>
-<h4 id="Immutable-详解及-React-中实践"><a href="#Immutable-详解及-React-中实践" class="headerlink" title="Immutable 详解及 React 中实践"></a>Immutable 详解及 React 中实践</h4><p><a href="https://zhuanlan.zhihu.com/p/20295971?columnSlug=purerender" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/20295971?columnSlug=purerender</a></p>
-<h4 id="Flux-架构入门教程"><a href="#Flux-架构入门教程" class="headerlink" title="Flux 架构入门教程"></a>Flux 架构入门教程</h4><p><a href="http://www.ruanyifeng.com/blog/2016/01/flux.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2016/01/flux.html</a></p>
-<h4 id="Flux-架构官方英文文档"><a href="#Flux-架构官方英文文档" class="headerlink" title="Flux 架构官方英文文档"></a>Flux 架构官方英文文档</h4><p><a href="https://facebook.github.io/flux/docs/overview.html#content" target="_blank" rel="external">https://facebook.github.io/flux/docs/overview.html#content</a></p>
-<h4 id="Redux-入门教程（一）：基本用法"><a href="#Redux-入门教程（一）：基本用法" class="headerlink" title="Redux 入门教程（一）：基本用法"></a>Redux 入门教程（一）：基本用法</h4><p><a href="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html</a></p>
-<h4 id="Redux-入门教程（二）：中间件（middleware）与异步操作"><a href="#Redux-入门教程（二）：中间件（middleware）与异步操作" class="headerlink" title="Redux 入门教程（二）：中间件（middleware）与异步操作"></a>Redux 入门教程（二）：中间件（middleware）与异步操作</h4><p><a href="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html</a></p>
-<h4 id="Redux-入门教程（三）：React-Redux-的用法"><a href="#Redux-入门教程（三）：React-Redux-的用法" class="headerlink" title="Redux 入门教程（三）：React-Redux 的用法"></a>Redux 入门教程（三）：React-Redux 的用法</h4><p><a href="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html</a></p>
-<h4 id="Redux-js-官方英文文档"><a href="#Redux-js-官方英文文档" class="headerlink" title="Redux.js 官方英文文档"></a>Redux.js 官方英文文档</h4><p><a href="http://redux.js.org" target="_blank" rel="external">http://redux.js.org</a></p>
-<h4 id="Redux-js-GitHub中文文档"><a href="#Redux-js-GitHub中文文档" class="headerlink" title="Redux.js GitHub中文文档"></a>Redux.js GitHub中文文档</h4><p><a href="http://cn.redux.js.org/docs/react-redux/api.html" target="_blank" rel="external">http://cn.redux.js.org/docs/react-redux/api.html</a></p>
-<h4 id="Flex-布局教程：语法篇"><a href="#Flex-布局教程：语法篇" class="headerlink" title="Flex 布局教程：语法篇"></a>Flex 布局教程：语法篇</h4><p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool</a></p>
-<h4 id="浅谈-React、Flux-与-Redux"><a href="#浅谈-React、Flux-与-Redux" class="headerlink" title="浅谈 React、Flux 与 Redux"></a>浅谈 React、Flux 与 Redux</h4><p><a href="http://www.tuicool.com/articles/3AFJNbj" target="_blank" rel="external">http://www.tuicool.com/articles/3AFJNbj</a></p>
-<h4 id="怎样理顺react，flux，redux这些概念的关系，开发中有必要使用它们吗"><a href="#怎样理顺react，flux，redux这些概念的关系，开发中有必要使用它们吗" class="headerlink" title="怎样理顺react，flux，redux这些概念的关系，开发中有必要使用它们吗?"></a>怎样理顺react，flux，redux这些概念的关系，开发中有必要使用它们吗?</h4><p><a href="https://www.zhihu.com/question/47686258/answer/107209140" target="_blank" rel="external">https://www.zhihu.com/question/47686258/answer/107209140</a></p>
-<h2 id="DEMO文章："><a href="#DEMO文章：" class="headerlink" title="DEMO文章："></a>DEMO文章：</h2><h4 id="这段时间看了下Redux，写自己对它的感觉。"><a href="#这段时间看了下Redux，写自己对它的感觉。" class="headerlink" title="这段时间看了下Redux，写自己对它的感觉。"></a>这段时间看了下Redux，写自己对它的感觉。</h4><p><a href="http://react-china.org/t/redux/2687" target="_blank" rel="external">http://react-china.org/t/redux/2687</a></p>
-<h4 id="基于-react-react-router-redux-webpack-ES6-7-less-的完整项目"><a href="#基于-react-react-router-redux-webpack-ES6-7-less-的完整项目" class="headerlink" title="基于 react + react-router + redux + webpack + ES6/7 + less 的完整项目"></a>基于 react + react-router + redux + webpack + ES6/7 + less 的完整项目</h4><p><a href="https://github.com/bailicangdu/react-pxq" target="_blank" rel="external">https://github.com/bailicangdu/react-pxq</a></p>
-<h4 id="基于webpack-react-react-router-redux-less-flex-css-ES6-的React版cnode社区"><a href="#基于webpack-react-react-router-redux-less-flex-css-ES6-的React版cnode社区" class="headerlink" title="基于webpack + react + react-router + redux + less + flex.css + ES6 的React版cnode社区"></a>基于webpack + react + react-router + redux + less + flex.css + ES6 的React版cnode社区</h4><p><a href="http://react-china.org/t/webpack-react-react-router-redux-less-flex-css-es6-react-cnode/6332" target="_blank" rel="external">http://react-china.org/t/webpack-react-react-router-redux-less-flex-css-es6-react-cnode/6332</a></p>
+        <h4 id="React-技术栈系列教程"><a href="#React-技术栈系列教程" class="headerlink" title="React 技术栈系列教程"></a>React 技术栈系列教程</h4><p><a href="http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html</a></p>
+<h4 id="React-js-入门教程"><a href="#React-js-入门教程" class="headerlink" title="React.js 入门教程"></a>React.js 入门教程</h4><p><a href="http://www.ruanyifeng.com/blog/2015/03/react.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2015/03/react.html</a></p>
+<h4 id="ECMAScript-6-入门"><a href="#ECMAScript-6-入门" class="headerlink" title="ECMAScript 6 入门"></a>ECMAScript 6 入门</h4><p><a href="http://es6.ruanyifeng.com/#docs/style" target="_blank" rel="noopener">http://es6.ruanyifeng.com/#docs/style</a></p>
+<h4 id="ReactNative-中文网"><a href="#ReactNative-中文网" class="headerlink" title="ReactNative 中文网"></a>ReactNative 中文网</h4><p><a href="http://reactnative.cn" target="_blank" rel="noopener">http://reactnative.cn</a></p>
+<h4 id="Immutable-js-官方文档"><a href="#Immutable-js-官方文档" class="headerlink" title="Immutable.js 官方文档"></a>Immutable.js 官方文档</h4><p><a href="http://facebook.github.io/immutable-js/" target="_blank" rel="noopener">http://facebook.github.io/immutable-js/</a></p>
+<h4 id="Immutable-详解及-React-中实践"><a href="#Immutable-详解及-React-中实践" class="headerlink" title="Immutable 详解及 React 中实践"></a>Immutable 详解及 React 中实践</h4><p><a href="https://zhuanlan.zhihu.com/p/20295971?columnSlug=purerender" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/20295971?columnSlug=purerender</a></p>
+<h4 id="Flux-架构入门教程"><a href="#Flux-架构入门教程" class="headerlink" title="Flux 架构入门教程"></a>Flux 架构入门教程</h4><p><a href="http://www.ruanyifeng.com/blog/2016/01/flux.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2016/01/flux.html</a></p>
+<h4 id="Flux-架构官方英文文档"><a href="#Flux-架构官方英文文档" class="headerlink" title="Flux 架构官方英文文档"></a>Flux 架构官方英文文档</h4><p><a href="https://facebook.github.io/flux/docs/overview.html#content" target="_blank" rel="noopener">https://facebook.github.io/flux/docs/overview.html#content</a></p>
+<h4 id="Redux-入门教程（一）：基本用法"><a href="#Redux-入门教程（一）：基本用法" class="headerlink" title="Redux 入门教程（一）：基本用法"></a>Redux 入门教程（一）：基本用法</h4><p><a href="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html</a></p>
+<h4 id="Redux-入门教程（二）：中间件（middleware）与异步操作"><a href="#Redux-入门教程（二）：中间件（middleware）与异步操作" class="headerlink" title="Redux 入门教程（二）：中间件（middleware）与异步操作"></a>Redux 入门教程（二）：中间件（middleware）与异步操作</h4><p><a href="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html</a></p>
+<h4 id="Redux-入门教程（三）：React-Redux-的用法"><a href="#Redux-入门教程（三）：React-Redux-的用法" class="headerlink" title="Redux 入门教程（三）：React-Redux 的用法"></a>Redux 入门教程（三）：React-Redux 的用法</h4><p><a href="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html</a></p>
+<h4 id="Redux-js-官方英文文档"><a href="#Redux-js-官方英文文档" class="headerlink" title="Redux.js 官方英文文档"></a>Redux.js 官方英文文档</h4><p><a href="http://redux.js.org" target="_blank" rel="noopener">http://redux.js.org</a></p>
+<h4 id="Redux-js-GitHub中文文档"><a href="#Redux-js-GitHub中文文档" class="headerlink" title="Redux.js GitHub中文文档"></a>Redux.js GitHub中文文档</h4><p><a href="http://cn.redux.js.org/docs/react-redux/api.html" target="_blank" rel="noopener">http://cn.redux.js.org/docs/react-redux/api.html</a></p>
+<h4 id="Flex-布局教程：语法篇"><a href="#Flex-布局教程：语法篇" class="headerlink" title="Flex 布局教程：语法篇"></a>Flex 布局教程：语法篇</h4><p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool</a></p>
+<h4 id="浅谈-React、Flux-与-Redux"><a href="#浅谈-React、Flux-与-Redux" class="headerlink" title="浅谈 React、Flux 与 Redux"></a>浅谈 React、Flux 与 Redux</h4><p><a href="http://www.tuicool.com/articles/3AFJNbj" target="_blank" rel="noopener">http://www.tuicool.com/articles/3AFJNbj</a></p>
+<h4 id="怎样理顺react，flux，redux这些概念的关系，开发中有必要使用它们吗"><a href="#怎样理顺react，flux，redux这些概念的关系，开发中有必要使用它们吗" class="headerlink" title="怎样理顺react，flux，redux这些概念的关系，开发中有必要使用它们吗?"></a>怎样理顺react，flux，redux这些概念的关系，开发中有必要使用它们吗?</h4><p><a href="https://www.zhihu.com/question/47686258/answer/107209140" target="_blank" rel="noopener">https://www.zhihu.com/question/47686258/answer/107209140</a></p>
+<h2 id="DEMO文章："><a href="#DEMO文章：" class="headerlink" title="DEMO文章："></a>DEMO文章：</h2><h4 id="这段时间看了下Redux，写自己对它的感觉。"><a href="#这段时间看了下Redux，写自己对它的感觉。" class="headerlink" title="这段时间看了下Redux，写自己对它的感觉。"></a>这段时间看了下Redux，写自己对它的感觉。</h4><p><a href="http://react-china.org/t/redux/2687" target="_blank" rel="noopener">http://react-china.org/t/redux/2687</a></p>
+<h4 id="基于-react-react-router-redux-webpack-ES6-7-less-的完整项目"><a href="#基于-react-react-router-redux-webpack-ES6-7-less-的完整项目" class="headerlink" title="基于 react + react-router + redux + webpack + ES6/7 + less 的完整项目"></a>基于 react + react-router + redux + webpack + ES6/7 + less 的完整项目</h4><p><a href="https://github.com/bailicangdu/react-pxq" target="_blank" rel="noopener">https://github.com/bailicangdu/react-pxq</a></p>
+<h4 id="基于webpack-react-react-router-redux-less-flex-css-ES6-的React版cnode社区"><a href="#基于webpack-react-react-router-redux-less-flex-css-ES6-的React版cnode社区" class="headerlink" title="基于webpack + react + react-router + redux + less + flex.css + ES6 的React版cnode社区"></a>基于webpack + react + react-router + redux + less + flex.css + ES6 的React版cnode社区</h4><p><a href="http://react-china.org/t/webpack-react-react-router-redux-less-flex-css-es6-react-cnode/6332" target="_blank" rel="noopener">http://react-china.org/t/webpack-react-react-router-redux-less-flex-css-es6-react-cnode/6332</a></p>
 <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>大前端的时代来了，还不要准备好么？</p>
 <h2 id="做React需要会什么？"><a href="#做React需要会什么？" class="headerlink" title="做React需要会什么？"></a>做React需要会什么？</h2><p>react的功能其实很单一，主要负责渲染的功能，现有的框架，比如angular是一个大而全的框架，用了angular几乎就不需要用其他工具辅助配合，但是react不一样，他只负责ui渲染，想要做好一个项目，往往需要其他库和工具的配合，比如用redux来管理数据，react-router管理路由，react已经全面拥抱es6，所以es6也得掌握，webpack就算是不会配置也要会用，要想提高性能，需要按需加载，immutable.js也得用上，还有单元测试等。</p>
 <h2 id="React-是什么"><a href="#React-是什么" class="headerlink" title="React 是什么"></a>React 是什么</h2><p>用脚本进行DOM操作的代价很昂贵。有个贴切的比喻，把DOM和JavaScript各自想象为一个岛屿，它们之间用收费桥梁连接，js每次访问DOM，都要途径这座桥，并交纳“过桥费”,访问DOM的次数越多，费用也就越高。 因此，推荐的做法是尽量减少过桥的次数，努力待在ECMAScript岛上。因为这个原因react的虚拟dom就显得难能可贵了，它创造了虚拟dom并且将它们储存起来，每当状态发生变化的时候就会创造新的虚拟节点和以前的进行对比，让变化的部分进行渲染。整个过程没有对dom进行获取和操作，只有一个渲染的过程，所以react说是一个ui框架。</p>
@@ -496,13 +593,15 @@ Reac">
 <p>这两种写法实现的功能一样但是原理却是不同，es6的class类可以看作是构造函数的一个语法糖，可以把它当成构造函数来看，extends实现了类之间的继承 —— 定义一个类Main 继承React.Component所有的属性和方法，组件的生命周期函数就是从这来的。constructor是构造器，在实例化对象时调用，super调用了父类的constructor创造了父类的实例对象this，然后用子类的构造函数进行修改。这和es5的原型继承是不同的，原型继承是先创造一个实例化对象this，然后再继承父级的原型方法。了解了这些之后我们在看组件的时候就清楚很多。</p>
 <p>当我们使用组件&lt; Main /&gt;时，其实是对Main类的实例化——new Main，只不过react对这个过程进行了封装，让它看起来更像是一个标签。</p>
 <p>有三点值得注意：1、定义类名字的首字母必须大写 2、因为class变成了关键字，类选择器需要用className来代替。 3、类和模块内部默认使用严格模式，所以不需要用use strict指定运行模式。</p>
-<h2 id="组件的生命周期"><a href="#组件的生命周期" class="headerlink" title="组件的生命周期"></a>组件的生命周期</h2><p>官方文档: <a href="https://facebook.github.io/react/docs/react-component.html#shouldcomponentupdate" target="_blank" rel="external">https://facebook.github.io/react/docs/react-component.html#shouldcomponentupdate</a></p>
+<h2 id="组件的生命周期"><a href="#组件的生命周期" class="headerlink" title="组件的生命周期"></a>组件的生命周期</h2><p>官方文档: <a href="https://facebook.github.io/react/docs/react-component.html#shouldcomponentupdate" target="_blank" rel="noopener">https://facebook.github.io/react/docs/react-component.html#shouldcomponentupdate</a></p>
 <p><img src="http://om9s615i9.bkt.clouddn.com/react的生命周期.png-rambolu" alt=""></p>
 <p><strong>当创建组件的实例并将其插入到DOM中时，将调用这些方法：</strong></p>
 <p>  <strong>1、constructor()</strong>  </p>
 <blockquote>
 <p>React组件的构造函数。在安装React组件的构造函数之前调用它。在实现Component子类的构造函数时，应该在任何其他语句之前调用super（props）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt; constructor(props) &#123;</div><div class="line">  super(props);</div><div class="line">&#125;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; constructor(props) &#123;</span><br><span class="line">  super(props);</span><br><span class="line">&#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p> <strong>2、componentWillMount()</strong> </p>
 <blockquote>
@@ -544,7 +643,7 @@ Reac">
 <p>以上可以看出来react总共有10个周期函数（render重复一次），这个10个函数可以满足我们所有对组件操作的需求，利用的好可以提高开发效率和组件性能。</p>
 <h2 id="React-Router路由"><a href="#React-Router路由" class="headerlink" title="React-Router路由"></a>React-Router路由</h2><p>Router就是React的一个组件，它并不会被渲染，只是一个创建内部路由规则的配置对象，根据匹配的路由地址展现相应的组件。Route则对路由地址和组件进行绑定，Route具有嵌套功能，表示路由地址的包涵关系，这和组件之间的嵌套并没有直接联系。Route可以向绑定的组件传递7个属性：children，history，location，params，route，routeParams，routes，每个属性都包涵路由的相关的信息。比较常用的有children（以路由的包涵关系为区分的组件），location（包括地址，参数，地址切换方式，key值，hash值）。react-router提供Link标签，这只是对a标签的封装，值得注意的是，点击链接进行的跳转并不是默认的方式，react-router阻止了a标签的默认行为并用pushState进行hash值的转变。切换页面的过程是在点击Link标签或者后退前进按钮时，会先发生url地址的转变，Router监听到地址的改变根据Route的path属性匹配到对应的组件，将state值改成对应的组件并调用setState触发render函数重新渲染dom。</p>
 <p>当页面比较多时，项目就会变得越来越大，尤其对于单页面应用来说，初次渲染的速度就会很慢，这时候就需要按需加载，只有切换到页面的时候才去加载对应的js文件。react配合webpack进行按需加载的方法很简单，Route的component改为getComponent，组件用require.ensure的方式获取，并在webpack中配置chunkFilename。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> chooseProducts = (location, cb) =&gt; &#123;</div><div class="line">    <span class="built_in">require</span>.ensure([], <span class="built_in">require</span> =&gt; &#123;</div><div class="line">        cb(<span class="literal">null</span>, <span class="built_in">require</span>(<span class="string">'../Component/chooseProducts'</span>).default)</div><div class="line">    &#125;,<span class="string">'chooseProducts'</span>)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> helpCenter = (location, cb) =&gt; &#123;</div><div class="line">    <span class="built_in">require</span>.ensure([], <span class="built_in">require</span> =&gt; &#123;</div><div class="line">        cb(<span class="literal">null</span>, <span class="built_in">require</span>(<span class="string">'../Component/helpCenter'</span>).default)</div><div class="line">    &#125;,<span class="string">'helpCenter'</span>)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> saleRecord = (location, cb) =&gt; &#123;</div><div class="line">    <span class="built_in">require</span>.ensure([], <span class="built_in">require</span> =&gt; &#123;</div><div class="line">        cb(<span class="literal">null</span>, <span class="built_in">require</span>(<span class="string">'../Component/saleRecord'</span>).default)</div><div class="line">    &#125;,<span class="string">'saleRecord'</span>)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> RouteConfig = (</div><div class="line">    &lt;Router history=&#123;history&#125;&gt;</div><div class="line">        &lt;Route path="/" component=&#123;Roots&#125;&gt;</div><div class="line">            &lt;IndexRoute component=&#123;index&#125; /&gt;//首页</div><div class="line">            &lt;Route path="index" component=&#123;index&#125; /&gt;</div><div class="line">            &lt;Route path="helpCenter" getComponent=&#123;helpCenter&#125; /&gt;//帮助中心</div><div class="line">            &lt;Route path="saleRecord" getComponent=&#123;saleRecord&#125; /&gt;//销售记录</div><div class="line">            &lt;Redirect from='*' to='/'  /&gt;</div><div class="line">        &lt;/Route&gt;</div><div class="line">    &lt;/Router&gt;</div><div class="line">);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> chooseProducts = <span class="function">(<span class="params">location, cb</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">require</span>.ensure([], <span class="built_in">require</span> =&gt; &#123;</span><br><span class="line">        cb(<span class="literal">null</span>, <span class="built_in">require</span>(<span class="string">'../Component/chooseProducts'</span>).default)</span><br><span class="line">    &#125;,<span class="string">'chooseProducts'</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> helpCenter = <span class="function">(<span class="params">location, cb</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">require</span>.ensure([], <span class="built_in">require</span> =&gt; &#123;</span><br><span class="line">        cb(<span class="literal">null</span>, <span class="built_in">require</span>(<span class="string">'../Component/helpCenter'</span>).default)</span><br><span class="line">    &#125;,<span class="string">'helpCenter'</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> saleRecord = <span class="function">(<span class="params">location, cb</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">require</span>.ensure([], <span class="built_in">require</span> =&gt; &#123;</span><br><span class="line">        cb(<span class="literal">null</span>, <span class="built_in">require</span>(<span class="string">'../Component/saleRecord'</span>).default)</span><br><span class="line">    &#125;,<span class="string">'saleRecord'</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> RouteConfig = (</span><br><span class="line">    &lt;Router history=&#123;history&#125;&gt;</span><br><span class="line">        &lt;Route path=<span class="string">"/"</span> component=&#123;Roots&#125;&gt;</span><br><span class="line">            &lt;IndexRoute component=&#123;index&#125; /&gt;<span class="comment">//首页</span></span><br><span class="line">            &lt;Route path=<span class="string">"index"</span> component=&#123;index&#125; /&gt;</span><br><span class="line">            &lt;Route path=<span class="string">"helpCenter"</span> getComponent=&#123;helpCenter&#125; /&gt;<span class="comment">//帮助中心</span></span><br><span class="line">            &lt;Route path=<span class="string">"saleRecord"</span> getComponent=&#123;saleRecord&#125; /&gt;<span class="comment">//销售记录</span></span><br><span class="line">            &lt;Redirect <span class="keyword">from</span>=<span class="string">'*'</span> to=<span class="string">'/'</span>  /&gt;</span><br><span class="line">        &lt;<span class="regexp">/Route&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>Router&gt;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 <h2 id="组件之间的通信"><a href="#组件之间的通信" class="headerlink" title="组件之间的通信"></a>组件之间的通信</h2><p>react推崇的是单向数据流，自上而下进行数据的传递，但是由下而上或者不在一条数据流上的组件之间的通信就会变的复杂。解决通信问题的方法很多，如果只是父子级关系，父级可以将一个回调函数当作属性传递给子级，子级可以直接调用函数从而和父级通信。</p>
 <p>组件层级嵌套到比较深，可以使用上下文getChildContext来传递信息，这样在不需要将函数一层层往下传，任何一层的子级都可以通过this.context直接访问。</p>
 <p>兄弟关系的组件之间无法直接通信，它们只能利用同一层的上级作为中转站。而如果兄弟组件都是最高层的组件，为了能够让它们进行通信，必须在它们外层再套一层组件，这个外层的组件起着保存数据，传递信息的作用，这其实就是redux所做的事情。</p>
@@ -581,7 +680,7 @@ Reac">
 <blockquote>
 <p>reducer是一个函数，它接受一个state和一个action，根据action的type返回一个新的state。根据业务逻辑可以分为很多个reducer，然后通过combineReducers将它们合并，state树中有很多对象，每个state对象对应一个reducer，state对象的名字可以在合并时定义。</p>
 </blockquote>
-<p>像这个样子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> reducer = combineReducers(&#123;</div><div class="line">     a: doSomethingWithA,</div><div class="line">     b: processB,</div><div class="line">     c: c</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>像这个样子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reducer = combineReducers(&#123;</span><br><span class="line">     a: doSomethingWithA,</span><br><span class="line">     b: processB,</span><br><span class="line">     c: c</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 <p><strong>combineReducers:</strong></p>
 <blockquote>
 <p>其实它也是一个reducer，它接受整个state和一个action，然后将整个state拆分发送给对应的reducer进行处理，所有的reducer会收到相同的action，不过它们会根据action的type进行判断，有这个type就进行处理然后返回新的state，没有就返回默认值，然后这些分散的state又会整合在一起返回一个新的state树。</p>
@@ -605,12 +704,12 @@ Reac">
 <blockquote>
 <p>mapStateToProps 接受两个参数，store的state和自定义的props，并返回一个新的对象，这个对象会作为props的一部分传入ui组件。我们可以根据组件所需要的数据自定义返回一个对象。ownProps的变化也会触发mapStateToProps</p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">mapStateToProps</span>(<span class="params">state</span>) </span>&#123;</div><div class="line">   <span class="keyword">return</span> &#123; todos: state.todos &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">mapStateToProps</span>(<span class="params">state</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">return</span> &#123; <span class="attr">todos</span>: state.todos &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>mapDispatchToProps(dispatch, [ownProps])：</strong></p>
 <blockquote>
 <p>mapDispatchToProps如果是对象，那么会和store绑定作为props的一部分传入ui组件。如果是个函数，它接受两个参数，bindActionCreators会将action和dispatch绑定并返回一个对象，这个对象会和ownProps一起作为props的一部分传入ui组件。所以不论mapDispatchToProps是对象还是函数，它最终都会返回一个对象，如果是函数，这个对象的key值是可以自定义的</p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">mapDispatchToProps</span>(<span class="params">dispatch</span>) </span>&#123;</div><div class="line">   <span class="keyword">return</span> &#123;</div><div class="line">      todoActions: bindActionCreators(todoActionCreators, dispatch),</div><div class="line">      counterActions: bindActionCreators(counterActionCreators, dispatch)</div><div class="line">   &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">mapDispatchToProps</span>(<span class="params">dispatch</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">return</span> &#123;</span><br><span class="line">      todoActions: bindActionCreators(todoActionCreators, dispatch),</span><br><span class="line">      counterActions: bindActionCreators(counterActionCreators, dispatch)</span><br><span class="line">   &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>mapDispatchToProps返回的对象其属性其实就是一个个actionCreator，因为已经和dispatch绑定，所以当调用actionCreator时会立即发送action，而不用手动dispatch。ownProps的变化也会触发mapDispatchToProps。</p>
 <p><strong>mergeProps(stateProps, dispatchProps, ownProps)：</strong></p>
 <blockquote>
@@ -628,10 +727,10 @@ Reac">
 <p>一、Provider组件接受redux的store作为props，然后通过context往下传。</p>
 <p>二、connect函数收到Provider传出的store，然后接受三个参数mapStateToProps，mapDispatchToProps和组件，并将state和actionCreator以props传入组件，这时组件就可以调用actionCreator函数来触发reducer函数返回新的state，connect监听到state变化调用setState更新组件并将新的state传入组件。</p>
 <p>connect可以写的非常简洁，mapStateToProps，mapDispatchToProps只不过是传入的回调函数，connect函数在必要的时候会调用它们，名字不是固定的，甚至可以不写名字。</p>
-<p>简化版本：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">connect(state =&gt; state, action)(Component);</div></pre></td></tr></table></figure></p>
+<p>简化版本：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">connect(<span class="function"><span class="params">state</span> =&gt;</span> state, action)(Component);</span><br></pre></td></tr></table></figure></p>
 <h2 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h2><p>上面说了react，react-router和redux的知识点。但是怎么样将它们整合起来，搭建一个完整的项目。</p>
 <p>1、先引用 react.js，redux，react-router 等基本文件，建议用npm安装，直接在文件中引用。</p>
-<p>2、从 react.js，redux，react-router 中引入所需要的对象和方法。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123;Component, PropTypes&#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> ReactDOM, &#123;render&#125; <span class="keyword">from</span> <span class="string">'react-dom'</span>;</div><div class="line"><span class="keyword">import</span> &#123;Provider, connect&#125; <span class="keyword">from</span> <span class="string">'react-redux'</span>;</div><div class="line"><span class="keyword">import</span> &#123;createStore, combineReducers, applyMiddleware&#125; <span class="keyword">from</span> <span class="string">'redux'</span>;</div><div class="line"><span class="keyword">import</span> &#123; Router, Route, Redirect, IndexRoute, browserHistory, hashHistory &#125; <span class="keyword">from</span> <span class="string">'react-router'</span>;</div></pre></td></tr></table></figure></p>
+<p>2、从 react.js，redux，react-router 中引入所需要的对象和方法。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123;Component, PropTypes&#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM, &#123;render&#125; <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;Provider, connect&#125; <span class="keyword">from</span> <span class="string">'react-redux'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;createStore, combineReducers, applyMiddleware&#125; <span class="keyword">from</span> <span class="string">'redux'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; Router, Route, Redirect, IndexRoute, browserHistory, hashHistory &#125; <span class="keyword">from</span> <span class="string">'react-router'</span>;</span><br></pre></td></tr></table></figure></p>
 <p>3、根据需求创建顶层ui组件，每个顶层ui组件对应一个页面。</p>
 <p>4、创建actionCreators和reducers，并用combineReducers将所有的reducer合并成一个大的reduer。利用createStore创建store并引入combineReducers和applyMiddleware。</p>
 <p>5、利用connect将actionCreator，reuder和顶层的ui组件进行关联并返回一个新的组件。</p>
@@ -646,12 +745,18 @@ Reac">
 
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -705,22 +810,16 @@ Reac">
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
           
 
-
-          
-
   
     <div class="comments" id="comments">
     </div>
+
   
 
 
@@ -754,113 +853,219 @@ Reac">
         </ul>
       
 
-      <section class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/img/IronMan.png"
-                alt="RamboLu" />
+              <img class="site-author-image" itemprop="image" src="/images/IronMan.png" alt="RamboLu">
             
               <p class="site-author-name" itemprop="name">RamboLu</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Fire proves gold,adversity proves men.</p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">35</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">35</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">20</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
+            </nav>
+          
 
           
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/RamboLouis" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://weibo.com/210008553" target="_blank" title="新浪微博">
-                      
-                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://www.jianshu.com/users/7ebaa8152f09" target="_blank" title="简书">
-                      
-                        <i class="fa fa-fw fa-book"></i>简书</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/RamboLouis" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.linkedin.com/in/政浩-路-695158108/" target="_blank" title="LinkedIn">
-                      
-                        <i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:coderambolu@gmail.com" target="_blank" title="Email">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>Email</a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/RamboLouis" title="GitHub &rarr; https://github.com/RamboLouis" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://weibo.com/210008553" title="新浪微博 &rarr; http://weibo.com/210008553" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.jianshu.com/users/7ebaa8152f09" title="简书 &rarr; http://www.jianshu.com/users/7ebaa8152f09" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>简书</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/RamboLouis" title="Twitter &rarr; https://twitter.com/RamboLouis" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.linkedin.com/in/政浩-路-695158108/" title="LinkedIn &rarr; https://www.linkedin.com/in/政浩-路-695158108/" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:coderambolu@gmail.com" title="Email &rarr; mailto:coderambolu@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>Email</a>
+                </span>
+              
             </div>
           
 
           
-          
 
           
           
 
+          
+            
+          
           
 
         </div>
-      </section>
+      </div>
 
       
       <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
 
             
@@ -868,11 +1073,11 @@ Reac">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#React-技术栈系列教程"><span class="nav-number">1.</span> <span class="nav-text">React 技术栈系列教程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#React-js-入门教程"><span class="nav-number">2.</span> <span class="nav-text">React.js 入门教程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ECMAScript-6-入门"><span class="nav-number">3.</span> <span class="nav-text">ECMAScript 6 入门</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ReactNative-中文网"><span class="nav-number">4.</span> <span class="nav-text">ReactNative 中文网</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Immutable-js-官方文档"><span class="nav-number">5.</span> <span class="nav-text">Immutable.js 官方文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Immutable-详解及-React-中实践"><span class="nav-number">6.</span> <span class="nav-text">Immutable 详解及 React 中实践</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Flux-架构入门教程"><span class="nav-number">7.</span> <span class="nav-text">Flux 架构入门教程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Flux-架构官方英文文档"><span class="nav-number">8.</span> <span class="nav-text">Flux 架构官方英文文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Redux-入门教程（一）：基本用法"><span class="nav-number">9.</span> <span class="nav-text">Redux 入门教程（一）：基本用法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Redux-入门教程（二）：中间件（middleware）与异步操作"><span class="nav-number">10.</span> <span class="nav-text">Redux 入门教程（二）：中间件（middleware）与异步操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Redux-入门教程（三）：React-Redux-的用法"><span class="nav-number">11.</span> <span class="nav-text">Redux 入门教程（三）：React-Redux 的用法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Redux-js-官方英文文档"><span class="nav-number">12.</span> <span class="nav-text">Redux.js 官方英文文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Redux-js-GitHub中文文档"><span class="nav-number">13.</span> <span class="nav-text">Redux.js GitHub中文文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Flex-布局教程：语法篇"><span class="nav-number">14.</span> <span class="nav-text">Flex 布局教程：语法篇</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浅谈-React、Flux-与-Redux"><span class="nav-number">15.</span> <span class="nav-text">浅谈 React、Flux 与 Redux</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#怎样理顺react，flux，redux这些概念的关系，开发中有必要使用它们吗"><span class="nav-number">16.</span> <span class="nav-text">怎样理顺react，flux，redux这些概念的关系，开发中有必要使用它们吗?</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DEMO文章："><span class="nav-number"></span> <span class="nav-text">DEMO文章：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#这段时间看了下Redux，写自己对它的感觉。"><span class="nav-number">1.</span> <span class="nav-text">这段时间看了下Redux，写自己对它的感觉。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基于-react-react-router-redux-webpack-ES6-7-less-的完整项目"><span class="nav-number">2.</span> <span class="nav-text">基于 react + react-router + redux + webpack + ES6/7 + less 的完整项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基于webpack-react-react-router-redux-less-flex-css-ES6-的React版cnode社区"><span class="nav-number">3.</span> <span class="nav-text">基于webpack + react + react-router + redux + less + flex.css + ES6 的React版cnode社区</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number"></span> <span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#做React需要会什么？"><span class="nav-number"></span> <span class="nav-text">做React需要会什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-是什么"><span class="nav-number"></span> <span class="nav-text">React 是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React的组件化"><span class="nav-number"></span> <span class="nav-text">React的组件化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React的-Diff算法"><span class="nav-number"></span> <span class="nav-text">React的 Diff算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React组件是怎么来的"><span class="nav-number"></span> <span class="nav-text">React组件是怎么来的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组件的生命周期"><span class="nav-number"></span> <span class="nav-text">组件的生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-Router路由"><span class="nav-number"></span> <span class="nav-text">React-Router路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组件之间的通信"><span class="nav-number"></span> <span class="nav-text">组件之间的通信</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Redux"><span class="nav-number"></span> <span class="nav-text">Redux</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#流程是这个样子的："><span class="nav-number">1.</span> <span class="nav-text">流程是这个样子的：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#接下来具体分析一下，redux以及react-redux到底是怎么实现的。"><span class="nav-number">2.</span> <span class="nav-text">接下来具体分析一下，redux以及react-redux到底是怎么实现的。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#先上一张图"><span class="nav-number">3.</span> <span class="nav-text">先上一张图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#先说说redux："><span class="nav-number"></span> <span class="nav-text">先说说redux：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#redux主要由三部分组成：store，reducer，action。"><span class="nav-number">1.</span> <span class="nav-text">redux主要由三部分组成：store，reducer，action。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-Redux"><span class="nav-number"></span> <span class="nav-text">React-Redux</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下面是一个完整的-react-–-gt-redux-–-gt-react-流程："><span class="nav-number"></span> <span class="nav-text">下面是一个完整的 react –> redux –> react 流程：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目搭建"><span class="nav-number"></span> <span class="nav-text">项目搭建</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#React-技术栈系列教程"><span class="nav-number">1.</span> <span class="nav-text">React 技术栈系列教程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#React-js-入门教程"><span class="nav-number">2.</span> <span class="nav-text">React.js 入门教程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ECMAScript-6-入门"><span class="nav-number">3.</span> <span class="nav-text">ECMAScript 6 入门</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ReactNative-中文网"><span class="nav-number">4.</span> <span class="nav-text">ReactNative 中文网</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Immutable-js-官方文档"><span class="nav-number">5.</span> <span class="nav-text">Immutable.js 官方文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Immutable-详解及-React-中实践"><span class="nav-number">6.</span> <span class="nav-text">Immutable 详解及 React 中实践</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Flux-架构入门教程"><span class="nav-number">7.</span> <span class="nav-text">Flux 架构入门教程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Flux-架构官方英文文档"><span class="nav-number">8.</span> <span class="nav-text">Flux 架构官方英文文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Redux-入门教程（一）：基本用法"><span class="nav-number">9.</span> <span class="nav-text">Redux 入门教程（一）：基本用法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Redux-入门教程（二）：中间件（middleware）与异步操作"><span class="nav-number">10.</span> <span class="nav-text">Redux 入门教程（二）：中间件（middleware）与异步操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Redux-入门教程（三）：React-Redux-的用法"><span class="nav-number">11.</span> <span class="nav-text">Redux 入门教程（三）：React-Redux 的用法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Redux-js-官方英文文档"><span class="nav-number">12.</span> <span class="nav-text">Redux.js 官方英文文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Redux-js-GitHub中文文档"><span class="nav-number">13.</span> <span class="nav-text">Redux.js GitHub中文文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Flex-布局教程：语法篇"><span class="nav-number">14.</span> <span class="nav-text">Flex 布局教程：语法篇</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浅谈-React、Flux-与-Redux"><span class="nav-number">15.</span> <span class="nav-text">浅谈 React、Flux 与 Redux</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#怎样理顺react，flux，redux这些概念的关系，开发中有必要使用它们吗"><span class="nav-number">16.</span> <span class="nav-text">怎样理顺react，flux，redux这些概念的关系，开发中有必要使用它们吗?</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#DEMO文章："><span class="nav-number"></span> <span class="nav-text">DEMO文章：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#这段时间看了下Redux，写自己对它的感觉。"><span class="nav-number">1.</span> <span class="nav-text">这段时间看了下Redux，写自己对它的感觉。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基于-react-react-router-redux-webpack-ES6-7-less-的完整项目"><span class="nav-number">2.</span> <span class="nav-text">基于 react + react-router + redux + webpack + ES6/7 + less 的完整项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基于webpack-react-react-router-redux-less-flex-css-ES6-的React版cnode社区"><span class="nav-number">3.</span> <span class="nav-text">基于webpack + react + react-router + redux + less + flex.css + ES6 的React版cnode社区</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number"></span> <span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#做React需要会什么？"><span class="nav-number"></span> <span class="nav-text">做React需要会什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-是什么"><span class="nav-number"></span> <span class="nav-text">React 是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React的组件化"><span class="nav-number"></span> <span class="nav-text">React的组件化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React的-Diff算法"><span class="nav-number"></span> <span class="nav-text">React的 Diff算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React组件是怎么来的"><span class="nav-number"></span> <span class="nav-text">React组件是怎么来的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组件的生命周期"><span class="nav-number"></span> <span class="nav-text">组件的生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-Router路由"><span class="nav-number"></span> <span class="nav-text">React-Router路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组件之间的通信"><span class="nav-number"></span> <span class="nav-text">组件之间的通信</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Redux"><span class="nav-number"></span> <span class="nav-text">Redux</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#流程是这个样子的："><span class="nav-number">1.</span> <span class="nav-text">流程是这个样子的：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#接下来具体分析一下，redux以及react-redux到底是怎么实现的。"><span class="nav-number">2.</span> <span class="nav-text">接下来具体分析一下，redux以及react-redux到底是怎么实现的。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#先上一张图"><span class="nav-number">3.</span> <span class="nav-text">先上一张图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#先说说redux："><span class="nav-number"></span> <span class="nav-text">先说说redux：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#redux主要由三部分组成：store，reducer，action。"><span class="nav-number">1.</span> <span class="nav-text">redux主要由三部分组成：store，reducer，action。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-Redux"><span class="nav-number"></span> <span class="nav-text">React-Redux</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下面是一个完整的-react-–-gt-redux-–-gt-react-流程："><span class="nav-number"></span> <span class="nav-text">下面是一个完整的 react –&gt; redux –&gt; react 流程：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目搭建"><span class="nav-number"></span> <span class="nav-text">项目搭建</span></a></li></div>
             
 
           </div>
-        </section>
+        </div>
       <!--/noindex-->
       
 
@@ -888,60 +1093,59 @@ Reac">
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">RamboLu</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">
-    由 <a>Hexo</a> 技术支持
-  </div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 技术支持</div>
 
 
 
-  <span class="post-meta-divider"> | </span>
+  <span class="post-meta-divider">|</span>
 
 
 
-  <div class="theme-info"> 
-    <a> Next </a> 
-    主题
-  </div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT</a></div>
 
 
 
 
         
-  <div class="busuanzi-count">
-    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-    
-      <span class="site-uv">
-        <i class="fa fa-user"></i> 本站访客数
-        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-        人次
-      </span>
-    
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
 
-    
-      <span class="site-pv">
-        <i class="fa fa-eye"></i> 本站总访问量
-        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-        次
-      </span>
-    
-  </div>
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
 
 
 
 
 
-  <script type="text/javascript">
+  <script>
     (function() {
       var hm = document.createElement("script");
       hm.src = "//tajs.qq.com/stats?sId=61220060";
@@ -972,11 +1176,14 @@ Reac">
 
     
 
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -990,63 +1197,51 @@ Reac">
 
 
 
-  
-
-
-  
-
-
-
-
-
-
 
 
 
 
 
   
+    
+      
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script src="/js/src/utils.js?v=6.6.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script src="/js/src/motion.js?v=6.6.0"></script>
 
 
 
@@ -1054,36 +1249,22 @@ Reac">
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+  <script src="/js/src/affix.js?v=6.6.0"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
 
 
 
   
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
 
 
 
   
 
 
-  
-
-
-
-
-	
-
-
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
 
 
 
@@ -1091,11 +1272,7 @@ Reac">
 
 
 
-
-
   
-
-
 
 
 
@@ -1105,12 +1282,14 @@ Reac">
 
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
-  <script type="text/javascript">
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  <script>
     var GUEST = ['nick','mail','link'];
     var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
+    guest = guest.split(',').filter(function (item) {
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
@@ -1121,16 +1300,18 @@ Reac">
         appKey: 'rgnJBaCPX4E4G0oXvw19elko',
         placeholder: '请输入...',
         avatar:'mm',
-        guest_info:guest,
+        meta:guest,
         pageSize:'10' || 10,
+        visitor: false
     });
   </script>
 
 
 
+
   
 
-  <script type="text/javascript">
+  <script>
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -1179,6 +1360,8 @@ Reac">
         .css('overflow', 'hidden');
       $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
 
+      
+
       $.ajax({
         url: path,
         dataType: isXml ? "xml" : "json",
@@ -1212,6 +1395,7 @@ Reac">
                 var title = data.title.trim();
                 var titleInLowerCase = title.toLowerCase();
                 var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
                 var contentInLowerCase = content.toLowerCase();
                 var articleUrl = decodeURIComponent(data.url);
                 var indexOfTitle = [];
@@ -1454,107 +1638,61 @@ Reac">
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz", "rgnJBaCPX4E4G0oXvw19elko");</script>
   <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
+    
     function addCount(Counter) {
       var $visitors = $(".leancloud_visitors");
       var url = $visitors.attr('id').trim();
       var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
 
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function ({ results }) {
           if (results.length > 0) {
             var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            })
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
           } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
           }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
+        })
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
       });
     }
+    
 
     $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz")
+        .done(function ({ api_server }) {
+          var Counter = function (method, url, data) {
+            return $.ajax({
+              method: method,
+              url: `https://${api_server}/1.1${url}`,
+              headers: {
+                'X-LC-Id': "UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz",
+                'X-LC-Key': "rgnJBaCPX4E4G0oXvw19elko",
+                'Content-Type': 'application/json',
+              },
+              data: data,
+            });
+          };
+          
+          addCount(Counter);
+          
+        })
     });
   </script>
 
@@ -1565,6 +1703,16 @@ Reac">
   
 
   
+
+  
+
+  
+  
+
+  
+
+  
+
   
 
   

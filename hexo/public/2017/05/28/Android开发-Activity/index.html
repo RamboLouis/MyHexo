@@ -2,14 +2,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +29,6 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,9 +45,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -92,27 +96,21 @@
 
 
 
-  
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/IronMan.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/IronMan.png?v=6.6.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/IronMan.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/IronMan.png?v=6.6.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/IronMan.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/IronMan.png?v=6.6.0">
 
 
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+  <link rel="mask-icon" href="/images/IronMan.png?v=6.6.0" color="#222">
 
 
 
@@ -122,45 +120,18 @@
 
 
 
-
-<meta name="description" content="Activity
-Android应用程序四大组件之一,一个 Activity 通常就是一个单独的屏幕,用户可与其提供的屏幕进行交互。每个 Activity 都会获得一个用于绘制其用户界面的窗口。窗口通常会充满屏幕，但也可小于屏幕并浮动在其他窗口之上。类似于iOS中的UIViewController。
-
-每次新 Activity 启动时，前一 Activity 便会停止，但系统会在堆栈（“返回栈”）">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Android开发-Activity.">
-<meta property="og:url" content="http://RamboLu.top/2017/05/28/Android开发-Activity/index.html">
-<meta property="og:site_name" content="RamboLu Blog">
-<meta property="og:description" content="Activity
-Android应用程序四大组件之一,一个 Activity 通常就是一个单独的屏幕,用户可与其提供的屏幕进行交互。每个 Activity 都会获得一个用于绘制其用户界面的窗口。窗口通常会充满屏幕，但也可小于屏幕并浮动在其他窗口之上。类似于iOS中的UIViewController。
-
-每次新 Activity 启动时，前一 Activity 便会停止，但系统会在堆栈（“返回栈”）">
-<meta property="og:image" content="https://developer.android.google.cn/images/activity_lifecycle.png">
-<meta property="og:updated_time" content="2017-06-08T02:14:39.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android开发-Activity.">
-<meta name="twitter:description" content="Activity
-Android应用程序四大组件之一,一个 Activity 通常就是一个单独的屏幕,用户可与其提供的屏幕进行交互。每个 Activity 都会获得一个用于绘制其用户界面的窗口。窗口通常会充满屏幕，但也可小于屏幕并浮动在其他窗口之上。类似于iOS中的UIViewController。
-
-每次新 Activity 启动时，前一 Activity 便会停止，但系统会在堆栈（“返回栈”）">
-<meta name="twitter:image" content="https://developer.android.google.cn/images/activity_lifecycle.png">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    version: '5.1.4',
+    version: '6.6.0',
     sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -172,12 +143,39 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 </script>
 
 
-
-  <link rel="canonical" href="http://RamboLu.top/2017/05/28/Android开发-Activity/"/>
-
+  
 
 
 
+
+  <meta name="description" content="Activity Android应用程序四大组件之一,一个 Activity 通常就是一个单独的屏幕,用户可与其提供的屏幕进行交互。每个 Activity 都会获得一个用于绘制其用户界面的窗口。窗口通常会充满屏幕，但也可小于屏幕并浮动在其他窗口之上。类似于iOS中的UIViewController。  每次新 Activity 启动时，前一 Activity 便会停止，但系统会在堆栈（“返回栈”）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android开发-Activity.">
+<meta property="og:url" content="http://RamboLu.top/2017/05/28/Android开发-Activity/index.html">
+<meta property="og:site_name" content="RamboLu Blog">
+<meta property="og:description" content="Activity Android应用程序四大组件之一,一个 Activity 通常就是一个单独的屏幕,用户可与其提供的屏幕进行交互。每个 Activity 都会获得一个用于绘制其用户界面的窗口。窗口通常会充满屏幕，但也可小于屏幕并浮动在其他窗口之上。类似于iOS中的UIViewController。  每次新 Activity 启动时，前一 Activity 便会停止，但系统会在堆栈（“返回栈”）">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://developer.android.google.cn/images/activity_lifecycle.png">
+<meta property="og:updated_time" content="2017-06-08T02:14:39.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android开发-Activity.">
+<meta name="twitter:description" content="Activity Android应用程序四大组件之一,一个 Activity 通常就是一个单独的屏幕,用户可与其提供的屏幕进行交互。每个 Activity 都会获得一个用于绘制其用户界面的窗口。窗口通常会充满屏幕，但也可小于屏幕并浮动在其他窗口之上。类似于iOS中的UIViewController。  每次新 Activity 启动时，前一 Activity 便会停止，但系统会在堆栈（“返回栈”）">
+<meta name="twitter:image" content="https://developer.android.google.cn/images/activity_lifecycle.png">
+
+
+
+
+
+
+  <link rel="canonical" href="http://RamboLu.top/2017/05/28/Android开发-Activity/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>Android开发-Activity. | RamboLu Blog</title>
   
@@ -189,9 +187,38 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 
 
 
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -200,25 +227,27 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 
   <div class="container sidebar-position-left page-post-detail">
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">RamboLu Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
-        <h1 class="site-subtitle" itemprop="description">技术在于折腾。</h1>
+        <p class="site-subtitle">技术在于折腾。</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -226,76 +255,111 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            所有文章
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于我
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
 
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于我</a>
+
+  </li>
+
+      
       
         <li class="menu-item menu-item-search">
           
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
         </li>
       
     </ul>
+  
+
   
 
   
@@ -310,9 +374,7 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -326,12 +388,23 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
 
@@ -344,20 +417,22 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2017/05/28/Android开发-Activity/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -366,11 +441,20 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 
         
         
-          <h2 class="post-title" itemprop="name headline">Android开发-Activity.</h2>
+          <h1 class="post-title" itemprop="name headline">Android开发-Activity.
+
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -378,18 +462,35 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-28T11:15:05+08:00">
-                2017-05-28
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-05-28 11:15:05" itemprop="dateCreated datePublished" datetime="2017-05-28T11:15:05+08:00">2017-05-28</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-06-08 10:14:39" itemprop="dateModified" datetime="2017-06-08T10:14:39+08:00">2017-06-08</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -400,11 +501,7 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index">
-                    <span itemprop="name">Android</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
 
                 
                 
@@ -420,7 +517,7 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/05/28/Android开发-Activity/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2017/05/28/Android开发-Activity/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/05/28/Android开发-Activity/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -434,13 +531,12 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -482,11 +578,11 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 <h4 id="配置-AndroidManifest"><a href="#配置-AndroidManifest" class="headerlink" title="配置 AndroidManifest"></a>配置 AndroidManifest</h4><ul>
 <li>更改默认Activity。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;manifest ... &gt;</div><div class="line">  &lt;application ... &gt;</div><div class="line">      &lt;activity android:name=&quot;.MainActivity&quot; /&gt;</div><div class="line">      ...</div><div class="line">  &lt;/application ... &gt;</div><div class="line">  ...</div><div class="line">&lt;/manifest &gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;manifest ... &gt;</span><br><span class="line">  &lt;application ... &gt;</span><br><span class="line">      &lt;activity android:name=&quot;.MainActivity&quot; /&gt;</span><br><span class="line">      ...</span><br><span class="line">  &lt;/application ... &gt;</span><br><span class="line">  ...</span><br><span class="line">&lt;/manifest &gt;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>intent-filter</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;activity android:name=&quot;.MainActivity&quot;&gt;</div><div class="line">  &lt;intent-filter&gt;</div><div class="line">     &lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;</div><div class="line">     &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;</div><div class="line">   &lt;/intent-filter&gt;</div><div class="line">&lt;/activity&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;activity android:name=&quot;.MainActivity&quot;&gt;</span><br><span class="line">  &lt;intent-filter&gt;</span><br><span class="line">     &lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;</span><br><span class="line">     &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;</span><br><span class="line">   &lt;/intent-filter&gt;</span><br><span class="line">&lt;/activity&gt;</span><br></pre></td></tr></table></figure>
 <p>action 元素指定这是应用的“主”入口点。<br>category 元素指定此 Activity 应列入系统的应用启动器内。</p>
 <h4 id="启动-Activity"><a href="#启动-Activity" class="headerlink" title="启动 Activity"></a>启动 Activity</h4><ul>
 <li>可以通过调用 <code>startActivity()</code>，并将其传递给描述您想启动的 Activity 的 Intent 来启动另一个 Activity。</li>
@@ -495,16 +591,16 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 <ol>
 <li>显式启动:通过包名来启动</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Intent intent = new Intent(XXX.this, HomeActivity.class);</div><div class="line">startActivity(intent);</div></pre></td></tr></table></figure>
-<ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = new Intent(XXX.this, HomeActivity.class);</span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure>
+<ol start="2">
 <li>隐式启动:通过AndroidManifest中的Intent-filter的Action,Category来实现。</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"> &lt;activity android:name=&quot;.OtherActivity&quot;&gt;</div><div class="line">    &lt;intent-filter&gt;</div><div class="line">        &lt;action android:name=&quot;other_action&quot; /&gt;</div><div class="line">        &lt;category android:name=&quot;other_category&quot; /&gt;</div><div class="line">        &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;</div><div class="line">    &lt;/intent-filter&gt;</div><div class="line">&lt;/activity&gt;</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Intent otherIntent = new Intent();</div><div class="line">otherIntent.setAction(&quot;other_action&quot;);</div><div class="line">otherIntent.addCategory(&quot;other_category&quot;);</div><div class="line">startActivity(otherIntent);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> &lt;activity android:name=&quot;.OtherActivity&quot;&gt;</span><br><span class="line">    &lt;intent-filter&gt;</span><br><span class="line">        &lt;action android:name=&quot;other_action&quot; /&gt;</span><br><span class="line">        &lt;category android:name=&quot;other_category&quot; /&gt;</span><br><span class="line">        &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;</span><br><span class="line">    &lt;/intent-filter&gt;</span><br><span class="line">&lt;/activity&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Intent otherIntent = new Intent();</span><br><span class="line">otherIntent.setAction(&quot;other_action&quot;);</span><br><span class="line">otherIntent.addCategory(&quot;other_category&quot;);</span><br><span class="line">startActivity(otherIntent);</span><br></pre></td></tr></table></figure>
 <ul>
 <li>应用还可以利用 Activity 数据执行某项操作，例如打电话、发短信、发电子邮件等。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">// 打电话</div><div class="line">Uri uri = Uri.parse(&quot;tel:10010&quot;);</div><div class="line">Intent intent = new Intent(Intent.ACTION_DIAL, uri);</div><div class="line">startActivity(intent);</div><div class="line">// 2. 发短信</div><div class="line">Uri uri = Uri.parse(&quot;sms:10010&quot;);</div><div class="line">Intent intent = new Intent(Intent.ACTION_SENDTO, uri);</div><div class="line">intent.putExtra(&quot;sms_body&quot;, &quot;今天天气不错&quot;);</div><div class="line">startActivity(intent);</div><div class="line">// 3. 打开浏览器</div><div class="line">Uri uri = Uri.parse(&quot;http://www.baidu.com&quot;);</div><div class="line">Intent intent  = new Intent(Intent.ACTION_VIEW, uri);</div><div class="line">startActivity(intent);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// 打电话</span><br><span class="line">Uri uri = Uri.parse(&quot;tel:10010&quot;);</span><br><span class="line">Intent intent = new Intent(Intent.ACTION_DIAL, uri);</span><br><span class="line">startActivity(intent);</span><br><span class="line">// 2. 发短信</span><br><span class="line">Uri uri = Uri.parse(&quot;sms:10010&quot;);</span><br><span class="line">Intent intent = new Intent(Intent.ACTION_SENDTO, uri);</span><br><span class="line">intent.putExtra(&quot;sms_body&quot;, &quot;今天天气不错&quot;);</span><br><span class="line">startActivity(intent);</span><br><span class="line">// 3. 打开浏览器</span><br><span class="line">Uri uri = Uri.parse(&quot;http://www.baidu.com&quot;);</span><br><span class="line">Intent intent  = new Intent(Intent.ACTION_VIEW, uri);</span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure>
 <h4 id="启动-Activity-以获得回调结果"><a href="#启动-Activity-以获得回调结果" class="headerlink" title="启动 Activity 以获得回调结果"></a>启动 Activity 以获得回调结果</h4><p>从启动的 Activity 获得回调结果。在这种情况下，请通过调用 <code>startActivityForResult()</code>（而非 startActivity()）来启动 Activity。 要想在随后收到后续 Activity 的结果，请实现 <code>onActivityResult()</code> 回调方法。 当后续 Activity 完成时，它会使用 Intent 向 <code>onActivityResult()</code> 方法返回结果。</p>
 <h4 id="管理-Activity-生命周期"><a href="#管理-Activity-生命周期" class="headerlink" title="管理 Activity 生命周期"></a>管理 Activity 生命周期</h4><ul>
 <li><strong>onCreate()</strong>: 类似iOS中的viewDidLoad。</li>
@@ -561,33 +657,39 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 <h4 id="Activity-正向传值及反向回调"><a href="#Activity-正向传值及反向回调" class="headerlink" title="Activity 正向传值及反向回调"></a>Activity 正向传值及反向回调</h4><h5 id="正向传值"><a href="#正向传值" class="headerlink" title="正向传值"></a>正向传值</h5><ul>
 <li>Activity A 传递一个或多个参数</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">Intent intent = new Intent(MainActivity.this, UserActivity.class);</div><div class="line">// 一次传一个</div><div class="line">intent.putExtra(&quot;name&quot;,name);</div><div class="line"></div><div class="line">// 一次传多条数据</div><div class="line">Bundle bd = new Bundle();</div><div class="line">bd.putCharSequence(&quot;name&quot;,name);</div><div class="line">bd.putCharSequence(&quot;sex&quot;,sex);</div><div class="line">intent.putExtras(bd);</div><div class="line"></div><div class="line">startActivity(intent);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = new Intent(MainActivity.this, UserActivity.class);</span><br><span class="line">// 一次传一个</span><br><span class="line">intent.putExtra(&quot;name&quot;,name);</span><br><span class="line"></span><br><span class="line">// 一次传多条数据</span><br><span class="line">Bundle bd = new Bundle();</span><br><span class="line">bd.putCharSequence(&quot;name&quot;,name);</span><br><span class="line">bd.putCharSequence(&quot;sex&quot;,sex);</span><br><span class="line">intent.putExtras(bd);</span><br><span class="line"></span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure>
 <ul>
 <li>Activity B 接收一个或多个参数</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Intent getIntent = getIntent();</div><div class="line"></div><div class="line">// 一次取一个</div><div class="line">name = getIntent.getStringExtra(&quot;name&quot;);</div><div class="line"></div><div class="line">// 一次取多个</div><div class="line">Bundle bd = getIntent.getExtras();</div><div class="line">name = bd.getCharSequence(&quot;name&quot;).toString();</div><div class="line">sex = bd.getCharSequence(&quot;sex&quot;).toString();</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Intent getIntent = getIntent();</span><br><span class="line"></span><br><span class="line">// 一次取一个</span><br><span class="line">name = getIntent.getStringExtra(&quot;name&quot;);</span><br><span class="line"></span><br><span class="line">// 一次取多个</span><br><span class="line">Bundle bd = getIntent.getExtras();</span><br><span class="line">name = bd.getCharSequence(&quot;name&quot;).toString();</span><br><span class="line">sex = bd.getCharSequence(&quot;sex&quot;).toString();</span><br></pre></td></tr></table></figure>
 <h5 id="反向回调"><a href="#反向回调" class="headerlink" title="反向回调"></a>反向回调</h5><ul>
 <li>Activity A 使用带<code>Result</code>的方法 <code>startActivityForResult()</code> 来启动 Activity B，而非 <code>startActivity()</code> 来启动 Activity B。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Intent intent = new Intent(OtherActivity.this,ImageActivity.class);</div><div class="line">startActivityForResult(intent,100);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = new Intent(OtherActivity.this,ImageActivity.class);</span><br><span class="line">startActivityForResult(intent,100);</span><br></pre></td></tr></table></figure>
 <ul>
 <li>Activity B 则实现 <code>setResult()</code>方法来实现回传值。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Intent intent = getIntent();</div><div class="line">setResult(200,intent);</div><div class="line">finish();</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = getIntent();</span><br><span class="line">setResult(200,intent);</span><br><span class="line">finish();</span><br></pre></td></tr></table></figure>
 <ul>
 <li>这样 Activity A 就会收到 Activity B 的回调结果，Activity A 再实现 <code>onActivityResult()</code> 回调方法进行监听。</li>
 </ul>
 <p>requestCode 为 Activity A 中 <code>startActivityForResult()</code> 发送的第二个参数: 100<br>resultCode 为 Activity B 中<code>setResult()</code>发送的第一个参数: 200<br>Intent 为 Activity B 中的Intent</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">@Override</div><div class="line">   protected void onActivityResult(int requestCode, int resultCode, Intent data) &#123;</div><div class="line">       super.onActivityResult(requestCode, resultCode, data);</div><div class="line">       Log.d(TAG, &quot;requestCode-----&gt;&quot; + requestCode);</div><div class="line">       Log.d(TAG, &quot;resultCode---&gt;&quot; + resultCode);</div><div class="line">       </div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line">   protected void onActivityResult(int requestCode, int resultCode, Intent data) &#123;</span><br><span class="line">       super.onActivityResult(requestCode, resultCode, data);</span><br><span class="line">       Log.d(TAG, &quot;requestCode-----&gt;&quot; + requestCode);</span><br><span class="line">       Log.d(TAG, &quot;resultCode---&gt;&quot; + resultCode);</span><br><span class="line">       </span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -631,22 +733,16 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
           
 
-
-          
-
   
     <div class="comments" id="comments">
     </div>
+
   
 
 
@@ -680,113 +776,219 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
         </ul>
       
 
-      <section class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/img/IronMan.png"
-                alt="RamboLu" />
+              <img class="site-author-image" itemprop="image" src="/images/IronMan.png" alt="RamboLu">
             
               <p class="site-author-name" itemprop="name">RamboLu</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Fire proves gold,adversity proves men.</p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">35</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">35</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">20</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
+            </nav>
+          
 
           
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/RamboLouis" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://weibo.com/210008553" target="_blank" title="新浪微博">
-                      
-                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://www.jianshu.com/users/7ebaa8152f09" target="_blank" title="简书">
-                      
-                        <i class="fa fa-fw fa-book"></i>简书</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/RamboLouis" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.linkedin.com/in/政浩-路-695158108/" target="_blank" title="LinkedIn">
-                      
-                        <i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:coderambolu@gmail.com" target="_blank" title="Email">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>Email</a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/RamboLouis" title="GitHub &rarr; https://github.com/RamboLouis" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://weibo.com/210008553" title="新浪微博 &rarr; http://weibo.com/210008553" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.jianshu.com/users/7ebaa8152f09" title="简书 &rarr; http://www.jianshu.com/users/7ebaa8152f09" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>简书</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/RamboLouis" title="Twitter &rarr; https://twitter.com/RamboLouis" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.linkedin.com/in/政浩-路-695158108/" title="LinkedIn &rarr; https://www.linkedin.com/in/政浩-路-695158108/" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:coderambolu@gmail.com" title="Email &rarr; mailto:coderambolu@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>Email</a>
+                </span>
+              
             </div>
           
 
           
-          
 
           
           
 
+          
+            
+          
           
 
         </div>
-      </section>
+      </div>
 
       
       <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
 
             
@@ -798,7 +1000,7 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
             
 
           </div>
-        </section>
+        </div>
       <!--/noindex-->
       
 
@@ -814,60 +1016,59 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">RamboLu</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">
-    由 <a>Hexo</a> 技术支持
-  </div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 技术支持</div>
 
 
 
-  <span class="post-meta-divider"> | </span>
+  <span class="post-meta-divider">|</span>
 
 
 
-  <div class="theme-info"> 
-    <a> Next </a> 
-    主题
-  </div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT</a></div>
 
 
 
 
         
-  <div class="busuanzi-count">
-    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-    
-      <span class="site-uv">
-        <i class="fa fa-user"></i> 本站访客数
-        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-        人次
-      </span>
-    
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
 
-    
-      <span class="site-pv">
-        <i class="fa fa-eye"></i> 本站总访问量
-        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-        次
-      </span>
-    
-  </div>
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
 
 
 
 
 
-  <script type="text/javascript">
+  <script>
     (function() {
       var hm = document.createElement("script");
       hm.src = "//tajs.qq.com/stats?sId=61220060";
@@ -898,11 +1099,14 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 
     
 
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -916,63 +1120,51 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 
 
 
-  
-
-
-  
-
-
-
-
-
-
 
 
 
 
 
   
+    
+      
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script src="/js/src/utils.js?v=6.6.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script src="/js/src/motion.js?v=6.6.0"></script>
 
 
 
@@ -980,36 +1172,22 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+  <script src="/js/src/affix.js?v=6.6.0"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
 
 
 
   
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
 
 
 
   
 
 
-  
-
-
-
-
-	
-
-
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
 
 
 
@@ -1017,11 +1195,7 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 
 
 
-
-
   
-
-
 
 
 
@@ -1031,12 +1205,14 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
 
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
-  <script type="text/javascript">
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  <script>
     var GUEST = ['nick','mail','link'];
     var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
+    guest = guest.split(',').filter(function (item) {
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
@@ -1047,16 +1223,18 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
         appKey: 'rgnJBaCPX4E4G0oXvw19elko',
         placeholder: '请输入...',
         avatar:'mm',
-        guest_info:guest,
+        meta:guest,
         pageSize:'10' || 10,
+        visitor: false
     });
   </script>
 
 
 
+
   
 
-  <script type="text/javascript">
+  <script>
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -1105,6 +1283,8 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
         .css('overflow', 'hidden');
       $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
 
+      
+
       $.ajax({
         url: path,
         dataType: isXml ? "xml" : "json",
@@ -1138,6 +1318,7 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
                 var title = data.title.trim();
                 var titleInLowerCase = title.toLowerCase();
                 var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
                 var contentInLowerCase = content.toLowerCase();
                 var articleUrl = decodeURIComponent(data.url);
                 var indexOfTitle = [];
@@ -1380,107 +1561,61 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz", "rgnJBaCPX4E4G0oXvw19elko");</script>
   <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
+    
     function addCount(Counter) {
       var $visitors = $(".leancloud_visitors");
       var url = $visitors.attr('id').trim();
       var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
 
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function ({ results }) {
           if (results.length > 0) {
             var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            })
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
           } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
           }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
+        })
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
       });
     }
+    
 
     $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz")
+        .done(function ({ api_server }) {
+          var Counter = function (method, url, data) {
+            return $.ajax({
+              method: method,
+              url: `https://${api_server}/1.1${url}`,
+              headers: {
+                'X-LC-Id': "UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz",
+                'X-LC-Key': "rgnJBaCPX4E4G0oXvw19elko",
+                'Content-Type': 'application/json',
+              },
+              data: data,
+            });
+          };
+          
+          addCount(Counter);
+          
+        })
     });
   </script>
 
@@ -1491,6 +1626,16 @@ Android应用程序四大组件之一,一个 Activity 通常就是一个单独�
   
 
   
+
+  
+
+  
+  
+
+  
+
+  
+
   
 
   

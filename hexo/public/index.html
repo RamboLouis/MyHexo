@@ -2,14 +2,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +29,6 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,9 +45,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -92,27 +96,21 @@
 
 
 
-  
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/IronMan.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/IronMan.png?v=6.6.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/IronMan.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/IronMan.png?v=6.6.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/IronMan.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/IronMan.png?v=6.6.0">
 
 
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+  <link rel="mask-icon" href="/images/IronMan.png?v=6.6.0" color="#222">
 
 
 
@@ -122,33 +120,18 @@
 
 
 
-
-<meta name="description" content="Fire proves gold,adversity proves men.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="RamboLu Blog">
-<meta property="og:url" content="http://RamboLu.top/index.html">
-<meta property="og:site_name" content="RamboLu Blog">
-<meta property="og:description" content="Fire proves gold,adversity proves men.">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RamboLu Blog">
-<meta name="twitter:description" content="Fire proves gold,adversity proves men.">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    version: '5.1.4',
+    version: '6.6.0',
     sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -160,12 +143,36 @@
 </script>
 
 
-
-  <link rel="canonical" href="http://RamboLu.top/"/>
-
+  
 
 
 
+
+  <meta name="description" content="Fire proves gold,adversity proves men.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RamboLu Blog">
+<meta property="og:url" content="http://RamboLu.top/index.html">
+<meta property="og:site_name" content="RamboLu Blog">
+<meta property="og:description" content="Fire proves gold,adversity proves men.">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RamboLu Blog">
+<meta name="twitter:description" content="Fire proves gold,adversity proves men.">
+
+
+
+
+
+
+  <link rel="canonical" href="http://RamboLu.top/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>RamboLu Blog</title>
   
@@ -177,9 +184,38 @@
 
 
 
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -189,25 +225,27 @@
   <div class="container sidebar-position-left 
   page-home">
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">RamboLu Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
-        <h1 class="site-subtitle" itemprop="description">技术在于折腾。</h1>
+        <p class="site-subtitle">技术在于折腾。</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -215,76 +253,111 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            所有文章
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于我
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home menu-item-active">
 
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于我</a>
+
+  </li>
+
+      
       
         <li class="menu-item menu-item-search">
           
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
         </li>
       
     </ul>
+  
+
   
 
   
@@ -299,9 +372,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -315,12 +386,23 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -333,20 +415,22 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/11/01/Web学习-freeCodeCamp课程学习/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -355,13 +439,22 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/01/Web学习-freeCodeCamp课程学习/" itemprop="url">Web学习-freeCodeCamp课程学习</a></h2>
+                
+                <a href="/2018/11/01/Web学习-freeCodeCamp课程学习/" class="post-title-link" itemprop="http://RamboLu.top/index.html">Web学习-freeCodeCamp课程学习</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -369,13 +462,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-01T10:28:45+08:00">
-                2018-11-01
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-01 10:28:45" itemprop="dateCreated datePublished" datetime="2018-11-01T10:28:45+08:00">2018-11-01</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-22 15:49:19" itemprop="dateModified" datetime="2018-11-22T15:49:19+08:00">2018-11-22</time>
+              
             
           </span>
 
@@ -389,7 +499,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/11/01/Web学习-freeCodeCamp课程学习/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/01/Web学习-freeCodeCamp课程学习/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/11/01/Web学习-freeCodeCamp课程学习/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -403,13 +513,12 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -438,21 +547,29 @@ Create Visual Balance Using the text-align Property
 h4标记上的te
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/01/Web学习-freeCodeCamp课程学习/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/01/Web学习-freeCodeCamp课程学习/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -485,20 +602,22 @@ h4标记上的te
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -507,13 +626,22 @@ h4标记上的te
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/" itemprop="url">Linux-Ubuntu安装与卸载Gitlab</a></h2>
+                
+                <a href="/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/" class="post-title-link" itemprop="http://RamboLu.top/index.html">Linux-Ubuntu安装与卸载Gitlab</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -521,18 +649,35 @@ h4标记上的te
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-03T15:10:21+08:00">
-                2018-06-03
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-03 15:10:21" itemprop="dateCreated datePublished" datetime="2018-06-03T15:10:21+08:00">2018-06-03</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-08 20:18:25" itemprop="dateModified" datetime="2018-06-08T20:18:25+08:00">2018-06-08</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -543,11 +688,7 @@ h4标记上的te
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Gitlab/" itemprop="url" rel="index">
-                    <span itemprop="name">Gitlab</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Gitlab/" itemprop="url" rel="index"><span itemprop="name">Gitlab</span></a></span>
 
                 
                 
@@ -563,7 +704,7 @@ h4标记上的te
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -577,13 +718,12 @@ h4标记上的te
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -610,21 +750,29 @@ h4标记上的te
 然后，安装Postfix发送通知邮件。如果您想使用其他解决方案发送电子邮件，跳过此步骤并在安装GitLab后配置外部SMTP服务器。ps:配置外部SMTP服务器: https://docs
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -657,20 +805,22 @@ h4标记上的te
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/05/26/Liunx-Ubuntu删除和部署Nginx/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -679,13 +829,22 @@ h4标记上的te
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/26/Liunx-Ubuntu删除和部署Nginx/" itemprop="url">Liunx-Ubuntu删除和部署Nginx</a></h2>
+                
+                <a href="/2018/05/26/Liunx-Ubuntu删除和部署Nginx/" class="post-title-link" itemprop="http://RamboLu.top/index.html">Liunx-Ubuntu删除和部署Nginx</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -693,18 +852,35 @@ h4标记上的te
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-26T21:06:49+08:00">
-                2018-05-26
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-26 21:06:49" itemprop="dateCreated datePublished" datetime="2018-05-26T21:06:49+08:00">2018-05-26</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-08 13:48:19" itemprop="dateModified" datetime="2018-06-08T13:48:19+08:00">2018-06-08</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -715,11 +891,7 @@ h4标记上的te
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span>
 
                 
                 
@@ -735,7 +907,7 @@ h4标记上的te
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/05/26/Liunx-Ubuntu删除和部署Nginx/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/05/26/Liunx-Ubuntu删除和部署Nginx/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/05/26/Liunx-Ubuntu删除和部署Nginx/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -749,13 +921,12 @@ h4标记上的te
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -795,21 +966,29 @@ h4标记上的te
 12sudo apt-get --purge remo
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/26/Liunx-Ubuntu删除和部署Nginx/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/05/26/Liunx-Ubuntu删除和部署Nginx/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -842,20 +1021,22 @@ h4标记上的te
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/05/10/Flutter开发-Flutter的SDK安装与初尝/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -864,13 +1045,22 @@ h4标记上的te
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/10/Flutter开发-Flutter的SDK安装与初尝/" itemprop="url">Flutter开发-Flutter的SDK安装与初尝</a></h2>
+                
+                <a href="/2018/05/10/Flutter开发-Flutter的SDK安装与初尝/" class="post-title-link" itemprop="http://RamboLu.top/index.html">Flutter开发-Flutter的SDK安装与初尝</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -878,13 +1068,30 @@ h4标记上的te
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-10T17:33:25+08:00">
-                2018-05-10
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-10 17:33:25" itemprop="dateCreated datePublished" datetime="2018-05-10T17:33:25+08:00">2018-05-10</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-05-13 21:32:00" itemprop="dateModified" datetime="2018-05-13T21:32:00+08:00">2018-05-13</time>
+              
             
           </span>
 
@@ -898,7 +1105,7 @@ h4标记上的te
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/05/10/Flutter开发-Flutter的SDK安装与初尝/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/05/10/Flutter开发-Flutter的SDK安装与初尝/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/05/10/Flutter开发-Flutter的SDK安装与初尝/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -912,13 +1119,12 @@ h4标记上的te
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -950,21 +1156,29 @@ h4标记上的te
 https://flutter.io/sdk
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/10/Flutter开发-Flutter的SDK安装与初尝/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/05/10/Flutter开发-Flutter的SDK安装与初尝/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -997,20 +1211,22 @@ https://flutter.io/sdk
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/04/25/Android开发-gradlew、adb和keytool命令总结/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -1019,13 +1235,22 @@ https://flutter.io/sdk
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/25/Android开发-gradlew、adb和keytool命令总结/" itemprop="url">Android开发-gradlew、adb、keytool和fastboot命令总结</a></h2>
+                
+                <a href="/2018/04/25/Android开发-gradlew、adb和keytool命令总结/" class="post-title-link" itemprop="http://RamboLu.top/index.html">Android开发-gradlew、adb、keytool和fastboot命令总结</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1033,18 +1258,35 @@ https://flutter.io/sdk
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-25T18:38:26+08:00">
-                2018-04-25
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-04-25 18:38:26" itemprop="dateCreated datePublished" datetime="2018-04-25T18:38:26+08:00">2018-04-25</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-25 11:17:23" itemprop="dateModified" datetime="2018-07-25T11:17:23+08:00">2018-07-25</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1055,11 +1297,7 @@ https://flutter.io/sdk
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index">
-                    <span itemprop="name">Android</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
 
                 
                 
@@ -1075,7 +1313,7 @@ https://flutter.io/sdk
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/04/25/Android开发-gradlew、adb和keytool命令总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/04/25/Android开发-gradlew、adb和keytool命令总结/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/04/25/Android开发-gradlew、adb和keytool命令总结/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1089,13 +1327,12 @@ https://flutter.io/sdk
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -1139,21 +1376,29 @@ adb uninstall &lt;package&gt;
 adb install 
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/25/Android开发-gradlew、adb和keytool命令总结/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/04/25/Android开发-gradlew、adb和keytool命令总结/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1186,20 +1431,22 @@ adb install
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/03/27/Web开发-Android和iOS的WebView使用浏览器调试/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -1208,13 +1455,22 @@ adb install
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/27/Web开发-Android和iOS的WebView使用浏览器调试/" itemprop="url">Web开发-Android和iOS浏览器调试手机web</a></h2>
+                
+                <a href="/2018/03/27/Web开发-Android和iOS的WebView使用浏览器调试/" class="post-title-link" itemprop="http://RamboLu.top/index.html">Web开发-Android和iOS浏览器调试手机web</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1222,13 +1478,30 @@ adb install
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-27T18:19:10+08:00">
-                2018-03-27
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-03-27 18:19:10" itemprop="dateCreated datePublished" datetime="2018-03-27T18:19:10+08:00">2018-03-27</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-04-29 19:22:24" itemprop="dateModified" datetime="2018-04-29T19:22:24+08:00">2018-04-29</time>
+              
             
           </span>
 
@@ -1242,7 +1515,7 @@ adb install
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/03/27/Web开发-Android和iOS的WebView使用浏览器调试/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/27/Web开发-Android和iOS的WebView使用浏览器调试/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/03/27/Web开发-Android和iOS的WebView使用浏览器调试/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1256,13 +1529,12 @@ adb install
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -1301,21 +1573,29 @@ iOS设备
 
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/27/Web开发-Android和iOS的WebView使用浏览器调试/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/03/27/Web开发-Android和iOS的WebView使用浏览器调试/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1348,20 +1628,22 @@ iOS设备
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -1370,13 +1652,22 @@ iOS设备
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/" itemprop="url">Android开发-恩智浦NXP i.MX7D开发板刷Android Things系统心得</a></h2>
+                
+                <a href="/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/" class="post-title-link" itemprop="http://RamboLu.top/index.html">Android开发-恩智浦NXP i.MX7D开发板刷Android Things系统心得</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1384,18 +1675,35 @@ iOS设备
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-07T14:56:41+08:00">
-                2018-02-07
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-02-07 14:56:41" itemprop="dateCreated datePublished" datetime="2018-02-07T14:56:41+08:00">2018-02-07</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-02-09 14:10:59" itemprop="dateModified" datetime="2018-02-09T14:10:59+08:00">2018-02-09</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1406,11 +1714,7 @@ iOS设备
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index">
-                    <span itemprop="name">Android</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
 
                 
                 
@@ -1426,7 +1730,7 @@ iOS设备
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1440,13 +1744,12 @@ iOS设备
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -1476,21 +1779,29 @@ iOS设备
 根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1523,20 +1834,22 @@ iOS设备
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2017/07/10/ReactNative开发-FlatList和SectionList应用/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -1545,13 +1858,22 @@ iOS设备
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/10/ReactNative开发-FlatList和SectionList应用/" itemprop="url">ReactNative开发-FlatList和SectionList应用</a></h2>
+                
+                <a href="/2017/07/10/ReactNative开发-FlatList和SectionList应用/" class="post-title-link" itemprop="http://RamboLu.top/index.html">ReactNative开发-FlatList和SectionList应用</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1559,18 +1881,35 @@ iOS设备
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-10T18:10:32+08:00">
-                2017-07-10
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-07-10 18:10:32" itemprop="dateCreated datePublished" datetime="2017-07-10T18:10:32+08:00">2017-07-10</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-12 11:24:15" itemprop="dateModified" datetime="2018-01-12T11:24:15+08:00">2018-01-12</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1581,11 +1920,7 @@ iOS设备
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ReactNative/" itemprop="url" rel="index">
-                    <span itemprop="name">ReactNative</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/ReactNative/" itemprop="url" rel="index"><span itemprop="name">ReactNative</span></a></span>
 
                 
                 
@@ -1601,7 +1936,7 @@ iOS设备
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/07/10/ReactNative开发-FlatList和SectionList应用/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2017/07/10/ReactNative开发-FlatList和SectionList应用/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/07/10/ReactNative开发-FlatList和SectionList应用/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1615,13 +1950,12 @@ iOS设备
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -1651,21 +1985,29 @@ iOS设备
 FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/10/ReactNative开发-FlatList和SectionList应用/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/07/10/ReactNative开发-FlatList和SectionList应用/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1698,20 +2040,22 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2017/07/04/ReactNative开发-iOS自动切换ip/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -1720,13 +2064,22 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/04/ReactNative开发-iOS自动切换ip/" itemprop="url">ReactNative开发-iOS设备动态获取电脑IP</a></h2>
+                
+                <a href="/2017/07/04/ReactNative开发-iOS自动切换ip/" class="post-title-link" itemprop="http://RamboLu.top/index.html">ReactNative开发-iOS设备动态获取电脑IP</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1734,18 +2087,35 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-04T16:33:59+08:00">
-                2017-07-04
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-07-04 16:33:59" itemprop="dateCreated datePublished" datetime="2017-07-04T16:33:59+08:00">2017-07-04</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-22 13:08:32" itemprop="dateModified" datetime="2018-07-22T13:08:32+08:00">2018-07-22</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1756,11 +2126,7 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ReactNative/" itemprop="url" rel="index">
-                    <span itemprop="name">ReactNative</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/ReactNative/" itemprop="url" rel="index"><span itemprop="name">ReactNative</span></a></span>
 
                 
                 
@@ -1776,7 +2142,7 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/07/04/ReactNative开发-iOS自动切换ip/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2017/07/04/ReactNative开发-iOS自动切换ip/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/07/04/ReactNative开发-iOS自动切换ip/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1790,13 +2156,12 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -1833,21 +2198,29 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
 123456INFOPLIST=&qu
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/04/ReactNative开发-iOS自动切换ip/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/07/04/ReactNative开发-iOS自动切换ip/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1880,20 +2253,22 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2017/06/25/ReactNative开发-React-Navigation应用/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -1902,13 +2277,22 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/25/ReactNative开发-React-Navigation应用/" itemprop="url">ReactNative开发-React Navigation应用</a></h2>
+                
+                <a href="/2017/06/25/ReactNative开发-React-Navigation应用/" class="post-title-link" itemprop="http://RamboLu.top/index.html">ReactNative开发-React Navigation应用</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1916,18 +2300,35 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-25T17:14:48+08:00">
-                2017-06-25
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-06-25 17:14:48" itemprop="dateCreated datePublished" datetime="2017-06-25T17:14:48+08:00">2017-06-25</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-11-17 14:29:09" itemprop="dateModified" datetime="2017-11-17T14:29:09+08:00">2017-11-17</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1938,11 +2339,7 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ReactNative/" itemprop="url" rel="index">
-                    <span itemprop="name">ReactNative</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/ReactNative/" itemprop="url" rel="index"><span itemprop="name">ReactNative</span></a></span>
 
                 
                 
@@ -1958,7 +2355,7 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/06/25/ReactNative开发-React-Navigation应用/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2017/06/25/ReactNative开发-React-Navigation应用/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/06/25/ReactNative开发-React-Navigation应用/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1972,13 +2369,12 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -2005,21 +2401,29 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
 从0.44版本开始,Navigator被从React Native的核心组件库中剥离到了一个名为react-native-deprecated-custom-components的单独模块中.如果你需要继续使用Navigator,则需要先npm i -S react-native-deprecated-
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/25/ReactNative开发-React-Navigation应用/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/06/25/ReactNative开发-React-Navigation应用/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -2048,15 +2452,12 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
 
           </div>
-          
-
-
           
 
         </div>
@@ -2079,109 +2480,215 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/img/IronMan.png"
-                alt="RamboLu" />
+              <img class="site-author-image" itemprop="image" src="/images/IronMan.png" alt="RamboLu">
             
               <p class="site-author-name" itemprop="name">RamboLu</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Fire proves gold,adversity proves men.</p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">35</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">35</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">20</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
+            </nav>
+          
 
           
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/RamboLouis" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://weibo.com/210008553" target="_blank" title="新浪微博">
-                      
-                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://www.jianshu.com/users/7ebaa8152f09" target="_blank" title="简书">
-                      
-                        <i class="fa fa-fw fa-book"></i>简书</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/RamboLouis" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.linkedin.com/in/政浩-路-695158108/" target="_blank" title="LinkedIn">
-                      
-                        <i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:coderambolu@gmail.com" target="_blank" title="Email">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>Email</a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/RamboLouis" title="GitHub &rarr; https://github.com/RamboLouis" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://weibo.com/210008553" title="新浪微博 &rarr; http://weibo.com/210008553" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.jianshu.com/users/7ebaa8152f09" title="简书 &rarr; http://www.jianshu.com/users/7ebaa8152f09" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>简书</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/RamboLouis" title="Twitter &rarr; https://twitter.com/RamboLouis" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.linkedin.com/in/政浩-路-695158108/" title="LinkedIn &rarr; https://www.linkedin.com/in/政浩-路-695158108/" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:coderambolu@gmail.com" title="Email &rarr; mailto:coderambolu@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>Email</a>
+                </span>
+              
             </div>
           
 
           
-          
 
           
           
 
+          
+            
+          
           
 
         </div>
-      </section>
+      </div>
 
       
 
@@ -2197,60 +2704,59 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">RamboLu</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">
-    由 <a>Hexo</a> 技术支持
-  </div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 技术支持</div>
 
 
 
-  <span class="post-meta-divider"> | </span>
+  <span class="post-meta-divider">|</span>
 
 
 
-  <div class="theme-info"> 
-    <a> Next </a> 
-    主题
-  </div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT</a></div>
 
 
 
 
         
-  <div class="busuanzi-count">
-    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-    
-      <span class="site-uv">
-        <i class="fa fa-user"></i> 本站访客数
-        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-        人次
-      </span>
-    
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
 
-    
-      <span class="site-pv">
-        <i class="fa fa-eye"></i> 本站总访问量
-        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-        次
-      </span>
-    
-  </div>
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
 
 
 
 
 
-  <script type="text/javascript">
+  <script>
     (function() {
       var hm = document.createElement("script");
       hm.src = "//tajs.qq.com/stats?sId=61220060";
@@ -2281,11 +2787,14 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
 
     
 
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -2299,63 +2808,51 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
 
 
 
-  
-
-
-  
-
-
-
-
-
-
 
 
 
 
 
   
+    
+      
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script src="/js/src/utils.js?v=6.6.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script src="/js/src/motion.js?v=6.6.0"></script>
 
 
 
@@ -2363,9 +2860,9 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+  <script src="/js/src/affix.js?v=6.6.0"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
 
 
 
@@ -2374,21 +2871,7 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
 
 
 
@@ -2396,11 +2879,7 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
 
 
 
-
-
   
-
-
 
 
 
@@ -2410,12 +2889,14 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
 
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
-  <script type="text/javascript">
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  <script>
     var GUEST = ['nick','mail','link'];
     var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
+    guest = guest.split(',').filter(function (item) {
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
@@ -2426,16 +2907,18 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
         appKey: 'rgnJBaCPX4E4G0oXvw19elko',
         placeholder: '请输入...',
         avatar:'mm',
-        guest_info:guest,
+        meta:guest,
         pageSize:'10' || 10,
+        visitor: false
     });
   </script>
 
 
 
+
   
 
-  <script type="text/javascript">
+  <script>
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -2484,6 +2967,8 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
         .css('overflow', 'hidden');
       $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
 
+      
+
       $.ajax({
         url: path,
         dataType: isXml ? "xml" : "json",
@@ -2517,6 +3002,7 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
                 var title = data.title.trim();
                 var titleInLowerCase = title.toLowerCase();
                 var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
                 var contentInLowerCase = content.toLowerCase();
                 var articleUrl = decodeURIComponent(data.url);
                 var indexOfTitle = [];
@@ -2759,11 +3245,9 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz", "rgnJBaCPX4E4G0oXvw19elko");</script>
   <script>
+    
     function showTime(Counter) {
-      var query = new AV.Query(Counter);
       var entries = [];
       var $visitors = $(".leancloud_visitors");
 
@@ -2771,9 +3255,8 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
         entries.push( $(this).attr("id").trim() );
       });
 
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { "$in": entries } }) })
+        .done(function ({ results }) {
           var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
 
           if (results.length === 0) {
@@ -2783,8 +3266,8 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
 
           for (var i = 0; i < results.length; i++) {
             var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
+            var url = item.url;
+            var time = item.time;
             var element = document.getElementById(url);
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
@@ -2798,68 +3281,33 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
             }
           }
         })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
+        .fail(function ({ responseJSON }) {
+          console.log("LeanCloud Counter Error: " + responseJSON.code + " " + responseJSON.error);
         });
     }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
+    
 
     $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz")
+        .done(function ({ api_server }) {
+          var Counter = function (method, url, data) {
+            return $.ajax({
+              method: method,
+              url: `https://${api_server}/1.1${url}`,
+              headers: {
+                'X-LC-Id': "UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz",
+                'X-LC-Key': "rgnJBaCPX4E4G0oXvw19elko",
+                'Content-Type': 'application/json',
+              },
+              data: data,
+            });
+          };
+          
+          if ($('.post-title-link').length >= 1) {
+            showTime(Counter);
+          }
+          
+        })
     });
   </script>
 
@@ -2870,6 +3318,16 @@ FlatList和SectionList通过源码可以看出,都是基于VirtualizedL
   
 
   
+
+  
+
+  
+  
+
+  
+
+  
+
   
 
   

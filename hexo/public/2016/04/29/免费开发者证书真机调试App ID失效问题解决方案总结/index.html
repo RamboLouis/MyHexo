@@ -2,14 +2,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +29,6 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,9 +45,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -92,59 +96,66 @@
 
 
 
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/IronMan.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/IronMan.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/IronMan.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/IronMan.png?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
   
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/IronMan.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/IronMan.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/IronMan.png?v=5.1.4">
 
 
 
-
-
-
-  <meta name="keywords" content="随笔,Xcode," />
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="前言
-今天(4月29日),笔者在做免费开发者证书真机调试的时候.发现如下问题:
-
-问题:Unable to add App ID because the ‘10’ App ID limit in ‘7’ days has been exceeded.翻译如下:
-
-
-寻求解决问题过程:第一次遇到,于是开始百度,发现百度没有这个问题.进行简要搜索时发现:
-
-也是今天发布的寻找答案的,于是只能借助更强大">
+  <meta name="description" content="前言 今天(4月29日),笔者在做免费开发者证书真机调试的时候.发现如下问题:  问题:Unable to add App ID because the ‘10’ App ID limit in ‘7’ days has been exceeded.翻译如下:   寻求解决问题过程:第一次遇到,于是开始百度,发现百度没有这个问题.进行简要搜索时发现:  也是今天发布的寻找答案的,于是只能借助更强大">
+<meta name="keywords" content="随笔,Xcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="免费开发者证书真机调试App ID失效问题:"Unable to add App ID because the '10' App ID limit in '7' days has been exceeded."解决方案总结。">
+<meta property="og:title" content="免费开发者证书真机调试App ID失效问题:&quot;Unable to add App ID because the &#39;10&#39; App ID limit in &#39;7&#39; days has been exceeded.&quot;解决方案总结。">
 <meta property="og:url" content="http://RamboLu.top/2016/04/29/免费开发者证书真机调试App ID失效问题解决方案总结/index.html">
 <meta property="og:site_name" content="RamboLu Blog">
-<meta property="og:description" content="前言
-今天(4月29日),笔者在做免费开发者证书真机调试的时候.发现如下问题:
-
-问题:Unable to add App ID because the ‘10’ App ID limit in ‘7’ days has been exceeded.翻译如下:
-
-
-寻求解决问题过程:第一次遇到,于是开始百度,发现百度没有这个问题.进行简要搜索时发现:
-
-也是今天发布的寻找答案的,于是只能借助更强大">
+<meta property="og:description" content="前言 今天(4月29日),笔者在做免费开发者证书真机调试的时候.发现如下问题:  问题:Unable to add App ID because the ‘10’ App ID limit in ‘7’ days has been exceeded.翻译如下:   寻求解决问题过程:第一次遇到,于是开始百度,发现百度没有这个问题.进行简要搜索时发现:  也是今天发布的寻找答案的,于是只能借助更强大">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-2dffb91f2aff0452.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-73b4cbda03a89376.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-05ca85237d7e1ab3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
@@ -162,51 +173,24 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1666327-216d62c9b1f05ea2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:updated_time" content="2017-03-16T04:55:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="免费开发者证书真机调试App ID失效问题:"Unable to add App ID because the '10' App ID limit in '7' days has been exceeded."解决方案总结。">
-<meta name="twitter:description" content="前言
-今天(4月29日),笔者在做免费开发者证书真机调试的时候.发现如下问题:
-
-问题:Unable to add App ID because the ‘10’ App ID limit in ‘7’ days has been exceeded.翻译如下:
-
-
-寻求解决问题过程:第一次遇到,于是开始百度,发现百度没有这个问题.进行简要搜索时发现:
-
-也是今天发布的寻找答案的,于是只能借助更强大">
+<meta name="twitter:title" content="免费开发者证书真机调试App ID失效问题:&quot;Unable to add App ID because the &#39;10&#39; App ID limit in &#39;7&#39; days has been exceeded.&quot;解决方案总结。">
+<meta name="twitter:description" content="前言 今天(4月29日),笔者在做免费开发者证书真机调试的时候.发现如下问题:  问题:Unable to add App ID because the ‘10’ App ID limit in ‘7’ days has been exceeded.翻译如下:   寻求解决问题过程:第一次遇到,于是开始百度,发现百度没有这个问题.进行简要搜索时发现:  也是今天发布的寻找答案的,于是只能借助更强大">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1666327-2dffb91f2aff0452.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+
+
+
+  <link rel="canonical" href="http://RamboLu.top/2016/04/29/免费开发者证书真机调试App ID失效问题解决方案总结/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://RamboLu.top/2016/04/29/免费开发者证书真机调试App ID失效问题解决方案总结/"/>
-
-
-
-
 
   <title>免费开发者证书真机调试App ID失效问题:"Unable to add App ID because the '10' App ID limit in '7' days has been exceeded."解决方案总结。 | RamboLu Blog</title>
   
@@ -218,9 +202,38 @@
 
 
 
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -229,25 +242,27 @@
 
   <div class="container sidebar-position-left page-post-detail">
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">RamboLu Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
-        <h1 class="site-subtitle" itemprop="description">技术在于折腾。</h1>
+        <p class="site-subtitle">技术在于折腾。</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -255,76 +270,111 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            所有文章
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于我
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
 
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于我</a>
+
+  </li>
+
+      
       
         <li class="menu-item menu-item-search">
           
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
         </li>
       
     </ul>
+  
+
   
 
   
@@ -339,9 +389,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -355,12 +403,23 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
 
@@ -373,20 +432,22 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2016/04/29/免费开发者证书真机调试App ID失效问题解决方案总结/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/IronMan.png">
+      <meta itemprop="description" content="Fire proves gold,adversity proves men.">
+      <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -395,11 +456,20 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">免费开发者证书真机调试App ID失效问题:"Unable to add App ID because the '10' App ID limit in '7' days has been exceeded."解决方案总结。</h2>
+          <h1 class="post-title" itemprop="name headline">免费开发者证书真机调试App ID失效问题:"Unable to add App ID because the '10' App ID limit in '7' days has been exceeded."解决方案总结。
+
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -407,18 +477,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-29T18:43:55+08:00">
-                2016-04-29
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-04-29 18:43:55" itemprop="dateCreated datePublished" datetime="2016-04-29T18:43:55+08:00">2016-04-29</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-03-16 12:55:47" itemprop="dateModified" datetime="2017-03-16T12:55:47+08:00">2017-03-16</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -429,11 +516,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Xcode/" itemprop="url" rel="index">
-                    <span itemprop="name">Xcode</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Xcode/" itemprop="url" rel="index"><span itemprop="name">Xcode</span></a></span>
 
                 
                 
@@ -449,7 +532,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2016/04/29/免费开发者证书真机调试App ID失效问题解决方案总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/04/29/免费开发者证书真机调试App ID失效问题解决方案总结/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2016/04/29/免费开发者证书真机调试App ID失效问题解决方案总结/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -457,19 +540,18 @@
 
           
           
-             <span id="/2016/04/29/免费开发者证书真机调试App ID失效问题解决方案总结/" class="leancloud_visitors" data-flag-title="免费开发者证书真机调试App ID失效问题:"Unable to add App ID because the '10' App ID limit in '7' days has been exceeded."解决方案总结。">
+             <span id="/2016/04/29/免费开发者证书真机调试App ID失效问题解决方案总结/" class="leancloud_visitors" data-flag-title="免费开发者证书真机调试App ID失效问题:" unable="" to="" add="" app="" because="" the="" '10'="" limit="" in="" '7'="" days="" has="" been="" exceeded."解决方案总结。"="">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
           
-          
-          
+
           
 
           
@@ -499,7 +581,7 @@
 <p><img src="http://upload-images.jianshu.io/upload_images/1666327-7b00acaa5f2f699c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Baidu搜索界面"></p>
 <p>也是今天发布的寻找答案的,于是只能借助更强大的搜索:</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1666327-156f98324f2ff99a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Google搜索界面"><br>在stack overflow中发现也有出现此问题:</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-873f95aed0d62dbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="stack overflow"><br>链接如下:<a href="http://stackoverflow.com/questions/36923849/unable-to-add-app-id-because-the-10-app-id-limit-in-7-days-has-been-exceeded" target="_blank" rel="external">http://stackoverflow.com/questions/36923849/unable-to-add-app-id-because-the-10-app-id-limit-in-7-days-has-been-exceeded</a><br>发现这个问题是4月28日晚上18点提交的,具体美国时间比中国晚一天,也就是说也是今天才发现的这个问题,看到解决方案.<br>然后再开始跟苹果技术支持邮件联系得出如下答案:<br><img src="http://upload-images.jianshu.io/upload_images/1666327-fcbd3399aa6ec871.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Apple"><br>于是得出结论.</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-873f95aed0d62dbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="stack overflow"><br>链接如下:<a href="http://stackoverflow.com/questions/36923849/unable-to-add-app-id-because-the-10-app-id-limit-in-7-days-has-been-exceeded" target="_blank" rel="noopener">http://stackoverflow.com/questions/36923849/unable-to-add-app-id-because-the-10-app-id-limit-in-7-days-has-been-exceeded</a><br>发现这个问题是4月28日晚上18点提交的,具体美国时间比中国晚一天,也就是说也是今天才发现的这个问题,看到解决方案.<br>然后再开始跟苹果技术支持邮件联系得出如下答案:<br><img src="http://upload-images.jianshu.io/upload_images/1666327-fcbd3399aa6ec871.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Apple"><br>于是得出结论.</p>
 <h2 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因:"></a>问题原因:</h2><p>这是苹果对<code>Bundle Identifier</code>进行了封锁.</p>
 <p>推测:苹果于今天修改了规格,限制了开发者使用免证书的真机调试次数.</p>
 <p>根据客服回电的答案得出,一个App ID,免证书真机调试只能进行10次,具体时间没有说明.</p>
@@ -517,7 +599,7 @@
 <hr>
 <h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案:"></a>解决方案:</h2><p> 1.更换成开发者账号的App ID.(呵呵,你懂得.)<br> 2.暂时解决方案,更换<code>Bundle Identifie</code>r,把此前真机调试项目工程的<code>Bundle Identifier</code>更换成现在的项目工程的<code>Bundle Identifier</code>,(亲测可用!!)<br> 3.重新创建项目工程的时候直接写成以前的真机测试通过的项目名字.(亲测可用!!)<br>  解决方案会持续更新…..</p>
 <hr>
-<h6 id="友情提示"><a href="#友情提示" class="headerlink" title="友情提示:"></a>友情提示:</h6><p>免费真机调试描述文件(<code>.mobileprovision</code>),有效期为90天,也就是说超过时间<code>Bundle Identifier</code>就不能用了.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">5月12日更新 .mobileprovision 有效期为更改7天.</div></pre></td></tr></table></figure></p>
+<h6 id="友情提示"><a href="#友情提示" class="headerlink" title="友情提示:"></a>友情提示:</h6><p>免费真机调试描述文件(<code>.mobileprovision</code>),有效期为90天,也就是说超过时间<code>Bundle Identifier</code>就不能用了.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5月12日更新 .mobileprovision 有效期为更改7天.</span><br></pre></td></tr></table></figure></p>
 <h6 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法:"></a>解决办法:</h6><p>1.$99刀的开发者Apple ID.<br>2.重新申请Apple ID,只申请1个描述文件(<code>.mobileprovision</code>),一直使用90天后再进行更换.(更换时间改为7天)</p>
 <hr>
 <h2 id="意外情况"><a href="#意外情况" class="headerlink" title="意外情况:"></a>意外情况:</h2><h4 id="一-更换Bundle-Identifier还是没有解决-亲测可用"><a href="#一-更换Bundle-Identifier还是没有解决-亲测可用" class="headerlink" title="一 .  更换Bundle Identifier还是没有解决: (亲测可用!!)"></a>一 .  更换Bundle Identifier还是没有解决: (亲测可用!!)</h4><p>当出现更换这里的<code>Bundle Identifier</code>还是没有用的时候<br><img src="http://upload-images.jianshu.io/upload_images/1666327-dbee77d2ab0dadaf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1"></p>
@@ -531,12 +613,18 @@
 
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -588,22 +676,16 @@
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
           
 
-
-          
-
   
     <div class="comments" id="comments">
     </div>
+
   
 
 
@@ -637,113 +719,219 @@
         </ul>
       
 
-      <section class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/img/IronMan.png"
-                alt="RamboLu" />
+              <img class="site-author-image" itemprop="image" src="/images/IronMan.png" alt="RamboLu">
             
               <p class="site-author-name" itemprop="name">RamboLu</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Fire proves gold,adversity proves men.</p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">35</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">35</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">20</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
+            </nav>
+          
 
           
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/RamboLouis" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://weibo.com/210008553" target="_blank" title="新浪微博">
-                      
-                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://www.jianshu.com/users/7ebaa8152f09" target="_blank" title="简书">
-                      
-                        <i class="fa fa-fw fa-book"></i>简书</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/RamboLouis" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.linkedin.com/in/政浩-路-695158108/" target="_blank" title="LinkedIn">
-                      
-                        <i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:coderambolu@gmail.com" target="_blank" title="Email">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>Email</a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/RamboLouis" title="GitHub &rarr; https://github.com/RamboLouis" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://weibo.com/210008553" title="新浪微博 &rarr; http://weibo.com/210008553" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.jianshu.com/users/7ebaa8152f09" title="简书 &rarr; http://www.jianshu.com/users/7ebaa8152f09" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>简书</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/RamboLouis" title="Twitter &rarr; https://twitter.com/RamboLouis" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.linkedin.com/in/政浩-路-695158108/" title="LinkedIn &rarr; https://www.linkedin.com/in/政浩-路-695158108/" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:coderambolu@gmail.com" title="Email &rarr; mailto:coderambolu@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>Email</a>
+                </span>
+              
             </div>
           
 
           
-          
 
           
           
 
+          
+            
+          
           
 
         </div>
-      </section>
+      </div>
 
       
       <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
 
             
@@ -751,11 +939,11 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.1.</span> <span class="nav-text">问题:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Unable-to-add-App-ID-because-the-‘10’-App-ID-limit-in-‘7’-days-has-been-exceeded"><span class="nav-number">1.1.1.</span> <span class="nav-text">Unable to add App ID because the ‘10’ App ID limit in ‘7’ days has been exceeded.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#寻求解决问题过程"><span class="nav-number">1.2.</span> <span class="nav-text">寻求解决问题过程:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题原因"><span class="nav-number">1.3.</span> <span class="nav-text">问题原因:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">1.4.</span> <span class="nav-text">解决方案:</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#友情提示"><span class="nav-number">1.4.0.0.0.1.</span> <span class="nav-text">友情提示:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#解决办法"><span class="nav-number">1.4.0.0.0.2.</span> <span class="nav-text">解决办法:</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#意外情况"><span class="nav-number">1.5.</span> <span class="nav-text">意外情况:</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一-更换Bundle-Identifier还是没有解决-亲测可用"><span class="nav-number">1.5.0.1.</span> <span class="nav-text">一 .  更换Bundle Identifier还是没有解决: (亲测可用!!)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二-忘记之前创建的Bundle-Identifier"><span class="nav-number">1.5.0.2.</span> <span class="nav-text">二 .  忘记之前创建的Bundle Identifier</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.1.</span> <span class="nav-text">问题:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Unable-to-add-App-ID-because-the-‘10’-App-ID-limit-in-‘7’-days-has-been-exceeded"><span class="nav-number">1.1.1.</span> <span class="nav-text">Unable to add App ID because the ‘10’ App ID limit in ‘7’ days has been exceeded.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#寻求解决问题过程"><span class="nav-number">1.2.</span> <span class="nav-text">寻求解决问题过程:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题原因"><span class="nav-number">1.3.</span> <span class="nav-text">问题原因:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">1.4.</span> <span class="nav-text">解决方案:</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#友情提示"><span class="nav-number">1.4.0.0.0.1.</span> <span class="nav-text">友情提示:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#解决办法"><span class="nav-number">1.4.0.0.0.2.</span> <span class="nav-text">解决办法:</span></a></li></ol></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#意外情况"><span class="nav-number">1.5.</span> <span class="nav-text">意外情况:</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一-更换Bundle-Identifier还是没有解决-亲测可用"><span class="nav-number">1.5.0.1.</span> <span class="nav-text">一 .  更换Bundle Identifier还是没有解决: (亲测可用!!)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二-忘记之前创建的Bundle-Identifier"><span class="nav-number">1.5.0.2.</span> <span class="nav-text">二 .  忘记之前创建的Bundle Identifier</span></a></li></ol></li></div>
             
 
           </div>
-        </section>
+        </div>
       <!--/noindex-->
       
 
@@ -771,60 +959,59 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">RamboLu</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">
-    由 <a>Hexo</a> 技术支持
-  </div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 技术支持</div>
 
 
 
-  <span class="post-meta-divider"> | </span>
+  <span class="post-meta-divider">|</span>
 
 
 
-  <div class="theme-info"> 
-    <a> Next </a> 
-    主题
-  </div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT</a></div>
 
 
 
 
         
-  <div class="busuanzi-count">
-    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-    
-      <span class="site-uv">
-        <i class="fa fa-user"></i> 本站访客数
-        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-        人次
-      </span>
-    
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
 
-    
-      <span class="site-pv">
-        <i class="fa fa-eye"></i> 本站总访问量
-        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-        次
-      </span>
-    
-  </div>
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
 
 
 
 
 
-  <script type="text/javascript">
+  <script>
     (function() {
       var hm = document.createElement("script");
       hm.src = "//tajs.qq.com/stats?sId=61220060";
@@ -855,11 +1042,14 @@
 
     
 
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -873,63 +1063,51 @@
 
 
 
-  
-
-
-  
-
-
-
-
-
-
 
 
 
 
 
   
+    
+      
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script src="/js/src/utils.js?v=6.6.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script src="/js/src/motion.js?v=6.6.0"></script>
 
 
 
@@ -937,36 +1115,22 @@
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+  <script src="/js/src/affix.js?v=6.6.0"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
 
 
 
   
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
 
 
 
   
 
 
-  
-
-
-
-
-	
-
-
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
 
 
 
@@ -974,11 +1138,7 @@
 
 
 
-
-
   
-
-
 
 
 
@@ -988,12 +1148,14 @@
 
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
-  <script type="text/javascript">
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  <script>
     var GUEST = ['nick','mail','link'];
     var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
+    guest = guest.split(',').filter(function (item) {
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
@@ -1004,16 +1166,18 @@
         appKey: 'rgnJBaCPX4E4G0oXvw19elko',
         placeholder: '请输入...',
         avatar:'mm',
-        guest_info:guest,
+        meta:guest,
         pageSize:'10' || 10,
+        visitor: false
     });
   </script>
 
 
 
+
   
 
-  <script type="text/javascript">
+  <script>
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -1062,6 +1226,8 @@
         .css('overflow', 'hidden');
       $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
 
+      
+
       $.ajax({
         url: path,
         dataType: isXml ? "xml" : "json",
@@ -1095,6 +1261,7 @@
                 var title = data.title.trim();
                 var titleInLowerCase = title.toLowerCase();
                 var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
                 var contentInLowerCase = content.toLowerCase();
                 var articleUrl = decodeURIComponent(data.url);
                 var indexOfTitle = [];
@@ -1337,107 +1504,61 @@
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz", "rgnJBaCPX4E4G0oXvw19elko");</script>
   <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
+    
     function addCount(Counter) {
       var $visitors = $(".leancloud_visitors");
       var url = $visitors.attr('id').trim();
       var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
 
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function ({ results }) {
           if (results.length > 0) {
             var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            })
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
           } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
           }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
+        })
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
       });
     }
+    
 
     $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz")
+        .done(function ({ api_server }) {
+          var Counter = function (method, url, data) {
+            return $.ajax({
+              method: method,
+              url: `https://${api_server}/1.1${url}`,
+              headers: {
+                'X-LC-Id': "UpN97PCxY6PrIMk3Gvgr7oxp-gzGzoHsz",
+                'X-LC-Key': "rgnJBaCPX4E4G0oXvw19elko",
+                'Content-Type': 'application/json',
+              },
+              data: data,
+            });
+          };
+          
+          addCount(Counter);
+          
+        })
     });
   </script>
 
@@ -1448,6 +1569,16 @@
   
 
   
+
+  
+
+  
+  
+
+  
+
+  
+
   
 
   
