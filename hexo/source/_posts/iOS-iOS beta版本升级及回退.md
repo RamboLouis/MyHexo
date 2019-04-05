@@ -1,5 +1,5 @@
 ---
-title: iOS10 beta版本升级及回退.
+title: iOS-iOS beta版本升级及回退.
 date: 2016-06-13 20:37:01
 categories:
     - iPhone

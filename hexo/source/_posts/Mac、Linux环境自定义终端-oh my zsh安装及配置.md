@@ -74,8 +74,38 @@ Ps：主题文件在 ~/.oh-my-zsh/themes 目录
 ZSH_THEME="ys"
 ```
 
-## 终端启动速度慢
+## 终端启动速度慢:
 检查`~/.bash_profile`或`~/.zshrc`的预加载运行命令
 ps: 删除多余命令,重新启动终端
 
+## 安装插件:
 
+1.下载插件到`.oh-my-zsh/plugins`目录
+
+* `zsh-autosuggestions` 自动提示插件
+
+```
+git clone git://github.com/zsh-users/zsh-autosuggestions /Users/{用户名}/.oh-my-zsh/plugins/zsh-autosuggestions
+```
+
+* `zsh-syntax-highlighting` 命令输入高亮
+
+    命令输入正确会绿色高亮显示，输入错误会显示其他的颜色
+
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /Users/{用户名}/.oh-my-zsh/plugins/zsh-syntax-highlighting
+```
+
+2.配置`.zshrc`文件
+
+找到`plugins=(git)`, 每个插件中间`空格`
+
+```
+plugins=(git {插件名})
+```
+
+3.关闭终端重新打开
+
+```
+source ~/.zshrc
+```
