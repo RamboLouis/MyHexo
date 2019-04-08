@@ -2,9 +2,11 @@
 title: Linux-Ubuntu安装与卸载Gitlab
 date: 2018-06-03 15:10:21
 categories:
+    - Linux
     - Gitlab
 tags:
     - Gitlab
+    - Linux
 ---
 
 ### 一、安装Gitlab
