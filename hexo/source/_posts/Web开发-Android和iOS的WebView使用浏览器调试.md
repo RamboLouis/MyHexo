@@ -1,7 +1,10 @@
 ---
 title: Web开发-Android和iOS浏览器调试手机web
 date: 2018-03-27 18:19:10
-tags:
+categories:
+  - Web
+tags: 
+  - Web
 ---
 
 ## Chrome 浏览器调试手机web

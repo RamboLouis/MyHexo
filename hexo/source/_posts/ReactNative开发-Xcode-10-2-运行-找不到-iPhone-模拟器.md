@@ -12,13 +12,25 @@ tags:
 在项目中的
 `~/node_modules/react-native/local-cli/runIOS/findMatchingSimulator.js`的文件里
 
-找到对应的文件将
+找到对应的文件,和对应的代码
 ```
-if (!version.startsWith('iOS') && !version.startsWith('tvOS'))
+if (!version.startsWith('iOS') && !version.startsWith('tvOS')) {
+  continue;
+}
+或者
+if (version.indexOf('iOS') !== 0) {
+  continue;
+}
 ```
 
-修改为
+将`iOS`前面加上`com.apple.CoreSimulator.SimRuntime`
 
 ```
-if (!version.startsWith('com.apple.CoreSimulator.SimRuntime.iOS') && !version.startsWith('com.apple.CoreSimulator.SimRuntime.tvOS'))
+if (!version.startsWith('com.apple.CoreSimulator.SimRuntime.iOS') && !version.startsWith('com.apple.CoreSimulator.SimRuntime.tvOS')) {
+  continue;
+}
+或
+if (version.indexOf('com.apple.CoreSimulator.SimRuntime.iOS') !== 0) {
+  continue;
+}
 ```

@@ -1,7 +1,10 @@
 ---
 title: Web学习-freeCodeCamp课程学习
 date: 2018-11-1 10:28:45
-tags:
+categories:
+  - Web
+tags: 
+  - Web
 ---
 
 ## 一、Responsive Web Design Certification(响应式网页设计认证)
