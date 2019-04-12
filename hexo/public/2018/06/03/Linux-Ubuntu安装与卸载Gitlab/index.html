@@ -151,7 +151,7 @@
   <meta name="description" content="一、安装Gitlab1.安装并配置必要的依赖关系12sudo apt-get updatesudo apt-get install -y curl openssh-server ca-certificates  然后，安装Postfix发送通知邮件。如果您想使用其他解决方案发送电子邮件，跳过此步骤并在安装GitLab后配置外部SMTP服务器。ps:配置外部SMTP服务器: https://docs">
 <meta name="keywords" content="Linux,Gitlab">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux-Ubuntu安装与卸载Gitlab">
+<meta property="og:title" content="Linux-Ubuntu安装、卸载和配置Gitlab">
 <meta property="og:url" content="http://RamboLu.top/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/index.html">
 <meta property="og:site_name" content="RamboLu Blog">
 <meta property="og:description" content="一、安装Gitlab1.安装并配置必要的依赖关系12sudo apt-get updatesudo apt-get install -y curl openssh-server ca-certificates  然后，安装Postfix发送通知邮件。如果您想使用其他解决方案发送电子邮件，跳过此步骤并在安装GitLab后配置外部SMTP服务器。ps:配置外部SMTP服务器: https://docs">
@@ -161,9 +161,9 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1666327-433d919bfbde5ca3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1666327-f60e1c658c9aa94e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1666327-19ffad61c5546f1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-04-08T09:59:35.000Z">
+<meta property="og:updated_time" content="2019-04-12T09:17:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux-Ubuntu安装与卸载Gitlab">
+<meta name="twitter:title" content="Linux-Ubuntu安装、卸载和配置Gitlab">
 <meta name="twitter:description" content="一、安装Gitlab1.安装并配置必要的依赖关系12sudo apt-get updatesudo apt-get install -y curl openssh-server ca-certificates  然后，安装Postfix发送通知邮件。如果您想使用其他解决方案发送电子邮件，跳过此步骤并在安装GitLab后配置外部SMTP服务器。ps:配置外部SMTP服务器: https://docs">
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1666327-4a8af0f2837cbd76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
@@ -182,7 +182,7 @@
   };
 </script>
 
-  <title>Linux-Ubuntu安装与卸载Gitlab | RamboLu Blog</title>
+  <title>Linux-Ubuntu安装、卸载和配置Gitlab | RamboLu Blog</title>
   
 
 
@@ -446,7 +446,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux-Ubuntu安装与卸载Gitlab
+          <h1 class="post-title" itemprop="name headline">Linux-Ubuntu安装、卸载和配置Gitlab
 
               
             
@@ -521,7 +521,7 @@
 
           
           
-             <span id="/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/" class="leancloud_visitors" data-flag-title="Linux-Ubuntu安装与卸载Gitlab">
+             <span id="/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/" class="leancloud_visitors" data-flag-title="Linux-Ubuntu安装、卸载和配置Gitlab">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -561,15 +561,17 @@
 <li>在Postfix安装期间，可能会出现一个配置屏幕。选择 <code>Internet Site</code> 并按回车。使用您的服务器的外部DNS作为’邮件名’并按回车。如果出现其他屏幕，请继续按回车键以接受默认值。</li>
 </ul>
 <h4 id="2-添加GitLab软件包存储库并安装软件包"><a href="#2-添加GitLab软件包存储库并安装软件包" class="headerlink" title="2.添加GitLab软件包存储库并安装软件包"></a>2.添加GitLab软件包存储库并安装软件包</h4><ul>
-<li>添加GitLab软件包存储库。</li>
+<li><p>添加GitLab软件包存储库。</p>
+<p>  ps:<br>gitlab-ce 是社区版，免费的<br>gitlab-ee 是企业版，收费的</p>
+</li>
 </ul>
-<p>ps:<br>gitlab-ce 是社区版，免费的<br>gitlab-ee 是企业版，收费的</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ee:</span><br><span class="line">curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash</span><br><span class="line">gitlab-ce: </span><br><span class="line">curl -sS http://packages.gitlab.cc/install/gitlab-ce/script.deb.sh | sudo bash</span><br></pre></td></tr></table></figure>
 <ul>
-<li>接下来，安装GitLab软件包。将<code>http：// gitlab.example.com</code>更改为您想要访问您的GitLab实例的URL。安装将自动在该URL处配置并启动GitLab。安装后HTTPS需要额外的配置。</li>
+<li><p>接下来，安装GitLab软件包。将<code>http：// gitlab.example.com</code>更改为您想要访问您的GitLab实例的URL。安装将自动在该URL处配置并启动GitLab。安装后HTTPS需要额外的配置。</p>
+<p>  ps:<br>额外的配置: <a href="https://docs.gitlab.com/omnibus/settings/nginx.html#enable-https" target="_blank" rel="noopener">https://docs.gitlab.com/omnibus/settings/nginx.html#enable-https</a></p>
+<p>  <code>EXTERNAL_URL</code>为要配置的URL</p>
+</li>
 </ul>
-<p>ps:<br>额外的配置: <a href="https://docs.gitlab.com/omnibus/settings/nginx.html#enable-https" target="_blank" rel="noopener">https://docs.gitlab.com/omnibus/settings/nginx.html#enable-https</a></p>
-<p><code>EXTERNAL_URL</code>为要配置的URL</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo EXTERNAL_URL=&quot;http://gitlab.example.com&quot; apt-get install gitlab-ce</span><br></pre></td></tr></table></figure>
 <ul>
 <li>或者使用清华大学软件镜像站提供的软件源来安装 <code>gitlab-ce</code></li>
@@ -578,8 +580,8 @@
 <ul>
 <li>安装成功</li>
 </ul>
-<p> ps: 这里提示 <code>在/etc/gitlab/gitlab.rb文件中,设置“external_url”为GitLab配置的URL</code>, 所以接下来需要配置gitlab,并且.</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> Please configure a URL for your GitLab instance by setting `external_url`</span><br><span class="line">configuration in /etc/gitlab/gitlab.rb file.</span><br></pre></td></tr></table></figure>
+<pre><code>ps: 这里提示 `在/etc/gitlab/gitlab.rb文件中,设置“external_url”为GitLab配置的URL`, 所以接下来需要配置gitlab,并且.
+</code></pre> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> Please configure a URL for your GitLab instance by setting `external_url`</span><br><span class="line">configuration in /etc/gitlab/gitlab.rb file.</span><br></pre></td></tr></table></figure>
 <p><img src="https://upload-images.jianshu.io/upload_images/1666327-4a8af0f2837cbd76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <h4 id="3-配置gitlab"><a href="#3-配置gitlab" class="headerlink" title="3.配置gitlab"></a>3.配置gitlab</h4><ul>
 <li>在 <code>/etc/gitlab/gitlab.rb</code> 中设置 <code>external_url</code></li>
@@ -596,9 +598,10 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl restart</span><br></pre></td></tr></table></figure>
 <h4 id="4-登录gitlab"><a href="#4-登录gitlab" class="headerlink" title="4.登录gitlab"></a>4.登录gitlab</h4><ul>
-<li>首次登录会让设置密码</li>
+<li><p>首次登录会让设置密码</p>
+<p>  ps: 用户名为<code>root</code><br><img src="https://upload-images.jianshu.io/upload_images/1666327-f0bfad102ddb4623.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+</li>
 </ul>
-<p>ps: 用户名为<code>root</code>,同时也可以自己注册<br><img src="https://upload-images.jianshu.io/upload_images/1666327-f0bfad102ddb4623.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p><img src="https://upload-images.jianshu.io/upload_images/1666327-433d919bfbde5ca3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <h3 id="二、卸载Gitlab"><a href="#二、卸载Gitlab" class="headerlink" title="二、卸载Gitlab"></a>二、卸载Gitlab</h3><ul>
 <li>停止gitlab</li>
@@ -658,19 +661,48 @@
 <li>重起配置及重启gitlab</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl reconfigure</span><br><span class="line">sudo gitlab-ctl restart</span><br></pre></td></tr></table></figure>
-<h3 id="四、配置Gitlab的nginx"><a href="#四、配置Gitlab的nginx" class="headerlink" title="四、配置Gitlab的nginx"></a>四、配置Gitlab的nginx</h3><ul>
+<h3 id="四、配置Gitlab"><a href="#四、配置Gitlab" class="headerlink" title="四、配置Gitlab"></a>四、配置Gitlab</h3><ul>
 <li>查看gitlab配置</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/gitlab/gitlab.rb</span><br></pre></td></tr></table></figure>
 <ul>
-<li>nginx关闭</li>
+<li>gitlab 备份</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gitlab-rake gitlab:backup:create</span><br><span class="line">或</span><br><span class="line">sudo /usr/bin/gitlab-rake gitlab:backup:create</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>进入<code>/gitlab.rb</code>修改备份路径</p>
+<p>  通过/etc/gitlab/gitlab.rb配置文件来修改默认存放备份文件的目录</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitlab_rails[&apos;backup_path&apos;] = &quot;/xxxx/gitlab_backup&quot;</span><br></pre></td></tr></table></figure>
+<p>修改后再重新配置gitlab应用程序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl reconfigure</span><br></pre></td></tr></table></figure>
+<ul>
+<li>进入<code>/gitlab.rb</code>关闭自带nginx</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx[&apos;enable&apos;] = false</span><br></pre></td></tr></table></figure>
 <ul>
-<li>gitlab的nginx配置</li>
+<li><p>gitlab的nginx的配置文件</p>
+<p>  gitlab的nginx是默认80端口,可以进去<code>/gitlab-http.conf</code>配置文件修改端口号,然后再重启</p>
+</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/var/opt/gitlab/nginx/conf/gitlab-http.conf</span><br></pre></td></tr></table></figure>
-
+<ul>
+<li>gitlab重启</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl restart</span><br></pre></td></tr></table></figure>
+<h3 id="五、修改Gitlab的Root密码"><a href="#五、修改Gitlab的Root密码" class="headerlink" title="五、修改Gitlab的Root密码"></a>五、修改Gitlab的Root密码</h3><ul>
+<li>进入 gitlab 生产控制台</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-rails console production</span><br></pre></td></tr></table></figure>
+<ul>
+<li>进入加载生产环境 (Rails 5.0.7.1)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">irb(main):001:0&gt; user = User.where(id: 1).first</span><br><span class="line">=&gt; #&lt;User id:1 @root&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">irb(main):005:0&gt; user.password = &apos;aaaaaaaa111111111&apos;</span><br><span class="line">=&gt; &quot;aaaaaaaa111111111&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">irb(main):006:0&gt; user.password_confirmation = &apos;aaaaaaaa111111111&apos;</span><br><span class="line">=&gt; &quot;aaaaaaaa111111111&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">irb(main):007:0&gt; user.save!</span><br><span class="line">Enqueued ActionMailer::DeliveryJob (Job ID: 18cbb4be-5215-43b2-9f3d-6b8e8ca5443a) to Sidekiq(mailers) with arguments: &quot;DeviseMailer&quot;, &quot;password_change&quot;, &quot;deliver_now&quot;, #&lt;GlobalID:0x00007f227ce31ef8 @uri=#&lt;URI::GID gid://gitlab/User/1&gt;&gt;</span><br><span class="line">=&gt; true</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">irb(main):008:0&gt; quit</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -1007,7 +1039,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、安装Gitlab"><span class="nav-number">1.</span> <span class="nav-text">一、安装Gitlab</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-安装并配置必要的依赖关系"><span class="nav-number">1.1.</span> <span class="nav-text">1.安装并配置必要的依赖关系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-添加GitLab软件包存储库并安装软件包"><span class="nav-number">1.2.</span> <span class="nav-text">2.添加GitLab软件包存储库并安装软件包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-配置gitlab"><span class="nav-number">1.3.</span> <span class="nav-text">3.配置gitlab</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-登录gitlab"><span class="nav-number">1.4.</span> <span class="nav-text">4.登录gitlab</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、卸载Gitlab"><span class="nav-number">2.</span> <span class="nav-text">二、卸载Gitlab</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、汉化Gitlab"><span class="nav-number">3.</span> <span class="nav-text">三、汉化Gitlab</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-查看gitlab版本"><span class="nav-number">3.1.</span> <span class="nav-text">1.查看gitlab版本</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、配置Gitlab的nginx"><span class="nav-number">4.</span> <span class="nav-text">四、配置Gitlab的nginx</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、安装Gitlab"><span class="nav-number">1.</span> <span class="nav-text">一、安装Gitlab</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-安装并配置必要的依赖关系"><span class="nav-number">1.1.</span> <span class="nav-text">1.安装并配置必要的依赖关系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-添加GitLab软件包存储库并安装软件包"><span class="nav-number">1.2.</span> <span class="nav-text">2.添加GitLab软件包存储库并安装软件包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-配置gitlab"><span class="nav-number">1.3.</span> <span class="nav-text">3.配置gitlab</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-登录gitlab"><span class="nav-number">1.4.</span> <span class="nav-text">4.登录gitlab</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、卸载Gitlab"><span class="nav-number">2.</span> <span class="nav-text">二、卸载Gitlab</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、汉化Gitlab"><span class="nav-number">3.</span> <span class="nav-text">三、汉化Gitlab</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-查看gitlab版本"><span class="nav-number">3.1.</span> <span class="nav-text">1.查看gitlab版本</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、配置Gitlab"><span class="nav-number">4.</span> <span class="nav-text">四、配置Gitlab</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、修改Gitlab的Root密码"><span class="nav-number">5.</span> <span class="nav-text">五、修改Gitlab的Root密码</span></a></li></ol></div>
             
 
           </div>

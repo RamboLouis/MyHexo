@@ -1,5 +1,5 @@
 ---
-title: Linux-Ubuntu安装与卸载Gitlab
+title: Linux-Ubuntu安装、卸载和配置Gitlab
 date: 2018-06-03 15:10:21
 categories:
     - Linux
@@ -31,7 +31,7 @@ sudo apt-get install -y postfix
 
 * 添加GitLab软件包存储库。
 
-ps: 
+    ps: 
 gitlab-ce 是社区版，免费的
 gitlab-ee 是企业版，收费的
 
@@ -44,10 +44,10 @@ curl -sS http://packages.gitlab.cc/install/gitlab-ce/script.deb.sh | sudo bash
 
 * 接下来，安装GitLab软件包。将`http：// gitlab.example.com`更改为您想要访问您的GitLab实例的URL。安装将自动在该URL处配置并启动GitLab。安装后HTTPS需要额外的配置。
 
-ps:
+    ps:
 额外的配置: https://docs.gitlab.com/omnibus/settings/nginx.html#enable-https
 
-`EXTERNAL_URL`为要配置的URL
+    `EXTERNAL_URL`为要配置的URL
 
 ```
 sudo EXTERNAL_URL="http://gitlab.example.com" apt-get install gitlab-ce
@@ -61,7 +61,7 @@ https://mirror.tuna.tsinghua.edu.cn/help/gitlab-ce/
 * 安装成功
 
 
- ps: 这里提示 `在/etc/gitlab/gitlab.rb文件中,设置“external_url”为GitLab配置的URL`, 所以接下来需要配置gitlab,并且.
+    ps: 这里提示 `在/etc/gitlab/gitlab.rb文件中,设置“external_url”为GitLab配置的URL`, 所以接下来需要配置gitlab,并且.
  
  ```
  Please configure a URL for your GitLab instance by setting `external_url`
@@ -100,7 +100,7 @@ sudo gitlab-ctl restart
 
 * 首次登录会让设置密码
 
-ps: 用户名为`root`,同时也可以自己注册
+    ps: 用户名为`root`
 ![](https://upload-images.jianshu.io/upload_images/1666327-f0bfad102ddb4623.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![](https://upload-images.jianshu.io/upload_images/1666327-433d919bfbde5ca3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -215,7 +215,7 @@ sudo gitlab-ctl restart
 ```
 
 
-### 四、配置Gitlab的nginx
+### 四、配置Gitlab
 
 * 查看gitlab配置
 
@@ -223,16 +223,79 @@ sudo gitlab-ctl restart
 sudo vim /etc/gitlab/gitlab.rb
 ```
 
-* nginx关闭
+* gitlab 备份
+
+```
+gitlab-rake gitlab:backup:create
+或
+sudo /usr/bin/gitlab-rake gitlab:backup:create
+```
+
+* 进入`/gitlab.rb`修改备份路径
+
+    通过/etc/gitlab/gitlab.rb配置文件来修改默认存放备份文件的目录
+
+```
+gitlab_rails['backup_path'] = "/xxxx/gitlab_backup"
+```
+
+修改后再重新配置gitlab应用程序
+
+```
+gitlab-ctl reconfigure
+```
+
+* 进入`/gitlab.rb`关闭自带nginx
 
 ```
 nginx['enable'] = false
 ```
 
-* gitlab的nginx配置
+* gitlab的nginx的配置文件
+
+    gitlab的nginx是默认80端口,可以进去`/gitlab-http.conf`配置文件修改端口号,然后再重启
 
 ```
 /var/opt/gitlab/nginx/conf/gitlab-http.conf
 ```
 
+* gitlab重启
 
+```
+gitlab-ctl restart
+```
+
+### 五、修改Gitlab的Root密码
+
+* 进入 gitlab 生产控制台
+
+```
+sudo gitlab-rails console production
+```
+
+* 进入加载生产环境 (Rails 5.0.7.1)
+
+```
+irb(main):001:0> user = User.where(id: 1).first
+=> #<User id:1 @root>
+```
+
+```
+irb(main):005:0> user.password = 'aaaaaaaa111111111'
+=> "aaaaaaaa111111111"
+```
+
+```
+irb(main):006:0> user.password_confirmation = 'aaaaaaaa111111111'
+=> "aaaaaaaa111111111"
+```
+
+```
+irb(main):007:0> user.save!
+Enqueued ActionMailer::DeliveryJob (Job ID: 18cbb4be-5215-43b2-9f3d-6b8e8ca5443a) to Sidekiq(mailers) with arguments: "DeviseMailer", "password_change", "deliver_now", #<GlobalID:0x00007f227ce31ef8 @uri=#<URI::GID gid://gitlab/User/1>>
+=> true
+```
+
+```
+irb(main):008:0> quit
+```
