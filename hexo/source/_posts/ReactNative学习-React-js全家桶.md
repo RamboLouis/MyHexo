@@ -100,7 +100,7 @@ react的diff算法用在什么地方呢？当组件更新的时候，react会创
 
 官方文档: https://facebook.github.io/react/docs/react-component.html#shouldcomponentupdate
 
-![](http://om9s615i9.bkt.clouddn.com/react的生命周期.png-rambolu)
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2017-02-27/react-lifecycle.png)
 
 
 **当创建组件的实例并将其插入到DOM中时，将调用这些方法：**

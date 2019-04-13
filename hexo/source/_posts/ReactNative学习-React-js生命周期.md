@@ -12,7 +12,7 @@ tags:
 
 官方文档: https://facebook.github.io/react/docs/react-component.html#shouldcomponentupdate
 
-![](http://om9s615i9.bkt.clouddn.com/react的生命周期.png-rambolu)
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2017-02-27/react-lifecycle.png)
 
 
 **当创建组件的实例并将其插入到DOM中时，将调用这些方法：**
@@ -20,11 +20,11 @@ tags:
   **1、constructor()**  
 > React组件的构造函数。在安装React组件的构造函数之前调用它。在实现Component子类的构造函数时，应该在任何其他语句之前调用super（props）。
 
-> ```
-> constructor(props) {
+```
+constructor(props) {
   super(props);
 }
-> ```
+```
 
  **2、componentWillMount()** 
 > 组件初始化时只调用，以后组件更新不调用，整个生命周期只调用一次，此时可以修改state。
