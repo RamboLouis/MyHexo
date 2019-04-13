@@ -225,7 +225,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -234,7 +234,7 @@
 
   <div class="container sidebar-position-left page-post-detail">
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -426,20 +426,20 @@
 
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/05/10/Flutter开发-Flutter的SDK安装与初尝/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
       <meta itemprop="description" content="Fire proves gold,adversity proves men.">
       <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -540,11 +540,11 @@
 <ul>
 <li>解压后得到 <code>flutter</code> SDK以及执行文件</li>
 </ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-30d1bd3bb2273ca8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-30d1bd3bb2273ca8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <h3 id="二、设置Flutter-SDK"><a href="#二、设置Flutter-SDK" class="headerlink" title="二、设置Flutter SDK"></a>二、设置Flutter SDK</h3><ul>
 <li>设置文件存放路径, 以当前用户路径<code>~</code>为主, 把解压后的文件存放在用户路径<code>~</code>下.</li>
 </ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-900e3173db6e6d29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-900e3173db6e6d29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>在 <code>.bash_profile</code> 文件中添加SDK路径</li>
 </ul>
@@ -555,28 +555,28 @@
 <li>查看 <code>flutter</code> 是否安装上</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-90d7c1d8512cdd09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-90d7c1d8512cdd09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>查看 <code>flutter</code> 需要的依赖关系</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-e20952ea871e6ebe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-e20952ea871e6ebe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>开始按照提示分别安装依赖,以及插件把</li>
 </ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-5cb1c73da26447b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-5cb1c73da26447b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <h3 id="三、创建项目"><a href="#三、创建项目" class="headerlink" title="三、创建项目"></a>三、创建项目</h3><ul>
 <li>以<code>Android Studio</code>为例</li>
 </ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-f41aab7ae029ae07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-f41aab7ae029ae07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>值得注意的是这里提供了各个平台使用的原生语言,例如:iOS平台默认使用<code>OC</code>,可以选择使用<code>Swift</code>, Android平台默认是<code>Java</code>,可以选择<code>Kotlin</code>.</li>
 </ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-69663399be66d485.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-69663399be66d485.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>最终项目结构目录</li>
 </ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-78ba8e7a6a1d6180.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-78ba8e7a6a1d6180.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 
       
     </div>
@@ -680,7 +680,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/IronMan.png" alt="RamboLu">
             

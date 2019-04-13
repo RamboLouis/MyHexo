@@ -43,7 +43,7 @@ highlight:                              # 代码块的设置
   line_number: true
   auto_detect: false
   tab_replace:
-
+ 
 # Home page setting 主页设置
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -81,7 +81,6 @@ pagination_dir: page                    # 分页目录
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next                             # 当前主题名称。值为false时禁用主题
-
 
 # Deployment 部署
 deploy:                                 # 部分的设置

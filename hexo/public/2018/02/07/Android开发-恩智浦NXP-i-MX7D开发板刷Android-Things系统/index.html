@@ -235,7 +235,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -244,7 +244,7 @@
 
   <div class="container sidebar-position-left page-post-detail">
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -436,20 +436,20 @@
 
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/02/07/Android开发-恩智浦NXP-i-MX7D开发板刷Android-Things系统/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
       <meta itemprop="description" content="Fire proves gold,adversity proves men.">
       <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -502,7 +502,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
 
                 
                 
@@ -562,43 +562,43 @@
 </blockquote>
 <h2 id="组装套件"><a href="#组装套件" class="headerlink" title="组装套件"></a>组装套件</h2><p><a href="https://developer.android.google.cn/things/hardware/imx7d-kit.html" target="_blank" rel="noopener">https://developer.android.google.cn/things/hardware/imx7d-kit.html</a></p>
 <ul>
-<li>根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-5fcfb0844d9606b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
-<li>最后的成品就是这个样子,出现NXP的logo.(没有安装相机模块)<br><img src="http://upload-images.jianshu.io/upload_images/1666327-2fe4f767e8e75a83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+<li>根据官方文档步骤可以进行组装,同时还有树莓派3的操作步骤.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-5fcfb0844d9606b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></li>
+<li>最后的成品就是这个样子,出现NXP的logo.(没有安装相机模块)<br><img src="http://upload-images.jianshu.io/upload_images/1666327-2fe4f767e8e75a83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></li>
 </ul>
 <h2 id="刷机开始"><a href="#刷机开始" class="headerlink" title="刷机开始"></a>刷机开始</h2><h5 id="一键式刷机"><a href="#一键式刷机" class="headerlink" title="一键式刷机"></a>一键式刷机</h5><p><a href="https://developer.android.com/things/hardware/imx7d.html" target="_blank" rel="noopener">https://developer.android.com/things/hardware/imx7d.html</a></p>
 <ul>
 <li>还是根据官方文档的提示,在最后在步骤二的时候提示从Android Things Console下载Android Things Setup Utility.</li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-0fe76c03b51e87d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/1666327-00c2f580a2eb6ed6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-0fe76c03b51e87d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br><img src="http://upload-images.jianshu.io/upload_images/1666327-00c2f580a2eb6ed6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li><p>下载Android Things Setup Utility.(如果打不开可能被墙了 -.-)<br><a href="https://partner.android.com/things/console/u/0/#/tools" target="_blank" rel="noopener">https://partner.android.com/things/console/u/0/#/tools</a><br>ps: 没关系,我在github传了一份,可以下载对应系统版本.<br><a href="https://github.com/RamboLouis/AndroidTestProject/tree/master/AndroidThings/android_things_setup_utility" target="_blank" rel="noopener">https://github.com/RamboLouis/AndroidTestProject/tree/master/AndroidThings/android_things_setup_utility</a><br>同时,也可以自己去租VPS.(macOS系统的 -.-)<br><a href="http://www.rambolu.top/2017/02/21/Mac%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8DigitalOcean%E7%A7%9F%E7%94%A8VPS%EF%BC%8C%E9%83%A8%E7%BD%B2Docker%E5%AE%B9%E5%99%A8%E6%90%AD%E5%BB%BASS%E5%92%8CVPN%E4%B8%93%E5%B1%9E%E6%A2%AF%E5%AD%90/" target="_blank" rel="noopener">Mac环境使用DigitalOcean租用VPS</a><br><img src="http://upload-images.jianshu.io/upload_images/1666327-30caa3d67de1e7d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Setup Utility"></p>
 </li>
-<li><p>下载完成后,开始选择对应系统的安装文件,通过命令行运行.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-0388143d2110a812.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<li><p>下载完成后,开始选择对应系统的安装文件,通过命令行运行.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-0388143d2110a812.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 </li>
 <li><p>命令行运行.<br>遇到第一个选项:<br>选择第一个安装Android设备,并可选择设置Wi-Fi.<br>因为第二个是在现有的系统上设置wifi的.<br>第二个选项:<br>根据自己的开发板进行选择.<br>第三个选项:<br>根据个人喜好进行选择图形化界面.<br>直到提示开始开始下载Android Things<br><img src="http://upload-images.jianshu.io/upload_images/1666327-f8783c252e1422dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="下载Android Things"></p>
 </li>
 <li><p>安装结束,确定键继续.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-3594b0929f1456ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装结束,确定键继续"></p>
 </li>
-<li><p>设置并输入自己所在网络wifi名字和密码<br><img src="http://upload-images.jianshu.io/upload_images/1666327-7246e19a774219f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<li><p>设置并输入自己所在网络wifi名字和密码<br><img src="http://upload-images.jianshu.io/upload_images/1666327-7246e19a774219f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 </li>
-<li><p>点击确定退出安装.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-0b8a2fe8cf65c6a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<li><p>点击确定退出安装.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-0b8a2fe8cf65c6a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 </li>
 </ul>
-<h5 id="手动刷机"><a href="#手动刷机" class="headerlink" title="手动刷机"></a>手动刷机</h5><p><a href="https://developer.android.google.cn/things/hardware/fastboot.html" target="_blank" rel="noopener">https://developer.android.google.cn/things/hardware/fastboot.html</a><br><img src="http://upload-images.jianshu.io/upload_images/1666327-edced73d0550387e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h5 id="手动刷机"><a href="#手动刷机" class="headerlink" title="手动刷机"></a>手动刷机</h5><p><a href="https://developer.android.google.cn/things/hardware/fastboot.html" target="_blank" rel="noopener">https://developer.android.google.cn/things/hardware/fastboot.html</a><br><img src="http://upload-images.jianshu.io/upload_images/1666327-edced73d0550387e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
-<li>需要在<a href="https://partner.android.com/things/console" target="_blank" rel="noopener">Android Things Console</a>,创建项目并下载.(同样,如果打不开那就是被墙了 -.-)<br><img src="http://upload-images.jianshu.io/upload_images/1666327-9f76d2ba873b8dab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+<li>需要在<a href="https://partner.android.com/things/console" target="_blank" rel="noopener">Android Things Console</a>,创建项目并下载.(同样,如果打不开那就是被墙了 -.-)<br><img src="http://upload-images.jianshu.io/upload_images/1666327-9f76d2ba873b8dab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></li>
 <li>按照官方文档说的,执行<code>flash-all.sh</code>文件<br><img src="http://upload-images.jianshu.io/upload_images/1666327-b8ce261d78ab5a83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="flash-all.sh"></li>
-<li>成功 <strong>Successfully flashed your imx7d.</strong><br><img src="http://upload-images.jianshu.io/upload_images/1666327-2171e9b64fa5068a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+<li>成功 <strong>Successfully flashed your imx7d.</strong><br><img src="http://upload-images.jianshu.io/upload_images/1666327-2171e9b64fa5068a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></li>
 </ul>
 <h2 id="查找并运行"><a href="#查找并运行" class="headerlink" title="查找并运行"></a>查找并运行</h2><ul>
 <li><p>输入<code>adb devices</code>发现可以找到设备.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-b11bca69e053cf7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="输入adb devices"></p>
 </li>
-<li><p>通过自建项目或者官网下载demo,可以运行设备了.<br>建议选择26以上的<br><img src="http://upload-images.jianshu.io/upload_images/1666327-82d4d447ef2b32d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<li><p>通过自建项目或者官网下载demo,可以运行设备了.<br>建议选择26以上的<br><img src="http://upload-images.jianshu.io/upload_images/1666327-82d4d447ef2b32d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 </li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-917aa5236b3871d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-917aa5236b3871d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <h2 id="结束"><a href="#结束" class="headerlink" title="结束."></a>结束.</h2><ul>
-<li>Holle world出现.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-3666fdcc67b501a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+<li>Holle world出现.<br><img src="http://upload-images.jianshu.io/upload_images/1666327-3666fdcc67b501a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></li>
 </ul>
 <p>ps:<br>开发套件教程:<br><a href="https://developer.android.com/things/get-started/kits.html" target="_blank" rel="noopener">https://developer.android.com/things/get-started/kits.html</a><br>案例:<br><a href="https://developer.android.com/things/sdk/samples.html" target="_blank" rel="noopener">https://developer.android.com/things/sdk/samples.html</a><br>Google社区:<br><a href="https://plus.google.com/communities/107507328426910012281" target="_blank" rel="noopener">https://plus.google.com/communities/107507328426910012281</a></p>
 
@@ -704,7 +704,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/IronMan.png" alt="RamboLu">
             

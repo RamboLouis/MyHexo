@@ -150,7 +150,7 @@ hexo d (hexo deploy简写)
 1. 安装 `hexo-generator-searchdb`，在站点的根目录下执行以下命令：
 
     ```
-    npm install hexo-generator- searchdb --save
+    npm install hexo-generator-searchdb --save
     ```
 
 2. 编辑 `站点配置文件`，新增以下内容到任意位置：

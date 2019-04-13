@@ -247,7 +247,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -256,7 +256,7 @@
 
   <div class="container sidebar-position-left page-post-detail">
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -448,20 +448,20 @@
 
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2017/02/21/Mac环境使用DigitalOcean租用VPS，部署Docker容器搭建SS和VPN专属梯子/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
       <meta itemprop="description" content="Fire proves gold,adversity proves men.">
       <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -514,14 +514,14 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Mac/" itemprop="url" rel="index"><span itemprop="name">Mac</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Mac/" itemprop="url" rel="index"><span itemprop="name">Mac</span></a></span>
 
                 
                 
                   ，
                 
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Mac/Docker/" itemprop="url" rel="index"><span itemprop="name">Docker</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Mac/Docker/" itemprop="url" rel="index"><span itemprop="name">Docker</span></a></span>
 
                 
                 
@@ -632,7 +632,7 @@
 <ul>
 <li>DockerHub地址: <a href="https://hub.docker.com/r/oddrationale/docker-shadowsocks/" target="_blank" rel="noopener">https://hub.docker.com/r/oddrationale/docker-shadowsocks/</a></li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-5143e943e6b70624.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-5143e943e6b70624.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>从DockerHub上,拉取shadowsocks容器</li>
 </ul>
@@ -651,11 +651,11 @@
 <h5 id="2、通过IPsec-VPN连接"><a href="#2、通过IPsec-VPN连接" class="headerlink" title="2、通过IPsec VPN连接."></a>2、通过IPsec VPN连接.</h5><ul>
 <li>通过<code>DockerHub</code>搜索<code>ipsec</code></li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-19ff3dc0b32e0c8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-19ff3dc0b32e0c8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>DockerHub地址: <a href="https://hub.docker.com/r/hwdsl2/ipsec-vpn-server/" target="_blank" rel="noopener">https://hub.docker.com/r/hwdsl2/ipsec-vpn-server/</a></li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-6d5b4d24f88d9259.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-6d5b4d24f88d9259.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>从DockerHub上,拉取shadowsocks容器</li>
 </ul>
@@ -677,38 +677,38 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs ipsec-vpn-server</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs xxxx: 容器名字</span><br></pre></td></tr></table></figure>
 <p>在命令输出中查找这些代码：<br>Connect to your new VPN with these details:<br>Server IP: your_vpn_server_ip<br>IPsec PSK: your_ipsec_pre_shared_key<br>Username: your_vpn_username<br>Password: your_vpn_password</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-1512f01be6bbfcd3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-1512f01be6bbfcd3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>添加vpn地址</li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-9786adc38b361586.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-1d5ecc462a185c30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-9786adc38b361586.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-1d5ecc462a185c30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>共享密钥填写IPsec PSKs</li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-fbe3204922e161e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1666327-62bc94a1c7bb8a7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-fbe3204922e161e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1666327-62bc94a1c7bb8a7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <h4 id="（二）、-通过脚本方式部署连接仓库"><a href="#（二）、-通过脚本方式部署连接仓库" class="headerlink" title="（二）、 通过脚本方式部署连接仓库"></a>（二）、 通过脚本方式部署连接仓库</h4><ul>
 <li>选择安装: 1</li>
 </ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-a0712ed5f94dfbb5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-a0712ed5f94dfbb5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>设置密码、端口及加密方式</li>
 </ul>
 <p>ps: 加密方式建议选择 aes-256-cfb</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-148fd0b6d51a8580.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-148fd0b6d51a8580.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>回车安装，安装成功</li>
 </ul>
 <p>安装过程会经历几分钟，然后把配置信息保存好</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-321c50899ead1a2b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""> </p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-321c50899ead1a2b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt> </p>
 <h3 id="七、添加服务器"><a href="#七、添加服务器" class="headerlink" title="七、添加服务器"></a>七、添加服务器</h3><ul>
 <li>下载ss客户端（shadowsocks），并添加。</li>
 </ul>
 <p>GitHub官方提供下载dmg：<br><a href="https://github.com/shadowsocks/shadowsocks-iOS/releases" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks-iOS/releases</a></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1666327-a926bcfd857363fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="shadowsocks下载"></p>
 <p>ps: 新一代shadowsocks客户端：<br><a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases" target="_blank" rel="noopener">https://github.com/shadowsocks/ShadowsocksX-NG/releases</a></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-9dba03d94e979981.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-9dba03d94e979981.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>安装后配置服务器，打开服务器设置，并添加服务器。</li>
 </ul>
@@ -726,7 +726,7 @@
 <li>暂停容器</li>
 </ul>
 <p>ps: 查询过后NAMES,为启动镜像后随机生成的容器名.</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-f6eda7dbfd45f917.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-f6eda7dbfd45f917.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop xxx(容器名字)</span><br></pre></td></tr></table></figure>
 <ul>
 <li>删除容器<br>ps: 删除容器前需要暂停容器</li>
@@ -861,7 +861,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/IronMan.png" alt="RamboLu">
             

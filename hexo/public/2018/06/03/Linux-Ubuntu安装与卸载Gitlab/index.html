@@ -149,7 +149,7 @@
 
 
   <meta name="description" content="一、安装Gitlab1.安装并配置必要的依赖关系12sudo apt-get updatesudo apt-get install -y curl openssh-server ca-certificates  然后，安装Postfix发送通知邮件。如果您想使用其他解决方案发送电子邮件，跳过此步骤并在安装GitLab后配置外部SMTP服务器。ps:配置外部SMTP服务器: https://docs">
-<meta name="keywords" content="Linux,Gitlab">
+<meta name="keywords" content="Gitlab,Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux-Ubuntu安装、卸载和配置Gitlab">
 <meta property="og:url" content="http://RamboLu.top/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/index.html">
@@ -223,7 +223,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -232,7 +232,7 @@
 
   <div class="container sidebar-position-left page-post-detail">
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -424,20 +424,20 @@
 
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://RamboLu.top/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RamboLu">
       <meta itemprop="description" content="Fire proves gold,adversity proves men.">
       <meta itemprop="image" content="/images/IronMan.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RamboLu Blog">
     </span>
 
@@ -490,14 +490,14 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span>
 
                 
                 
                   ，
                 
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Linux/Gitlab/" itemprop="url" rel="index"><span itemprop="name">Gitlab</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Linux/Gitlab/" itemprop="url" rel="index"><span itemprop="name">Gitlab</span></a></span>
 
                 
                 
@@ -582,7 +582,7 @@
 </ul>
 <pre><code>ps: 这里提示 `在/etc/gitlab/gitlab.rb文件中,设置“external_url”为GitLab配置的URL`, 所以接下来需要配置gitlab,并且.
 </code></pre> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> Please configure a URL for your GitLab instance by setting `external_url`</span><br><span class="line">configuration in /etc/gitlab/gitlab.rb file.</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-4a8af0f2837cbd76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-4a8af0f2837cbd76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <h4 id="3-配置gitlab"><a href="#3-配置gitlab" class="headerlink" title="3.配置gitlab"></a>3.配置gitlab</h4><ul>
 <li>在 <code>/etc/gitlab/gitlab.rb</code> 中设置 <code>external_url</code></li>
 </ul>
@@ -599,10 +599,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl restart</span><br></pre></td></tr></table></figure>
 <h4 id="4-登录gitlab"><a href="#4-登录gitlab" class="headerlink" title="4.登录gitlab"></a>4.登录gitlab</h4><ul>
 <li><p>首次登录会让设置密码</p>
-<p>  ps: 用户名为<code>root</code><br><img src="https://upload-images.jianshu.io/upload_images/1666327-f0bfad102ddb4623.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>  ps: 用户名为<code>root</code><br><img src="https://upload-images.jianshu.io/upload_images/1666327-f0bfad102ddb4623.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 </li>
 </ul>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-433d919bfbde5ca3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-433d919bfbde5ca3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <h3 id="二、卸载Gitlab"><a href="#二、卸载Gitlab" class="headerlink" title="二、卸载Gitlab"></a>二、卸载Gitlab</h3><ul>
 <li>停止gitlab</li>
 </ul>
@@ -631,7 +631,7 @@
 </ul>
 <p><a href="https://gitlab.com/xhang/gitlab" target="_blank" rel="noopener">https://gitlab.com/xhang/gitlab</a></p>
 <h4 id="1-查看gitlab版本"><a href="#1-查看gitlab版本" class="headerlink" title="1.查看gitlab版本"></a>1.查看<code>gitlab</code>版本</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /opt/gitlab/embedded/service/gitlab-rails/VERSION</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-f60e1c658c9aa94e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-f60e1c658c9aa94e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <p>2.下载汉化包</p>
 <ul>
 <li>wget方式(指定版本)</li>
@@ -656,7 +656,7 @@
 <li>覆盖</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp -rf gitlab-10-8-stable-zh/* /opt/gitlab/embedded/service/gitlab-rails/</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/1666327-19ffad61c5546f1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1666327-19ffad61c5546f1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 <ul>
 <li>重起配置及重启gitlab</li>
 </ul>
@@ -725,9 +725,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"># Linux</a>
-          
             <a href="/tags/Gitlab/" rel="tag"># Gitlab</a>
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
           
         </div>
       
@@ -813,7 +813,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/IronMan.png" alt="RamboLu">
             
