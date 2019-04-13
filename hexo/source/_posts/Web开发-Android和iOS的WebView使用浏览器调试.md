@@ -13,7 +13,7 @@ tags:
 
 *  然后手机设置成USB调试即可.
 
-![](https://upload-images.jianshu.io/upload_images/1666327-8d4747a78e5b7a0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2018-03-27/01.png)
 
 #### iOS设备
 * 这个需要依靠第三方插件:[ios-webkit-debug-proxy](https://github.com/google/ios-webkit-debug-proxy)
@@ -22,7 +22,7 @@ tags:
 
 * 在`Discover network targets`里面增加`localhost:9000`
 
-![](https://upload-images.jianshu.io/upload_images/1666327-29face9afcae2f54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2018-03-27/02.png)
 
 * 运行`remotedebug_ios_webkit_adapter --port=9000`
 
@@ -30,9 +30,9 @@ tags:
 
 * 开始开发菜单
 
-![](https://upload-images.jianshu.io/upload_images/1666327-56e0bec271cfe717.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2018-03-27/03.png)
 
 * 根据对应的设备进行页面选择
 
-![](https://upload-images.jianshu.io/upload_images/1666327-12997f69cfce6665.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2018-03-27/04.png)
 
