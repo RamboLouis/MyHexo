@@ -60,15 +60,14 @@ https://mirror.tuna.tsinghua.edu.cn/help/gitlab-ce/
 
 * 安装成功
 
-
-    ps: 这里提示 `在/etc/gitlab/gitlab.rb文件中,设置“external_url”为GitLab配置的URL`, 所以接下来需要配置gitlab,并且.
+ps: 这里提示 `在/etc/gitlab/gitlab.rb文件中,设置“external_url”为GitLab配置的URL`, 所以接下来需要配置gitlab
  
  ```
  Please configure a URL for your GitLab instance by setting `external_url`
 configuration in /etc/gitlab/gitlab.rb file.
 ```
 
-![](https://upload-images.jianshu.io/upload_images/1666327-4a8af0f2837cbd76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2018-06-03/gitlab.png)
 
 #### 3.配置gitlab
 
@@ -101,9 +100,10 @@ sudo gitlab-ctl restart
 * 首次登录会让设置密码
 
     ps: 用户名为`root`
-![](https://upload-images.jianshu.io/upload_images/1666327-f0bfad102ddb4623.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![](https://upload-images.jianshu.io/upload_images/1666327-433d919bfbde5ca3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2018-06-03/gitlab-root.png)
+
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2018-06-03/gitlab-root-1.png)
 
 ### 二、卸载Gitlab
 
@@ -122,12 +122,14 @@ ps -e | grep gitlab
 * 删除所有包含gitlab的文件及目录
 
 ```
-find / -name gitlab | xargs rm -rf 
+find / -name gitlab | xargs rm -rf
 ```
 
 * 卸载
 
 ```
+sudo apt-get remove gitlab-ce
+或者
 sudo apt-get remove gitlab-ee
 ```
 
@@ -158,7 +160,7 @@ https://gitlab.com/xhang/gitlab
 cat /opt/gitlab/embedded/service/gitlab-rails/VERSION
 ```
 
-![](https://upload-images.jianshu.io/upload_images/1666327-f60e1c658c9aa94e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2018-06-03/gitlab-version.png)
 
 2.下载汉化包
 
@@ -205,7 +207,7 @@ cp -r /opt/gitlab/embedded/service/gitlab-rails{,.ori}
 ```
 sudo cp -rf gitlab-10-8-stable-zh/* /opt/gitlab/embedded/service/gitlab-rails/
 ```
-![](https://upload-images.jianshu.io/upload_images/1666327-19ffad61c5546f1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2018-06-03/gitlab-error-1.png)
 
 * 重起配置及重启gitlab
 
