@@ -6,7 +6,7 @@ categories:
 tags:
 ---
 
-![](http://om9s615i9.bkt.clouddn.com/Adapter流程图.png-rambolu)
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2017-06-05/Adapter.png)
 
 ### Adapter
 * Adapter从字面意思了解就是适配器，类似于iOS中UITableView和UICollectionView中的数据源。

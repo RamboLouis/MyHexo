@@ -140,7 +140,7 @@ startActivity(intent);
 * **onDestroy()**:
 
 在 Activity 被销毁前调用。
-![](https://developer.android.google.cn/images/activity_lifecycle.png)
+![](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2017-05-28/activity-lifecycle.png)
 
 * Activity的启动顺序：
 
