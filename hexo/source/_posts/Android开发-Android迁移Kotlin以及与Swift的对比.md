@@ -18,11 +18,11 @@ Ps:使用Android Studio开发安卓.听说Android Studio 3.0 预览版已支持 
 * `Android Studio` -> `Preferences` -> `Plugins`
 * 选择`Browse Repositories`
 
-![选择Browse Repositories](http://upload-images.jianshu.io/upload_images/1666327-2f21c585f5a11d31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![选择Browse Repositories](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2017-05-18/01.png)
 
 * 搜索`Kotlin`
 
-![搜索Kotlin](http://upload-images.jianshu.io/upload_images/1666327-037c81681ed27be8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![搜索Kotlin](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2017-05-18/2.png)
 
 * 根据提示重启Android Studio即可.
 
@@ -34,7 +34,7 @@ Kotlin插件提供了迁移入口, jetbrains真是良心卖家啊.
 * 选择 `code` -> `Convert Java File to Kotlin File`
 
 Ps:和Swift迁移感觉一样,
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/1666327-3be717b132da80ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2017-05-18/3.png)
 
 原本java文件的MainActivity:
 
@@ -101,20 +101,20 @@ class ViewController: UIViewController {
 #### 3、配置Kotlin.
 
 * 当你转移后,再次打开Activity,IDE会提醒你`Kotlin not configured`.此时需要点击右面的`configure`.
-![Configure](http://upload-images.jianshu.io/upload_images/1666327-85f7b794b83f43a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Configure](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2017-05-18/4.png)
 
 * 点击后会提醒项目配置Kotlin,是选择选择默认状态(All modules containing Kotlin files: app),以及Kotlin的版本就即可.
-![Kotlin version](http://upload-images.jianshu.io/upload_images/1666327-0e358bc86a37c8ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Kotlin version](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2017-05-18/5.png)
 Ps: 配置完,其实是在你项目中的`build.gradle`中添加了Kotlin版本和路径(不是app->build.gradle)
 
-![版本和路径](http://upload-images.jianshu.io/upload_images/1666327-617bd8faf1d89f4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![版本和路径](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2017-05-18/6.png)
 以及你的`app`->`build.gradle`中添加了Kotlin的依赖
 
-![Kotlin的依赖](http://upload-images.jianshu.io/upload_images/1666327-a33793e2b7a6a46c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Kotlin的依赖](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2017-05-18/7.png)
 
 * 配置完,提示需要同步才能正常工作,此时需要点击同步.
 
-![同步](http://upload-images.jianshu.io/upload_images/1666327-3b41981f73eff30c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![同步](https://raw.githubusercontent.com/RamboLouis/MyHexo/master/hexo-source/images/2017-05-18/8.png)
 
 * 好了,现在可以运行了.
 
