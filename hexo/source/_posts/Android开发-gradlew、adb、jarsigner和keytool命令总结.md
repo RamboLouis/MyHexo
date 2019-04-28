@@ -1,12 +1,12 @@
 ---
-title: Android开发-gradlew、adb、keytool和fastboot命令总结
+title: Android开发-gradlew、adb、keytool、jarsigner和fastboot命令总结
 date: 2018-04-25 18:38:26
 categories:
     - Android
 tags:
 ---
 
-### gradlew
+## gradlew
 
 * 查看项目依赖库依赖
 
@@ -16,7 +16,7 @@ tags:
 
 `./gradlew app:dependencies > xxxx.txt`
 
-### adb
+## adb
 
 * 查询设备
 
@@ -35,7 +35,7 @@ tags:
 
 `adb -s <device>  install -r <path>`
 
-### keytool
+## keytool
 
 * 查询证书指纹 (SHA1) - 输入密码
 
@@ -49,8 +49,29 @@ tags:
 
 `keytool -list -v -keystore <storeFile> -storepass <keyPassword>`
 
-### fastboot
+* 修改keystore密码：
 
+`keytool -storepasswd -keystore [.keystore或.jks文件]`
+
+* 修改keystore的alias：
+
+`keytool -changealias -keystore [.keystore或.jks文件] -alias [要修改.keystore或.jks文件中别名别名] -destalias [新别名]`
+
+* 修改alias的密码：
+
+`keytool -keypasswd -keystore [.keystore或.jks文件] -alias [.keystore或.jks文件中别名]`
+
+## jarsigner
+
+* 查看apk包签名：
+
+`jarsigner -verify -verbose -certs [.apk包]`
+
+* 给apk包打签名
+
+`jarsigner -verbose -keystore [.keystore或.jks文件绝对路径] -signedjar [签名以后的apk文件绝对路径] [要签名的apk文件绝对路径] [.keystore或.jks文件中的别名]`
+
+## fastboot
 
 * 查看手机进入fastboot模式连接设备
 
