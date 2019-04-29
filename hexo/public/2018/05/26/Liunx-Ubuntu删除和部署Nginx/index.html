@@ -156,7 +156,7 @@
 <meta property="og:site_name" content="RamboLu Blog">
 <meta property="og:description" content="一、删除Nginx 删除Nginx及配置文件  1sudo apt-get --purge remove nginx  自动移除全部不使用的软件包  1sudo apt-get autoremove ngix  查看与Nginx相关的软件  1dpkg --get-selections|grep nginx  继续删除与Nginx有关的软件  12sudo apt-get --purge remo">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-08T05:48:19.000Z">
+<meta property="og:updated_time" content="2019-04-29T11:04:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Liunx-Ubuntu删除和部署Nginx">
 <meta name="twitter:description" content="一、删除Nginx 删除Nginx及配置文件  1sudo apt-get --purge remove nginx  自动移除全部不使用的软件包  1sudo apt-get autoremove ngix  查看与Nginx相关的软件  1dpkg --get-selections|grep nginx  继续删除与Nginx有关的软件  12sudo apt-get --purge remo">
@@ -539,7 +539,7 @@
       
 
       
-        <h3 id="一、删除Nginx"><a href="#一、删除Nginx" class="headerlink" title="一、删除Nginx"></a>一、删除Nginx</h3><ul>
+        <h2 id="一、删除Nginx"><a href="#一、删除Nginx" class="headerlink" title="一、删除Nginx"></a>一、删除Nginx</h2><ul>
 <li>删除<code>Nginx</code>及配置文件</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get --purge remove nginx</span><br></pre></td></tr></table></figure>
@@ -555,8 +555,8 @@
 <li>继续删除与<code>Nginx</code>有关的软件</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get --purge remove nginx-common</span><br><span class="line">sudo apt-get --purge remove nginx-core</span><br></pre></td></tr></table></figure>
-<h3 id="二、安装部署Nginx"><a href="#二、安装部署Nginx" class="headerlink" title="二、安装部署Nginx"></a>二、安装部署Nginx</h3><h4 id="1、APT源安装-不推荐"><a href="#1、APT源安装-不推荐" class="headerlink" title="1、APT源安装(不推荐)"></a>1、APT源安装(不推荐)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nginx</span><br></pre></td></tr></table></figure>
-<h4 id="2、源码安装"><a href="#2、源码安装" class="headerlink" title="2、源码安装"></a>2、源码安装</h4><ul>
+<h2 id="二、安装部署Nginx"><a href="#二、安装部署Nginx" class="headerlink" title="二、安装部署Nginx"></a>二、安装部署Nginx</h2><h3 id="1、APT源安装-不推荐"><a href="#1、APT源安装-不推荐" class="headerlink" title="1、APT源安装(不推荐)"></a>1、APT源安装(不推荐)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nginx</span><br></pre></td></tr></table></figure>
+<h3 id="2、源码安装"><a href="#2、源码安装" class="headerlink" title="2、源码安装"></a>2、源码安装</h3><ul>
 <li>通过官方提供的下载包进行安装</li>
 </ul>
 <p>官方地址: <a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">http://nginx.org/en/download.html</a></p>
@@ -573,12 +573,18 @@
 <li>安装</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo make &amp;&amp; sudo make install</span><br></pre></td></tr></table></figure>
-<h3 id="三、启动、重启、停止Nginx"><a href="#三、启动、重启、停止Nginx" class="headerlink" title="三、启动、重启、停止Nginx"></a>三、启动、重启、停止Nginx</h3><h6 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h6><p><code>Nginx</code>安装目录地址 -c <code>Nginx</code>指定配置文件地址</p>
+<h2 id="三、启动、重启Nginx"><a href="#三、启动、重启Nginx" class="headerlink" title="三、启动、重启Nginx"></a>三、启动、重启Nginx</h2><h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><p><code>Nginx</code>安装目录地址 -c <code>Nginx</code>指定配置文件地址</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf</span><br></pre></td></tr></table></figure>
-<h6 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h6><ul>
+<h3 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h3><ul>
 <li>检验<code>Nginx</code>配置文件是否正确</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 进入sbin 文件</span><br><span class="line">cd /usr/local/nginx/sbin</span><br><span class="line">./nginx -t</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/local/nginx/sbin/nginx -t -c /usr/local/nginx/conf/nginx.conf</span><br></pre></td></tr></table></figure>
+<ul>
+<li>重启服务</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/sbin/nginx -s reload</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -625,7 +631,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/03/Linux-Ubuntu安装与卸载Gitlab/" rel="prev" title="Linux-安装、卸载和配置Gitlab">
+              <a href="/2018/06/03/Linux-安装、卸载和配置Gitlab/" rel="prev" title="Linux-安装、卸载和配置Gitlab">
                 Linux-安装、卸载和配置Gitlab <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -914,7 +920,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、删除Nginx"><span class="nav-number">1.</span> <span class="nav-text">一、删除Nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、安装部署Nginx"><span class="nav-number">2.</span> <span class="nav-text">二、安装部署Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、APT源安装-不推荐"><span class="nav-number">2.1.</span> <span class="nav-text">1、APT源安装(不推荐)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、源码安装"><span class="nav-number">2.2.</span> <span class="nav-text">2、源码安装</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、启动、重启、停止Nginx"><span class="nav-number">3.</span> <span class="nav-text">三、启动、重启、停止Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#启动"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">启动</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#重启"><span class="nav-number">3.0.0.2.</span> <span class="nav-text">重启</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、删除Nginx"><span class="nav-number">1.</span> <span class="nav-text">一、删除Nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、安装部署Nginx"><span class="nav-number">2.</span> <span class="nav-text">二、安装部署Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、APT源安装-不推荐"><span class="nav-number">2.1.</span> <span class="nav-text">1、APT源安装(不推荐)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、源码安装"><span class="nav-number">2.2.</span> <span class="nav-text">2、源码安装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、启动、重启Nginx"><span class="nav-number">3.</span> <span class="nav-text">三、启动、重启Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#启动"><span class="nav-number">3.1.</span> <span class="nav-text">启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重启"><span class="nav-number">3.2.</span> <span class="nav-text">重启</span></a></li></ol></li></ol></div>
             
 
           </div>
